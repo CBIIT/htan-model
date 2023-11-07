@@ -1,0 +1,32 @@
+[project]
+name = "htan-rdf-to-mdf"
+version = "0.0.1"
+description = "HTAN RDF-based data model converter to MDF"
+authors = [
+    "Mark A. Jensen <mark.jensen@nih.gov>"
+]
+requires-python = ">=3.9"
+readme = "README.md"
+
+[project.urls]
+"Bug Tracker" = "https://github.com/CBIIT/htan-model"
+
+[tool.poetry]
+name = "htan-rdf-to-mdf"
+version = "0.0.1"
+description = "HTAN RDF-based data model converter to MDF"
+authors = [
+    "Mark A. Jensen <mark.jensen@nih.gov>"
+]
+license = "Apache 2.0"
+readme = "README.md"
+
+
+[tool.poetry.scripts]
+"htan-rdf-to-mdf.py" = { reference = "bin/htan-rdf-to-mdf.py", type = "file" }
+
+[tool.poetry.dependencies]
+python = ">=3.9,<4.0"
+bento-mdf = ">=0.9.3"
+bento-meta = ">=0.2.4"
+rdflib = ">=6.2.0"

@@ -1,0 +1,6 @@
+[submodule "ncihtan-data-models"]
+	path = ncihtan-data-models
+	url = https://github.com/ncihtan/data-models.git
+[submodule "bento-mdf"]
+	path = bento-mdf
+	url = https://github.com/CBIIT/bento-mdf
