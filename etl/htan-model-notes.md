@@ -17,7 +17,7 @@ DependsOn Component:
 Source: URL if available of the semantic source of the Attribute - not necessarily an "IRI", can be just a link
 
 
-Python module rdflib can parse jsonld - however, to be able to see the entities in the result object, must remove the top-level "@id" dict entry.
+NOTE: Python module rdflib can parse jsonld - however, to be able to see the entities in the result object, must remove the top-level "@id" dict entry.
 
 use virtualenv .../htan-venv
 
