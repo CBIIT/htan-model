@@ -1,0 +1,2645 @@
+Handle: HTAN
+Nodes:
+    AcuteLymphoblasticLeukemiaTier3:
+        Desc: Acute Lymphoblastic Leukemia attributes in Clinical Data Tier 3
+        Props:
+        - CNSLeukemiaStatus
+        - Component
+        - HTANParticipantID
+        - MRDALLDiagnosticSensitivity
+        - NCIALLRiskGroup
+        - SpecimenBlastCountPercentageValue
+        - StartDaysfromIndex
+        - StopDaysfromIndex
+        - TimepointLabel
+        Term:
+        -   Code: http://schema.biothings.io/AcuteLymphoblasticLeukemiaTier3
+            Definition: Acute Lymphoblastic Leukemia attributes in Clinical Data Tier
+                3
+            Handle: Acute_Lymphoblastic_Leukemia_Tier_3
+            Origin: HTAN
+            Value: Acute Lymphoblastic Leukemia Tier 3
+    Biospecimen:
+        Desc: HTAN biological entity; this can be tissue, blood, analyte and subsamples
+            of those
+        Props:
+        - AcquisitionMethodType
+        - AdjacentBiospecimenIDs
+        - BiospecimenType
+        - CollectionDaysfromIndex
+        - CollectionMedia
+        - Component
+        - DegreeofDysplasia
+        - DysplasiaFraction
+        - FiducialMarker
+        - FixativeType
+        - HTANBiospecimenID
+        - HTANParentID
+        - HistologyAssessmentBy
+        - HistologyAssessmentMedium
+        - LysisBuffer
+        - MethodofNucleicAcidIsolation
+        - MountingMedium
+        - NumberProliferatingCells
+        - PercentEosinophilInfiltration
+        - PercentGranulocyteInfiltration
+        - PercentInflamInfiltration
+        - PercentLymphocyteInfiltration
+        - PercentMonocyteInfiltration
+        - PercentNecrosis
+        - PercentNeutrophilInfiltration
+        - PercentNormalCells
+        - PercentStromalCells
+        - PercentTumorCells
+        - PercentTumorNuclei
+        - PreinvasiveMorphology
+        - ProcessingDaysfromIndex
+        - ProcessingLocation
+        - ProtocolLink
+        - SiteDataSource
+        - SlicingMethod
+        - SourceHTANBiospecimenID
+        - StorageMethod
+        - TimepointLabel
+        - TumorInfiltratingLymphocytes
+        Term:
+        -   Code: http://schema.biothings.io/Biospecimen
+            Definition: HTAN biological entity; this can be tissue, blood, analyte
+                and subsamples of those
+            Handle: Biospecimen
+            Origin: HTAN
+            Value: Biospecimen
+    BreastCancerTier3:
+        Desc: Breast cancer specific attributes in Clinical Data Tier 3
+        Props:
+        - BIRADSMammographyBreastDensityCategory
+        - BreastBiopsyProcedureFindingType
+        - BreastCancerAllredEstrogenReceptorScore
+        - BreastCancerAssessmentTests
+        - BreastCancerGenomicTestPerformed
+        - BreastCarcinomaCentromere17CopyNumber
+        - BreastCarcinomaDetectionMethodType
+        - BreastCarcinomaERStainingIntensity
+        - BreastCarcinomaERStatusPercentageValue
+        - BreastCarcinomaEstrogenReceptorStatus
+        - BreastCarcinomaHER2Centromere17CopynumberTotal
+        - BreastCarcinomaHER2Chromosome17Ratio
+        - BreastCarcinomaHER2RatioDiagnosis
+        - BreastCarcinomaHER2Status
+        - BreastCarcinomaHistologyCategory
+        - BreastCarcinomaPRStainingIntensity
+        - BreastCarcinomaPRStatusPercentageValue
+        - BreastCarcinomaProgesteronerReceptorStatus
+        - BreastCarcinomaSurgicalProcedureName
+        - BreastImagingPerformedType
+        - BreastQuadrantSite
+        - Component
+        - HER2BreastCarcinomaCopyNumberTotal
+        - HTANParticipantID
+        - HormoneTherapyBreastCancerPreventionIndicator
+        - InvasiveDuctalBreastCarcinomaHistologicCategory
+        - InvasiveLobularBreastCarcinomaHistologicCategory
+        - MammaprintRiskGroup
+        - MulticentricBreastCarcinomaPresentIndicator
+        - MultifocalBreastCarcinomaPresentIndicator
+        - OncotypeRiskGroup
+        - OncotypeScore
+        - PriorInvasiveBreastDisease
+        - StartDaysfromIndex
+        - StopDaysfromIndex
+        - TimepointLabel
+        Term:
+        -   Code: http://schema.biothings.io/BreastCancerTier3
+            Definition: Breast cancer specific attributes in Clinical Data Tier 3
+            Handle: Breast_Cancer_Tier_3
+            Origin: HTAN
+            Value: Breast Cancer Tier 3
+    BulkMethylation_seqLevel1:
+        Desc: Raw data for bulk methylation sequencing, such as FASTQs and unaligned
+            BAMs
+        Props:
+        - BisulfiteConversion
+        - BulkMethylationAssayType
+        - Component
+        - FileFormat
+        - Filename
+        - HTANDataFileID
+        - HTANParentBiospecimenID
+        - NucleicAcidSource
+        - ReplicateType
+        - SequencingPlatform
+        - TotalDNAInput
+        Term:
+        -   Code: http://schema.biothings.io/BulkMethylation-seqLevel1
+            Definition: Raw data for bulk methylation sequencing, such as FASTQs and
+                unaligned BAMs
+            Handle: Bulk_Methylation_seq_Level_1
+            Origin: HTAN
+            Value: Bulk Methylation-seq Level 1
+    BulkMethylation_seqLevel2:
+        Desc: Aligned primary data for bulk methylation sequencing, such as gene expression
+            matrix files, VCFs, etc.
+        Props:
+        - AlignmentWorkflowType
+        - AlignmentWorkflowUrl
+        - AverageBaseQuality
+        - AverageInsertSize
+        - AverageReadLength
+        - BulkMethylationGenomicReference
+        - Component
+        - Contamination
+        - ContaminationError
+        - DuplicateRemovalSoftware
+        - FileFormat
+        - Filename
+        - GenomicReferenceURL
+        - HTANDataFileID
+        - HTANParentDataFileID
+        - IndexFileName
+        - LibraryLayout
+        - MeanCoverage
+        - PairsOnDiffCHR
+        - ProportionBaseMismatch
+        - ProportionCoverage30X
+        - ProportionReadsDuplicated
+        - ProportionReadsMapped
+        - ProportionTargetsNoCoverage
+        - ProportionofMinimumCpGCoverage10X
+        - ShortReads
+        - TotalReads
+        - TotalUniquelyMapped
+        - TotalUnmappedreads
+        - Trimmer
+        Term:
+        -   Code: http://schema.biothings.io/BulkMethylation-seqLevel2
+            Definition: Aligned primary data for bulk methylation sequencing, such
+                as gene expression matrix files, VCFs, etc.
+            Handle: Bulk_Methylation_seq_Level_2
+            Origin: HTAN
+            Value: Bulk Methylation-seq Level 2
+    BulkMethylation_seqLevel3:
+        Desc: Sample level summary data for bulk methylation sequencing, such as t-SNE
+            plot coordinates, etc.
+        Props:
+        - Component
+        - DMCCallingTool
+        - DMCCallingWorkflowURL
+        - DMCdatafileformat
+        - DMRCallingTool
+        - DMRCallingWorkflowURL
+        - DMRdatafileFormat
+        - FileFormat
+        - Filename
+        - HTANDataFileID
+        - HTANParentDataFileID
+        - Lambdamethylationratio
+        - PUC19methylationratio
+        Term:
+        -   Code: http://schema.biothings.io/BulkMethylation-seqLevel3
+            Definition: Sample level summary data for bulk methylation sequencing,
+                such as t-SNE plot coordinates, etc.
+            Handle: Bulk_Methylation_seq_Level_3
+            Origin: HTAN
+            Value: Bulk Methylation-seq Level 3
+    BulkRNA_seqLevel1:
+        Desc: Bulk RNA-seq [EFO_0003738]
+        Props:
+        - AdapterContent
+        - AdapterName
+        - AdapterSequence
+        - BaseCallerName
+        - BaseCallerVersion
+        - BasicStatistics
+        - Component
+        - DV200
+        - Encoding
+        - FileFormat
+        - Filename
+        - FlowCellBarcode
+        - FragmentMaximumLength
+        - FragmentMeanLength
+        - FragmentMinimumLength
+        - FragmentStandardDeviationLength
+        - HTANDataFileID
+        - HTANParentBiospecimenID
+        - KmerContent
+        - LaneNumber
+        - LibraryLayout
+        - LibraryPreparationDaysfromIndex
+        - LibraryPreparationKitName
+        - LibraryPreparationKitVendor
+        - LibraryPreparationKitVersion
+        - LibrarySelectionMethod
+        - LibraryStrand
+        - Micro_regionSeqPlatform
+        - MultiplexBarcode
+        - NucleicAcidSource
+        - OverrepresentedSequences
+        - PerBaseNContent
+        - PerBaseSequenceContent
+        - PerBaseSequenceQuality
+        - PerSequenceGCContent
+        - PerSequenceQualityScore
+        - PerTileSequenceQuality
+        - PercentGCContent
+        - QCWorkflowLink
+        - QCWorkflowType
+        - QCWorkflowVersion
+        - RIN
+        - ROITag
+        - ReadIndicator
+        - ReadLength
+        - SequenceDuplicationLevels
+        - SequenceLengthDistribution
+        - SequencingBatchID
+        - SequencingPlatform
+        - SizeSelectionRange
+        - SpikeIn
+        - TargetDepth
+        - ToTrimAdapterSequence
+        - TotalReads
+        - TranscriptIntegrityNumber
+        Term:
+        -   Code: http://schema.biothings.io/BulkRNA-seqLevel1
+            Definition: Bulk RNA-seq [EFO_0003738]
+            Handle: Bulk_RNA_seq_Level_1
+            Origin: HTAN
+            Value: Bulk RNA-seq Level 1
+    BulkRNA_seqLevel2:
+        Desc: Bulk RNA-seq alignment protocol description
+        Props:
+        - AlignmentWorkflowType
+        - AlignmentWorkflowUrl
+        - AverageBaseQuality
+        - AverageInsertSize
+        - AverageReadLength
+        - Component
+        - Contamination
+        - ContaminationError
+        - FileFormat
+        - Filename
+        - GenomicReference
+        - GenomicReferenceURL
+        - HTANDataFileID
+        - HTANParentDataFileID
+        - IndexFileName
+        - Islowestlevel
+        - MSIScore
+        - MSIStatus
+        - MSIWorkflowLink
+        - MeanCoverage
+        - PairsOnDiffCHR
+        - ProportionBaseMismatch
+        - ProportionReadsDuplicated
+        - ProportionReadsMapped
+        - ProportionTargetsNoCoverage
+        - ShortReads
+        - TotalReads
+        - TotalUniquelyMapped
+        - TotalUnmappedreads
+        Term:
+        -   Code: http://schema.biothings.io/BulkRNA-seqLevel2
+            Definition: Bulk RNA-seq alignment protocol description
+            Handle: Bulk_RNA_seq_Level_2
+            Origin: HTAN
+            Value: Bulk RNA-seq Level 2
+    BulkRNA_seqLevel3:
+        Desc: Bulk RNA-seq gene expression matrices
+        Props:
+        - Component
+        - DataCategory
+        - ExpressionUnits
+        - FileFormat
+        - Filename
+        - FusionGeneDetected
+        - FusionGeneIdentity
+        - HTANDataFileID
+        - HTANParentDataFileID
+        - MatrixType
+        - PseudoAlignmentUsed
+        Term:
+        -   Code: http://schema.biothings.io/BulkRNA-seqLevel3
+            Definition: Bulk RNA-seq gene expression matrices
+            Handle: Bulk_RNA_seq_Level_3
+            Origin: HTAN
+            Value: Bulk RNA-seq Level 3
+    BulkWESLevel1:
+        Desc: Bulk Whole Exome Sequencing raw files
+        Props:
+        - AdapterName
+        - AdapterSequence
+        - BaseCallerName
+        - BaseCallerVersion
+        - Component
+        - FileFormat
+        - Filename
+        - FlowCellBarcode
+        - FragmentMaximumLength
+        - FragmentMeanLength
+        - FragmentMinimumLength
+        - FragmentStandardDeviationLength
+        - HTANDataFileID
+        - HTANParentBiospecimenID
+        - LaneNumber
+        - LibraryLayout
+        - LibraryPreparationDaysfromIndex
+        - LibraryPreparationKitName
+        - LibraryPreparationKitVendor
+        - LibraryPreparationKitVersion
+        - LibrarySelectionMethod
+        - MultiplexBarcode
+        - ReadIndicator
+        - ReadLength
+        - SequencingBatchID
+        - SequencingPlatform
+        - SizeSelectionRange
+        - TargetCaptureKit
+        - TargetDepth
+        - ToTrimAdapterSequence
+        Term:
+        -   Code: http://schema.biothings.io/BulkWESLevel1
+            Definition: Bulk Whole Exome Sequencing raw files
+            Handle: Bulk_WES_Level_1
+            Origin: HTAN
+            Value: Bulk WES Level 1
+    BulkWESLevel2:
+        Desc: Bulk Whole Exome Sequencing aligned files and QC
+        Props:
+        - AdapterContent
+        - AlignmentWorkflowType
+        - AverageBaseQuality
+        - AverageInsertSize
+        - AverageReadLength
+        - BasicStatistics
+        - Component
+        - Contamination
+        - ContaminationError
+        - Encoding
+        - FileFormat
+        - Filename
+        - GenomicReference
+        - GenomicReferenceURL
+        - HTANDataFileID
+        - HTANParentDataFileID
+        - IndexFileName
+        - Islowestlevel
+        - MSIScore
+        - MSIStatus
+        - MSIWorkflowLink
+        - MeanCoverage
+        - OverrepresentedSequences
+        - PairsOnDiffCHR
+        - PerBaseNContent
+        - PerBaseSequenceContent
+        - PerBaseSequenceQuality
+        - PerSequenceGCContent
+        - PerSequenceQualityScore
+        - PerTileSequenceQuality
+        - PercentGCContent
+        - ProportionBaseMismatch
+        - ProportionCoverage10x
+        - ProportionCoverage30X
+        - ProportionReadsDuplicated
+        - ProportionReadsMapped
+        - ProportionTargetsNoCoverage
+        - QCWorkflowLink
+        - QCWorkflowType
+        - QCWorkflowVersion
+        - SequenceDuplicationLevels
+        - SequenceLengthDistribution
+        - ShortReads
+        - TotalReads
+        - TotalUniquelyMapped
+        - TotalUnmappedreads
+        Term:
+        -   Code: http://schema.biothings.io/BulkWESLevel2
+            Definition: Bulk Whole Exome Sequencing aligned files and QC
+            Handle: Bulk_WES_Level_2
+            Origin: HTAN
+            Value: Bulk WES Level 2
+    BulkWESLevel3:
+        Desc: Bulk Whole Exome Sequencing called variants
+        Props:
+        - Component
+        - FileFormat
+        - Filename
+        - GenomicReference
+        - GenomicReferenceURL
+        - GermlineVariantsWorkflowType
+        - GermlineVariantsWorkflowURL
+        - HTANDataFileID
+        - HTANParentDataFileID
+        - SomaticVariantsSampleType
+        - SomaticVariantsWorkflowType
+        - SomaticVariantsWorkflowURL
+        - StructuralVariantWorkflowType
+        - StructuralVariantWorkflowURL
+        Term:
+        -   Code: http://schema.biothings.io/BulkWESLevel3
+            Definition: Bulk Whole Exome Sequencing called variants
+            Handle: Bulk_WES_Level_3
+            Origin: HTAN
+            Value: Bulk WES Level 3
+    ClinicalDataTier2:
+        Desc: Tier 2 Cancer Data
+        Props:
+        - COVID19AntibodyTesting
+        - COVID19CancerTreatmentFollowup
+        - COVID19ComplicationsSeverity
+        - COVID19CurrentStatus
+        - COVID19OccurrenceIndicator
+        - COVID19PositiveLabTestIndicator
+        - CancerAssociatedGeneMutations
+        - CancerIncidence
+        - CancerIncidenceLocation
+        - Chewingtobaccodailyusecount
+        - Component
+        - ConcomitantMedicationReceivedType
+        - CountryofBirth
+        - Ecigvape30dayusenum
+        - Ecigvapetimesperday
+        - Ecigvapeuse
+        - EducationLevel
+        - ExtentofTumorResection
+        - FamilyMemberVitalStatusIndicator
+        - HTANParticipantID
+        - HereditaryCancerPredispositionSyndrome
+        - Immunosuppression
+        - KnownGeneticPredispositionMutation
+        - LabTestsforMMRStatus
+        - MedicallyUnderservedArea
+        - MismatchRepairSystemStatus
+        - ModeofCancerDetection
+        - MutationalSignatures
+        - OtherBiopsyResectionSite
+        - PrecancerousConditionType
+        - PriorSitesofRadiation
+        - RuralvsUrban
+        - SatelliteMetastasisPresentIndicator
+        - Secondhandsmokeexposureyears
+        - SentinelLymphNodeCount
+        - SentinelNodePositiveAssessmentCount
+        - StartDaysfromIndex
+        - StopDaysfromIndex
+        - TimepointLabel
+        - TumorExtranodalExtensionIndicator
+        - Typeofsmokeexposurecumulativeyears
+        Term:
+        -   Code: http://schema.biothings.io/ClinicalDataTier2
+            Definition: Tier 2 Cancer Data
+            Handle: Clinical_Data_Tier_2
+            Origin: HTAN
+            Value: Clinical Data Tier 2
+    ColorectalCancerTier3:
+        Desc: Colorectal cancer specific attributes in Clinical Data Tier 3
+        Props:
+        - ColonPolypOccurenceIndicator
+        - ColorectalCancerDetectionMethodType
+        - ColorectalCancerKRASIndicator
+        - ColorectalCancerTumorBorderConfiguration
+        - ColorectalPolypAdenomaType
+        - ColorectalPolypCount
+        - ColorectalPolypNewIndicator
+        - ColorectalPolypShape
+        - ColorectalPolypType
+        - Component
+        - FamilyColonCancerHistoryIndicator
+        - FamilyHistoryColorectalPolyp
+        - FamilyMedicalHistoryColorectalPolypDiagnosis
+        - HTANParticipantID
+        - HistoryofPriorColonPolyps
+        - ImmediateFamilyHistoryEndometrialCancer
+        - ImmediateFamilyHistoryOvarianCancer
+        - MLH1PromoterMethylationStatus
+        - PatientColonoscopyPerformedIndicator
+        - PatientInflammatoryBowelDiseasePersonalMedicaHistory
+        - SizeofPolypRemoved
+        - StartDaysfromIndex
+        - StopDaysfromIndex
+        - TimepointLabel
+        Term:
+        -   Code: http://schema.biothings.io/ColorectalCancerTier3
+            Definition: Colorectal cancer specific attributes in Clinical Data Tier
+                3
+            Handle: Colorectal_Cancer_Tier_3
+            Origin: HTAN
+            Value: Colorectal Cancer Tier 3
+    Demographics:
+        Desc: Demographic attributes
+        Props:
+        - AgeIsObfuscated
+        - Component
+        - CountryofResidence
+        - DaystoBirth
+        - Ethnicity
+        - Gender
+        - HTANParticipantID
+        - OccupationDurationYears
+        - PrematureAtBirth
+        - Race
+        - VitalStatus
+        - WeeksGestationatBirth
+        - YearOfBirth
+        Term:
+        -   Code: http://schema.biothings.io/Demographics
+            Definition: Demographic attributes
+            Handle: Demographics
+            Origin: HTAN
+            Value: Demographics
+    Diagnosis:
+        Desc: Disease diagnosis
+        Props:
+        - AJCCClinicalM
+        - AJCCClinicalN
+        - AJCCClinicalStage
+        - AJCCClinicalT
+        - AJCCPathologicM
+        - AJCCPathologicN
+        - AJCCPathologicStage
+        - AJCCPathologicT
+        - AJCCStagingSystemEdition
+        - AgeatDiagnosis
+        - AnaplasiaPresent
+        - AnaplasiaPresentType
+        - BestOverallResponse
+        - BreslowThickness
+        - ClassificationofTumor
+        - CogNeuroblastomaRiskGroup
+        - CogRhabdomyosarcomaRiskGroup
+        - Component
+        - DaystoDiagnosis
+        - DaystoLastFollowup
+        - DaystoLastKnownDiseaseStatus
+        - FirstSymptomPriortoDiagnosis
+        - GleasonGradeGroup
+        - GleasonGradeTertiary
+        - GleasonPatternsPercent
+        - GreatestTumorDimension
+        - GrossTumorWeight
+        - HTANParticipantID
+        - IGCCCGStage
+        - INPCGrade
+        - INPCHistologicGroup
+        - INRGStage
+        - INSSStage
+        - IRSGroup
+        - IRSStage
+        - ISSStage
+        - InternationalPrognosticIndex
+        - LastKnownDiseaseStatus
+        - Laterality
+        - LymphNodeInvolvedSite
+        - LymphNodesPositive
+        - LymphNodesTested
+        - LymphaticInvasionPresent
+        - MarginDistance
+        - MarginsInvolvedSite
+        - MedulloblastomaMolecularClassification
+        - MetastasisatDiagnosis
+        - MetastasisatDiagnosisSite
+        - MethodofDiagnosis
+        - MicropapillaryFeatures
+        - MitosisKaryorrhexisIndex
+        - MitoticCount
+        - Morphology
+        - NonNodalRegionalDisease
+        - NonNodalTumorDeposits
+        - OvarianSpecimenStatus
+        - OvarianSurfaceInvolvement
+        - PercentTumorInvasion
+        - PerineuralInvasionPresent
+        - PeritonealFluidCytologicalStatus
+        - PregnantatDiagnosis
+        - PrimaryDiagnosis
+        - PrimaryGleasonGrade
+        - PriorMalignancy
+        - PriorTreatment
+        - ProgressionorRecurrence
+        - ResidualDisease
+        - SecondaryGleasonGrade
+        - SiteofResectionorBiopsy
+        - SupratentorialLocalization
+        - SynchronousMalignancy
+        - TissueorOrganofOrigin
+        - TumorConfinedtoOrganofOrigin
+        - TumorDepth
+        - TumorFocality
+        - TumorGrade
+        - TumorLargestDimensionDiameter
+        - VascularInvasionPresent
+        - VascularInvasionType
+        - WHOCNSGrade
+        - WHONTEGrade
+        - YearofDiagnosis
+        Term:
+        -   Code: http://schema.biothings.io/Diagnosis
+            Definition: Disease diagnosis
+            Handle: Diagnosis
+            Origin: HTAN
+            Value: Diagnosis
+    ElectronMicroscopyLevel1:
+        Desc: Raw electron microscopy data as one TIFF file per plane for a 3D image
+            stack or per tile for a 2D large area montage
+        Props:
+        - Component
+        - EMbeamcurrent
+        - EMcontrasttype
+        - EMdwellorexposuretime
+        - EMinstrument
+        - EMmethod
+        - EMsignalorcontrastmech
+        - EMsignalprocessing
+        - EMspotsize
+        - EMstagetilt
+        - EMvoltage
+        - FileFormat
+        - Filename
+        - HTANDataFileID
+        - HTANParentBiospecimenID
+        - PhysicalSizeX
+        - PhysicalSizeY
+        - PhysicalSizeZ
+        - ProtocolLink
+        - SizeC
+        - SizeX
+        - SizeY
+        - SizeZ
+        - SoftwareandVersion
+        Term:
+        -   Code: http://schema.biothings.io/ElectronMicroscopyLevel1
+            Definition: Raw electron microscopy data as one TIFF file per plane for
+                a 3D image stack or per tile for a 2D large area montage
+            Handle: Electron_Microscopy_Level_1
+            Origin: HTAN
+            Value: Electron Microscopy Level 1
+    ElectronMicroscopyLevel2:
+        Desc: Processed electron microscopy data as one OME-TIFF image per plane or
+            montage
+        Props:
+        - Component
+        - EMcontrasttype
+        - FileFormat
+        - Filename
+        - HTANDataFileID
+        - HTANParentDataFileID
+        - TileoverlapX
+        - TileoverlapY
+        Term:
+        -   Code: http://schema.biothings.io/ElectronMicroscopyLevel2
+            Definition: Processed electron microscopy data as one OME-TIFF image per
+                plane or montage
+            Handle: Electron_Microscopy_Level_2
+            Origin: HTAN
+            Value: Electron Microscopy Level 2
+    ElectronMicroscopyLevel3:
+        Desc: Segmented electron microscopy data as .am or .tiff formats
+        Props:
+        - Component
+        - FileFormat
+        - Filename
+        - HTANDataFileID
+        - HTANParentDataFileID
+        - ImagingObjectClass
+        Term:
+        -   Code: http://schema.biothings.io/ElectronMicroscopyLevel3
+            Definition: Segmented electron microscopy data as .am or .tiff formats
+            Handle: Electron_Microscopy_Level_3
+            Origin: HTAN
+            Value: Electron Microscopy Level 3
+    ElectronMicroscopyLevel4:
+        Desc: Movies or other derived files from electron microscopy data
+        Props:
+        - Comment
+        - Component
+        - FileFormat
+        - Filename
+        - HTANDataFileID
+        - HTANParentDataFileID
+        Term:
+        -   Code: http://schema.biothings.io/ElectronMicroscopyLevel4
+            Definition: Movies or other derived files from electron microscopy data
+            Handle: Electron_Microscopy_Level_4
+            Origin: HTAN
+            Value: Electron Microscopy Level 4
+    Exposure:
+        Desc: Exposure to carcinogens
+        Props:
+        - AlcoholExposure
+        - AsbestosExposure
+        - CoalDustExposure
+        - Component
+        - EnvironmentalTobaccoSmokeExposure
+        - HTANParticipantID
+        - RadonExposure
+        - RespirableCrystallineSilicaExposure
+        - SmokingExposure
+        - StartDaysfromIndex
+        Term:
+        -   Code: http://schema.biothings.io/Exposure
+            Definition: Exposure to carcinogens
+            Handle: Exposure
+            Origin: HTAN
+            Value: Exposure
+    FamilyHistory:
+        Desc: Family cancer history
+        Props:
+        - Component
+        - HTANParticipantID
+        - RelativewithCancerHistory
+        Term:
+        -   Code: http://schema.biothings.io/FamilyHistory
+            Definition: Family cancer history
+            Handle: Family_History
+            Origin: HTAN
+            Value: Family History
+    FollowUp:
+        Desc: Follow up clinical visits
+        Props:
+        - AIDSRiskFactors
+        - AdverseEvent
+        - AdverseEventGrade
+        - BMI
+        - BarrettsEsophagusGobletCellsPresent
+        - BodySurfaceArea
+        - CD4Count
+        - CDCHIVRiskFactors
+        - CauseofResponse
+        - Comorbidity
+        - ComorbidityMethodofDiagnosis
+        - Component
+        - DLCORefPredictivePercent
+        - DaystoAdverseEvent
+        - DaystoComorbidity
+        - DaystoFollowUp
+        - DaystoImaging
+        - DiabetesTreatmentType
+        - DiseaseResponse
+        - ECOGPerformanceStatus
+        - EvidenceofRecurrenceType
+        - FEV1FVCPostBronchPercent
+        - FEV1FVCPreBronchPercent
+        - FEV1RefPostBronchPercent
+        - FEV1RefPreBronchPercent
+        - HAARTTreatmentIndicator
+        - HIVViralLoad
+        - HPVPositiveType
+        - HTANParticipantID
+        - Height
+        - HepatitisSustainedVirologicalResponse
+        - HormonalContraceptiveUse
+        - HysterectomyMarginsInvolved
+        - HysterectomyType
+        - ImagingResult
+        - ImagingType
+        - ImmunosuppressiveTreatmentType
+        - KarnofskyPerformanceStatus
+        - MenopauseStatus
+        - NadirCD4Count
+        - PancreatitisOnsetYear
+        - PregnancyOutcome
+        - ProgressionorRecurrence
+        - RecistTargetedRegionsNumber
+        - RecistTargetedRegionsSum
+        - RefluxTreatmentType
+        - RiskFactor
+        - RiskFactorTreatment
+        - ScanTracerUsed
+        - ViralHepatitisSerologies
+        - Weight
+        Term:
+        -   Code: http://schema.biothings.io/FollowUp
+            Definition: Follow up clinical visits
+            Handle: Follow_Up
+            Origin: HTAN
+            Value: Follow Up
+    HI_C_seqLevel1:
+        Desc: Unaligned sequence data
+        Props:
+        - BiotinEnrichment
+        - Component
+        - CrosslinkingCondtion
+        - DNADigestionCondition
+        - DNAInputAmount
+        - FileFormat
+        - Filename
+        - GenomicReference
+        - HTANDataFileID
+        - HTANParentBiospecimenID
+        - LigationCondition
+        - NucleiPermeabilizationMethod
+        - NucleicAcidSource
+        - ProtocolLink
+        - SequencingPlatform
+        - TechnicalReplicateGroup
+        - TotalReads
+        - TranspositionReaction
+        Term:
+        -   Code: http://schema.biothings.io/HI-C-seqLevel1
+            Definition: Unaligned sequence data
+            Handle: HI_C_seq_Level_1
+            Origin: HTAN
+            Value: HI-C-seq Level 1
+    HI_C_seqLevel2:
+        Desc: Aligned read pairs, contact matrix
+        Props:
+        - AlignedReadLength
+        - Component
+        - FileFormat
+        - Filename
+        - GenomicReference
+        - HTANDataFileID
+        - HTANParentDataFileID
+        - NormalizationMethod
+        - Resolution
+        - Tool
+        Term:
+        -   Code: http://schema.biothings.io/HI-C-seqLevel2
+            Definition: Aligned read pairs, contact matrix
+            Handle: HI_C_seq_Level_2
+            Origin: HTAN
+            Value: HI-C-seq Level 2
+    HI_C_seqLevel3:
+        Desc: Summary data for the HI-C-seq assay.
+        Props:
+        - Component
+        - FileFormat
+        - Filename
+        - GenomicReference
+        - HTANDataFileID
+        - HTANParentDataFileID
+        - LoopCalling
+        - LoopWindow
+        - StripeCalling
+        - StripeWindow
+        Term:
+        -   Code: http://schema.biothings.io/HI-C-seqLevel3
+            Definition: Summary data for the HI-C-seq assay.
+            Handle: HI_C_seq_Level_3
+            Origin: HTAN
+            Value: HI-C-seq Level 3
+    HTANRPPAAntibodyTable:
+        Desc: A table containing antibody level metadata for RPPA
+        Props:
+        - AbNameReportedonDataset
+        - AntibodyNotes
+        - CatalogNumber
+        - Clonality
+        - Clone
+        - FileFormat
+        - Filename
+        - GENCODEGeneSymbolTarget
+        - HTANRPPAAntibodyTableID
+        - InternalAbID
+        - PhosphoSite
+        - PhosphoproteinFlag
+        - RPPADilution
+        - RPPAValidationStatus
+        - Species
+        - UNIPROTProteinIDTarget
+        - Vendor
+        Term:
+        -   Code: http://schema.biothings.io/HTANRPPAAntibodyTable
+            Definition: A table containing antibody level metadata for RPPA
+            Handle: HTAN_RPPA_Antibody_Table
+            Origin: HTAN
+            Value: HTAN RPPA Antibody Table
+    ImagingLevel1:
+        Desc: Raw imaging data
+        Props:
+        - Comment
+        - CommitSHA
+        - Component
+        - FileFormat
+        - Filename
+        - HTANDataFileID
+        - HTANParentBiospecimenID
+        - ImagingAssayType
+        - Pre_processingCompleted
+        - Pre_processingRequired
+        - ProtocolLink
+        - SoftwareandVersion
+        Term:
+        -   Code: http://schema.biothings.io/ImagingLevel1
+            Definition: Raw imaging data
+            Handle: Imaging_Level_1
+            Origin: HTAN
+            Value: Imaging Level 1
+    ImagingLevel2:
+        Desc: Raw and pre-processed image data
+        Props:
+        - ChannelMetadataFilename
+        - Comment
+        - Component
+        - DimensionOrder
+        - FOVX
+        - FOVXUnit
+        - FOVY
+        - FOVYUnit
+        - FOVnumber
+        - FileFormat
+        - Filename
+        - FrameAveraging
+        - HTANDataFileID
+        - HTANParentBiospecimenID
+        - HTANParticipantID
+        - ImageID
+        - ImagingAssayType
+        - Immersion
+        - LensNA
+        - MERFISHCodebookFile
+        - MERFISHPositionsFile
+        - Microscope
+        - NominalMagnification
+        - Objective
+        - PassedQC
+        - PhysicalSizeX
+        - PhysicalSizeXUnit
+        - PhysicalSizeY
+        - PhysicalSizeYUnit
+        - PhysicalSizeZ
+        - PhysicalSizeZUnit
+        - PixelType
+        - PixelsBigEndian
+        - PlaneCount
+        - ProtocolLink
+        - Pyramid
+        - SizeC
+        - SizeT
+        - SizeX
+        - SizeY
+        - SizeZ
+        - SoftwareandVersion
+        - Tseries
+        - WorkingDistance
+        - WorkingDistanceUnit
+        - Zstack
+        Term:
+        -   Code: http://schema.biothings.io/ImagingLevel2
+            Definition: Raw and pre-processed image data
+            Handle: Imaging_Level_2
+            Origin: HTAN
+            Value: Imaging Level 2
+    ImagingLevel3Channels:
+        Desc: Channel-level Metadata Attributes
+        Props:
+        - AntibodyName
+        - AntibodyRole
+        - CatalogNumber
+        - ChannelID
+        - ChannelName
+        - ChannelPassedQC
+        - Clone
+        - Concentration
+        - CycleNumber
+        - Dilution
+        - EmissionBandwidth
+        - EmissionWavelength
+        - ExcitationBandwidth
+        - ExcitationWavelength
+        - Fluorophore
+        - HTANChannelMetadataID
+        - Lot
+        - MetalIsotopeElement
+        - MetalIsotopeMass
+        - OligoBarcodeLowerStrand
+        - OligoBarcodeUpperStrand
+        - RRIDidentifier
+        - SubCycleNumber
+        - TargetName
+        - Vendor
+        Term:
+        -   Code: http://schema.biothings.io/ImagingLevel3Channels
+            Definition: Channel-level Metadata Attributes
+            Handle: Imaging_Level_3_Channels
+            Origin: HTAN
+            Value: Imaging Level 3 Channels
+    ImagingLevel3Image:
+        Desc: Quality controlled imaging data
+        Props:
+        - Comment
+        - Component
+        - FOVX
+        - FOVY
+        - FOVnumber
+        - FileFormat
+        - Filename
+        - FrameAveraging
+        - HTANDataFileID
+        - HTANParentBiospecimenID
+        - HTANParentChannelMetadataID
+        - HTANParentDataFileID
+        - ImagingAssayType
+        - Immersion
+        - LensNA
+        - Microscope
+        - NominalMagnification
+        - Objective
+        - PassedQC
+        - ProtocolLink
+        - Pyramid
+        - SoftwareandVersion
+        - Tseries
+        - WorkingDistance
+        - Zstack
+        Term:
+        -   Code: http://schema.biothings.io/ImagingLevel3Image
+            Definition: Quality controlled imaging data
+            Handle: Imaging_Level_3_Image
+            Origin: HTAN
+            Value: Imaging Level 3 Image
+    ImagingLevel3Segmentation:
+        Desc: Object segmentations
+        Props:
+        - CommitSHA
+        - Component
+        - FileFormat
+        - Filename
+        - HTANDataFileID
+        - HTANParentDataFileID
+        - ImagingObjectClass
+        - ImagingSegmentationDataType
+        - NumberofObjects
+        - Parameterfile
+        - SoftwareandVersion
+        Term:
+        -   Code: http://schema.biothings.io/ImagingLevel3Segmentation
+            Definition: Object segmentations
+            Handle: Imaging_Level_3_Segmentation
+            Origin: HTAN
+            Value: Imaging Level 3 Segmentation
+    ImagingLevel4:
+        Desc: 'Derived imaging data: Object-by-feature array'
+        Props:
+        - CommitSHA
+        - Component
+        - FileFormat
+        - Filename
+        - HTANDataFileID
+        - HTANParentChannelMetadataID
+        - HTANParentDataFileID
+        - ImagingObjectClass
+        - ImagingSummaryStatistic
+        - NumberofFeatures
+        - NumberofObjects
+        - Parameterfile
+        - SoftwareandVersion
+        Term:
+        -   Code: http://schema.biothings.io/ImagingLevel4
+            Definition: 'Derived imaging data: Object-by-feature array'
+            Handle: Imaging_Level_4
+            Origin: HTAN
+            Value: Imaging Level 4
+    LungCancerTier3:
+        Desc: Lung cancer specific attributes in Clinical Data Tier 3
+        Props:
+        - Component
+        - CurrentLungCancerSymptoms
+        - HTANParticipantID
+        - LungAdjacentHistologyType
+        - LungCancerDetectionMethodType
+        - LungCancerHarboringGenomicAberrations
+        - LungCancerParticipantProcedureHistory
+        - LungTopography
+        - LungTumorLobeBronchialLocation
+        - LungTumorLocationAnatomicSite
+        - StartDaysfromIndex
+        - StopDaysfromIndex
+        - TimepointLabel
+        Term:
+        -   Code: http://schema.biothings.io/LungCancerTier3
+            Definition: Lung cancer specific attributes in Clinical Data Tier 3
+            Handle: Lung_Cancer_Tier_3
+            Origin: HTAN
+            Value: Lung Cancer Tier 3
+    MassSpectrometryLevel1:
+        Desc: Mass Spectrometry derived data that includes proteomics, metabolomics,
+            and lipidomics, level 1
+        Props:
+        - AnalyteType
+        - Component
+        - DataCollectionMode
+        - FileFormat
+        - Filename
+        - HTANDataFileID
+        - HTANParentBiospecimenID
+        - LCColumnVendorandModel
+        - LCFlowRate
+        - LCGradient
+        - LCIDValue
+        - LCInstrumentVendorandModel
+        - LCLengthValue
+        - LCMobilePhaseA
+        - LCMobilePhaseB
+        - LCResin
+        - LCTempValue
+        - MSBatchID
+        - MSInstrumentMetadataFile
+        - MSInstrumentVendorandModel
+        - MSLabeling
+        - MSScanMode
+        - MSSource
+        - MS_basedAssayType
+        - MS_basedTargeted
+        - MassRangeHighValue
+        - MassRangeLowValue
+        - Polarity
+        - ProtocolLink
+        - SoftwareandVersion
+        Term:
+        -   Code: http://schema.biothings.io/MassSpectrometryLevel1
+            Definition: Mass Spectrometry derived data that includes proteomics, metabolomics,
+                and lipidomics, level 1
+            Handle: Mass_Spectrometry_Level_1
+            Origin: HTAN
+            Value: Mass Spectrometry Level 1
+    MassSpectrometryLevel2:
+        Desc: Mass Spectrometry derived data that includes proteomics, metabolomics,
+            and lipidomics, level 2
+        Props:
+        - Component
+        - FileFormat
+        - Filename
+        - HTANDataFileID
+        - HTANParentBiospecimenID
+        - HTANParentDataFileID
+        - MSAssayCategory
+        - MassSpectrometryAuxiliaryFile
+        - SoftwareandVersion
+        Term:
+        -   Code: http://schema.biothings.io/MassSpectrometryLevel2
+            Definition: Mass Spectrometry derived data that includes proteomics, metabolomics,
+                and lipidomics, level 2
+            Handle: Mass_Spectrometry_Level_2
+            Origin: HTAN
+            Value: Mass Spectrometry Level 2
+    MassSpectrometryLevel3:
+        Desc: Mass Spectrometry derived data that includes proteomics, metabolomics,
+            and lipidomics, level 3
+        Props:
+        - Component
+        - FileFormat
+        - Filename
+        - HTANDataFileID
+        - HTANParentBiospecimenID
+        - HTANParentDataFileID
+        - MSAssayCategory
+        - MassSpectrometryAuxiliaryFile
+        - SoftwareandVersion
+        Term:
+        -   Code: http://schema.biothings.io/MassSpectrometryLevel3
+            Definition: Mass Spectrometry derived data that includes proteomics, metabolomics,
+                and lipidomics, level 3
+            Handle: Mass_Spectrometry_Level_3
+            Origin: HTAN
+            Value: Mass Spectrometry Level 3
+    MassSpectrometryLevel4:
+        Desc: Mass Spectrometry derived data that includes proteomics, metabolomics,
+            and lipidomics, level 4
+        Props:
+        - Component
+        - FileFormat
+        - Filename
+        - HTANDataFileID
+        - HTANParentBiospecimenID
+        - HTANParentDataFileID
+        - MSAssayCategory
+        - MassSpectrometryAuxiliaryFile
+        - SoftwareandVersion
+        Term:
+        -   Code: http://schema.biothings.io/MassSpectrometryLevel4
+            Definition: Mass Spectrometry derived data that includes proteomics, metabolomics,
+                and lipidomics, level 4
+            Handle: Mass_Spectrometry_Level_4
+            Origin: HTAN
+            Value: Mass Spectrometry Level 4
+    MelanomaTier3:
+        Desc: Melanoma specific attributes in Clinical Data Tier 3
+        Props:
+        - Component
+        - CutaneousMelanomaAdditionalFindings
+        - CutaneousMelanomaSurgicalMargins
+        - CutaneousMelanomaTumorInfiltratingLymphocytes
+        - CutaneousMelanomaTumorRegressionRange
+        - CutaneousMelanomaUlceration
+        - FitzpatrickSkinTone
+        - HTANParticipantID
+        - HistoryofAtypicalNevi
+        - HistoryofBlisteringSunburn
+        - HistoryofChronicUVExposure
+        - HistoryofTanningBedUse
+        - ImmediateFamilyHistoryMelanoma
+        - MelanomaBiopsyResectionSites
+        - MelanomaLesionSize
+        - MelanomaSpecimenClarkLevelValue
+        - StartDaysfromIndex
+        - StopDaysfromIndex
+        - TimepointLabel
+        Term:
+        -   Code: http://schema.biothings.io/MelanomaTier3
+            Definition: Melanoma specific attributes in Clinical Data Tier 3
+            Handle: Melanoma_Tier_3
+            Origin: HTAN
+            Value: Melanoma Tier 3
+    MolecularTest:
+        Desc: Clinical molecular test data
+        Props:
+        - AAChange
+        - Antigen
+        - BloodTestNormalRangeLower
+        - BloodTestNormalRangeUpper
+        - CellCount
+        - Chromosome
+        - ClinicalBiospecimenType
+        - Clonality
+        - Component
+        - CopyNumber
+        - Cytoband
+        - Exon
+        - GeneSymbol
+        - HTANParticipantID
+        - HistoneFamily
+        - HistoneVariant
+        - Intron
+        - LaboratoryTest
+        - LociAbnormalCount
+        - LociCount
+        - Locus
+        - MismatchRepairMutation
+        - MolecularAnalysisMethod
+        - MolecularConsequence
+        - Pathogenicity
+        - Ploidy
+        - SecondExon
+        - SecondGeneSymbol
+        - SpecializedMolecularTest
+        - StartDaysfromIndex
+        - StopDaysfromIndex
+        - TestAnalyteType
+        - TestResult
+        - TestUnits
+        - TestValue
+        - TimepointLabel
+        - Transcript
+        - VariantOrigin
+        - VariantType
+        - Zygosity
+        Term:
+        -   Code: http://schema.biothings.io/MolecularTest
+            Definition: Clinical molecular test data
+            Handle: Molecular_Test
+            Origin: HTAN
+            Value: Molecular Test
+    NanoStringGeoMxDSPROIDCCSegmentAnnotationMetadata:
+        Desc: 'GeoMx ROI and Segment Metadata Attributes. The assayed biospecimen
+            should be reported one per row with the associated ROI coordinates. '
+        Props:
+        - Alignedreads
+        - Biologicalprobemedian
+        - Deduplicatedreads
+        - HTANParentBiospecimenID
+        - InSituNegativemedian
+        - MapQ30
+        - Nucleicount
+        - ROIXCoordinate
+        - ROIYCoordinate
+        - ROIname
+        - Rawreads
+        - ScanHeight
+        - ScanOffsetX
+        - ScanOffsetY
+        - ScanWidth
+        - Scanname
+        - Segmentname
+        - SequencingSaturation
+        - Slidename
+        - Stitchedreads
+        - Surfacearea
+        - Tags
+        Term:
+        -   Code: http://schema.biothings.io/NanoStringGeoMxDSPROIDCCSegmentAnnotationMetadata
+            Definition: 'GeoMx ROI and Segment Metadata Attributes. The assayed biospecimen
+                should be reported one per row with the associated ROI coordinates. '
+            Handle: NanoString_GeoMx_DSP_ROI_DCC_Segment_Annotation_Metadata
+            Origin: HTAN
+            Value: NanoString GeoMx DSP ROI DCC Segment Annotation Metadata
+    NanoStringGeoMxDSPROIRCCSegmentAnnotationMetadata:
+        Desc: 'GeoMx ROI and Segment Metadata Attributes. The assayed biospecimen
+            should be reported one per row with the associated ROI coordinates. '
+        Props:
+        - BindingDensity
+        - HTANParentBiospecimenID
+        - Nucleicount
+        - Positivenormfactor
+        - QCstatus
+        - ROIXCoordinate
+        - ROIYCoordinate
+        - ROIname
+        - ScanHeight
+        - ScanOffsetX
+        - ScanOffsetY
+        - ScanWidth
+        - Scanname
+        - Segmentname
+        - Surfacearea
+        - Tags
+        - TissueStain
+        Term:
+        -   Code: http://schema.biothings.io/NanoStringGeoMxDSPROIRCCSegmentAnnotationMetadata
+            Definition: 'GeoMx ROI and Segment Metadata Attributes. The assayed biospecimen
+                should be reported one per row with the associated ROI coordinates. '
+            Handle: NanoString_GeoMx_DSP_ROI_RCC_Segment_Annotation_Metadata
+            Origin: HTAN
+            Value: NanoString GeoMx DSP ROI RCC Segment Annotation Metadata
+    NanoStringGeoMxDSPSpatialTranscriptomicsLevel1:
+        Desc: Files contain raw data output from the NanoString GeoMx DSP Pipeline.
+            These can include RCC or DCC Files.
+        Props:
+        - Component
+        - FileFormat
+        - Filename
+        - GeoMxDSPLibraryPreparationKitVendor
+        - GeoMxDSPLibraryPreparationKitVersion
+        - GeoMxDSPNGSLibraryPreparationKitName
+        - GeoMxDSPNGSLibrarySelectionMethod
+        - GeoMxDSPNGSSequencingPlatform
+        - HTANDataFileID
+        - HTANParentBiospecimenID
+        - SoftwareandVersion
+        - SynapseIDofGeoMxDSPPKCFile
+        - SynapseIDofGeoMxLabWorksheetFile
+        Term:
+        -   Code: http://schema.biothings.io/NanoStringGeoMxDSPSpatialTranscriptomicsLevel1
+            Definition: Files contain raw data output from the NanoString GeoMx DSP
+                Pipeline. These can include RCC or DCC Files.
+            Handle: NanoString_GeoMx_DSP_Spatial_Transcriptomics_Level_1
+            Origin: HTAN
+            Value: NanoString GeoMx DSP Spatial Transcriptomics Level 1
+    NanoStringGeoMxDSPSpatialTranscriptomicsLevel3:
+        Desc: Files contain processed data from the NanoString GeoMx DSP Pipeline.
+            This level depends on GeoMx Level 1 and Imaging Level 2.
+        Props:
+        - Component
+        - FileFormat
+        - Filename
+        - GeoMxDSPAssayType
+        - GeoMxDSPGenomicReference
+        - GeoMxDSPUniqueProbeCount
+        - GeoMxDSPUniqueTargetCount
+        - GeoMxDSPWorkflowLink
+        - GeoMxDSPWorkflowParameterDescription
+        - GeoMxDSPWorkflowType
+        - HTANDataFileID
+        - HTANParentBiospecimenID
+        - MatrixType
+        - SynapseIDofGeoMxDSPROISegmentAnnotationFile
+        Term:
+        -   Code: http://schema.biothings.io/NanoStringGeoMxDSPSpatialTranscriptomicsLevel3
+            Definition: Files contain processed data from the NanoString GeoMx DSP
+                Pipeline. This level depends on GeoMx Level 1 and Imaging Level 2.
+            Handle: NanoString_GeoMx_DSP_Spatial_Transcriptomics_Level_3
+            Origin: HTAN
+            Value: NanoString GeoMx DSP Spatial Transcriptomics Level 3
+    NeuroblastomaandGliomaTier3:
+        Desc: Brain cancer specific attributes in Clinical Data Tier 3
+        Props:
+        - CNSTumorPrimaryAnatomicSite
+        - Component
+        - GliomaSpecificMetastasisSites
+        - GliomaSpecificRadiationField
+        - HTANParticipantID
+        - InfraTentorialEpendymomaMolecularSubgroup
+        - NeuroblastomaMYCNGeneAmplificationStatus
+        - StartDaysfromIndex
+        - StopDaysfromIndex
+        - SupraTentorialEpendymomaMolecularSubgroup
+        - TimepointLabel
+        Term:
+        -   Code: http://schema.biothings.io/NeuroblastomaandGliomaTier3
+            Definition: Brain cancer specific attributes in Clinical Data Tier 3
+            Handle: Neuroblastoma_and_Glioma_Tier_3
+            Origin: HTAN
+            Value: Neuroblastoma and Glioma Tier 3
+    OtherAssay:
+        Desc: Metadata applying to any assay without standard descriptors. Can be
+            used as a placeholder for minimal amount of metadata until the assay descriptors
+            are standardized
+        Props:
+        - AssayType
+        - Component
+        - FileFormat
+        - Filename
+        - HTANDataFileID
+        - HTANParentBiospecimenID
+        Term:
+        -   Code: http://schema.biothings.io/OtherAssay
+            Definition: Metadata applying to any assay without standard descriptors.
+                Can be used as a placeholder for minimal amount of metadata until
+                the assay descriptors are standardized
+            Handle: Other_Assay
+            Origin: HTAN
+            Value: Other Assay
+    OvarianCancerTier3:
+        Desc: Ovarian cancer specific attributes in Clinical Data Tier 3
+        Props:
+        - Component
+        - HTANParticipantID
+        - OvarianCancerHistologicSubtype
+        - OvarianCancerPlatinumStatus
+        - OvarianCancerSurgicalOutcome
+        - StartDaysfromIndex
+        - StopDaysfromIndex
+        - TimepointLabel
+        Term:
+        -   Code: http://schema.biothings.io/OvarianCancerTier3
+            Definition: Ovarian cancer specific attributes in Clinical Data Tier 3
+            Handle: Ovarian_Cancer_Tier_3
+            Origin: HTAN
+            Value: Ovarian Cancer Tier 3
+    PancreaticCancerTier3:
+        Desc: Pancreatic cancer specific attributes in Clinical Tier Data 3
+        Props:
+        - Component
+        - HTANParticipantID
+        - PancreasPrecancerHistopathologicGrade
+        - PancreaticDuctFinalPathologyType
+        - PancreaticIPMNPathologyEpithelialSubtype
+        - StartDaysfromIndex
+        - StopDaysfromIndex
+        - TimepointLabel
+        Term:
+        -   Code: http://schema.biothings.io/PancreaticCancerTier3
+            Definition: Pancreatic cancer specific attributes in Clinical Tier Data
+                3
+            Handle: Pancreatic_Cancer_Tier_3
+            Origin: HTAN
+            Value: Pancreatic Cancer Tier 3
+    Patient:
+        Desc: HTAN patient
+        Props:
+        - Component
+        - HTANParticipantID
+        Term:
+        -   Code: http://schema.biothings.io/Patient
+            Definition: HTAN patient
+            Handle: Patient
+            Origin: HTAN
+            Value: Patient
+    ProstateCancerTier3:
+        Desc: Prostate cancer specific attributes in Clinical Data Tier 3
+        Props:
+        - AdditonalFindingsUninvolvedProstate
+        - Component
+        - HTANParticipantID
+        - LocationExtentExtraprostaticExtension
+        - LocationNaturePositiveMargins
+        - ProstateCancerCytologicMorphologicSubtypes
+        - ProstateCancerLocalExtent
+        - ProstateCarcinomaHistologicType
+        - SeminalVesicleInvasion
+        - StartDaysfromIndex
+        - StopDaysfromIndex
+        - TimepointLabel
+        Term:
+        -   Code: http://schema.biothings.io/ProstateCancerTier3
+            Definition: Prostate cancer specific attributes in Clinical Data Tier
+                3
+            Handle: Prostate_Cancer_Tier_3
+            Origin: HTAN
+            Value: Prostate Cancer Tier 3
+    RPPALevel2:
+        Desc: Array based protemics. Each dilution curve of spot intensities is fitted
+            using the monotone increasing B-spline model in the SuperCurve R package.
+            This fits a single curve using all the samples on a slide with the signal
+            intensity as the response variable and the dilution steps as independent
+            variables. The fitted curve is plotted with the signal intensities on
+            the y-axis and the log2-concentration of proteins on the x-axis for diagnostic
+            purposes.
+        Props:
+        - AssayType
+        - Component
+        - FileFormat
+        - Filename
+        - HTANDataFileID
+        - HTANParentBiospecimenID
+        - HTANParentDataFileID
+        - HTANParticipantID
+        - HTANRPPAAntibodyTable
+        - ProtocolLink
+        - SoftwareandVersion
+        Term:
+        -   Code: http://schema.biothings.io/RPPALevel2
+            Definition: Array based protemics. Each dilution curve of spot intensities
+                is fitted using the monotone increasing B-spline model in the SuperCurve
+                R package. This fits a single curve using all the samples on a slide
+                with the signal intensity as the response variable and the dilution
+                steps as independent variables. The fitted curve is plotted with the
+                signal intensities on the y-axis and the log2-concentration of proteins
+                on the x-axis for diagnostic purposes.
+            Handle: RPPA_Level_2
+            Origin: HTAN
+            Value: RPPA Level 2
+    RPPALevel3:
+        Desc: Level 3 Reverse Phase Protein Array (RPPA) data contains intra-batch
+            normalized intensities.
+        Props:
+        - AssayType
+        - Component
+        - FileFormat
+        - Filename
+        - HTANDataFileID
+        - HTANParentBiospecimenID
+        - HTANParentDataFileID
+        - HTANParticipantID
+        - NormalizationMethod
+        - SoftwareandVersion
+        Term:
+        -   Code: http://schema.biothings.io/RPPALevel3
+            Definition: Level 3 Reverse Phase Protein Array (RPPA) data contains intra-batch
+                normalized intensities.
+            Handle: RPPA_Level_3
+            Origin: HTAN
+            Value: RPPA Level 3
+    RPPALevel4:
+        Desc: Level 4 Reverse Phase Protein Array (RPPA) data contains intra-batch
+            corrected intensities.
+        Props:
+        - AssayType
+        - BatchCorrectionMethod
+        - Component
+        - FileFormat
+        - Filename
+        - HTANDataFileID
+        - HTANParentBiospecimenID
+        - HTANParentDataFileID
+        - HTANParticipantID
+        Term:
+        -   Code: http://schema.biothings.io/RPPALevel4
+            Definition: Level 4 Reverse Phase Protein Array (RPPA) data contains intra-batch
+                corrected intensities.
+            Handle: RPPA_Level_4
+            Origin: HTAN
+            Value: RPPA Level 4
+    SRRSBiospecimen:
+        Desc: SRRS-specific HTAN biological entity; this can be tissue, blood, analyte
+            and subsamples of those, however it can be described via fewer attributes
+            than a standard HTAN specimen
+        Props:
+        - AcquisitionMethodType
+        - AdditionalTopography
+        - AdjacentBiospecimenIDs
+        - BiospecimenType
+        - CollectionDaysfromIndex
+        - CollectionMedia
+        - Component
+        - FixativeType
+        - HTANBiospecimenID
+        - HTANParentID
+        - HistologicMorphologyCode
+        - IschemicTemperature
+        - IschemicTime
+        - PreinvasiveMorphology
+        - PreservationMethod
+        - ProcessingDaysfromIndex
+        - ProtocolLink
+        - SourceHTANBiospecimenID
+        - StorageMethod
+        - TimepointLabel
+        - TopographyCode
+        Term:
+        -   Code: http://schema.biothings.io/SRRSBiospecimen
+            Definition: SRRS-specific HTAN biological entity; this can be tissue,
+                blood, analyte and subsamples of those, however it can be described
+                via fewer attributes than a standard HTAN specimen
+            Handle: SRRS_Biospecimen
+            Origin: HTAN
+            Value: SRRS Biospecimen
+    SRRSClinicalDataTier2:
+        Desc: Cancer related clinical data specific to SRRS
+        Props:
+        - AgeatDiagnosis
+        - CancerIncidence
+        - CancerIncidenceLocation
+        - Component
+        - CountryofBirth
+        - DaystoFollowUp
+        - DaystoLastFollowup
+        - DaystoLastKnownDiseaseStatus
+        - DaystoRecurrence
+        - EducationLevel
+        - Ethnicity
+        - Gender
+        - GeneSymbol
+        - HTANParticipantID
+        - LastKnownDiseaseStatus
+        - MedicallyUnderservedArea
+        - MolecularAnalysisMethod
+        - Morphology
+        - NCIAtlasCancerSite
+        - PackYearsSmoked
+        - PrimaryDiagnosis
+        - ProgressionorRecurrence
+        - Race
+        - RuralvsUrban
+        - SiteofResectionorBiopsy
+        - StartDaysfromIndex
+        - StopDaysfromIndex
+        - TestResult
+        - TimepointLabel
+        - TissueorOrganofOrigin
+        - TreatmentType
+        - TumorGrade
+        - TumorLargestDimensionDiameter
+        - VitalStatus
+        - YearsSmoked
+        Term:
+        -   Code: http://schema.biothings.io/SRRSClinicalDataTier2
+            Definition: Cancer related clinical data specific to SRRS
+            Handle: SRRS_Clinical_Data_Tier_2
+            Origin: HTAN
+            Value: SRRS Clinical Data Tier 2
+    SRRSImagingLevel2:
+        Desc: SRRS-specific HTAN raw and pre-processed image data
+        Props:
+        - ChannelMetadataFilename
+        - Component
+        - DimensionOrder
+        - FileFormat
+        - Filename
+        - FrameAveraging
+        - HTANDataFileID
+        - HTANParentBiospecimenID
+        - HTANParticipantID
+        - ImageID
+        - ImagingAssayType
+        - Microscope
+        - NominalMagnification
+        - Objective
+        - PassedQC
+        - PhysicalSizeX
+        - PhysicalSizeXUnit
+        - PhysicalSizeY
+        - PhysicalSizeYUnit
+        - PixelType
+        - PixelsBigEndian
+        - PlaneCount
+        - ProtocolLink
+        - Pyramid
+        - SizeC
+        - SizeT
+        - SizeX
+        - SizeY
+        - SizeZ
+        - SoftwareandVersion
+        - Tseries
+        - Zstack
+        Term:
+        -   Code: http://schema.biothings.io/SRRSImagingLevel2
+            Definition: SRRS-specific HTAN raw and pre-processed image data
+            Handle: SRRS_Imaging_Level_2
+            Origin: HTAN
+            Value: SRRS Imaging Level 2
+    SarcomaTier3:
+        Desc: Sarcoma specific attributes in Clinical Data Tier 3
+        Props:
+        - Component
+        - HTANParticipantID
+        - SarcomaDiagnosisClassificationCategory
+        - SarcomaSubtype
+        - SarcomaTumorExtensionType
+        - StartDaysfromIndex
+        - StopDaysfromIndex
+        - TimepointLabel
+        Term:
+        -   Code: http://schema.biothings.io/SarcomaTier3
+            Definition: Sarcoma specific attributes in Clinical Data Tier 3
+            Handle: Sarcoma_Tier_3
+            Origin: HTAN
+            Value: Sarcoma Tier 3
+    ScATAC_seqLevel1:
+        Desc: scATAC-seq files containing sequence read information, with or without
+            alignment, as FASTQ or BAM files
+        Props:
+        - Component
+        - DissociationMethod
+        - FileFormat
+        - Filename
+        - HTANDataFileID
+        - HTANParentBiospecimenID
+        - LibraryConstructionMethod
+        - MedianFractionofReadsinAnnotatedcisDNAElements
+        - MedianFractionofReadsinPeaks
+        - MedianPassingReadPercentage
+        - MedianPercentageofMitochondrialReadsperNucleus
+        - NucleiBarcodeLength
+        - NucleiBarcodeRead
+        - NucleicAcidSource
+        - NucleusIdentifier
+        - ProtocolLink
+        - ScATACseqLibraryLayout
+        - ScATACseqRead1
+        - ScATACseqRead2
+        - ScATACseqRead3
+        - SequencingPlatform
+        - SingleCellIsolationMethod
+        - SingleNucleusBuffer
+        - TechnicalReplicateGroup
+        - ThresholdforMinimumPassingReads
+        - TotalNumberofPassingNuclei
+        - TotalReads
+        - TranspositionReaction
+        Term:
+        -   Code: http://schema.biothings.io/ScATAC-seqLevel1
+            Definition: scATAC-seq files containing sequence read information, with
+                or without alignment, as FASTQ or BAM files
+            Handle: scATAC_seq_Level_1
+            Origin: HTAN
+            Value: scATAC-seq Level 1
+    ScATAC_seqLevel2:
+        Desc: scATAC-seq files containing aligned sequence data, as a BAM file
+        Props:
+        - AlignmentWorkflowType
+        - AlignmentWorkflowUrl
+        - AverageBaseQuality
+        - AverageInsertSize
+        - AverageReadLength
+        - Component
+        - Contamination
+        - ContaminationError
+        - FileFormat
+        - Filename
+        - GenomicReference
+        - GenomicReferenceURL
+        - HTANDataFileID
+        - HTANParentDataFileID
+        - IndexFileName
+        - MapQ30
+        - MeanCoverage
+        - MedianPercentageofMitochondrialReadsperNucleus
+        - PairsOnDiffCHR
+        - ProportionBaseMismatch
+        - ProportionCoverage10x
+        - ProportionCoverage30X
+        - ProportionReadsDuplicated
+        - ProportionReadsMapped
+        - ProportionTargetsNoCoverage
+        - ShortReads
+        - TotalReads
+        - TotalUniquelyMapped
+        - TotalUnmappedreads
+        Term:
+        -   Code: http://schema.biothings.io/ScATAC-seqLevel2
+            Definition: scATAC-seq files containing aligned sequence data, as a BAM
+                file
+            Handle: scATAC_seq_Level_2
+            Origin: HTAN
+            Value: scATAC-seq Level 2
+    ScATAC_seqLevel3:
+        Desc: Processed data files containing peak information for cells
+        Props:
+        - BlacklistRatio
+        - BlacklistRegionFragments
+        - ChimericRead_Pairs
+        - Component
+        - DNaseSensitiveRegionFragments
+        - DuplicateRead_Pairs
+        - EnhancerRegionFragments
+        - FileFormat
+        - Filename
+        - HTANDataFileID
+        - HTANParentDataFileID
+        - LowMapQ
+        - MACS2End
+        - MACS2FoldChange
+        - MACS2Name
+        - MACS2NegLog10pvalueSummit
+        - MACS2NegLog10qvalueSummit
+        - MACS2RelativeSummitPosition
+        - MACS2Score
+        - MACS2Seqnames
+        - MACS2Start
+        - MACS2Strand
+        - MACS2Width
+        - MitochondrialRead_Pairs
+        - NCountPeaks
+        - NCountRNA
+        - NFeaturePeaks
+        - NFeatureRNA
+        - NucleosomePercentile
+        - NucleosomeSignal
+        - OnTargetFragments
+        - PassedFilters
+        - PctReadsinPeaks
+        - PeakRegionCutsites
+        - PeakRegionFragments
+        - PromoterRegionFragments
+        - ScATAC_seqObjectID
+        - SeuratClusters
+        - TSSEnrichment
+        - TSSFragments
+        - TSSPercentile
+        - TotalRead_Pairs
+        - UnmappedRead_Pairs
+        Term:
+        -   Code: http://schema.biothings.io/ScATAC-seqLevel3
+            Definition: Processed data files containing peak information for cells
+            Handle: scATAC_seq_Level_3
+            Origin: HTAN
+            Value: scATAC-seq Level 3
+    ScATAC_seqLevel4:
+        Desc: Data represents the relationships between cells derived from Level 3
+            expression data and shown as tSNE or UMAP coordinates per cell, plus all
+            other cell-specific meta information (e.g., cell type)
+        Props:
+        - Component
+        - FileFormat
+        - Filename
+        - HTANDataFileID
+        - HTANParentDataFileID
+        - ScATACseqWorkflowParametersDescription
+        - ScATACseqWorkflowType
+        - WorkflowLink
+        - WorkflowVersion
+        Term:
+        -   Code: http://schema.biothings.io/ScATAC-seqLevel4
+            Definition: Data represents the relationships between cells derived from
+                Level 3 expression data and shown as tSNE or UMAP coordinates per
+                cell, plus all other cell-specific meta information (e.g., cell type)
+            Handle: scATAC_seq_Level_4
+            Origin: HTAN
+            Value: scATAC-seq Level 4
+    ScDNA_seqLevel1:
+        Desc: Single-cell DNA-seq
+        Props:
+        - AdapterContent
+        - AdapterName
+        - AdapterSequence
+        - BaseCallerName
+        - BaseCallerVersion
+        - BasicStatistics
+        - Component
+        - Encoding
+        - FileFormat
+        - Filename
+        - FlowCellBarcode
+        - FragmentMaximumLength
+        - FragmentMeanLength
+        - FragmentMinimumLength
+        - FragmentStandardDeviationLength
+        - HTANDataFileID
+        - HTANParentBiospecimenID
+        - KmerContent
+        - LaneNumber
+        - LibraryLayout
+        - LibraryPreparationKitName
+        - LibraryPreparationKitVendor
+        - LibraryPreparationKitVersion
+        - LibrarySelectionMethod
+        - LibraryStrand
+        - MultiplexBarcode
+        - NucleicAcidSource
+        - OverrepresentedSequences
+        - PerBaseNContent
+        - PerBaseSequenceContent
+        - PerBaseSequenceQuality
+        - PerSequenceGCContent
+        - PerSequenceQualityScore
+        - PerTileSequenceQuality
+        - PercentGCContent
+        - QCWorkflowLink
+        - QCWorkflowType
+        - QCWorkflowVersion
+        - ReadLength
+        - SequenceDuplicationLevels
+        - SequenceLengthDistribution
+        - SequencingBatchID
+        - SizeSelectionRange
+        - TargetDepth
+        - ToTrimAdapterSequence
+        - TotalReads
+        Term:
+        -   Code: http://schema.biothings.io/ScDNA-seqLevel1
+            Definition: Single-cell DNA-seq
+            Handle: scDNA_seq_Level_1
+            Origin: HTAN
+            Value: scDNA-seq Level 1
+    ScDNA_seqLevel2:
+        Desc: Alignment workflows downstream of scDNA-seq Level 1
+        Props:
+        - AlignmentWorkflowType
+        - AlignmentWorkflowUrl
+        - AverageBaseQuality
+        - AverageInsertSize
+        - AverageReadLength
+        - Component
+        - Contamination
+        - ContaminationError
+        - FileFormat
+        - Filename
+        - GenomicReference
+        - GenomicReferenceURL
+        - HTANDataFileID
+        - HTANParentDataFileID
+        - IndexFileName
+        - MapQ30
+        - MeanCoverage
+        - PairsOnDiffCHR
+        - ProportionBaseMismatch
+        - ProportionCoverage10x
+        - ProportionCoverage30X
+        - ProportionMitochondrialReads
+        - ProportionReadsDuplicated
+        - ProportionReadsMapped
+        - ProportionTargetsNoCoverage
+        - ShortReads
+        - TotalReads
+        - TotalUniquelyMapped
+        - TotalUnmappedreads
+        Term:
+        -   Code: http://schema.biothings.io/ScDNA-seqLevel2
+            Definition: Alignment workflows downstream of scDNA-seq Level 1
+            Handle: scDNA_seq_Level_2
+            Origin: HTAN
+            Value: scDNA-seq Level 2
+    ScRNA_seqLevel1:
+        Desc: Single-cell RNA-seq [EFO_0008913]
+        Props:
+        - Component
+        - CryopreservedCellsinSample
+        - DissociationMethod
+        - EndBias
+        - FileFormat
+        - Filename
+        - HTANDataFileID
+        - HTANParentBiospecimenID
+        - InputCellsandNuclei
+        - LibraryConstructionMethod
+        - LibraryPreparationDaysfromIndex
+        - NucleicAcidCaptureDaysfromIndex
+        - NucleicAcidSource
+        - ProtocolLink
+        - Read1
+        - Read2
+        - ReadIndicator
+        - ReverseTranscriptionPrimer
+        - SequencingLibraryConstructionDaysfromIndex
+        - SequencingPlatform
+        - SingleCellDissociationDaysfromIndex
+        - SingleCellIsolationMethod
+        - SpikeIn
+        - TechnicalReplicateGroup
+        - TotalNumberofInputCells
+        Term:
+        -   Code: http://schema.biothings.io/ScRNA-seqLevel1
+            Definition: Single-cell RNA-seq [EFO_0008913]
+            Handle: scRNA_seq_Level_1
+            Origin: HTAN
+            Value: scRNA-seq Level 1
+    ScRNA_seqLevel2:
+        Desc: Alignment workflows downstream of scRNA-seq Level 1
+        Props:
+        - AppliedHardTrimming
+        - CellBarcodeTag
+        - Checksum
+        - Component
+        - FileFormat
+        - Filename
+        - GenomeAnnotationURL
+        - GenomicReference
+        - GenomicReferenceURL
+        - HTANDataFileID
+        - HTANParentDataFileID
+        - ScRNAseqWorkflowParametersDescription
+        - ScRNAseqWorkflowType
+        - UMITag
+        - WhitelistCellBarcodeFileLink
+        - WorkflowLink
+        - WorkflowVersion
+        Term:
+        -   Code: http://schema.biothings.io/ScRNA-seqLevel2
+            Definition: Alignment workflows downstream of scRNA-seq Level 1
+            Handle: scRNA_seq_Level_2
+            Origin: HTAN
+            Value: scRNA-seq Level 2
+    ScRNA_seqLevel3:
+        Desc: Gene and Isoform expression files
+        Props:
+        - CellMedianNumberGenes
+        - CellMedianNumberReads
+        - CellTotal
+        - Component
+        - DataCategory
+        - FileFormat
+        - Filename
+        - HTANDataFileID
+        - HTANParentDataFileID
+        - LinkedMatrices
+        - MatrixType
+        - ScRNAseqWorkflowParametersDescription
+        - ScRNAseqWorkflowType
+        - WorkflowLink
+        - WorkflowVersion
+        Term:
+        -   Code: http://schema.biothings.io/ScRNA-seqLevel3
+            Definition: Gene and Isoform expression files
+            Handle: scRNA_seq_Level_3
+            Origin: HTAN
+            Value: scRNA-seq Level 3
+    ScRNA_seqLevel4:
+        Desc: Data represents the relationships between cells derived from Level 3
+            expression data and shown as tSNE or UMAP coordinates per cell, plus all
+            other cell-specific meta information (e.g., cell type)
+        Props:
+        - Component
+        - FileFormat
+        - Filename
+        - HTANDataFileID
+        - HTANParentDataFileID
+        - ScRNAseqWorkflowParametersDescription
+        - ScRNAseqWorkflowType
+        - WorkflowLink
+        - WorkflowVersion
+        Term:
+        -   Code: http://schema.biothings.io/ScRNA-seqLevel4
+            Definition: Data represents the relationships between cells derived from
+                Level 3 expression data and shown as tSNE or UMAP coordinates per
+                cell, plus all other cell-specific meta information (e.g., cell type)
+            Handle: scRNA_seq_Level_4
+            Origin: HTAN
+            Value: scRNA-seq Level 4
+    ScmC_seqLevel1:
+        Desc: Files contain raw scmC-seq data.
+        Props:
+        - BisulfiteConversion
+        - Component
+        - FileFormat
+        - Filename
+        - HTANDataFileID
+        - HTANParentBiospecimenID
+        - LibraryLayout
+        - MedianFractionofReadsinPeaks
+        - MedianPassingReadPercentage
+        - MedianPercentageofMitochondrialReadsperNucleus
+        - NucleicAcidSource
+        - NucleusIdentifier
+        - PeaksCallingSoftware
+        - ScmCseqRead1
+        - ScmCseqRead2
+        - ScmCseqRead3
+        - SequencingPlatform
+        - SingleCellIsolationMethod
+        - SingleNucleusBuffer
+        - SingleNucleusCapture
+        - TechnicalReplicateGroup
+        - ThresholdforMinimumPassingReads
+        - TotalNumberofPassingNuclei
+        - TotalReads
+        Term:
+        -   Code: http://schema.biothings.io/ScmC-seqLevel1
+            Definition: Files contain raw scmC-seq data.
+            Handle: scmC_seq_Level_1
+            Origin: HTAN
+            Value: scmC-seq Level 1
+    ScmC_seqLevel2:
+        Desc: Files contain scmC-seq files containing aligned sequence data, as a
+            BAM file.
+        Props:
+        - AlignmentWorkflowType
+        - AlignmentWorkflowUrl
+        - AverageBaseQuality
+        - AverageInsertSize
+        - AverageReadLength
+        - Component
+        - Contamination
+        - ContaminationError
+        - FileFormat
+        - Filename
+        - GenomicReference
+        - GenomicReferenceURL
+        - HTANDataFileID
+        - HTANParentDataFileID
+        - IndexFileName
+        - MeanCoverage
+        - PairsOnDiffCHR
+        - ProportionBaseMismatch
+        - ProportionReadsDuplicated
+        - ProportionReadsMapped
+        - ProportionTargetsNoCoverage
+        - ShortReads
+        - TotalReads
+        - TotalUniquelyMapped
+        - TotalUnmappedreads
+        Term:
+        -   Code: http://schema.biothings.io/ScmC-seqLevel2
+            Definition: Files contain scmC-seq files containing aligned sequence data,
+                as a BAM file.
+            Handle: scmC_seq_Level_2
+            Origin: HTAN
+            Value: scmC-seq Level 2
+    Slide_seqLevel1:
+        Desc: Raw sequencing files for the Slide-seq assay.
+        Props:
+        - Component
+        - EndBias
+        - FileFormat
+        - Filename
+        - HTANDataFileID
+        - HTANParentBiospecimenID
+        - LibraryConstructionMethod
+        - LibraryPreparationDaysfromIndex
+        - NucleicAcidCaptureDaysfromIndex
+        - NucleicAcidSource
+        - ProtocolLink
+        - ReadIndicator
+        - ReverseTranscriptionPrimer
+        - RunID
+        - SequencingBatchID
+        - SequencingLibraryConstructionDaysfromIndex
+        - SequencingPlatform
+        - SpatialBarcodeOffset
+        - SpatialBarcodeandUMI
+        - SpatialLibraryConstructionMethod
+        - SpatialRead1
+        - SpatialRead2
+        - SpikeIn
+        - TechnicalReplicateGroup
+        - TotalNumberBeadsinPuck
+        Term:
+        -   Code: http://schema.biothings.io/Slide-seqLevel1
+            Definition: Raw sequencing files for the Slide-seq assay.
+            Handle: Slide_seq_Level_1
+            Origin: HTAN
+            Value: Slide-seq Level 1
+    Slide_seqLevel2:
+        Desc: Aligned sequencing files and QC for the Slide-seq assay.
+        Props:
+        - AppliedHardTrimming
+        - Checksum
+        - Component
+        - FileFormat
+        - Filename
+        - GenomeAnnotationURL
+        - GenomicReference
+        - GenomicReferenceURL
+        - HTANDataFileID
+        - HTANParentDataFileID
+        - Slide_seqWorkflowParameterDescription
+        - Slide_seqWorkflowType
+        - SpatialBarcodeTag
+        - UMITag
+        - WorkflowLink
+        - WorkflowVersion
+        Term:
+        -   Code: http://schema.biothings.io/Slide-seqLevel2
+            Definition: Aligned sequencing files and QC for the Slide-seq assay.
+            Handle: Slide_seq_Level_2
+            Origin: HTAN
+            Value: Slide-seq Level 2
+    Slide_seqLevel3:
+        Desc: Gene matrices with features and barcodes for Slide-seq as well as spatial
+            information (bead location files).
+        Props:
+        - BeadsTotal
+        - Component
+        - DataCategory
+        - FileFormat
+        - Filename
+        - HTANDataFileID
+        - HTANParentDataFileID
+        - MatrixType
+        - MedianNumberGenesperSpatialSpot
+        - MedianUMICountsperSpot
+        - Slide_seqBeadFileType
+        - Slide_seqWorkflowParameterDescription
+        - Slide_seqWorkflowType
+        - WorkflowLink
+        - WorkflowVersion
+        Term:
+        -   Code: http://schema.biothings.io/Slide-seqLevel3
+            Definition: Gene matrices with features and barcodes for Slide-seq as
+                well as spatial information (bead location files).
+            Handle: Slide_seq_Level_3
+            Origin: HTAN
+            Value: Slide-seq Level 3
+    Therapy:
+        Desc: Clinical therapy or treatment
+        Props:
+        - ChemoConcurrenttoRadiation
+        - Component
+        - DaystoTreatmentEnd
+        - DaystoTreatmentStart
+        - HTANParticipantID
+        - InitialDiseaseStatus
+        - NumberofCycles
+        - ReasonTreatmentEnded
+        - RegimenorLineofTherapy
+        - TherapeuticAgents
+        - TreatmentAnatomicSite
+        - TreatmentArm
+        - TreatmentDose
+        - TreatmentDoseUnits
+        - TreatmentEffect
+        - TreatmentEffectIndicator
+        - TreatmentFrequency
+        - TreatmentIntentType
+        - TreatmentOutcome
+        - TreatmentType
+        - TreatmentorTherapy
+        Term:
+        -   Code: http://schema.biothings.io/Therapy
+            Definition: Clinical therapy or treatment
+            Handle: Therapy
+            Origin: HTAN
+            Value: Therapy
+    _10xVisiumSpatialTranscriptomics_AuxiliaryFiles:
+        Desc: Auxiliary data associated with spot/slide analysis (aligned Images,
+            quality control files, etc)  from Spatial Transcriptomics.
+        Props:
+        - CaptureArea
+        - Component
+        - FileFormat
+        - Filename
+        - HTANDataFileID
+        - HTANParentBiospecimenID
+        - HTANParentDataFileID
+        - RunID
+        - SlideID
+        - VisiumFileType
+        - WorkflowLink
+        - WorkflowVersion
+        Term:
+        -   Code: http://schema.biothings.io/10xVisiumSpatialTranscriptomics-AuxiliaryFiles
+            Definition: Auxiliary data associated with spot/slide analysis (aligned
+                Images, quality control files, etc)  from Spatial Transcriptomics.
+            Handle: _10x_Visium_Spatial_Transcriptomics___Auxiliary_Files
+            Origin: HTAN
+            Value: 10x Visium Spatial Transcriptomics - Auxiliary Files
+    _10xVisiumSpatialTranscriptomics_RNA_seqLevel1:
+        Desc: Files contain raw RNA-seq data associated with spot/slide data.
+        Props:
+        - CaptureArea
+        - Component
+        - DV200
+        - EndBias
+        - FileFormat
+        - Filename
+        - HTANDataFileID
+        - HTANParentBiospecimenID
+        - ImageRe_orientation
+        - LibraryPreparationDaysfromIndex
+        - PermeabilizationTime
+        - ProtocolLink
+        - RIN
+        - ReadIndicator
+        - ReverseTranscriptionPrimer
+        - RunID
+        - SequencingLibraryConstructionDaysfromIndex
+        - SequencingPlatform
+        - SlideID
+        - SlideVersion
+        - SpatialLibraryConstructionMethod
+        - SpatialRead1
+        - SpatialRead2
+        Term:
+        -   Code: http://schema.biothings.io/10xVisiumSpatialTranscriptomics-RNA-seqLevel1
+            Definition: Files contain raw RNA-seq data associated with spot/slide
+                data.
+            Handle: _10x_Visium_Spatial_Transcriptomics___RNA_seq_Level_1
+            Origin: HTAN
+            Value: 10x Visium Spatial Transcriptomics - RNA-seq Level 1
+    _10xVisiumSpatialTranscriptomics_RNA_seqLevel2:
+        Desc: Alignment workflows downstream of Spatial Transcriptomics RNA-seq Level
+            1.
+        Props:
+        - AppliedHardTrimming
+        - CaptureArea
+        - Checksum
+        - Component
+        - FileFormat
+        - Filename
+        - GenomeAnnotationURL
+        - GenomicReference
+        - GenomicReferenceURL
+        - HTANDataFileID
+        - HTANParentBiospecimenID
+        - HTANParentDataFileID
+        - RunID
+        - SpatialBarcodeTag
+        - UMITag
+        - WhitelistSpatialBarcodeFileLink
+        - WorkflowLink
+        - WorkflowVersion
+        Term:
+        -   Code: http://schema.biothings.io/10xVisiumSpatialTranscriptomics-RNA-seqLevel2
+            Definition: Alignment workflows downstream of Spatial Transcriptomics
+                RNA-seq Level 1.
+            Handle: _10x_Visium_Spatial_Transcriptomics___RNA_seq_Level_2
+            Origin: HTAN
+            Value: 10x Visium Spatial Transcriptomics - RNA-seq Level 2
+    _10xVisiumSpatialTranscriptomics_RNA_seqLevel3:
+        Desc: Processed data files based on Spatial Transcriptomics RNA-seq Level
+            2 and Spatial Transcriptomics Auxiliary files.
+        Props:
+        - CaptureArea
+        - Component
+        - FileFormat
+        - Filename
+        - HTANDataFileID
+        - HTANParentBiospecimenID
+        - HTANParentDataFileID
+        - MeanReadsperSpatialSpot
+        - MedianNumberGenesperSpatialSpot
+        - MedianUMICountsperSpot
+        - ProportionReadsMapped
+        - ProportionReadsMappedtoTranscriptome
+        - RunID
+        - SequencingSaturation
+        - Spotsundertissue
+        - VisiumFileType
+        - WorkflowLink
+        - WorkflowVersion
+        Term:
+        -   Code: http://schema.biothings.io/10xVisiumSpatialTranscriptomics-RNA-seqLevel3
+            Definition: Processed data files based on Spatial Transcriptomics RNA-seq
+                Level 2 and Spatial Transcriptomics Auxiliary files.
+            Handle: _10x_Visium_Spatial_Transcriptomics___RNA_seq_Level_3
+            Origin: HTAN
+            Value: 10x Visium Spatial Transcriptomics - RNA-seq Level 3
+    _10xVisiumSpatialTranscriptomics_RNA_seqLevel4:
+        Desc: Processed data files based on Spatial Transcriptomics RNA-seq Level
+            3.
+        Props:
+        - Component
+        - FileFormat
+        - Filename
+        - HTANDataFileID
+        - HTANParentBiospecimenID
+        - HTANParentDataFileID
+        - RunID
+        - VisiumWorkflowParametersDescription
+        - VisiumWorkflowType
+        - WorkflowLink
+        - WorkflowVersion
+        Term:
+        -   Code: http://schema.biothings.io/10xVisiumSpatialTranscriptomics-RNA-seqLevel4
+            Definition: Processed data files based on Spatial Transcriptomics RNA-seq
+                Level 3.
+            Handle: _10x_Visium_Spatial_Transcriptomics___RNA_seq_Level_4
+            Origin: HTAN
+            Value: 10x Visium Spatial Transcriptomics - RNA-seq Level 4
+Relationships:
+    requires_component:
+        Ends:
+        -   Dst: Patient
+            Props: null
+            Src: AcuteLymphoblasticLeukemiaTier3
+        -   Dst: Patient
+            Props: null
+            Src: Biospecimen
+        -   Dst: Patient
+            Props: null
+            Src: BreastCancerTier3
+        -   Dst: Biospecimen
+            Props: null
+            Src: BulkMethylation_seqLevel1
+        -   Dst: Biospecimen
+            Props: null
+            Src: BulkMethylation_seqLevel2
+        -   Dst: BulkMethylation_seqLevel1
+            Props: null
+            Src: BulkMethylation_seqLevel2
+        -   Dst: Biospecimen
+            Props: null
+            Src: BulkMethylation_seqLevel3
+        -   Dst: BulkMethylation_seqLevel2
+            Props: null
+            Src: BulkMethylation_seqLevel3
+        -   Dst: Biospecimen
+            Props: null
+            Src: BulkRNA_seqLevel1
+        -   Dst: BulkRNA_seqLevel1
+            Props: null
+            Src: BulkRNA_seqLevel2
+        -   Dst: BulkRNA_seqLevel2
+            Props: null
+            Src: BulkRNA_seqLevel3
+        -   Dst: Biospecimen
+            Props: null
+            Src: BulkWESLevel1
+        -   Dst: BulkWESLevel1
+            Props: null
+            Src: BulkWESLevel2
+        -   Dst: BulkWESLevel2
+            Props: null
+            Src: BulkWESLevel3
+        -   Dst: Patient
+            Props: null
+            Src: ClinicalDataTier2
+        -   Dst: Patient
+            Props: null
+            Src: ColorectalCancerTier3
+        -   Dst: Biospecimen
+            Props: null
+            Src: ElectronMicroscopyLevel1
+        -   Dst: ElectronMicroscopyLevel1
+            Props: null
+            Src: ElectronMicroscopyLevel2
+        -   Dst: ElectronMicroscopyLevel2
+            Props: null
+            Src: ElectronMicroscopyLevel3
+        -   Dst: ElectronMicroscopyLevel3
+            Props: null
+            Src: ElectronMicroscopyLevel4
+        -   Dst: Biospecimen
+            Props: null
+            Src: HI_C_seqLevel1
+        -   Dst: HI_C_seqLevel1
+            Props: null
+            Src: HI_C_seqLevel2
+        -   Dst: HI_C_seqLevel2
+            Props: null
+            Src: HI_C_seqLevel3
+        -   Dst: RPPALevel2
+            Props: null
+            Src: HTANRPPAAntibodyTable
+        -   Dst: Biospecimen
+            Props: null
+            Src: ImagingLevel1
+        -   Dst: ImagingLevel1
+            Props: null
+            Src: ImagingLevel2
+        -   Dst: ImagingLevel2
+            Props: null
+            Src: ImagingLevel3Image
+        -   Dst: ImagingLevel3Channels
+            Props: null
+            Src: ImagingLevel3Image
+        -   Dst: ImagingLevel2
+            Props: null
+            Src: ImagingLevel3Segmentation
+        -   Dst: ImagingLevel3Channels
+            Props: null
+            Src: ImagingLevel4
+        -   Dst: Patient
+            Props: null
+            Src: LungCancerTier3
+        -   Dst: Biospecimen
+            Props: null
+            Src: MassSpectrometryLevel1
+        -   Dst: MassSpectrometryLevel1
+            Props: null
+            Src: MassSpectrometryLevel2
+        -   Dst: MassSpectrometryLevel2
+            Props: null
+            Src: MassSpectrometryLevel3
+        -   Dst: MassSpectrometryLevel3
+            Props: null
+            Src: MassSpectrometryLevel4
+        -   Dst: Patient
+            Props: null
+            Src: MelanomaTier3
+        -   Dst: Biospecimen
+            Props: null
+            Src: NanoStringGeoMxDSPSpatialTranscriptomicsLevel1
+        -   Dst: NanoStringGeoMxDSPROIDCCSegmentAnnotationMetadata
+            Props: null
+            Src: NanoStringGeoMxDSPSpatialTranscriptomicsLevel1
+        -   Dst: NanoStringGeoMxDSPROIRCCSegmentAnnotationMetadata
+            Props: null
+            Src: NanoStringGeoMxDSPSpatialTranscriptomicsLevel1
+        -   Dst: ImagingLevel2
+            Props: null
+            Src: NanoStringGeoMxDSPSpatialTranscriptomicsLevel3
+        -   Dst: NanoStringGeoMxDSPROIDCCSegmentAnnotationMetadata
+            Props: null
+            Src: NanoStringGeoMxDSPSpatialTranscriptomicsLevel3
+        -   Dst: NanoStringGeoMxDSPROIRCCSegmentAnnotationMetadata
+            Props: null
+            Src: NanoStringGeoMxDSPSpatialTranscriptomicsLevel3
+        -   Dst: NanoStringGeoMxDSPSpatialTranscriptomicsLevel1
+            Props: null
+            Src: NanoStringGeoMxDSPSpatialTranscriptomicsLevel3
+        -   Dst: Patient
+            Props: null
+            Src: NeuroblastomaandGliomaTier3
+        -   Dst: Biospecimen
+            Props: null
+            Src: OtherAssay
+        -   Dst: Patient
+            Props: null
+            Src: OvarianCancerTier3
+        -   Dst: Patient
+            Props: null
+            Src: PancreaticCancerTier3
+        -   Dst: Demographics
+            Props: null
+            Src: Patient
+        -   Dst: Diagnosis
+            Props: null
+            Src: Patient
+        -   Dst: Exposure
+            Props: null
+            Src: Patient
+        -   Dst: FamilyHistory
+            Props: null
+            Src: Patient
+        -   Dst: FollowUp
+            Props: null
+            Src: Patient
+        -   Dst: MolecularTest
+            Props: null
+            Src: Patient
+        -   Dst: Therapy
+            Props: null
+            Src: Patient
+        -   Dst: Patient
+            Props: null
+            Src: ProstateCancerTier3
+        -   Dst: Biospecimen
+            Props: null
+            Src: RPPALevel2
+        -   Dst: Biospecimen
+            Props: null
+            Src: RPPALevel3
+        -   Dst: RPPALevel2
+            Props: null
+            Src: RPPALevel4
+        -   Dst: Patient
+            Props: null
+            Src: SRRSBiospecimen
+        -   Dst: Patient
+            Props: null
+            Src: SRRSClinicalDataTier2
+        -   Dst: Biospecimen
+            Props: null
+            Src: SRRSImagingLevel2
+        -   Dst: Patient
+            Props: null
+            Src: SarcomaTier3
+        -   Dst: Biospecimen
+            Props: null
+            Src: ScATAC_seqLevel1
+        -   Dst: ScATAC_seqLevel1
+            Props: null
+            Src: ScATAC_seqLevel2
+        -   Dst: ScATAC_seqLevel2
+            Props: null
+            Src: ScATAC_seqLevel3
+        -   Dst: ScATAC_seqLevel3
+            Props: null
+            Src: ScATAC_seqLevel4
+        -   Dst: Biospecimen
+            Props: null
+            Src: ScDNA_seqLevel1
+        -   Dst: ScDNA_seqLevel1
+            Props: null
+            Src: ScDNA_seqLevel2
+        -   Dst: Biospecimen
+            Props: null
+            Src: ScRNA_seqLevel1
+        -   Dst: ScRNA_seqLevel1
+            Props: null
+            Src: ScRNA_seqLevel2
+        -   Dst: ScRNA_seqLevel2
+            Props: null
+            Src: ScRNA_seqLevel3
+        -   Dst: ScRNA_seqLevel3
+            Props: null
+            Src: ScRNA_seqLevel4
+        -   Dst: Biospecimen
+            Props: null
+            Src: ScmC_seqLevel1
+        -   Dst: ScmC_seqLevel1
+            Props: null
+            Src: ScmC_seqLevel2
+        -   Dst: Biospecimen
+            Props: null
+            Src: Slide_seqLevel1
+        -   Dst: Slide_seqLevel1
+            Props: null
+            Src: Slide_seqLevel2
+        -   Dst: Slide_seqLevel2
+            Props: null
+            Src: Slide_seqLevel3
+        -   Dst: _10xVisiumSpatialTranscriptomics_RNA_seqLevel1
+            Props: null
+            Src: _10xVisiumSpatialTranscriptomics_AuxiliaryFiles
+        -   Dst: _10xVisiumSpatialTranscriptomics_RNA_seqLevel2
+            Props: null
+            Src: _10xVisiumSpatialTranscriptomics_AuxiliaryFiles
+        -   Dst: Biospecimen
+            Props: null
+            Src: _10xVisiumSpatialTranscriptomics_RNA_seqLevel1
+        -   Dst: _10xVisiumSpatialTranscriptomics_RNA_seqLevel1
+            Props: null
+            Src: _10xVisiumSpatialTranscriptomics_RNA_seqLevel2
+        -   Dst: _10xVisiumSpatialTranscriptomics_AuxiliaryFiles
+            Props: null
+            Src: _10xVisiumSpatialTranscriptomics_RNA_seqLevel3
+        -   Dst: _10xVisiumSpatialTranscriptomics_RNA_seqLevel2
+            Props: null
+            Src: _10xVisiumSpatialTranscriptomics_RNA_seqLevel3
+        -   Dst: _10xVisiumSpatialTranscriptomics_RNA_seqLevel3
+            Props: null
+            Src: _10xVisiumSpatialTranscriptomics_RNA_seqLevel4
+        Mul: one_to_many
+        Props: null
