@@ -53,8 +53,8 @@ def qe(x):
 
 
 def norm_hdl(x):
-    hdl = x.lower()
-    hdl = re.sub("[']","",hdl)
+    hdl = re.sub("[']","",x)
+    hdl = re.sub("^([0-9])","_\\1",hdl)
     hdl = re.sub("[ -./!@#$%&*()?+=]","_",hdl)
     return hdl
     
@@ -62,7 +62,7 @@ def norm_hdl(x):
 def get_atts(ent: URIRef, g: Graph):
     atts = {
         "label": qe(str(g.value(ent, RDFS.label, None))),
-        "comment": qe(str(g.value(ent, RDFS.comment, None))),
+        "comment": qe(str(g.value(ent, RDFS.comment, None))) or  "None provided",
         "displayName": qe(str(g.value(ent, SMS.displayName, None))),
     }
     
@@ -79,21 +79,24 @@ model = Model(handle="HTAN")
 for nd in ht_nodes:
     # get rdf info
     atts = get_atts(nd, g)
-    node = model.add_node({"handle": atts["label"], "desc": atts["comment"]})
+    node = model.add_node({"handle": norm_hdl(atts["label"]),
+                           "desc": atts["comment"]})
     model.annotate(node, Term({"value": atts["displayName"],
                                "origin_name": "HTAN",
                                "origin_id": str(nd),
+                               "origin_definition": atts["comment"],
                                "handle": norm_hdl(atts["displayName"])}))
 
     # collect properties
     prs = g.objects(nd, SMS.requiresDependency, unique=True)
     for pr in prs:
         patts = get_atts(pr, g)
-        prop = model.add_prop(node, Property({"handle": patts["label"],
+        prop = model.add_prop(node, Property({"handle": norm_hdl(patts["label"]),
                                               "desc": patts["comment"]}))
         model.annotate(prop, Term({"value": patts["displayName"],
                                    "origin_name": "HTAN",
                                    "origin_id": qe(str(pr)),
+                                   "origin_definition": patts["comment"],
                                    "handle": norm_hdl(patts["displayName"])}))
         vals = list(g.objects(pr, SDO.rangeIncludes, unique=True))
         if vals:
@@ -114,12 +117,16 @@ for dst in g.objects(None,SMS.requiresComponent,unique=True):
     for src in g.subjects(SMS.requiresComponent,dst, unique=True):
         satts = get_atts(src, g)
         model.add_edge(Edge({"handle": "requires_component",
-                             "src": model.nodes[satts["label"]],
-                             "dst": model.nodes[datts["label"]]}))
+                             "multiplicity": "one_to_many",
+                             "src": model.nodes[norm_hdl(satts["label"])],
+                             "dst": model.nodes[norm_hdl(datts["label"])]}))
 
 
 mdf = MDF(model=model)
 mdf_dict = mdf.write_mdf()
+
+# kludge - need fix in bento-mdf
+mdf_dict["Relationships"]['requires_component']['Props'] = None
 with open("htan-model.yaml","w") as f:
     yaml.dump({k:mdf_dict[k] for k in mdf_dict if k in
                ["Handle", "Nodes", "Relationships"]}, stream=f,
