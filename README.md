@@ -4,4 +4,4 @@
 
 This is a representation of the [JSONLD-based HTAN data model](https://github.com/ncihtan/data-models.git) in [Model Description Format](https://github.com/CBIIT/bento-mdf).
 
-[View model on GitHub Pages](https://cbiit.github.io/icdc-model-tool/)
+[View model on GitHub Pages](https://cbiit.github.io/htan-model/)
