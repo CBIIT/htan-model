@@ -1,24 +1,6 @@
 Handle: HTAN
+Version: v24.3.1
 Nodes:
-    AcuteLymphoblasticLeukemiaTier3:
-        Desc: Acute Lymphoblastic Leukemia attributes in Clinical Data Tier 3
-        Props:
-        - CNSLeukemiaStatus
-        - Component
-        - HTANParticipantID
-        - MRDALLDiagnosticSensitivity
-        - NCIALLRiskGroup
-        - SpecimenBlastCountPercentageValue
-        - StartDaysfromIndex
-        - StopDaysfromIndex
-        - TimepointLabel
-        Term:
-        -   Code: http://schema.biothings.io/AcuteLymphoblasticLeukemiaTier3
-            Definition: Acute Lymphoblastic Leukemia attributes in Clinical Data Tier
-                3
-            Handle: Acute_Lymphoblastic_Leukemia_Tier_3
-            Origin: HTAN
-            Value: Acute Lymphoblastic Leukemia Tier 3
     Biospecimen:
         Desc: HTAN biological entity; this can be tissue, blood, analyte and subsamples
             of those
@@ -69,51 +51,6 @@ Nodes:
             Handle: Biospecimen
             Origin: HTAN
             Value: Biospecimen
-    BreastCancerTier3:
-        Desc: Breast cancer specific attributes in Clinical Data Tier 3
-        Props:
-        - BIRADSMammographyBreastDensityCategory
-        - BreastBiopsyProcedureFindingType
-        - BreastCancerAllredEstrogenReceptorScore
-        - BreastCancerAssessmentTests
-        - BreastCancerGenomicTestPerformed
-        - BreastCarcinomaCentromere17CopyNumber
-        - BreastCarcinomaDetectionMethodType
-        - BreastCarcinomaERStainingIntensity
-        - BreastCarcinomaERStatusPercentageValue
-        - BreastCarcinomaEstrogenReceptorStatus
-        - BreastCarcinomaHER2Centromere17CopynumberTotal
-        - BreastCarcinomaHER2Chromosome17Ratio
-        - BreastCarcinomaHER2RatioDiagnosis
-        - BreastCarcinomaHER2Status
-        - BreastCarcinomaHistologyCategory
-        - BreastCarcinomaPRStainingIntensity
-        - BreastCarcinomaPRStatusPercentageValue
-        - BreastCarcinomaProgesteronerReceptorStatus
-        - BreastCarcinomaSurgicalProcedureName
-        - BreastImagingPerformedType
-        - BreastQuadrantSite
-        - Component
-        - HER2BreastCarcinomaCopyNumberTotal
-        - HTANParticipantID
-        - HormoneTherapyBreastCancerPreventionIndicator
-        - InvasiveDuctalBreastCarcinomaHistologicCategory
-        - InvasiveLobularBreastCarcinomaHistologicCategory
-        - MammaprintRiskGroup
-        - MulticentricBreastCarcinomaPresentIndicator
-        - MultifocalBreastCarcinomaPresentIndicator
-        - OncotypeRiskGroup
-        - OncotypeScore
-        - PriorInvasiveBreastDisease
-        - StartDaysfromIndex
-        - StopDaysfromIndex
-        - TimepointLabel
-        Term:
-        -   Code: http://schema.biothings.io/BreastCancerTier3
-            Definition: Breast cancer specific attributes in Clinical Data Tier 3
-            Handle: Breast_Cancer_Tier_3
-            Origin: HTAN
-            Value: Breast Cancer Tier 3
     BulkMethylation_seqLevel1:
         Desc: Raw data for bulk methylation sequencing, such as FASTQs and unaligned
             BAMs
@@ -440,90 +377,6 @@ Nodes:
             Handle: Bulk_WES_Level_3
             Origin: HTAN
             Value: Bulk WES Level 3
-    ClinicalDataTier2:
-        Desc: Tier 2 Cancer Data
-        Props:
-        - COVID19AntibodyTesting
-        - COVID19CancerTreatmentFollowup
-        - COVID19ComplicationsSeverity
-        - COVID19CurrentStatus
-        - COVID19OccurrenceIndicator
-        - COVID19PositiveLabTestIndicator
-        - CancerAssociatedGeneMutations
-        - CancerIncidence
-        - CancerIncidenceLocation
-        - Chewingtobaccodailyusecount
-        - Component
-        - ConcomitantMedicationReceivedType
-        - CountryofBirth
-        - Ecigvape30dayusenum
-        - Ecigvapetimesperday
-        - Ecigvapeuse
-        - EducationLevel
-        - ExtentofTumorResection
-        - FamilyMemberVitalStatusIndicator
-        - HTANParticipantID
-        - HereditaryCancerPredispositionSyndrome
-        - Immunosuppression
-        - KnownGeneticPredispositionMutation
-        - LabTestsforMMRStatus
-        - MedicallyUnderservedArea
-        - MismatchRepairSystemStatus
-        - ModeofCancerDetection
-        - MutationalSignatures
-        - OtherBiopsyResectionSite
-        - PrecancerousConditionType
-        - PriorSitesofRadiation
-        - RuralvsUrban
-        - SatelliteMetastasisPresentIndicator
-        - Secondhandsmokeexposureyears
-        - SentinelLymphNodeCount
-        - SentinelNodePositiveAssessmentCount
-        - StartDaysfromIndex
-        - StopDaysfromIndex
-        - TimepointLabel
-        - TumorExtranodalExtensionIndicator
-        - Typeofsmokeexposurecumulativeyears
-        Term:
-        -   Code: http://schema.biothings.io/ClinicalDataTier2
-            Definition: Tier 2 Cancer Data
-            Handle: Clinical_Data_Tier_2
-            Origin: HTAN
-            Value: Clinical Data Tier 2
-    ColorectalCancerTier3:
-        Desc: Colorectal cancer specific attributes in Clinical Data Tier 3
-        Props:
-        - ColonPolypOccurenceIndicator
-        - ColorectalCancerDetectionMethodType
-        - ColorectalCancerKRASIndicator
-        - ColorectalCancerTumorBorderConfiguration
-        - ColorectalPolypAdenomaType
-        - ColorectalPolypCount
-        - ColorectalPolypNewIndicator
-        - ColorectalPolypShape
-        - ColorectalPolypType
-        - Component
-        - FamilyColonCancerHistoryIndicator
-        - FamilyHistoryColorectalPolyp
-        - FamilyMedicalHistoryColorectalPolypDiagnosis
-        - HTANParticipantID
-        - HistoryofPriorColonPolyps
-        - ImmediateFamilyHistoryEndometrialCancer
-        - ImmediateFamilyHistoryOvarianCancer
-        - MLH1PromoterMethylationStatus
-        - PatientColonoscopyPerformedIndicator
-        - PatientInflammatoryBowelDiseasePersonalMedicaHistory
-        - SizeofPolypRemoved
-        - StartDaysfromIndex
-        - StopDaysfromIndex
-        - TimepointLabel
-        Term:
-        -   Code: http://schema.biothings.io/ColorectalCancerTier3
-            Definition: Colorectal cancer specific attributes in Clinical Data Tier
-                3
-            Handle: Colorectal_Cancer_Tier_3
-            Origin: HTAN
-            Value: Colorectal Cancer Tier 3
     Demographics:
         Desc: Demographic attributes
         Props:
@@ -609,6 +462,7 @@ Nodes:
         - PercentTumorInvasion
         - PerineuralInvasionPresent
         - PeritonealFluidCytologicalStatus
+        - PrecancerousConditionType
         - PregnantatDiagnosis
         - PrimaryDiagnosis
         - PrimaryGleasonGrade
@@ -721,6 +575,21 @@ Nodes:
             Handle: Electron_Microscopy_Level_4
             Origin: HTAN
             Value: Electron Microscopy Level 4
+    ExSeqMinimal:
+        Desc: Minimal metadata for the ExSeq assay
+        Props:
+        - AssayType
+        - Component
+        - FileFormat
+        - Filename
+        - HTANDataFileID
+        - HTANParentBiospecimenID
+        Term:
+        -   Code: http://schema.biothings.io/ExSeqMinimal
+            Definition: Minimal metadata for the ExSeq assay
+            Handle: ExSeq_Minimal
+            Origin: HTAN
+            Value: ExSeq Minimal
     Exposure:
         Desc: Exposure to carcinogens
         Props:
@@ -877,32 +746,6 @@ Nodes:
             Handle: HI_C_seq_Level_3
             Origin: HTAN
             Value: HI-C-seq Level 3
-    HTANRPPAAntibodyTable:
-        Desc: A table containing antibody level metadata for RPPA
-        Props:
-        - AbNameReportedonDataset
-        - AntibodyNotes
-        - CatalogNumber
-        - Clonality
-        - Clone
-        - FileFormat
-        - Filename
-        - GENCODEGeneSymbolTarget
-        - HTANRPPAAntibodyTableID
-        - InternalAbID
-        - PhosphoSite
-        - PhosphoproteinFlag
-        - RPPADilution
-        - RPPAValidationStatus
-        - Species
-        - UNIPROTProteinIDTarget
-        - Vendor
-        Term:
-        -   Code: http://schema.biothings.io/HTANRPPAAntibodyTable
-            Definition: A table containing antibody level metadata for RPPA
-            Handle: HTAN_RPPA_Antibody_Table
-            Origin: HTAN
-            Value: HTAN RPPA Antibody Table
     ImagingLevel1:
         Desc: Raw imaging data
         Props:
@@ -1089,28 +932,6 @@ Nodes:
             Handle: Imaging_Level_4
             Origin: HTAN
             Value: Imaging Level 4
-    LungCancerTier3:
-        Desc: Lung cancer specific attributes in Clinical Data Tier 3
-        Props:
-        - Component
-        - CurrentLungCancerSymptoms
-        - HTANParticipantID
-        - LungAdjacentHistologyType
-        - LungCancerDetectionMethodType
-        - LungCancerHarboringGenomicAberrations
-        - LungCancerParticipantProcedureHistory
-        - LungTopography
-        - LungTumorLobeBronchialLocation
-        - LungTumorLocationAnatomicSite
-        - StartDaysfromIndex
-        - StopDaysfromIndex
-        - TimepointLabel
-        Term:
-        -   Code: http://schema.biothings.io/LungCancerTier3
-            Definition: Lung cancer specific attributes in Clinical Data Tier 3
-            Handle: Lung_Cancer_Tier_3
-            Origin: HTAN
-            Value: Lung Cancer Tier 3
     MassSpectrometryLevel1:
         Desc: Mass Spectrometry derived data that includes proteomics, metabolomics,
             and lipidomics, level 1
@@ -1212,34 +1033,6 @@ Nodes:
             Handle: Mass_Spectrometry_Level_4
             Origin: HTAN
             Value: Mass Spectrometry Level 4
-    MelanomaTier3:
-        Desc: Melanoma specific attributes in Clinical Data Tier 3
-        Props:
-        - Component
-        - CutaneousMelanomaAdditionalFindings
-        - CutaneousMelanomaSurgicalMargins
-        - CutaneousMelanomaTumorInfiltratingLymphocytes
-        - CutaneousMelanomaTumorRegressionRange
-        - CutaneousMelanomaUlceration
-        - FitzpatrickSkinTone
-        - HTANParticipantID
-        - HistoryofAtypicalNevi
-        - HistoryofBlisteringSunburn
-        - HistoryofChronicUVExposure
-        - HistoryofTanningBedUse
-        - ImmediateFamilyHistoryMelanoma
-        - MelanomaBiopsyResectionSites
-        - MelanomaLesionSize
-        - MelanomaSpecimenClarkLevelValue
-        - StartDaysfromIndex
-        - StopDaysfromIndex
-        - TimepointLabel
-        Term:
-        -   Code: http://schema.biothings.io/MelanomaTier3
-            Definition: Melanoma specific attributes in Clinical Data Tier 3
-            Handle: Melanoma_Tier_3
-            Origin: HTAN
-            Value: Melanoma Tier 3
     MolecularTest:
         Desc: Clinical molecular test data
         Props:
@@ -1290,8 +1083,8 @@ Nodes:
             Origin: HTAN
             Value: Molecular Test
     NanoStringGeoMxDSPROIDCCSegmentAnnotationMetadata:
-        Desc: 'GeoMx ROI and Segment Metadata Attributes. The assayed biospecimen
-            should be reported one per row with the associated ROI coordinates. '
+        Desc: GeoMx ROI and Segment Metadata Attributes. The assayed biospecimen should
+            be reported one per row with the associated ROI coordinates.
         Props:
         - Alignedreads
         - Biologicalprobemedian
@@ -1317,14 +1110,14 @@ Nodes:
         - Tags
         Term:
         -   Code: http://schema.biothings.io/NanoStringGeoMxDSPROIDCCSegmentAnnotationMetadata
-            Definition: 'GeoMx ROI and Segment Metadata Attributes. The assayed biospecimen
-                should be reported one per row with the associated ROI coordinates. '
+            Definition: GeoMx ROI and Segment Metadata Attributes. The assayed biospecimen
+                should be reported one per row with the associated ROI coordinates.
             Handle: NanoString_GeoMx_DSP_ROI_DCC_Segment_Annotation_Metadata
             Origin: HTAN
             Value: NanoString GeoMx DSP ROI DCC Segment Annotation Metadata
     NanoStringGeoMxDSPROIRCCSegmentAnnotationMetadata:
-        Desc: 'GeoMx ROI and Segment Metadata Attributes. The assayed biospecimen
-            should be reported one per row with the associated ROI coordinates. '
+        Desc: GeoMx ROI and Segment Metadata Attributes. The assayed biospecimen should
+            be reported one per row with the associated ROI coordinates.
         Props:
         - BindingDensity
         - HTANParentBiospecimenID
@@ -1345,8 +1138,8 @@ Nodes:
         - TissueStain
         Term:
         -   Code: http://schema.biothings.io/NanoStringGeoMxDSPROIRCCSegmentAnnotationMetadata
-            Definition: 'GeoMx ROI and Segment Metadata Attributes. The assayed biospecimen
-                should be reported one per row with the associated ROI coordinates. '
+            Definition: GeoMx ROI and Segment Metadata Attributes. The assayed biospecimen
+                should be reported one per row with the associated ROI coordinates.
             Handle: NanoString_GeoMx_DSP_ROI_RCC_Segment_Annotation_Metadata
             Origin: HTAN
             Value: NanoString GeoMx DSP ROI RCC Segment Annotation Metadata
@@ -1399,26 +1192,6 @@ Nodes:
             Handle: NanoString_GeoMx_DSP_Spatial_Transcriptomics_Level_3
             Origin: HTAN
             Value: NanoString GeoMx DSP Spatial Transcriptomics Level 3
-    NeuroblastomaandGliomaTier3:
-        Desc: Brain cancer specific attributes in Clinical Data Tier 3
-        Props:
-        - CNSTumorPrimaryAnatomicSite
-        - Component
-        - GliomaSpecificMetastasisSites
-        - GliomaSpecificRadiationField
-        - HTANParticipantID
-        - InfraTentorialEpendymomaMolecularSubgroup
-        - NeuroblastomaMYCNGeneAmplificationStatus
-        - StartDaysfromIndex
-        - StopDaysfromIndex
-        - SupraTentorialEpendymomaMolecularSubgroup
-        - TimepointLabel
-        Term:
-        -   Code: http://schema.biothings.io/NeuroblastomaandGliomaTier3
-            Definition: Brain cancer specific attributes in Clinical Data Tier 3
-            Handle: Neuroblastoma_and_Glioma_Tier_3
-            Origin: HTAN
-            Value: Neuroblastoma and Glioma Tier 3
     OtherAssay:
         Desc: Metadata applying to any assay without standard descriptors. Can be
             used as a placeholder for minimal amount of metadata until the assay descriptors
@@ -1438,41 +1211,6 @@ Nodes:
             Handle: Other_Assay
             Origin: HTAN
             Value: Other Assay
-    OvarianCancerTier3:
-        Desc: Ovarian cancer specific attributes in Clinical Data Tier 3
-        Props:
-        - Component
-        - HTANParticipantID
-        - OvarianCancerHistologicSubtype
-        - OvarianCancerPlatinumStatus
-        - OvarianCancerSurgicalOutcome
-        - StartDaysfromIndex
-        - StopDaysfromIndex
-        - TimepointLabel
-        Term:
-        -   Code: http://schema.biothings.io/OvarianCancerTier3
-            Definition: Ovarian cancer specific attributes in Clinical Data Tier 3
-            Handle: Ovarian_Cancer_Tier_3
-            Origin: HTAN
-            Value: Ovarian Cancer Tier 3
-    PancreaticCancerTier3:
-        Desc: Pancreatic cancer specific attributes in Clinical Tier Data 3
-        Props:
-        - Component
-        - HTANParticipantID
-        - PancreasPrecancerHistopathologicGrade
-        - PancreaticDuctFinalPathologyType
-        - PancreaticIPMNPathologyEpithelialSubtype
-        - StartDaysfromIndex
-        - StopDaysfromIndex
-        - TimepointLabel
-        Term:
-        -   Code: http://schema.biothings.io/PancreaticCancerTier3
-            Definition: Pancreatic cancer specific attributes in Clinical Tier Data
-                3
-            Handle: Pancreatic_Cancer_Tier_3
-            Origin: HTAN
-            Value: Pancreatic Cancer Tier 3
     Patient:
         Desc: HTAN patient
         Props:
@@ -1484,28 +1222,6 @@ Nodes:
             Handle: Patient
             Origin: HTAN
             Value: Patient
-    ProstateCancerTier3:
-        Desc: Prostate cancer specific attributes in Clinical Data Tier 3
-        Props:
-        - AdditonalFindingsUninvolvedProstate
-        - Component
-        - HTANParticipantID
-        - LocationExtentExtraprostaticExtension
-        - LocationNaturePositiveMargins
-        - ProstateCancerCytologicMorphologicSubtypes
-        - ProstateCancerLocalExtent
-        - ProstateCarcinomaHistologicType
-        - SeminalVesicleInvasion
-        - StartDaysfromIndex
-        - StopDaysfromIndex
-        - TimepointLabel
-        Term:
-        -   Code: http://schema.biothings.io/ProstateCancerTier3
-            Definition: Prostate cancer specific attributes in Clinical Data Tier
-                3
-            Handle: Prostate_Cancer_Tier_3
-            Origin: HTAN
-            Value: Prostate Cancer Tier 3
     RPPALevel2:
         Desc: Array based protemics. Each dilution curve of spot intensities is fitted
             using the monotone increasing B-spline model in the SuperCurve R package.
@@ -1613,50 +1329,6 @@ Nodes:
             Handle: SRRS_Biospecimen
             Origin: HTAN
             Value: SRRS Biospecimen
-    SRRSClinicalDataTier2:
-        Desc: Cancer related clinical data specific to SRRS
-        Props:
-        - AgeatDiagnosis
-        - CancerIncidence
-        - CancerIncidenceLocation
-        - Component
-        - CountryofBirth
-        - DaystoFollowUp
-        - DaystoLastFollowup
-        - DaystoLastKnownDiseaseStatus
-        - DaystoRecurrence
-        - EducationLevel
-        - Ethnicity
-        - Gender
-        - GeneSymbol
-        - HTANParticipantID
-        - LastKnownDiseaseStatus
-        - MedicallyUnderservedArea
-        - MolecularAnalysisMethod
-        - Morphology
-        - NCIAtlasCancerSite
-        - PackYearsSmoked
-        - PrimaryDiagnosis
-        - ProgressionorRecurrence
-        - Race
-        - RuralvsUrban
-        - SiteofResectionorBiopsy
-        - StartDaysfromIndex
-        - StopDaysfromIndex
-        - TestResult
-        - TimepointLabel
-        - TissueorOrganofOrigin
-        - TreatmentType
-        - TumorGrade
-        - TumorLargestDimensionDiameter
-        - VitalStatus
-        - YearsSmoked
-        Term:
-        -   Code: http://schema.biothings.io/SRRSClinicalDataTier2
-            Definition: Cancer related clinical data specific to SRRS
-            Handle: SRRS_Clinical_Data_Tier_2
-            Origin: HTAN
-            Value: SRRS Clinical Data Tier 2
     SRRSImagingLevel2:
         Desc: SRRS-specific HTAN raw and pre-processed image data
         Props:
@@ -1698,23 +1370,6 @@ Nodes:
             Handle: SRRS_Imaging_Level_2
             Origin: HTAN
             Value: SRRS Imaging Level 2
-    SarcomaTier3:
-        Desc: Sarcoma specific attributes in Clinical Data Tier 3
-        Props:
-        - Component
-        - HTANParticipantID
-        - SarcomaDiagnosisClassificationCategory
-        - SarcomaSubtype
-        - SarcomaTumorExtensionType
-        - StartDaysfromIndex
-        - StopDaysfromIndex
-        - TimepointLabel
-        Term:
-        -   Code: http://schema.biothings.io/SarcomaTier3
-            Definition: Sarcoma specific attributes in Clinical Data Tier 3
-            Handle: Sarcoma_Tier_3
-            Origin: HTAN
-            Value: Sarcoma Tier 3
     ScATAC_seqLevel1:
         Desc: scATAC-seq files containing sequence read information, with or without
             alignment, as FASTQ or BAM files
@@ -2144,15 +1799,12 @@ Nodes:
         - Filename
         - HTANDataFileID
         - HTANParentBiospecimenID
-        - LibraryConstructionMethod
         - LibraryPreparationDaysfromIndex
         - NucleicAcidCaptureDaysfromIndex
         - NucleicAcidSource
         - ProtocolLink
         - ReadIndicator
         - ReverseTranscriptionPrimer
-        - RunID
-        - SequencingBatchID
         - SequencingLibraryConstructionDaysfromIndex
         - SequencingPlatform
         - SpatialBarcodeOffset
@@ -2162,7 +1814,6 @@ Nodes:
         - SpatialRead2
         - SpikeIn
         - TechnicalReplicateGroup
-        - TotalNumberBeadsinPuck
         Term:
         -   Code: http://schema.biothings.io/Slide-seqLevel1
             Definition: Raw sequencing files for the Slide-seq assay.
@@ -2182,6 +1833,7 @@ Nodes:
         - GenomicReferenceURL
         - HTANDataFileID
         - HTANParentDataFileID
+        - MatchedSpatialBarcodeTag
         - Slide_seqWorkflowParameterDescription
         - Slide_seqWorkflowType
         - SpatialBarcodeTag
@@ -2208,7 +1860,10 @@ Nodes:
         - MatrixType
         - MedianNumberGenesperSpatialSpot
         - MedianUMICountsperSpot
+        - RunID
+        - SequencingBatchID
         - Slide_seqBeadFileType
+        - Slide_seqFragmentSize
         - Slide_seqWorkflowParameterDescription
         - Slide_seqWorkflowType
         - WorkflowLink
@@ -2391,13 +2046,7 @@ Relationships:
         Ends:
         -   Dst: Patient
             Props: null
-            Src: AcuteLymphoblasticLeukemiaTier3
-        -   Dst: Patient
-            Props: null
             Src: Biospecimen
-        -   Dst: Patient
-            Props: null
-            Src: BreastCancerTier3
         -   Dst: Biospecimen
             Props: null
             Src: BulkMethylation_seqLevel1
@@ -2431,12 +2080,6 @@ Relationships:
         -   Dst: BulkWESLevel2
             Props: null
             Src: BulkWESLevel3
-        -   Dst: Patient
-            Props: null
-            Src: ClinicalDataTier2
-        -   Dst: Patient
-            Props: null
-            Src: ColorectalCancerTier3
         -   Dst: Biospecimen
             Props: null
             Src: ElectronMicroscopyLevel1
@@ -2451,6 +2094,9 @@ Relationships:
             Src: ElectronMicroscopyLevel4
         -   Dst: Biospecimen
             Props: null
+            Src: ExSeqMinimal
+        -   Dst: Biospecimen
+            Props: null
             Src: HI_C_seqLevel1
         -   Dst: HI_C_seqLevel1
             Props: null
@@ -2458,9 +2104,6 @@ Relationships:
         -   Dst: HI_C_seqLevel2
             Props: null
             Src: HI_C_seqLevel3
-        -   Dst: RPPALevel2
-            Props: null
-            Src: HTANRPPAAntibodyTable
         -   Dst: Biospecimen
             Props: null
             Src: ImagingLevel1
@@ -2479,9 +2122,6 @@ Relationships:
         -   Dst: ImagingLevel3Channels
             Props: null
             Src: ImagingLevel4
-        -   Dst: Patient
-            Props: null
-            Src: LungCancerTier3
         -   Dst: Biospecimen
             Props: null
             Src: MassSpectrometryLevel1
@@ -2494,9 +2134,6 @@ Relationships:
         -   Dst: MassSpectrometryLevel3
             Props: null
             Src: MassSpectrometryLevel4
-        -   Dst: Patient
-            Props: null
-            Src: MelanomaTier3
         -   Dst: Biospecimen
             Props: null
             Src: NanoStringGeoMxDSPSpatialTranscriptomicsLevel1
@@ -2518,18 +2155,9 @@ Relationships:
         -   Dst: NanoStringGeoMxDSPSpatialTranscriptomicsLevel1
             Props: null
             Src: NanoStringGeoMxDSPSpatialTranscriptomicsLevel3
-        -   Dst: Patient
-            Props: null
-            Src: NeuroblastomaandGliomaTier3
         -   Dst: Biospecimen
             Props: null
             Src: OtherAssay
-        -   Dst: Patient
-            Props: null
-            Src: OvarianCancerTier3
-        -   Dst: Patient
-            Props: null
-            Src: PancreaticCancerTier3
         -   Dst: Demographics
             Props: null
             Src: Patient
@@ -2551,9 +2179,6 @@ Relationships:
         -   Dst: Therapy
             Props: null
             Src: Patient
-        -   Dst: Patient
-            Props: null
-            Src: ProstateCancerTier3
         -   Dst: Biospecimen
             Props: null
             Src: RPPALevel2
@@ -2566,15 +2191,9 @@ Relationships:
         -   Dst: Patient
             Props: null
             Src: SRRSBiospecimen
-        -   Dst: Patient
-            Props: null
-            Src: SRRSClinicalDataTier2
         -   Dst: Biospecimen
             Props: null
             Src: SRRSImagingLevel2
-        -   Dst: Patient
-            Props: null
-            Src: SarcomaTier3
         -   Dst: Biospecimen
             Props: null
             Src: ScATAC_seqLevel1

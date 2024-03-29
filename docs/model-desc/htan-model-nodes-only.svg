@@ -1,1063 +1,907 @@
-<svg width="6873pt" height="653pt"
- viewBox="0.00 0.00 6872.54 653.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="5744pt" height="653pt"
+ viewBox="0.00 0.00 5743.53 653.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 649)">
 <title>Perl</title>
-<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-649 6868.5404,-649 6868.5404,4 -4,4"/>
-<!-- ElectronMicroscopyLevel1 -->
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-649 5739.5311,-649 5739.5311,4 -4,4"/>
+<!-- BulkRNA_seqLevel1 -->
 <g id="node1" class="node">
-<title>ElectronMicroscopyLevel1</title>
-<ellipse fill="none" stroke="#000000" cx="6716.5404" cy="-279" rx="135.6761" ry="18"/>
-<text text-anchor="middle" x="6716.5404" y="-275.3" font-family="Times,serif" font-size="14.00" fill="#000000">ElectronMicroscopyLevel1</text>
+<title>BulkRNA_seqLevel1</title>
+<ellipse fill="none" stroke="#000000" cx="5587.5311" cy="-279" rx="106.6812" ry="18"/>
+<text text-anchor="middle" x="5587.5311" y="-275.3" font-family="Times,serif" font-size="14.00" fill="#000000">BulkRNA_seqLevel1</text>
 </g>
 <!-- Biospecimen -->
-<g id="node46" class="node">
-<title>Biospecimen</title>
-<ellipse fill="none" stroke="#000000" cx="3203.5404" cy="-192" rx="70.3881" ry="18"/>
-<text text-anchor="middle" x="3203.5404" y="-188.3" font-family="Times,serif" font-size="14.00" fill="#000000">Biospecimen</text>
-</g>
-<!-- ElectronMicroscopyLevel1&#45;&gt;Biospecimen -->
-<g id="edge52" class="edge">
-<title>ElectronMicroscopyLevel1&#45;&gt;Biospecimen</title>
-<path fill="none" stroke="#000000" d="M6632.7007,-264.7567C6555.9048,-252.4239 6438.9456,-235.4324 6336.5404,-228 6024.5055,-205.3529 3743.0968,-194.3366 3283.9248,-192.3364"/>
-<polygon fill="#000000" stroke="#000000" points="3283.7544,-188.8358 3273.7393,-192.2922 3283.724,-195.8357 3283.7544,-188.8358"/>
-<text text-anchor="middle" x="6547.5404" y="-231.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
-</g>
-<!-- ProstateCancerTier3 -->
-<g id="node2" class="node">
-<title>ProstateCancerTier3</title>
-<ellipse fill="none" stroke="#000000" cx="108.5404" cy="-192" rx="108.5808" ry="18"/>
-<text text-anchor="middle" x="108.5404" y="-188.3" font-family="Times,serif" font-size="14.00" fill="#000000">ProstateCancerTier3</text>
-</g>
-<!-- Patient -->
 <g id="node22" class="node">
-<title>Patient</title>
-<ellipse fill="none" stroke="#000000" cx="1701.5404" cy="-105" rx="44.393" ry="18"/>
-<text text-anchor="middle" x="1701.5404" y="-101.3" font-family="Times,serif" font-size="14.00" fill="#000000">Patient</text>
-</g>
-<!-- ProstateCancerTier3&#45;&gt;Patient -->
-<g id="edge51" class="edge">
-<title>ProstateCancerTier3&#45;&gt;Patient</title>
-<path fill="none" stroke="#000000" d="M163.2328,-176.3597C208.257,-164.2589 273.973,-148.3638 332.5404,-141 464.3064,-124.4327 1408.8691,-109.3622 1647.0942,-105.7954"/>
-<polygon fill="#000000" stroke="#000000" points="1647.2988,-109.2929 1657.2454,-105.644 1647.1943,-102.2937 1647.2988,-109.2929"/>
-<text text-anchor="middle" x="406.5404" y="-144.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
-</g>
-<!-- BulkRNA_seqLevel3 -->
-<g id="node3" class="node">
-<title>BulkRNA_seqLevel3</title>
-<ellipse fill="none" stroke="#000000" cx="3481.5404" cy="-453" rx="106.6812" ry="18"/>
-<text text-anchor="middle" x="3481.5404" y="-449.3" font-family="Times,serif" font-size="14.00" fill="#000000">BulkRNA_seqLevel3</text>
-</g>
-<!-- BulkRNA_seqLevel2 -->
-<g id="node41" class="node">
-<title>BulkRNA_seqLevel2</title>
-<ellipse fill="none" stroke="#000000" cx="3481.5404" cy="-366" rx="106.6812" ry="18"/>
-<text text-anchor="middle" x="3481.5404" y="-362.3" font-family="Times,serif" font-size="14.00" fill="#000000">BulkRNA_seqLevel2</text>
-</g>
-<!-- BulkRNA_seqLevel3&#45;&gt;BulkRNA_seqLevel2 -->
-<g id="edge59" class="edge">
-<title>BulkRNA_seqLevel3&#45;&gt;BulkRNA_seqLevel2</title>
-<path fill="none" stroke="#000000" d="M3481.5404,-434.9735C3481.5404,-423.1918 3481.5404,-407.5607 3481.5404,-394.1581"/>
-<polygon fill="#000000" stroke="#000000" points="3485.0405,-394.0033 3481.5404,-384.0034 3478.0405,-394.0034 3485.0405,-394.0033"/>
-<text text-anchor="middle" x="3555.5404" y="-405.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
-</g>
-<!-- ScDNA_seqLevel2 -->
-<g id="node4" class="node">
-<title>ScDNA_seqLevel2</title>
-<ellipse fill="none" stroke="#000000" cx="4172.5404" cy="-366" rx="96.6831" ry="18"/>
-<text text-anchor="middle" x="4172.5404" y="-362.3" font-family="Times,serif" font-size="14.00" fill="#000000">ScDNA_seqLevel2</text>
-</g>
-<!-- ScDNA_seqLevel1 -->
-<g id="node62" class="node">
-<title>ScDNA_seqLevel1</title>
-<ellipse fill="none" stroke="#000000" cx="4172.5404" cy="-279" rx="96.6831" ry="18"/>
-<text text-anchor="middle" x="4172.5404" y="-275.3" font-family="Times,serif" font-size="14.00" fill="#000000">ScDNA_seqLevel1</text>
-</g>
-<!-- ScDNA_seqLevel2&#45;&gt;ScDNA_seqLevel1 -->
-<g id="edge57" class="edge">
-<title>ScDNA_seqLevel2&#45;&gt;ScDNA_seqLevel1</title>
-<path fill="none" stroke="#000000" d="M4172.5404,-347.9735C4172.5404,-336.1918 4172.5404,-320.5607 4172.5404,-307.1581"/>
-<polygon fill="#000000" stroke="#000000" points="4176.0405,-307.0033 4172.5404,-297.0034 4169.0405,-307.0034 4176.0405,-307.0033"/>
-<text text-anchor="middle" x="4246.5404" y="-318.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
-</g>
-<!-- BreastCancerTier3 -->
-<g id="node5" class="node">
-<title>BreastCancerTier3</title>
-<ellipse fill="none" stroke="#000000" cx="335.5404" cy="-192" rx="100.1823" ry="18"/>
-<text text-anchor="middle" x="335.5404" y="-188.3" font-family="Times,serif" font-size="14.00" fill="#000000">BreastCancerTier3</text>
-</g>
-<!-- BreastCancerTier3&#45;&gt;Patient -->
-<g id="edge58" class="edge">
-<title>BreastCancerTier3&#45;&gt;Patient</title>
-<path fill="none" stroke="#000000" d="M390.824,-176.8255C437.5166,-164.7406 506.3612,-148.6291 567.5404,-141 780.2075,-114.4802 1450.6933,-107.0339 1647.0219,-105.3968"/>
-<polygon fill="#000000" stroke="#000000" points="1647.1287,-108.8962 1657.0997,-105.3145 1647.0714,-101.8964 1647.1287,-108.8962"/>
-<text text-anchor="middle" x="641.5404" y="-144.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
-</g>
-<!-- RPPALevel2 -->
-<g id="node6" class="node">
-<title>RPPALevel2</title>
-<ellipse fill="none" stroke="#000000" cx="1355.5404" cy="-279" rx="67.6881" ry="18"/>
-<text text-anchor="middle" x="1355.5404" y="-275.3" font-family="Times,serif" font-size="14.00" fill="#000000">RPPALevel2</text>
-</g>
-<!-- RPPALevel2&#45;&gt;Biospecimen -->
-<g id="edge54" class="edge">
-<title>RPPALevel2&#45;&gt;Biospecimen</title>
-<path fill="none" stroke="#000000" d="M1350.2612,-260.9818C1348.231,-249.9334 1348.1098,-236.3515 1356.5404,-228 1373.9863,-210.7177 3100.1517,-212.8691 3124.5404,-210 3130.8664,-209.2558 3137.4261,-208.2117 3143.939,-206.9971"/>
-<polygon fill="#000000" stroke="#000000" points="3144.9749,-210.3594 3154.0946,-204.9667 3143.6025,-203.4952 3144.9749,-210.3594"/>
-<text text-anchor="middle" x="1430.5404" y="-231.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
-</g>
-<!-- BulkMethylation_seqLevel3 -->
-<g id="node7" class="node">
-<title>BulkMethylation_seqLevel3</title>
-<ellipse fill="none" stroke="#000000" cx="1867.5404" cy="-453" rx="140.2752" ry="18"/>
-<text text-anchor="middle" x="1867.5404" y="-449.3" font-family="Times,serif" font-size="14.00" fill="#000000">BulkMethylation_seqLevel3</text>
-</g>
-<!-- BulkMethylation_seqLevel3&#45;&gt;Biospecimen -->
-<g id="edge55" class="edge">
-<title>BulkMethylation_seqLevel3&#45;&gt;Biospecimen</title>
-<path fill="none" stroke="#000000" d="M1936.2334,-437.2351C1955.266,-431.4966 1972.4084,-424.5473 1978.5404,-417 2007.2925,-381.6117 1978.3856,-359.2107 1989.5404,-315 1995.8804,-289.8721 1991.3929,-277.2998 2011.5404,-261 2076.4717,-208.4688 2113.4207,-236.1684 2196.5404,-228 2401.8126,-207.8274 2919.8052,-235.0419 3124.5404,-210 3130.8629,-209.2267 3137.4204,-208.1638 3143.9319,-206.9379"/>
-<polygon fill="#000000" stroke="#000000" points="3144.9726,-210.2988 3154.0861,-204.8956 3143.5923,-203.4362 3144.9726,-210.2988"/>
-<text text-anchor="middle" x="2063.5404" y="-318.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
-</g>
-<!-- BulkMethylation_seqLevel2 -->
-<g id="node53" class="node">
-<title>BulkMethylation_seqLevel2</title>
-<ellipse fill="none" stroke="#000000" cx="1821.5404" cy="-366" rx="140.2752" ry="18"/>
-<text text-anchor="middle" x="1821.5404" y="-362.3" font-family="Times,serif" font-size="14.00" fill="#000000">BulkMethylation_seqLevel2</text>
-</g>
-<!-- BulkMethylation_seqLevel3&#45;&gt;BulkMethylation_seqLevel2 -->
-<g id="edge56" class="edge">
-<title>BulkMethylation_seqLevel3&#45;&gt;BulkMethylation_seqLevel2</title>
-<path fill="none" stroke="#000000" d="M1844.6472,-435.095C1839.2572,-429.8168 1834.0627,-423.6536 1830.5404,-417 1826.8964,-410.1166 1824.688,-402.0521 1823.3609,-394.394"/>
-<polygon fill="#000000" stroke="#000000" points="1826.8147,-393.8126 1822.0453,-384.352 1819.874,-394.7219 1826.8147,-393.8126"/>
-<text text-anchor="middle" x="1904.5404" y="-405.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
-</g>
-<!-- HI_C_seqLevel3 -->
-<g id="node8" class="node">
-<title>HI_C_seqLevel3</title>
-<ellipse fill="none" stroke="#000000" cx="6475.5404" cy="-453" rx="87.1846" ry="18"/>
-<text text-anchor="middle" x="6475.5404" y="-449.3" font-family="Times,serif" font-size="14.00" fill="#000000">HI_C_seqLevel3</text>
-</g>
-<!-- HI_C_seqLevel2 -->
-<g id="node13" class="node">
-<title>HI_C_seqLevel2</title>
-<ellipse fill="none" stroke="#000000" cx="6475.5404" cy="-366" rx="87.1846" ry="18"/>
-<text text-anchor="middle" x="6475.5404" y="-362.3" font-family="Times,serif" font-size="14.00" fill="#000000">HI_C_seqLevel2</text>
-</g>
-<!-- HI_C_seqLevel3&#45;&gt;HI_C_seqLevel2 -->
-<g id="edge53" class="edge">
-<title>HI_C_seqLevel3&#45;&gt;HI_C_seqLevel2</title>
-<path fill="none" stroke="#000000" d="M6475.5404,-434.9735C6475.5404,-423.1918 6475.5404,-407.5607 6475.5404,-394.1581"/>
-<polygon fill="#000000" stroke="#000000" points="6479.0405,-394.0033 6475.5404,-384.0034 6472.0405,-394.0034 6479.0405,-394.0033"/>
-<text text-anchor="middle" x="6549.5404" y="-405.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
-</g>
-<!-- ScATAC_seqLevel1 -->
-<g id="node9" class="node">
-<title>ScATAC_seqLevel1</title>
-<ellipse fill="none" stroke="#000000" cx="2121.5404" cy="-279" rx="100.9827" ry="18"/>
-<text text-anchor="middle" x="2121.5404" y="-275.3" font-family="Times,serif" font-size="14.00" fill="#000000">ScATAC_seqLevel1</text>
-</g>
-<!-- ScATAC_seqLevel1&#45;&gt;Biospecimen -->
-<g id="edge44" class="edge">
-<title>ScATAC_seqLevel1&#45;&gt;Biospecimen</title>
-<path fill="none" stroke="#000000" d="M2153.9193,-261.9297C2178.5614,-249.906 2213.7184,-234.7881 2246.5404,-228 2437.6481,-188.4758 2930.845,-233.8001 3124.5404,-210 3130.8624,-209.2232 3137.4196,-208.158 3143.931,-206.9308"/>
-<polygon fill="#000000" stroke="#000000" points="3144.9723,-210.2915 3154.0851,-204.8871 3143.591,-203.4291 3144.9723,-210.2915"/>
-<text text-anchor="middle" x="2320.5404" y="-231.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
-</g>
-<!-- SRRSImagingLevel2 -->
-<g id="node10" class="node">
-<title>SRRSImagingLevel2</title>
-<ellipse fill="none" stroke="#000000" cx="2346.5404" cy="-279" rx="106.6812" ry="18"/>
-<text text-anchor="middle" x="2346.5404" y="-275.3" font-family="Times,serif" font-size="14.00" fill="#000000">SRRSImagingLevel2</text>
-</g>
-<!-- SRRSImagingLevel2&#45;&gt;Biospecimen -->
-<g id="edge41" class="edge">
-<title>SRRSImagingLevel2&#45;&gt;Biospecimen</title>
-<path fill="none" stroke="#000000" d="M2368.2394,-261.2241C2384.1459,-249.3565 2406.8409,-234.7352 2429.5404,-228 2503.5973,-206.0264 3047.8946,-219.6277 3124.5404,-210 3130.8603,-209.2061 3137.4162,-208.1299 3143.9267,-206.8962"/>
-<polygon fill="#000000" stroke="#000000" points="3144.9707,-210.256 3154.0799,-204.8455 3143.5849,-203.3946 3144.9707,-210.256"/>
-<text text-anchor="middle" x="2503.5404" y="-231.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
-</g>
-<!-- RPPALevel3 -->
-<g id="node11" class="node">
-<title>RPPALevel3</title>
-<ellipse fill="none" stroke="#000000" cx="2538.5404" cy="-279" rx="67.6881" ry="18"/>
-<text text-anchor="middle" x="2538.5404" y="-275.3" font-family="Times,serif" font-size="14.00" fill="#000000">RPPALevel3</text>
-</g>
-<!-- RPPALevel3&#45;&gt;Biospecimen -->
-<g id="edge43" class="edge">
-<title>RPPALevel3&#45;&gt;Biospecimen</title>
-<path fill="none" stroke="#000000" d="M2556.0937,-261.5579C2569.2992,-249.6843 2588.4989,-234.9153 2608.5404,-228 2662.771,-209.2878 3067.6521,-217.4054 3124.5404,-210 3130.8567,-209.1778 3137.4102,-208.0833 3143.9193,-206.8385"/>
-<polygon fill="#000000" stroke="#000000" points="3144.968,-210.1971 3154.071,-204.7764 3143.5744,-203.3372 3144.968,-210.1971"/>
-<text text-anchor="middle" x="2682.5404" y="-231.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
-</g>
-<!-- ScmC_seqLevel1 -->
-<g id="node12" class="node">
-<title>ScmC_seqLevel1</title>
-<ellipse fill="none" stroke="#000000" cx="2715.5404" cy="-279" rx="90.9839" ry="18"/>
-<text text-anchor="middle" x="2715.5404" y="-275.3" font-family="Times,serif" font-size="14.00" fill="#000000">ScmC_seqLevel1</text>
-</g>
-<!-- ScmC_seqLevel1&#45;&gt;Biospecimen -->
-<g id="edge42" class="edge">
-<title>ScmC_seqLevel1&#45;&gt;Biospecimen</title>
-<path fill="none" stroke="#000000" d="M2734.3097,-261.1634C2747.9321,-249.4311 2767.4306,-234.9968 2787.5404,-228 2858.3712,-203.3558 3050.2649,-220.368 3124.5404,-210 3130.7574,-209.1322 3137.2075,-208.0199 3143.6204,-206.7749"/>
-<polygon fill="#000000" stroke="#000000" points="3144.5342,-210.1605 3153.6286,-204.7251 3143.1297,-203.3028 3144.5342,-210.1605"/>
-<text text-anchor="middle" x="2861.5404" y="-231.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
-</g>
-<!-- HI_C_seqLevel1 -->
-<g id="node78" class="node">
-<title>HI_C_seqLevel1</title>
-<ellipse fill="none" stroke="#000000" cx="6475.5404" cy="-279" rx="87.1846" ry="18"/>
-<text text-anchor="middle" x="6475.5404" y="-275.3" font-family="Times,serif" font-size="14.00" fill="#000000">HI_C_seqLevel1</text>
-</g>
-<!-- HI_C_seqLevel2&#45;&gt;HI_C_seqLevel1 -->
-<g id="edge40" class="edge">
-<title>HI_C_seqLevel2&#45;&gt;HI_C_seqLevel1</title>
-<path fill="none" stroke="#000000" d="M6475.5404,-347.9735C6475.5404,-336.1918 6475.5404,-320.5607 6475.5404,-307.1581"/>
-<polygon fill="#000000" stroke="#000000" points="6479.0405,-307.0033 6475.5404,-297.0034 6472.0405,-307.0034 6479.0405,-307.0033"/>
-<text text-anchor="middle" x="6549.5404" y="-318.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
-</g>
-<!-- ElectronMicroscopyLevel2 -->
-<g id="node14" class="node">
-<title>ElectronMicroscopyLevel2</title>
-<ellipse fill="none" stroke="#000000" cx="6716.5404" cy="-366" rx="135.6761" ry="18"/>
-<text text-anchor="middle" x="6716.5404" y="-362.3" font-family="Times,serif" font-size="14.00" fill="#000000">ElectronMicroscopyLevel2</text>
-</g>
-<!-- ElectronMicroscopyLevel2&#45;&gt;ElectronMicroscopyLevel1 -->
-<g id="edge39" class="edge">
-<title>ElectronMicroscopyLevel2&#45;&gt;ElectronMicroscopyLevel1</title>
-<path fill="none" stroke="#000000" d="M6716.5404,-347.9735C6716.5404,-336.1918 6716.5404,-320.5607 6716.5404,-307.1581"/>
-<polygon fill="#000000" stroke="#000000" points="6720.0405,-307.0033 6716.5404,-297.0034 6713.0405,-307.0034 6720.0405,-307.0033"/>
-<text text-anchor="middle" x="6790.5404" y="-318.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
-</g>
-<!-- ColorectalCancerTier3 -->
-<g id="node15" class="node">
-<title>ColorectalCancerTier3</title>
-<ellipse fill="none" stroke="#000000" cx="571.5404" cy="-192" rx="117.7793" ry="18"/>
-<text text-anchor="middle" x="571.5404" y="-188.3" font-family="Times,serif" font-size="14.00" fill="#000000">ColorectalCancerTier3</text>
-</g>
-<!-- ColorectalCancerTier3&#45;&gt;Patient -->
-<g id="edge50" class="edge">
-<title>ColorectalCancerTier3&#45;&gt;Patient</title>
-<path fill="none" stroke="#000000" d="M629.1682,-176.2237C675.3857,-164.3007 742.1198,-148.7137 801.5404,-141 966.4398,-119.5935 1478.4909,-108.9086 1647.0957,-105.905"/>
-<polygon fill="#000000" stroke="#000000" points="1647.2913,-109.4022 1657.228,-105.7264 1647.1679,-102.4033 1647.2913,-109.4022"/>
-<text text-anchor="middle" x="875.5404" y="-144.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
-</g>
-<!-- BulkWESLevel2 -->
-<g id="node16" class="node">
-<title>BulkWESLevel2</title>
-<ellipse fill="none" stroke="#000000" cx="3971.5404" cy="-366" rx="86.3847" ry="18"/>
-<text text-anchor="middle" x="3971.5404" y="-362.3" font-family="Times,serif" font-size="14.00" fill="#000000">BulkWESLevel2</text>
-</g>
-<!-- BulkWESLevel1 -->
-<g id="node58" class="node">
-<title>BulkWESLevel1</title>
-<ellipse fill="none" stroke="#000000" cx="3971.5404" cy="-279" rx="86.3847" ry="18"/>
-<text text-anchor="middle" x="3971.5404" y="-275.3" font-family="Times,serif" font-size="14.00" fill="#000000">BulkWESLevel1</text>
-</g>
-<!-- BulkWESLevel2&#45;&gt;BulkWESLevel1 -->
-<g id="edge49" class="edge">
-<title>BulkWESLevel2&#45;&gt;BulkWESLevel1</title>
-<path fill="none" stroke="#000000" d="M3971.5404,-347.9735C3971.5404,-336.1918 3971.5404,-320.5607 3971.5404,-307.1581"/>
-<polygon fill="#000000" stroke="#000000" points="3975.0405,-307.0033 3971.5404,-297.0034 3968.0405,-307.0034 3975.0405,-307.0033"/>
-<text text-anchor="middle" x="4045.5404" y="-318.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
-</g>
-<!-- BulkWESLevel3 -->
-<g id="node17" class="node">
-<title>BulkWESLevel3</title>
-<ellipse fill="none" stroke="#000000" cx="3971.5404" cy="-453" rx="86.3847" ry="18"/>
-<text text-anchor="middle" x="3971.5404" y="-449.3" font-family="Times,serif" font-size="14.00" fill="#000000">BulkWESLevel3</text>
-</g>
-<!-- BulkWESLevel3&#45;&gt;BulkWESLevel2 -->
-<g id="edge46" class="edge">
-<title>BulkWESLevel3&#45;&gt;BulkWESLevel2</title>
-<path fill="none" stroke="#000000" d="M3971.5404,-434.9735C3971.5404,-423.1918 3971.5404,-407.5607 3971.5404,-394.1581"/>
-<polygon fill="#000000" stroke="#000000" points="3975.0405,-394.0033 3971.5404,-384.0034 3968.0405,-394.0034 3975.0405,-394.0033"/>
-<text text-anchor="middle" x="4045.5404" y="-405.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
-</g>
-<!-- ElectronMicroscopyLevel4 -->
-<g id="node18" class="node">
-<title>ElectronMicroscopyLevel4</title>
-<ellipse fill="none" stroke="#000000" cx="6716.5404" cy="-540" rx="135.6761" ry="18"/>
-<text text-anchor="middle" x="6716.5404" y="-536.3" font-family="Times,serif" font-size="14.00" fill="#000000">ElectronMicroscopyLevel4</text>
-</g>
-<!-- ElectronMicroscopyLevel3 -->
-<g id="node37" class="node">
-<title>ElectronMicroscopyLevel3</title>
-<ellipse fill="none" stroke="#000000" cx="6716.5404" cy="-453" rx="135.6761" ry="18"/>
-<text text-anchor="middle" x="6716.5404" y="-449.3" font-family="Times,serif" font-size="14.00" fill="#000000">ElectronMicroscopyLevel3</text>
-</g>
-<!-- ElectronMicroscopyLevel4&#45;&gt;ElectronMicroscopyLevel3 -->
-<g id="edge45" class="edge">
-<title>ElectronMicroscopyLevel4&#45;&gt;ElectronMicroscopyLevel3</title>
-<path fill="none" stroke="#000000" d="M6716.5404,-521.9735C6716.5404,-510.1918 6716.5404,-494.5607 6716.5404,-481.1581"/>
-<polygon fill="#000000" stroke="#000000" points="6720.0405,-481.0033 6716.5404,-471.0034 6713.0405,-481.0034 6720.0405,-481.0033"/>
-<text text-anchor="middle" x="6790.5404" y="-492.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
-</g>
-<!-- ScATAC_seqLevel4 -->
-<g id="node19" class="node">
-<title>ScATAC_seqLevel4</title>
-<ellipse fill="none" stroke="#000000" cx="2163.5404" cy="-540" rx="100.9827" ry="18"/>
-<text text-anchor="middle" x="2163.5404" y="-536.3" font-family="Times,serif" font-size="14.00" fill="#000000">ScATAC_seqLevel4</text>
-</g>
-<!-- ScATAC_seqLevel3 -->
-<g id="node38" class="node">
-<title>ScATAC_seqLevel3</title>
-<ellipse fill="none" stroke="#000000" cx="2163.5404" cy="-453" rx="100.9827" ry="18"/>
-<text text-anchor="middle" x="2163.5404" y="-449.3" font-family="Times,serif" font-size="14.00" fill="#000000">ScATAC_seqLevel3</text>
-</g>
-<!-- ScATAC_seqLevel4&#45;&gt;ScATAC_seqLevel3 -->
-<g id="edge48" class="edge">
-<title>ScATAC_seqLevel4&#45;&gt;ScATAC_seqLevel3</title>
-<path fill="none" stroke="#000000" d="M2163.5404,-521.9735C2163.5404,-510.1918 2163.5404,-494.5607 2163.5404,-481.1581"/>
-<polygon fill="#000000" stroke="#000000" points="2167.0405,-481.0033 2163.5404,-471.0034 2160.0405,-481.0034 2167.0405,-481.0033"/>
-<text text-anchor="middle" x="2237.5404" y="-492.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
-</g>
-<!-- ClinicalDataTier2 -->
-<g id="node20" class="node">
-<title>ClinicalDataTier2</title>
-<ellipse fill="none" stroke="#000000" cx="800.5404" cy="-192" rx="92.8835" ry="18"/>
-<text text-anchor="middle" x="800.5404" y="-188.3" font-family="Times,serif" font-size="14.00" fill="#000000">ClinicalDataTier2</text>
-</g>
-<!-- ClinicalDataTier2&#45;&gt;Patient -->
-<g id="edge47" class="edge">
-<title>ClinicalDataTier2&#45;&gt;Patient</title>
-<path fill="none" stroke="#000000" d="M856.3683,-177.4407C904.3263,-165.5603 975.5018,-149.4127 1038.5404,-141 1155.6071,-125.3771 1510.0476,-111.6993 1646.8525,-106.8624"/>
-<polygon fill="#000000" stroke="#000000" points="1647.2226,-110.3516 1657.0935,-106.5024 1646.9767,-103.3559 1647.2226,-110.3516"/>
-<text text-anchor="middle" x="1112.5404" y="-144.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
-</g>
-<!-- ImagingLevel3Image -->
-<g id="node21" class="node">
-<title>ImagingLevel3Image</title>
-<ellipse fill="none" stroke="#000000" cx="4380.5404" cy="-453" rx="109.6807" ry="18"/>
-<text text-anchor="middle" x="4380.5404" y="-449.3" font-family="Times,serif" font-size="14.00" fill="#000000">ImagingLevel3Image</text>
-</g>
-<!-- ImagingLevel3Channels -->
-<g id="node30" class="node">
-<title>ImagingLevel3Channels</title>
-<ellipse fill="none" stroke="#000000" cx="4411.5404" cy="-366" rx="124.2781" ry="18"/>
-<text text-anchor="middle" x="4411.5404" y="-362.3" font-family="Times,serif" font-size="14.00" fill="#000000">ImagingLevel3Channels</text>
-</g>
-<!-- ImagingLevel3Image&#45;&gt;ImagingLevel3Channels -->
-<g id="edge70" class="edge">
-<title>ImagingLevel3Image&#45;&gt;ImagingLevel3Channels</title>
-<path fill="none" stroke="#000000" d="M4345.0569,-435.8535C4331.1202,-426.685 4320.2148,-414.6861 4328.5404,-402 4332.304,-396.2653 4337.1989,-391.4394 4342.7297,-387.3794"/>
-<polygon fill="#000000" stroke="#000000" points="4344.6782,-390.288 4351.2303,-381.9621 4340.9162,-384.3848 4344.6782,-390.288"/>
-<text text-anchor="middle" x="4402.5404" y="-405.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
-</g>
-<!-- ImagingLevel2 -->
-<g id="node54" class="node">
-<title>ImagingLevel2</title>
-<ellipse fill="none" stroke="#000000" cx="4654.5404" cy="-366" rx="80.6858" ry="18"/>
-<text text-anchor="middle" x="4654.5404" y="-362.3" font-family="Times,serif" font-size="14.00" fill="#000000">ImagingLevel2</text>
-</g>
-<!-- ImagingLevel3Image&#45;&gt;ImagingLevel2 -->
-<g id="edge71" class="edge">
-<title>ImagingLevel3Image&#45;&gt;ImagingLevel2</title>
-<path fill="none" stroke="#000000" d="M4426.2037,-436.5966C4442.2142,-430.6554 4460.2598,-423.7437 4476.5404,-417 4491.4247,-410.8347 4494.3252,-407.2966 4509.5404,-402 4533.7613,-393.5684 4560.9033,-386.2795 4585.0965,-380.5085"/>
-<polygon fill="#000000" stroke="#000000" points="4585.9741,-383.8978 4594.9131,-378.2106 4584.3785,-377.082 4585.9741,-383.8978"/>
-<text text-anchor="middle" x="4583.5404" y="-405.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
-</g>
-<!-- Therapy -->
-<g id="node33" class="node">
-<title>Therapy</title>
-<ellipse fill="none" stroke="#000000" cx="1187.5404" cy="-18" rx="49.2915" ry="18"/>
-<text text-anchor="middle" x="1187.5404" y="-14.3" font-family="Times,serif" font-size="14.00" fill="#000000">Therapy</text>
-</g>
-<!-- Patient&#45;&gt;Therapy -->
-<g id="edge76" class="edge">
-<title>Patient&#45;&gt;Therapy</title>
-<path fill="none" stroke="#000000" d="M1657.2013,-103.8787C1545.4685,-100.7435 1258.6085,-90.6605 1221.5404,-69 1212.0999,-63.4836 1204.7604,-54.1795 1199.3561,-45.0169"/>
-<polygon fill="#000000" stroke="#000000" points="1202.3734,-43.2361 1194.5908,-36.047 1196.1916,-46.5202 1202.3734,-43.2361"/>
-<text text-anchor="middle" x="1295.5404" y="-57.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
-</g>
-<!-- MolecularTest -->
-<g id="node36" class="node">
-<title>MolecularTest</title>
-<ellipse fill="none" stroke="#000000" cx="1357.5404" cy="-18" rx="77.1866" ry="18"/>
-<text text-anchor="middle" x="1357.5404" y="-14.3" font-family="Times,serif" font-size="14.00" fill="#000000">MolecularTest</text>
-</g>
-<!-- Patient&#45;&gt;MolecularTest -->
-<g id="edge74" class="edge">
-<title>Patient&#45;&gt;MolecularTest</title>
-<path fill="none" stroke="#000000" d="M1657.883,-102.1548C1576.9339,-96.5657 1409.735,-83.434 1387.5404,-69 1378.8481,-63.3471 1372.3465,-54.2234 1367.6593,-45.2446"/>
-<polygon fill="#000000" stroke="#000000" points="1370.7974,-43.692 1363.4158,-36.0918 1364.4467,-46.6364 1370.7974,-43.692"/>
-<text text-anchor="middle" x="1461.5404" y="-57.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
-</g>
-<!-- FamilyHistory -->
-<g id="node39" class="node">
-<title>FamilyHistory</title>
-<ellipse fill="none" stroke="#000000" cx="1530.5404" cy="-18" rx="77.1866" ry="18"/>
-<text text-anchor="middle" x="1530.5404" y="-14.3" font-family="Times,serif" font-size="14.00" fill="#000000">FamilyHistory</text>
-</g>
-<!-- Patient&#45;&gt;FamilyHistory -->
-<g id="edge72" class="edge">
-<title>Patient&#45;&gt;FamilyHistory</title>
-<path fill="none" stroke="#000000" d="M1659.2007,-99.5023C1620.0785,-93.636 1565.6502,-83.2256 1549.5404,-69 1542.719,-62.9764 1538.341,-54.2666 1535.5334,-45.7444"/>
-<polygon fill="#000000" stroke="#000000" points="1538.8885,-44.7429 1532.9066,-35.9983 1532.1297,-46.5647 1538.8885,-44.7429"/>
-<text text-anchor="middle" x="1623.5404" y="-57.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
-</g>
-<!-- Exposure -->
-<g id="node40" class="node">
-<title>Exposure</title>
-<ellipse fill="none" stroke="#000000" cx="1701.5404" cy="-18" rx="54.6905" ry="18"/>
-<text text-anchor="middle" x="1701.5404" y="-14.3" font-family="Times,serif" font-size="14.00" fill="#000000">Exposure</text>
-</g>
-<!-- Patient&#45;&gt;Exposure -->
-<g id="edge78" class="edge">
-<title>Patient&#45;&gt;Exposure</title>
-<path fill="none" stroke="#000000" d="M1701.5404,-86.9735C1701.5404,-75.1918 1701.5404,-59.5607 1701.5404,-46.1581"/>
-<polygon fill="#000000" stroke="#000000" points="1705.0405,-46.0033 1701.5404,-36.0034 1698.0405,-46.0034 1705.0405,-46.0033"/>
-<text text-anchor="middle" x="1775.5404" y="-57.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
-</g>
-<!-- FollowUp -->
-<g id="node44" class="node">
-<title>FollowUp</title>
-<ellipse fill="none" stroke="#000000" cx="1872.5404" cy="-18" rx="54.6905" ry="18"/>
-<text text-anchor="middle" x="1872.5404" y="-14.3" font-family="Times,serif" font-size="14.00" fill="#000000">FollowUp</text>
-</g>
-<!-- Patient&#45;&gt;FollowUp -->
-<g id="edge77" class="edge">
-<title>Patient&#45;&gt;FollowUp</title>
-<path fill="none" stroke="#000000" d="M1743.6243,-99.1109C1781.8102,-93.0197 1834.5155,-82.5059 1850.5404,-69 1857.6418,-63.0148 1862.5138,-54.3145 1865.8287,-45.7892"/>
-<polygon fill="#000000" stroke="#000000" points="1869.2374,-46.6278 1869.045,-36.0347 1862.5895,-44.4357 1869.2374,-46.6278"/>
-<text text-anchor="middle" x="1936.5404" y="-57.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
-</g>
-<!-- Demographics -->
-<g id="node66" class="node">
-<title>Demographics</title>
-<ellipse fill="none" stroke="#000000" cx="2043.5404" cy="-18" rx="77.9862" ry="18"/>
-<text text-anchor="middle" x="2043.5404" y="-14.3" font-family="Times,serif" font-size="14.00" fill="#000000">Demographics</text>
-</g>
-<!-- Patient&#45;&gt;Demographics -->
-<g id="edge73" class="edge">
-<title>Patient&#45;&gt;Demographics</title>
-<path fill="none" stroke="#000000" d="M1745.3925,-102.1552C1826.2348,-96.5913 1992.553,-83.5359 2014.5404,-69 2023.1167,-63.3302 2029.4383,-54.2029 2033.95,-45.226"/>
-<polygon fill="#000000" stroke="#000000" points="2037.1531,-46.6366 2038.0151,-36.0768 2030.7561,-43.7943 2037.1531,-46.6366"/>
-<text text-anchor="middle" x="2103.5404" y="-57.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
-</g>
-<!-- Diagnosis -->
-<g id="node67" class="node">
-<title>Diagnosis</title>
-<ellipse fill="none" stroke="#000000" cx="2214.5404" cy="-18" rx="55.7903" ry="18"/>
-<text text-anchor="middle" x="2214.5404" y="-14.3" font-family="Times,serif" font-size="14.00" fill="#000000">Diagnosis</text>
-</g>
-<!-- Patient&#45;&gt;Diagnosis -->
-<g id="edge75" class="edge">
-<title>Patient&#45;&gt;Diagnosis</title>
-<path fill="none" stroke="#000000" d="M1745.8969,-103.9083C1857.6711,-100.8435 2144.6215,-90.9138 2181.5404,-69 2190.8586,-63.469 2198.0129,-54.1621 2203.2392,-45.0013"/>
-<polygon fill="#000000" stroke="#000000" points="2206.3883,-46.5305 2207.8316,-36.0344 2200.1579,-43.3395 2206.3883,-46.5305"/>
-<text text-anchor="middle" x="2271.5404" y="-57.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
-</g>
-<!-- _10xVisiumSpatialTranscriptomics_RNA_seqLevel4 -->
-<g id="node23" class="node">
-<title>_10xVisiumSpatialTranscriptomics_RNA_seqLevel4</title>
-<ellipse fill="none" stroke="#000000" cx="5821.5404" cy="-627" rx="252.6553" ry="18"/>
-<text text-anchor="middle" x="5821.5404" y="-623.3" font-family="Times,serif" font-size="14.00" fill="#000000">_10xVisiumSpatialTranscriptomics_RNA_seqLevel4</text>
-</g>
-<!-- _10xVisiumSpatialTranscriptomics_RNA_seqLevel3 -->
-<g id="node56" class="node">
-<title>_10xVisiumSpatialTranscriptomics_RNA_seqLevel3</title>
-<ellipse fill="none" stroke="#000000" cx="5821.5404" cy="-540" rx="252.6553" ry="18"/>
-<text text-anchor="middle" x="5821.5404" y="-536.3" font-family="Times,serif" font-size="14.00" fill="#000000">_10xVisiumSpatialTranscriptomics_RNA_seqLevel3</text>
-</g>
-<!-- _10xVisiumSpatialTranscriptomics_RNA_seqLevel4&#45;&gt;_10xVisiumSpatialTranscriptomics_RNA_seqLevel3 -->
-<g id="edge67" class="edge">
-<title>_10xVisiumSpatialTranscriptomics_RNA_seqLevel4&#45;&gt;_10xVisiumSpatialTranscriptomics_RNA_seqLevel3</title>
-<path fill="none" stroke="#000000" d="M5821.5404,-608.9735C5821.5404,-597.1918 5821.5404,-581.5607 5821.5404,-568.1581"/>
-<polygon fill="#000000" stroke="#000000" points="5825.0405,-568.0033 5821.5404,-558.0034 5818.0405,-568.0034 5825.0405,-568.0033"/>
-<text text-anchor="middle" x="5895.5404" y="-579.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
-</g>
-<!-- _10xVisiumSpatialTranscriptomics_AuxiliaryFiles -->
-<g id="node24" class="node">
-<title>_10xVisiumSpatialTranscriptomics_AuxiliaryFiles</title>
-<ellipse fill="none" stroke="#000000" cx="6127.5404" cy="-453" rx="243.1569" ry="18"/>
-<text text-anchor="middle" x="6127.5404" y="-449.3" font-family="Times,serif" font-size="14.00" fill="#000000">_10xVisiumSpatialTranscriptomics_AuxiliaryFiles</text>
-</g>
-<!-- _10xVisiumSpatialTranscriptomics_RNA_seqLevel2 -->
-<g id="node27" class="node">
-<title>_10xVisiumSpatialTranscriptomics_RNA_seqLevel2</title>
-<ellipse fill="none" stroke="#000000" cx="5913.5404" cy="-366" rx="252.6553" ry="18"/>
-<text text-anchor="middle" x="5913.5404" y="-362.3" font-family="Times,serif" font-size="14.00" fill="#000000">_10xVisiumSpatialTranscriptomics_RNA_seqLevel2</text>
-</g>
-<!-- _10xVisiumSpatialTranscriptomics_AuxiliaryFiles&#45;&gt;_10xVisiumSpatialTranscriptomics_RNA_seqLevel2 -->
-<g id="edge69" class="edge">
-<title>_10xVisiumSpatialTranscriptomics_AuxiliaryFiles&#45;&gt;_10xVisiumSpatialTranscriptomics_RNA_seqLevel2</title>
-<path fill="none" stroke="#000000" d="M6083.9763,-435.2894C6050.0971,-421.516 6002.9383,-402.344 5966.8133,-387.6577"/>
-<polygon fill="#000000" stroke="#000000" points="5967.9923,-384.3588 5957.4104,-383.835 5965.3559,-390.8435 5967.9923,-384.3588"/>
-<text text-anchor="middle" x="6107.5404" y="-405.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
-</g>
-<!-- _10xVisiumSpatialTranscriptomics_RNA_seqLevel1 -->
-<g id="node72" class="node">
-<title>_10xVisiumSpatialTranscriptomics_RNA_seqLevel1</title>
-<ellipse fill="none" stroke="#000000" cx="6117.5404" cy="-279" rx="252.6553" ry="18"/>
-<text text-anchor="middle" x="6117.5404" y="-275.3" font-family="Times,serif" font-size="14.00" fill="#000000">_10xVisiumSpatialTranscriptomics_RNA_seqLevel1</text>
-</g>
-<!-- _10xVisiumSpatialTranscriptomics_AuxiliaryFiles&#45;&gt;_10xVisiumSpatialTranscriptomics_RNA_seqLevel1 -->
-<g id="edge68" class="edge">
-<title>_10xVisiumSpatialTranscriptomics_AuxiliaryFiles&#45;&gt;_10xVisiumSpatialTranscriptomics_RNA_seqLevel1</title>
-<path fill="none" stroke="#000000" d="M6168.5155,-435.0843C6175.3435,-430.2265 6181.5075,-424.2498 6185.5404,-417 6197.1389,-396.1499 6240.8734,-412.4129 6180.5404,-315 6177.7514,-310.497 6174.179,-306.502 6170.1559,-302.9696"/>
-<polygon fill="#000000" stroke="#000000" points="6172.0307,-299.9984 6161.9509,-296.735 6167.7956,-305.5719 6172.0307,-299.9984"/>
-<text text-anchor="middle" x="6286.5404" y="-362.3" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
-</g>
-<!-- NeuroblastomaandGliomaTier3 -->
-<g id="node25" class="node">
-<title>NeuroblastomaandGliomaTier3</title>
-<ellipse fill="none" stroke="#000000" cx="1068.5404" cy="-192" rx="157.0724" ry="18"/>
-<text text-anchor="middle" x="1068.5404" y="-188.3" font-family="Times,serif" font-size="14.00" fill="#000000">NeuroblastomaandGliomaTier3</text>
-</g>
-<!-- NeuroblastomaandGliomaTier3&#45;&gt;Patient -->
-<g id="edge83" class="edge">
-<title>NeuroblastomaandGliomaTier3&#45;&gt;Patient</title>
-<path fill="none" stroke="#000000" d="M1121.6062,-174.9837C1159.3952,-163.5514 1211.5961,-149.1387 1258.5404,-141 1397.2118,-116.9587 1563.1579,-108.9007 1647.1222,-106.2545"/>
-<polygon fill="#000000" stroke="#000000" points="1647.3026,-109.7507 1657.1926,-105.9508 1647.0916,-102.7539 1647.3026,-109.7507"/>
-<text text-anchor="middle" x="1332.5404" y="-144.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
-</g>
-<!-- PancreaticCancerTier3 -->
-<g id="node26" class="node">
-<title>PancreaticCancerTier3</title>
-<ellipse fill="none" stroke="#000000" cx="1362.5404" cy="-192" rx="118.8789" ry="18"/>
-<text text-anchor="middle" x="1362.5404" y="-188.3" font-family="Times,serif" font-size="14.00" fill="#000000">PancreaticCancerTier3</text>
-</g>
-<!-- PancreaticCancerTier3&#45;&gt;Patient -->
-<g id="edge84" class="edge">
-<title>PancreaticCancerTier3&#45;&gt;Patient</title>
-<path fill="none" stroke="#000000" d="M1383.6633,-174.2117C1398.3804,-162.8151 1418.9874,-148.7544 1439.5404,-141 1476.5958,-127.0194 1582.6952,-115.5326 1647.9512,-109.5277"/>
-<polygon fill="#000000" stroke="#000000" points="1648.4138,-113.0003 1658.0569,-108.6115 1647.7817,-106.0289 1648.4138,-113.0003"/>
-<text text-anchor="middle" x="1513.5404" y="-144.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
-</g>
-<!-- _10xVisiumSpatialTranscriptomics_RNA_seqLevel2&#45;&gt;_10xVisiumSpatialTranscriptomics_RNA_seqLevel1 -->
-<g id="edge82" class="edge">
-<title>_10xVisiumSpatialTranscriptomics_RNA_seqLevel2&#45;&gt;_10xVisiumSpatialTranscriptomics_RNA_seqLevel1</title>
-<path fill="none" stroke="#000000" d="M5955.3151,-348.1843C5987.4933,-334.4612 6032.1303,-315.4249 6066.4379,-300.7937"/>
-<polygon fill="#000000" stroke="#000000" points="6067.9961,-303.9342 6075.8215,-296.7919 6065.2501,-297.4953 6067.9961,-303.9342"/>
-<text text-anchor="middle" x="6102.5404" y="-318.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
-</g>
-<!-- MassSpectrometryLevel2 -->
-<g id="node28" class="node">
-<title>MassSpectrometryLevel2</title>
-<ellipse fill="none" stroke="#000000" cx="3736.5404" cy="-366" rx="130.777" ry="18"/>
-<text text-anchor="middle" x="3736.5404" y="-362.3" font-family="Times,serif" font-size="14.00" fill="#000000">MassSpectrometryLevel2</text>
-</g>
-<!-- MassSpectrometryLevel1 -->
-<g id="node52" class="node">
-<title>MassSpectrometryLevel1</title>
-<ellipse fill="none" stroke="#000000" cx="3736.5404" cy="-279" rx="130.777" ry="18"/>
-<text text-anchor="middle" x="3736.5404" y="-275.3" font-family="Times,serif" font-size="14.00" fill="#000000">MassSpectrometryLevel1</text>
-</g>
-<!-- MassSpectrometryLevel2&#45;&gt;MassSpectrometryLevel1 -->
-<g id="edge81" class="edge">
-<title>MassSpectrometryLevel2&#45;&gt;MassSpectrometryLevel1</title>
-<path fill="none" stroke="#000000" d="M3736.5404,-347.9735C3736.5404,-336.1918 3736.5404,-320.5607 3736.5404,-307.1581"/>
-<polygon fill="#000000" stroke="#000000" points="3740.0405,-307.0033 3736.5404,-297.0034 3733.0405,-307.0034 3740.0405,-307.0033"/>
-<text text-anchor="middle" x="3810.5404" y="-318.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
-</g>
-<!-- ImagingLevel4 -->
-<g id="node29" class="node">
-<title>ImagingLevel4</title>
-<ellipse fill="none" stroke="#000000" cx="4156.5404" cy="-453" rx="80.6858" ry="18"/>
-<text text-anchor="middle" x="4156.5404" y="-449.3" font-family="Times,serif" font-size="14.00" fill="#000000">ImagingLevel4</text>
-</g>
-<!-- ImagingLevel4&#45;&gt;ImagingLevel3Channels -->
-<g id="edge80" class="edge">
-<title>ImagingLevel4&#45;&gt;ImagingLevel3Channels</title>
-<path fill="none" stroke="#000000" d="M4158.3027,-434.7558C4160.3683,-423.6171 4164.8457,-410.0197 4174.5404,-402 4177.356,-399.6708 4248.4528,-389.0568 4312.042,-379.9522"/>
-<polygon fill="#000000" stroke="#000000" points="4312.7669,-383.3843 4322.1716,-378.5054 4311.7771,-376.4546 4312.7669,-383.3843"/>
-<text text-anchor="middle" x="4248.5404" y="-405.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
-</g>
-<!-- ImagingLevel3Segmentation -->
-<g id="node31" class="node">
-<title>ImagingLevel3Segmentation</title>
-<ellipse fill="none" stroke="#000000" cx="4669.5404" cy="-453" rx="145.6742" ry="18"/>
-<text text-anchor="middle" x="4669.5404" y="-449.3" font-family="Times,serif" font-size="14.00" fill="#000000">ImagingLevel3Segmentation</text>
-</g>
-<!-- ImagingLevel3Segmentation&#45;&gt;ImagingLevel2 -->
-<g id="edge79" class="edge">
-<title>ImagingLevel3Segmentation&#45;&gt;ImagingLevel2</title>
-<path fill="none" stroke="#000000" d="M4666.4324,-434.9735C4664.401,-423.1918 4661.706,-407.5607 4659.3952,-394.1581"/>
-<polygon fill="#000000" stroke="#000000" points="4662.7927,-393.2633 4657.6444,-384.0034 4655.8944,-394.4527 4662.7927,-393.2633"/>
-<text text-anchor="middle" x="4737.5404" y="-405.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
-</g>
-<!-- ScATAC_seqLevel2 -->
-<g id="node32" class="node">
-<title>ScATAC_seqLevel2</title>
-<ellipse fill="none" stroke="#000000" cx="2163.5404" cy="-366" rx="100.9827" ry="18"/>
-<text text-anchor="middle" x="2163.5404" y="-362.3" font-family="Times,serif" font-size="14.00" fill="#000000">ScATAC_seqLevel2</text>
-</g>
-<!-- ScATAC_seqLevel2&#45;&gt;ScATAC_seqLevel1 -->
-<g id="edge64" class="edge">
-<title>ScATAC_seqLevel2&#45;&gt;ScATAC_seqLevel1</title>
-<path fill="none" stroke="#000000" d="M2156.2347,-347.8627C2152.145,-338.03 2146.8184,-325.7292 2141.5404,-315 2140.0886,-312.0489 2138.5128,-308.996 2136.9044,-305.9731"/>
-<polygon fill="#000000" stroke="#000000" points="2139.938,-304.2255 2132.073,-297.1267 2133.7945,-307.5807 2139.938,-304.2255"/>
-<text text-anchor="middle" x="2222.5404" y="-318.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
-</g>
-<!-- LungCancerTier3 -->
-<g id="node34" class="node">
-<title>LungCancerTier3</title>
-<ellipse fill="none" stroke="#000000" cx="1592.5404" cy="-192" rx="92.8835" ry="18"/>
-<text text-anchor="middle" x="1592.5404" y="-188.3" font-family="Times,serif" font-size="14.00" fill="#000000">LungCancerTier3</text>
-</g>
-<!-- LungCancerTier3&#45;&gt;Patient -->
-<g id="edge62" class="edge">
-<title>LungCancerTier3&#45;&gt;Patient</title>
-<path fill="none" stroke="#000000" d="M1589.7778,-173.6981C1589.2022,-163.0919 1590.3797,-150.0823 1597.5404,-141 1604.8636,-131.7115 1629.4299,-122.9868 1652.8472,-116.4533"/>
-<polygon fill="#000000" stroke="#000000" points="1654.0088,-119.7655 1662.7593,-113.7921 1652.1937,-113.0049 1654.0088,-119.7655"/>
-<text text-anchor="middle" x="1671.5404" y="-144.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
-</g>
-<!-- Slide_seqLevel1 -->
-<g id="node35" class="node">
-<title>Slide_seqLevel1</title>
-<ellipse fill="none" stroke="#000000" cx="2910.5404" cy="-279" rx="86.3847" ry="18"/>
-<text text-anchor="middle" x="2910.5404" y="-275.3" font-family="Times,serif" font-size="14.00" fill="#000000">Slide_seqLevel1</text>
-</g>
-<!-- Slide_seqLevel1&#45;&gt;Biospecimen -->
-<g id="edge63" class="edge">
-<title>Slide_seqLevel1&#45;&gt;Biospecimen</title>
-<path fill="none" stroke="#000000" d="M2922.535,-260.7448C2931.115,-249.3017 2943.7367,-235.3686 2958.5404,-228 3024.9755,-194.9314 3051.3505,-222.2637 3124.5404,-210 3130.4062,-209.0171 3136.4894,-207.8679 3142.5582,-206.6341"/>
-<polygon fill="#000000" stroke="#000000" points="3143.654,-209.9801 3152.7169,-204.4923 3142.2099,-203.1306 3143.654,-209.9801"/>
-<text text-anchor="middle" x="3032.5404" y="-231.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
-</g>
-<!-- ElectronMicroscopyLevel3&#45;&gt;ElectronMicroscopyLevel2 -->
-<g id="edge61" class="edge">
-<title>ElectronMicroscopyLevel3&#45;&gt;ElectronMicroscopyLevel2</title>
-<path fill="none" stroke="#000000" d="M6716.5404,-434.9735C6716.5404,-423.1918 6716.5404,-407.5607 6716.5404,-394.1581"/>
-<polygon fill="#000000" stroke="#000000" points="6720.0405,-394.0033 6716.5404,-384.0034 6713.0405,-394.0034 6720.0405,-394.0033"/>
-<text text-anchor="middle" x="6790.5404" y="-405.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
-</g>
-<!-- ScATAC_seqLevel3&#45;&gt;ScATAC_seqLevel2 -->
-<g id="edge60" class="edge">
-<title>ScATAC_seqLevel3&#45;&gt;ScATAC_seqLevel2</title>
-<path fill="none" stroke="#000000" d="M2163.5404,-434.9735C2163.5404,-423.1918 2163.5404,-407.5607 2163.5404,-394.1581"/>
-<polygon fill="#000000" stroke="#000000" points="2167.0405,-394.0033 2163.5404,-384.0034 2160.0405,-394.0034 2167.0405,-394.0033"/>
-<text text-anchor="middle" x="2237.5404" y="-405.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
-</g>
-<!-- BulkRNA_seqLevel1 -->
-<g id="node48" class="node">
-<title>BulkRNA_seqLevel1</title>
-<ellipse fill="none" stroke="#000000" cx="3481.5404" cy="-279" rx="106.6812" ry="18"/>
-<text text-anchor="middle" x="3481.5404" y="-275.3" font-family="Times,serif" font-size="14.00" fill="#000000">BulkRNA_seqLevel1</text>
-</g>
-<!-- BulkRNA_seqLevel2&#45;&gt;BulkRNA_seqLevel1 -->
-<g id="edge66" class="edge">
-<title>BulkRNA_seqLevel2&#45;&gt;BulkRNA_seqLevel1</title>
-<path fill="none" stroke="#000000" d="M3481.5404,-347.9735C3481.5404,-336.1918 3481.5404,-320.5607 3481.5404,-307.1581"/>
-<polygon fill="#000000" stroke="#000000" points="3485.0405,-307.0033 3481.5404,-297.0034 3478.0405,-307.0034 3485.0405,-307.0033"/>
-<text text-anchor="middle" x="3555.5404" y="-318.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
-</g>
-<!-- ScRNA_seqLevel1 -->
-<g id="node42" class="node">
-<title>ScRNA_seqLevel1</title>
-<ellipse fill="none" stroke="#000000" cx="3111.5404" cy="-279" rx="96.6831" ry="18"/>
-<text text-anchor="middle" x="3111.5404" y="-275.3" font-family="Times,serif" font-size="14.00" fill="#000000">ScRNA_seqLevel1</text>
-</g>
-<!-- ScRNA_seqLevel1&#45;&gt;Biospecimen -->
-<g id="edge65" class="edge">
-<title>ScRNA_seqLevel1&#45;&gt;Biospecimen</title>
-<path fill="none" stroke="#000000" d="M3108.5475,-260.8758C3107.8096,-250.3326 3108.7347,-237.3267 3115.5404,-228 3121.8078,-219.4109 3130.4926,-212.8649 3139.9815,-207.8776"/>
-<polygon fill="#000000" stroke="#000000" points="3141.6805,-210.9475 3149.2728,-203.5578 3138.7294,-204.6 3141.6805,-210.9475"/>
-<text text-anchor="middle" x="3189.5404" y="-231.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
-</g>
-<!-- NanoStringGeoMxDSPSpatialTranscriptomicsLevel3 -->
-<g id="node43" class="node">
-<title>NanoStringGeoMxDSPSpatialTranscriptomicsLevel3</title>
-<ellipse fill="none" stroke="#000000" cx="5150.5404" cy="-453" rx="258.0542" ry="18"/>
-<text text-anchor="middle" x="5150.5404" y="-449.3" font-family="Times,serif" font-size="14.00" fill="#000000">NanoStringGeoMxDSPSpatialTranscriptomicsLevel3</text>
-</g>
-<!-- NanoStringGeoMxDSPSpatialTranscriptomicsLevel3&#45;&gt;ImagingLevel2 -->
-<g id="edge14" class="edge">
-<title>NanoStringGeoMxDSPSpatialTranscriptomicsLevel3&#45;&gt;ImagingLevel2</title>
-<path fill="none" stroke="#000000" d="M4981.7065,-439.3724C4924.468,-433.4571 4868.2665,-425.8458 4841.5404,-417 4828.8753,-412.8081 4827.9704,-406.8445 4815.5404,-402 4799.0847,-395.5865 4761.1196,-386.9976 4726.188,-379.8177"/>
-<polygon fill="#000000" stroke="#000000" points="4726.4528,-376.2999 4715.9557,-377.7361 4725.0573,-383.1594 4726.4528,-376.2999"/>
-<text text-anchor="middle" x="4915.5404" y="-405.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
-</g>
-<!-- NanoStringGeoMxDSPROIDCCSegmentAnnotationMetadata -->
-<g id="node60" class="node">
-<title>NanoStringGeoMxDSPROIDCCSegmentAnnotationMetadata</title>
-<ellipse fill="none" stroke="#000000" cx="4761.5404" cy="-279" rx="295.1477" ry="18"/>
-<text text-anchor="middle" x="4761.5404" y="-275.3" font-family="Times,serif" font-size="14.00" fill="#000000">NanoStringGeoMxDSPROIDCCSegmentAnnotationMetadata</text>
-</g>
-<!-- NanoStringGeoMxDSPSpatialTranscriptomicsLevel3&#45;&gt;NanoStringGeoMxDSPROIDCCSegmentAnnotationMetadata -->
-<g id="edge13" class="edge">
-<title>NanoStringGeoMxDSPSpatialTranscriptomicsLevel3&#45;&gt;NanoStringGeoMxDSPROIDCCSegmentAnnotationMetadata</title>
-<path fill="none" stroke="#000000" d="M5104.0499,-435.2915C5072.2687,-423.9296 5028.9291,-409.8775 4989.5404,-402 4944.9146,-393.0752 4819.8431,-413.9071 4785.5404,-384 4763.9316,-365.1603 4759.5971,-331.2273 4759.5967,-307.036"/>
-<polygon fill="#000000" stroke="#000000" points="4763.0961,-307.0986 4759.8392,-297.0168 4756.0981,-306.9291 4763.0961,-307.0986"/>
-<text text-anchor="middle" x="4859.5404" y="-362.3" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
-</g>
-<!-- NanoStringGeoMxDSPROIRCCSegmentAnnotationMetadata -->
-<g id="node63" class="node">
-<title>NanoStringGeoMxDSPROIRCCSegmentAnnotationMetadata</title>
-<ellipse fill="none" stroke="#000000" cx="5552.5404" cy="-279" rx="294.3478" ry="18"/>
-<text text-anchor="middle" x="5552.5404" y="-275.3" font-family="Times,serif" font-size="14.00" fill="#000000">NanoStringGeoMxDSPROIRCCSegmentAnnotationMetadata</text>
-</g>
-<!-- NanoStringGeoMxDSPSpatialTranscriptomicsLevel3&#45;&gt;NanoStringGeoMxDSPROIRCCSegmentAnnotationMetadata -->
-<g id="edge15" class="edge">
-<title>NanoStringGeoMxDSPSpatialTranscriptomicsLevel3&#45;&gt;NanoStringGeoMxDSPROIRCCSegmentAnnotationMetadata</title>
-<path fill="none" stroke="#000000" d="M5263.4321,-436.775C5340.224,-424.182 5433.7893,-405.3168 5467.5404,-384 5483.8231,-373.716 5514.1953,-333.4154 5533.8789,-305.8423"/>
-<polygon fill="#000000" stroke="#000000" points="5536.9404,-307.5753 5539.8627,-297.3914 5531.2275,-303.5301 5536.9404,-307.5753"/>
-<text text-anchor="middle" x="5576.5404" y="-362.3" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
-</g>
-<!-- NanoStringGeoMxDSPSpatialTranscriptomicsLevel1 -->
-<g id="node74" class="node">
-<title>NanoStringGeoMxDSPSpatialTranscriptomicsLevel1</title>
-<ellipse fill="none" stroke="#000000" cx="5200.5404" cy="-366" rx="258.0542" ry="18"/>
-<text text-anchor="middle" x="5200.5404" y="-362.3" font-family="Times,serif" font-size="14.00" fill="#000000">NanoStringGeoMxDSPSpatialTranscriptomicsLevel1</text>
-</g>
-<!-- NanoStringGeoMxDSPSpatialTranscriptomicsLevel3&#45;&gt;NanoStringGeoMxDSPSpatialTranscriptomicsLevel1 -->
-<g id="edge12" class="edge">
-<title>NanoStringGeoMxDSPSpatialTranscriptomicsLevel3&#45;&gt;NanoStringGeoMxDSPSpatialTranscriptomicsLevel1</title>
-<path fill="none" stroke="#000000" d="M5160.9004,-434.9735C5167.8727,-422.8418 5177.1906,-406.6287 5185.0405,-392.9698"/>
-<polygon fill="#000000" stroke="#000000" points="5188.2453,-394.4175 5190.1936,-384.0034 5182.1762,-390.9295 5188.2453,-394.4175"/>
-<text text-anchor="middle" x="5252.5404" y="-405.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
-</g>
-<!-- OtherAssay -->
-<g id="node45" class="node">
-<title>OtherAssay</title>
-<ellipse fill="none" stroke="#000000" cx="3291.5404" cy="-279" rx="65.7887" ry="18"/>
-<text text-anchor="middle" x="3291.5404" y="-275.3" font-family="Times,serif" font-size="14.00" fill="#000000">OtherAssay</text>
-</g>
-<!-- OtherAssay&#45;&gt;Biospecimen -->
-<g id="edge10" class="edge">
-<title>OtherAssay&#45;&gt;Biospecimen</title>
-<path fill="none" stroke="#000000" d="M3286.1175,-260.8677C3282.2571,-250.3216 3276.2035,-237.3156 3267.5404,-228 3262.1686,-222.2237 3255.6548,-217.1366 3248.8648,-212.743"/>
-<polygon fill="#000000" stroke="#000000" points="3250.5601,-209.6787 3240.1815,-207.5489 3246.9667,-215.686 3250.5601,-209.6787"/>
-<text text-anchor="middle" x="3351.5404" y="-231.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
-</g>
-<!-- Biospecimen&#45;&gt;Patient -->
-<g id="edge11" class="edge">
-<title>Biospecimen&#45;&gt;Patient</title>
-<path fill="none" stroke="#000000" d="M3163.3078,-177.1534C3128.058,-164.9201 3075.1616,-148.4212 3027.5404,-141 2900.7825,-121.2462 1990.0888,-108.6061 1756.1864,-105.6618"/>
-<polygon fill="#000000" stroke="#000000" points="1755.9296,-102.1584 1745.8865,-105.5329 1755.8419,-109.1579 1755.9296,-102.1584"/>
-<text text-anchor="middle" x="3165.5404" y="-144.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
-</g>
-<!-- MassSpectrometryLevel4 -->
-<g id="node47" class="node">
-<title>MassSpectrometryLevel4</title>
-<ellipse fill="none" stroke="#000000" cx="3736.5404" cy="-540" rx="130.777" ry="18"/>
-<text text-anchor="middle" x="3736.5404" y="-536.3" font-family="Times,serif" font-size="14.00" fill="#000000">MassSpectrometryLevel4</text>
-</g>
-<!-- MassSpectrometryLevel3 -->
-<g id="node75" class="node">
-<title>MassSpectrometryLevel3</title>
-<ellipse fill="none" stroke="#000000" cx="3736.5404" cy="-453" rx="130.777" ry="18"/>
-<text text-anchor="middle" x="3736.5404" y="-449.3" font-family="Times,serif" font-size="14.00" fill="#000000">MassSpectrometryLevel3</text>
-</g>
-<!-- MassSpectrometryLevel4&#45;&gt;MassSpectrometryLevel3 -->
-<g id="edge20" class="edge">
-<title>MassSpectrometryLevel4&#45;&gt;MassSpectrometryLevel3</title>
-<path fill="none" stroke="#000000" d="M3736.5404,-521.9735C3736.5404,-510.1918 3736.5404,-494.5607 3736.5404,-481.1581"/>
-<polygon fill="#000000" stroke="#000000" points="3740.0405,-481.0033 3736.5404,-471.0034 3733.0405,-481.0034 3740.0405,-481.0033"/>
-<text text-anchor="middle" x="3810.5404" y="-492.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
+<title>Biospecimen</title>
+<ellipse fill="none" stroke="#000000" cx="3559.5311" cy="-192" rx="70.3881" ry="18"/>
+<text text-anchor="middle" x="3559.5311" y="-188.3" font-family="Times,serif" font-size="14.00" fill="#000000">Biospecimen</text>
 </g>
 <!-- BulkRNA_seqLevel1&#45;&gt;Biospecimen -->
-<g id="edge21" class="edge">
+<g id="edge64" class="edge">
 <title>BulkRNA_seqLevel1&#45;&gt;Biospecimen</title>
-<path fill="none" stroke="#000000" d="M3468.0978,-260.9894C3458.6135,-249.6495 3444.8975,-235.7397 3429.5404,-228 3403.8636,-215.0594 3334.976,-205.2437 3279.9482,-199.1561"/>
-<polygon fill="#000000" stroke="#000000" points="3280.1667,-195.6594 3269.8481,-198.0628 3279.4133,-202.6187 3280.1667,-195.6594"/>
-<text text-anchor="middle" x="3525.5404" y="-231.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
+<path fill="none" stroke="#000000" d="M5547.367,-262.3131C5516.1265,-250.2334 5471.3695,-234.87 5430.5311,-228 5252.658,-198.0775 3975.4265,-192.9786 3640.027,-192.1526"/>
+<polygon fill="#000000" stroke="#000000" points="3639.9165,-188.6525 3629.9081,-192.1283 3639.8997,-195.6524 3639.9165,-188.6525"/>
+<text text-anchor="middle" x="5562.5311" y="-231.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
 </g>
-<!-- OvarianCancerTier3 -->
-<g id="node49" class="node">
-<title>OvarianCancerTier3</title>
-<ellipse fill="none" stroke="#000000" cx="1810.5404" cy="-192" rx="106.6812" ry="18"/>
-<text text-anchor="middle" x="1810.5404" y="-188.3" font-family="Times,serif" font-size="14.00" fill="#000000">OvarianCancerTier3</text>
+<!-- ImagingLevel3Image -->
+<g id="node2" class="node">
+<title>ImagingLevel3Image</title>
+<ellipse fill="none" stroke="#000000" cx="735.5311" cy="-453" rx="109.6807" ry="18"/>
+<text text-anchor="middle" x="735.5311" y="-449.3" font-family="Times,serif" font-size="14.00" fill="#000000">ImagingLevel3Image</text>
 </g>
-<!-- OvarianCancerTier3&#45;&gt;Patient -->
-<g id="edge23" class="edge">
-<title>OvarianCancerTier3&#45;&gt;Patient</title>
-<path fill="none" stroke="#000000" d="M1788.2196,-174.1843C1771.2598,-160.6477 1747.8229,-141.9411 1729.5952,-127.3924"/>
-<polygon fill="#000000" stroke="#000000" points="1731.628,-124.5367 1721.6289,-121.034 1727.2612,-130.0077 1731.628,-124.5367"/>
-<text text-anchor="middle" x="1837.5404" y="-144.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
+<!-- ImagingLevel2 -->
+<g id="node30" class="node">
+<title>ImagingLevel2</title>
+<ellipse fill="none" stroke="#000000" cx="965.5311" cy="-366" rx="80.6858" ry="18"/>
+<text text-anchor="middle" x="965.5311" y="-362.3" font-family="Times,serif" font-size="14.00" fill="#000000">ImagingLevel2</text>
 </g>
-<!-- Slide_seqLevel2 -->
-<g id="node50" class="node">
-<title>Slide_seqLevel2</title>
-<ellipse fill="none" stroke="#000000" cx="2910.5404" cy="-366" rx="86.3847" ry="18"/>
-<text text-anchor="middle" x="2910.5404" y="-362.3" font-family="Times,serif" font-size="14.00" fill="#000000">Slide_seqLevel2</text>
+<!-- ImagingLevel3Image&#45;&gt;ImagingLevel2 -->
+<g id="edge56" class="edge">
+<title>ImagingLevel3Image&#45;&gt;ImagingLevel2</title>
+<path fill="none" stroke="#000000" d="M787.1736,-436.9635C801.9251,-431.5048 817.7324,-424.7825 831.5311,-417 840.9022,-411.7147 841.0171,-407.0238 850.5311,-402 865.9184,-393.8747 883.4468,-387.229 900.1004,-381.9592"/>
+<polygon fill="#000000" stroke="#000000" points="901.2332,-385.2731 909.782,-379.0146 899.1963,-378.576 901.2332,-385.2731"/>
+<text text-anchor="middle" x="924.5311" y="-405.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
 </g>
-<!-- Slide_seqLevel2&#45;&gt;Slide_seqLevel1 -->
-<g id="edge22" class="edge">
-<title>Slide_seqLevel2&#45;&gt;Slide_seqLevel1</title>
-<path fill="none" stroke="#000000" d="M2910.5404,-347.9735C2910.5404,-336.1918 2910.5404,-320.5607 2910.5404,-307.1581"/>
-<polygon fill="#000000" stroke="#000000" points="2914.0405,-307.0033 2910.5404,-297.0034 2907.0405,-307.0034 2914.0405,-307.0033"/>
-<text text-anchor="middle" x="2984.5404" y="-318.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
+<!-- ImagingLevel3Channels -->
+<g id="node42" class="node">
+<title>ImagingLevel3Channels</title>
+<ellipse fill="none" stroke="#000000" cx="656.5311" cy="-366" rx="124.2781" ry="18"/>
+<text text-anchor="middle" x="656.5311" y="-362.3" font-family="Times,serif" font-size="14.00" fill="#000000">ImagingLevel3Channels</text>
 </g>
-<!-- SRRSBiospecimen -->
-<g id="node51" class="node">
-<title>SRRSBiospecimen</title>
-<ellipse fill="none" stroke="#000000" cx="2031.5404" cy="-192" rx="96.6831" ry="18"/>
-<text text-anchor="middle" x="2031.5404" y="-188.3" font-family="Times,serif" font-size="14.00" fill="#000000">SRRSBiospecimen</text>
+<!-- ImagingLevel3Image&#45;&gt;ImagingLevel3Channels -->
+<g id="edge57" class="edge">
+<title>ImagingLevel3Image&#45;&gt;ImagingLevel3Channels</title>
+<path fill="none" stroke="#000000" d="M705.2168,-435.6128C697.5421,-430.2925 689.7277,-423.9792 683.5311,-417 677.4115,-410.1077 672.2034,-401.5826 668.0419,-393.4883"/>
+<polygon fill="#000000" stroke="#000000" points="671.1214,-391.8154 663.6455,-384.308 664.808,-394.8389 671.1214,-391.8154"/>
+<text text-anchor="middle" x="757.5311" y="-405.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
 </g>
-<!-- SRRSBiospecimen&#45;&gt;Patient -->
-<g id="edge18" class="edge">
-<title>SRRSBiospecimen&#45;&gt;Patient</title>
-<path fill="none" stroke="#000000" d="M1998.8636,-175.0237C1976.0637,-163.8349 1944.628,-149.6941 1915.5404,-141 1862.0718,-125.0186 1798.8327,-115.4788 1755.0307,-110.2766"/>
-<polygon fill="#000000" stroke="#000000" points="1755.2208,-106.7754 1744.8859,-109.108 1754.4196,-113.7294 1755.2208,-106.7754"/>
-<text text-anchor="middle" x="2029.5404" y="-144.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
+<!-- BulkMethylation_seqLevel3 -->
+<g id="node3" class="node">
+<title>BulkMethylation_seqLevel3</title>
+<ellipse fill="none" stroke="#000000" cx="272.5311" cy="-453" rx="140.2752" ry="18"/>
+<text text-anchor="middle" x="272.5311" y="-449.3" font-family="Times,serif" font-size="14.00" fill="#000000">BulkMethylation_seqLevel3</text>
 </g>
-<!-- MassSpectrometryLevel1&#45;&gt;Biospecimen -->
-<g id="edge19" class="edge">
-<title>MassSpectrometryLevel1&#45;&gt;Biospecimen</title>
-<path fill="none" stroke="#000000" d="M3699.5743,-261.6469C3673.3581,-250.1363 3637.0253,-235.7683 3603.5404,-228 3544.5006,-214.3031 3381.1812,-202.6071 3282.4403,-196.511"/>
-<polygon fill="#000000" stroke="#000000" points="3282.4024,-193.0022 3272.2073,-195.885 3281.9749,-199.9892 3282.4024,-193.0022"/>
-<text text-anchor="middle" x="3726.5404" y="-231.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
+<!-- BulkMethylation_seqLevel3&#45;&gt;Biospecimen -->
+<g id="edge62" class="edge">
+<title>BulkMethylation_seqLevel3&#45;&gt;Biospecimen</title>
+<path fill="none" stroke="#000000" d="M357.4882,-438.622C385.7835,-432.6258 413.0265,-425.1552 424.5311,-417 491.718,-369.373 454.1638,-303.7887 524.5311,-261 661.0572,-177.9816 722.9405,-235.894 882.5311,-228 1170.8521,-213.7385 3193.78,-243.2608 3480.5311,-210 3487.1028,-209.2377 3493.9262,-208.148 3500.6871,-206.8769"/>
+<polygon fill="#000000" stroke="#000000" points="3501.3972,-210.3043 3510.5111,-204.9018 3500.0174,-203.4416 3501.3972,-210.3043"/>
+<text text-anchor="middle" x="554.5311" y="-318.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
 </g>
-<!-- BulkMethylation_seqLevel2&#45;&gt;Biospecimen -->
-<g id="edge17" class="edge">
-<title>BulkMethylation_seqLevel2&#45;&gt;Biospecimen</title>
-<path fill="none" stroke="#000000" d="M1692.23,-358.9211C1589.6202,-348.5992 1471.933,-323.2457 1527.5404,-261 1571.0459,-212.3008 1754.3686,-232.122 1819.5404,-228 2108.9896,-209.6928 2836.5607,-244.4054 3124.5404,-210 3130.865,-209.2444 3137.4239,-208.1929 3143.9362,-206.9739"/>
-<polygon fill="#000000" stroke="#000000" points="3144.974,-210.3356 3154.0913,-204.9388 3143.5985,-203.4721 3144.974,-210.3356"/>
-<text text-anchor="middle" x="1601.5404" y="-275.3" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
+<!-- BulkMethylation_seqLevel2 -->
+<g id="node55" class="node">
+<title>BulkMethylation_seqLevel2</title>
+<ellipse fill="none" stroke="#000000" cx="272.5311" cy="-366" rx="140.2752" ry="18"/>
+<text text-anchor="middle" x="272.5311" y="-362.3" font-family="Times,serif" font-size="14.00" fill="#000000">BulkMethylation_seqLevel2</text>
 </g>
-<!-- BulkMethylation_seqLevel1 -->
-<g id="node76" class="node">
-<title>BulkMethylation_seqLevel1</title>
-<ellipse fill="none" stroke="#000000" cx="1824.5404" cy="-279" rx="140.2752" ry="18"/>
-<text text-anchor="middle" x="1824.5404" y="-275.3" font-family="Times,serif" font-size="14.00" fill="#000000">BulkMethylation_seqLevel1</text>
+<!-- BulkMethylation_seqLevel3&#45;&gt;BulkMethylation_seqLevel2 -->
+<g id="edge61" class="edge">
+<title>BulkMethylation_seqLevel3&#45;&gt;BulkMethylation_seqLevel2</title>
+<path fill="none" stroke="#000000" d="M272.5311,-434.9735C272.5311,-423.1918 272.5311,-407.5607 272.5311,-394.1581"/>
+<polygon fill="#000000" stroke="#000000" points="276.0311,-394.0033 272.5311,-384.0034 269.0311,-394.0034 276.0311,-394.0033"/>
+<text text-anchor="middle" x="346.5311" y="-405.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
 </g>
-<!-- BulkMethylation_seqLevel2&#45;&gt;BulkMethylation_seqLevel1 -->
-<g id="edge16" class="edge">
-<title>BulkMethylation_seqLevel2&#45;&gt;BulkMethylation_seqLevel1</title>
-<path fill="none" stroke="#000000" d="M1821.7421,-347.5827C1821.8886,-337.8853 1822.1347,-325.7965 1822.5404,-315 1822.6316,-312.5722 1822.7411,-310.0531 1822.8613,-307.5261"/>
-<polygon fill="#000000" stroke="#000000" points="1826.3685,-307.4774 1823.3958,-297.3082 1819.3781,-307.1117 1826.3685,-307.4774"/>
-<text text-anchor="middle" x="1896.5404" y="-318.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
+<!-- Therapy -->
+<g id="node4" class="node">
+<title>Therapy</title>
+<ellipse fill="none" stroke="#000000" cx="2946.5311" cy="-18" rx="49.2915" ry="18"/>
+<text text-anchor="middle" x="2946.5311" y="-14.3" font-family="Times,serif" font-size="14.00" fill="#000000">Therapy</text>
+</g>
+<!-- MassSpectrometryLevel3 -->
+<g id="node5" class="node">
+<title>MassSpectrometryLevel3</title>
+<ellipse fill="none" stroke="#000000" cx="2333.5311" cy="-453" rx="130.777" ry="18"/>
+<text text-anchor="middle" x="2333.5311" y="-449.3" font-family="Times,serif" font-size="14.00" fill="#000000">MassSpectrometryLevel3</text>
+</g>
+<!-- MassSpectrometryLevel2 -->
+<g id="node6" class="node">
+<title>MassSpectrometryLevel2</title>
+<ellipse fill="none" stroke="#000000" cx="2333.5311" cy="-366" rx="130.777" ry="18"/>
+<text text-anchor="middle" x="2333.5311" y="-362.3" font-family="Times,serif" font-size="14.00" fill="#000000">MassSpectrometryLevel2</text>
+</g>
+<!-- MassSpectrometryLevel3&#45;&gt;MassSpectrometryLevel2 -->
+<g id="edge71" class="edge">
+<title>MassSpectrometryLevel3&#45;&gt;MassSpectrometryLevel2</title>
+<path fill="none" stroke="#000000" d="M2333.5311,-434.9735C2333.5311,-423.1918 2333.5311,-407.5607 2333.5311,-394.1581"/>
+<polygon fill="#000000" stroke="#000000" points="2337.0311,-394.0033 2333.5311,-384.0034 2330.0311,-394.0034 2337.0311,-394.0033"/>
+<text text-anchor="middle" x="2407.5311" y="-405.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
+</g>
+<!-- MassSpectrometryLevel1 -->
+<g id="node11" class="node">
+<title>MassSpectrometryLevel1</title>
+<ellipse fill="none" stroke="#000000" cx="2242.5311" cy="-279" rx="130.777" ry="18"/>
+<text text-anchor="middle" x="2242.5311" y="-275.3" font-family="Times,serif" font-size="14.00" fill="#000000">MassSpectrometryLevel1</text>
+</g>
+<!-- MassSpectrometryLevel2&#45;&gt;MassSpectrometryLevel1 -->
+<g id="edge72" class="edge">
+<title>MassSpectrometryLevel2&#45;&gt;MassSpectrometryLevel1</title>
+<path fill="none" stroke="#000000" d="M2314.6758,-347.9735C2301.3762,-335.2586 2283.3872,-318.0603 2268.6996,-304.0183"/>
+<polygon fill="#000000" stroke="#000000" points="2271.009,-301.384 2261.3622,-297.0034 2266.1717,-306.4437 2271.009,-301.384"/>
+<text text-anchor="middle" x="2367.5311" y="-318.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
 </g>
 <!-- ImagingLevel1 -->
-<g id="node68" class="node">
+<g id="node7" class="node">
 <title>ImagingLevel1</title>
-<ellipse fill="none" stroke="#000000" cx="4367.5404" cy="-279" rx="80.6858" ry="18"/>
-<text text-anchor="middle" x="4367.5404" y="-275.3" font-family="Times,serif" font-size="14.00" fill="#000000">ImagingLevel1</text>
+<ellipse fill="none" stroke="#000000" cx="614.5311" cy="-279" rx="80.6858" ry="18"/>
+<text text-anchor="middle" x="614.5311" y="-275.3" font-family="Times,serif" font-size="14.00" fill="#000000">ImagingLevel1</text>
 </g>
-<!-- ImagingLevel2&#45;&gt;ImagingLevel1 -->
-<g id="edge6" class="edge">
-<title>ImagingLevel2&#45;&gt;ImagingLevel1</title>
-<path fill="none" stroke="#000000" d="M4606.503,-351.4382C4556.6287,-336.3194 4478.598,-312.6656 4425.3719,-296.5308"/>
-<polygon fill="#000000" stroke="#000000" points="4426.3198,-293.1609 4415.7344,-293.6094 4424.289,-299.8599 4426.3198,-293.1609"/>
-<text text-anchor="middle" x="4602.5404" y="-318.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
+<!-- ImagingLevel1&#45;&gt;Biospecimen -->
+<g id="edge68" class="edge">
+<title>ImagingLevel1&#45;&gt;Biospecimen</title>
+<path fill="none" stroke="#000000" d="M671.4372,-266.1293C682.3697,-264.0801 693.7659,-262.2324 704.5311,-261 1181.1974,-206.4307 1303.853,-237.8782 1783.5311,-228 1972.0572,-224.1176 3293.261,-232.071 3480.5311,-210 3486.8569,-209.2545 3493.4165,-208.2095 3499.9294,-206.9944"/>
+<polygon fill="#000000" stroke="#000000" points="3500.9655,-210.3566 3510.0849,-204.9634 3499.5927,-203.4925 3500.9655,-210.3566"/>
+<text text-anchor="middle" x="1857.5311" y="-231.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
+</g>
+<!-- Diagnosis -->
+<g id="node8" class="node">
+<title>Diagnosis</title>
+<ellipse fill="none" stroke="#000000" cx="3117.5311" cy="-18" rx="55.7903" ry="18"/>
+<text text-anchor="middle" x="3117.5311" y="-14.3" font-family="Times,serif" font-size="14.00" fill="#000000">Diagnosis</text>
+</g>
+<!-- FollowUp -->
+<g id="node9" class="node">
+<title>FollowUp</title>
+<ellipse fill="none" stroke="#000000" cx="3288.5311" cy="-18" rx="54.6905" ry="18"/>
+<text text-anchor="middle" x="3288.5311" y="-14.3" font-family="Times,serif" font-size="14.00" fill="#000000">FollowUp</text>
+</g>
+<!-- _10xVisiumSpatialTranscriptomics_RNA_seqLevel2 -->
+<g id="node10" class="node">
+<title>_10xVisiumSpatialTranscriptomics_RNA_seqLevel2</title>
+<ellipse fill="none" stroke="#000000" cx="3060.5311" cy="-366" rx="252.6553" ry="18"/>
+<text text-anchor="middle" x="3060.5311" y="-362.3" font-family="Times,serif" font-size="14.00" fill="#000000">_10xVisiumSpatialTranscriptomics_RNA_seqLevel2</text>
+</g>
+<!-- _10xVisiumSpatialTranscriptomics_RNA_seqLevel1 -->
+<g id="node20" class="node">
+<title>_10xVisiumSpatialTranscriptomics_RNA_seqLevel1</title>
+<ellipse fill="none" stroke="#000000" cx="3242.5311" cy="-279" rx="252.6553" ry="18"/>
+<text text-anchor="middle" x="3242.5311" y="-275.3" font-family="Times,serif" font-size="14.00" fill="#000000">_10xVisiumSpatialTranscriptomics_RNA_seqLevel1</text>
+</g>
+<!-- _10xVisiumSpatialTranscriptomics_RNA_seqLevel2&#45;&gt;_10xVisiumSpatialTranscriptomics_RNA_seqLevel1 -->
+<g id="edge42" class="edge">
+<title>_10xVisiumSpatialTranscriptomics_RNA_seqLevel2&#45;&gt;_10xVisiumSpatialTranscriptomics_RNA_seqLevel1</title>
+<path fill="none" stroke="#000000" d="M3097.8006,-348.1843C3126.1691,-334.6236 3165.3912,-315.8745 3195.8495,-301.3148"/>
+<polygon fill="#000000" stroke="#000000" points="3197.4863,-304.4118 3204.999,-296.9411 3194.4673,-298.0962 3197.4863,-304.4118"/>
+<text text-anchor="middle" x="3236.5311" y="-318.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
+</g>
+<!-- MassSpectrometryLevel1&#45;&gt;Biospecimen -->
+<g id="edge53" class="edge">
+<title>MassSpectrometryLevel1&#45;&gt;Biospecimen</title>
+<path fill="none" stroke="#000000" d="M2301.3901,-262.8694C2348.6004,-250.7485 2416.7795,-235.0682 2477.5311,-228 2698.9622,-202.2373 3259.2358,-236.9046 3480.5311,-210 3486.8541,-209.2313 3493.412,-208.1713 3499.9237,-206.9472"/>
+<polygon fill="#000000" stroke="#000000" points="3500.9636,-210.3083 3510.0781,-204.9068 3499.5846,-203.4455 3500.9636,-210.3083"/>
+<text text-anchor="middle" x="2551.5311" y="-231.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
+</g>
+<!-- SRRSImagingLevel2 -->
+<g id="node12" class="node">
+<title>SRRSImagingLevel2</title>
+<ellipse fill="none" stroke="#000000" cx="2497.5311" cy="-279" rx="106.6812" ry="18"/>
+<text text-anchor="middle" x="2497.5311" y="-275.3" font-family="Times,serif" font-size="14.00" fill="#000000">SRRSImagingLevel2</text>
+</g>
+<!-- SRRSImagingLevel2&#45;&gt;Biospecimen -->
+<g id="edge34" class="edge">
+<title>SRRSImagingLevel2&#45;&gt;Biospecimen</title>
+<path fill="none" stroke="#000000" d="M2548.5697,-263.04C2589.8934,-250.9288 2649.8487,-235.1782 2703.5311,-228 3045.9097,-182.2185 3137.7399,-252.5835 3480.5311,-210 3486.8521,-209.2148 3493.4086,-208.1442 3499.9196,-206.9137"/>
+<polygon fill="#000000" stroke="#000000" points="3500.9622,-210.274 3510.0732,-204.8666 3499.5787,-203.4121 3500.9622,-210.274"/>
+<text text-anchor="middle" x="2777.5311" y="-231.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
+</g>
+<!-- ScATAC_seqLevel4 -->
+<g id="node13" class="node">
+<title>ScATAC_seqLevel4</title>
+<ellipse fill="none" stroke="#000000" cx="5362.5311" cy="-540" rx="100.9827" ry="18"/>
+<text text-anchor="middle" x="5362.5311" y="-536.3" font-family="Times,serif" font-size="14.00" fill="#000000">ScATAC_seqLevel4</text>
+</g>
+<!-- ScATAC_seqLevel3 -->
+<g id="node65" class="node">
+<title>ScATAC_seqLevel3</title>
+<ellipse fill="none" stroke="#000000" cx="5362.5311" cy="-453" rx="100.9827" ry="18"/>
+<text text-anchor="middle" x="5362.5311" y="-449.3" font-family="Times,serif" font-size="14.00" fill="#000000">ScATAC_seqLevel3</text>
+</g>
+<!-- ScATAC_seqLevel4&#45;&gt;ScATAC_seqLevel3 -->
+<g id="edge33" class="edge">
+<title>ScATAC_seqLevel4&#45;&gt;ScATAC_seqLevel3</title>
+<path fill="none" stroke="#000000" d="M5362.5311,-521.9735C5362.5311,-510.1918 5362.5311,-494.5607 5362.5311,-481.1581"/>
+<polygon fill="#000000" stroke="#000000" points="5366.0311,-481.0033 5362.5311,-471.0034 5359.0311,-481.0034 5366.0311,-481.0033"/>
+<text text-anchor="middle" x="5436.5311" y="-492.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
+</g>
+<!-- RPPALevel4 -->
+<g id="node14" class="node">
+<title>RPPALevel4</title>
+<ellipse fill="none" stroke="#000000" cx="3583.5311" cy="-366" rx="67.6881" ry="18"/>
+<text text-anchor="middle" x="3583.5311" y="-362.3" font-family="Times,serif" font-size="14.00" fill="#000000">RPPALevel4</text>
+</g>
+<!-- RPPALevel2 -->
+<g id="node28" class="node">
+<title>RPPALevel2</title>
+<ellipse fill="none" stroke="#000000" cx="3580.5311" cy="-279" rx="67.6881" ry="18"/>
+<text text-anchor="middle" x="3580.5311" y="-275.3" font-family="Times,serif" font-size="14.00" fill="#000000">RPPALevel2</text>
+</g>
+<!-- RPPALevel4&#45;&gt;RPPALevel2 -->
+<g id="edge23" class="edge">
+<title>RPPALevel4&#45;&gt;RPPALevel2</title>
+<path fill="none" stroke="#000000" d="M3582.9094,-347.9735C3582.5032,-336.1918 3581.9642,-320.5607 3581.502,-307.1581"/>
+<polygon fill="#000000" stroke="#000000" points="3584.9945,-306.8768 3581.1519,-297.0034 3577.9987,-307.1181 3584.9945,-306.8768"/>
+<text text-anchor="middle" x="3656.5311" y="-318.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
+</g>
+<!-- Demographics -->
+<g id="node15" class="node">
+<title>Demographics</title>
+<ellipse fill="none" stroke="#000000" cx="3457.5311" cy="-18" rx="77.9862" ry="18"/>
+<text text-anchor="middle" x="3457.5311" y="-14.3" font-family="Times,serif" font-size="14.00" fill="#000000">Demographics</text>
+</g>
+<!-- HI_C_seqLevel1 -->
+<g id="node16" class="node">
+<title>HI_C_seqLevel1</title>
+<ellipse fill="none" stroke="#000000" cx="2709.5311" cy="-279" rx="87.1846" ry="18"/>
+<text text-anchor="middle" x="2709.5311" y="-275.3" font-family="Times,serif" font-size="14.00" fill="#000000">HI_C_seqLevel1</text>
+</g>
+<!-- HI_C_seqLevel1&#45;&gt;Biospecimen -->
+<g id="edge24" class="edge">
+<title>HI_C_seqLevel1&#45;&gt;Biospecimen</title>
+<path fill="none" stroke="#000000" d="M2761.5629,-264.4421C2807.4596,-252.3044 2876.371,-235.7845 2937.5311,-228 3177.0645,-197.5122 3241.0585,-240.9623 3480.5311,-210 3486.8481,-209.1832 3493.402,-208.0923 3499.9115,-206.8496"/>
+<polygon fill="#000000" stroke="#000000" points="3500.9592,-210.2084 3510.0635,-204.7897 3499.5671,-203.3482 3500.9592,-210.2084"/>
+<text text-anchor="middle" x="3011.5311" y="-231.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
+</g>
+<!-- ExSeqMinimal -->
+<g id="node17" class="node">
+<title>ExSeqMinimal</title>
+<ellipse fill="none" stroke="#000000" cx="2893.5311" cy="-279" rx="78.7863" ry="18"/>
+<text text-anchor="middle" x="2893.5311" y="-275.3" font-family="Times,serif" font-size="14.00" fill="#000000">ExSeqMinimal</text>
+</g>
+<!-- ExSeqMinimal&#45;&gt;Biospecimen -->
+<g id="edge36" class="edge">
+<title>ExSeqMinimal&#45;&gt;Biospecimen</title>
+<path fill="none" stroke="#000000" d="M2951.0012,-266.6157C2960.8338,-264.6385 2970.962,-262.6901 2980.5311,-261 3080.0603,-243.4205 3105.0231,-238.6426 3205.5311,-228 3327.3339,-215.1025 3359.3272,-227.6607 3480.5311,-210 3486.6514,-209.1082 3492.9998,-207.9918 3499.3174,-206.7541"/>
+<polygon fill="#000000" stroke="#000000" points="3500.0929,-210.168 3509.1824,-204.7244 3498.6822,-203.3116 3500.0929,-210.168"/>
+<text text-anchor="middle" x="3279.5311" y="-231.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
+</g>
+<!-- ImagingLevel3Segmentation -->
+<g id="node18" class="node">
+<title>ImagingLevel3Segmentation</title>
+<ellipse fill="none" stroke="#000000" cx="1024.5311" cy="-453" rx="145.6742" ry="18"/>
+<text text-anchor="middle" x="1024.5311" y="-449.3" font-family="Times,serif" font-size="14.00" fill="#000000">ImagingLevel3Segmentation</text>
+</g>
+<!-- ImagingLevel3Segmentation&#45;&gt;ImagingLevel2 -->
+<g id="edge38" class="edge">
+<title>ImagingLevel3Segmentation&#45;&gt;ImagingLevel2</title>
+<path fill="none" stroke="#000000" d="M1018.6052,-434.6432C1014.8604,-424.517 1009.4233,-412.006 1002.5311,-402 999.8143,-398.0558 996.6195,-394.1897 993.2647,-390.5408"/>
+<polygon fill="#000000" stroke="#000000" points="995.7586,-388.0851 986.2555,-383.4008 990.7633,-392.9889 995.7586,-388.0851"/>
+<text text-anchor="middle" x="1085.5311" y="-405.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
+</g>
+<!-- BulkRNA_seqLevel2 -->
+<g id="node19" class="node">
+<title>BulkRNA_seqLevel2</title>
+<ellipse fill="none" stroke="#000000" cx="5587.5311" cy="-366" rx="106.6812" ry="18"/>
+<text text-anchor="middle" x="5587.5311" y="-362.3" font-family="Times,serif" font-size="14.00" fill="#000000">BulkRNA_seqLevel2</text>
+</g>
+<!-- BulkRNA_seqLevel2&#45;&gt;BulkRNA_seqLevel1 -->
+<g id="edge39" class="edge">
+<title>BulkRNA_seqLevel2&#45;&gt;BulkRNA_seqLevel1</title>
+<path fill="none" stroke="#000000" d="M5587.5311,-347.9735C5587.5311,-336.1918 5587.5311,-320.5607 5587.5311,-307.1581"/>
+<polygon fill="#000000" stroke="#000000" points="5591.0311,-307.0033 5587.5311,-297.0034 5584.0311,-307.0034 5591.0311,-307.0033"/>
+<text text-anchor="middle" x="5661.5311" y="-318.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
+</g>
+<!-- _10xVisiumSpatialTranscriptomics_RNA_seqLevel1&#45;&gt;Biospecimen -->
+<g id="edge40" class="edge">
+<title>_10xVisiumSpatialTranscriptomics_RNA_seqLevel1&#45;&gt;Biospecimen</title>
+<path fill="none" stroke="#000000" d="M3295.8015,-261.3917C3327.7488,-251.0928 3369.2788,-238.1613 3406.5311,-228 3423.5432,-223.3596 3462.3742,-214.2291 3496.6573,-206.3249"/>
+<polygon fill="#000000" stroke="#000000" points="3497.6909,-209.6786 3506.6515,-204.0255 3496.1214,-202.8568 3497.6909,-209.6786"/>
+<text text-anchor="middle" x="3480.5311" y="-231.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
+</g>
+<!-- NanoStringGeoMxDSPROIRCCSegmentAnnotationMetadata -->
+<g id="node21" class="node">
+<title>NanoStringGeoMxDSPROIRCCSegmentAnnotationMetadata</title>
+<ellipse fill="none" stroke="#000000" cx="1615.5311" cy="-279" rx="294.3478" ry="18"/>
+<text text-anchor="middle" x="1615.5311" y="-275.3" font-family="Times,serif" font-size="14.00" fill="#000000">NanoStringGeoMxDSPROIRCCSegmentAnnotationMetadata</text>
+</g>
+<!-- Patient -->
+<g id="node44" class="node">
+<title>Patient</title>
+<ellipse fill="none" stroke="#000000" cx="3459.5311" cy="-105" rx="44.393" ry="18"/>
+<text text-anchor="middle" x="3459.5311" y="-101.3" font-family="Times,serif" font-size="14.00" fill="#000000">Patient</text>
+</g>
+<!-- Biospecimen&#45;&gt;Patient -->
+<g id="edge1" class="edge">
+<title>Biospecimen&#45;&gt;Patient</title>
+<path fill="none" stroke="#000000" d="M3552.3359,-173.7376C3547.4435,-163.1454 3540.1149,-150.1367 3530.5311,-141 3522.3364,-133.1877 3512.1157,-126.6888 3502.0048,-121.4627"/>
+<polygon fill="#000000" stroke="#000000" points="3503.3381,-118.2199 3492.8115,-117.02 3500.2923,-124.5225 3503.3381,-118.2199"/>
+<text text-anchor="middle" x="3617.5311" y="-144.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
+</g>
+<!-- ScDNA_seqLevel2 -->
+<g id="node23" class="node">
+<title>ScDNA_seqLevel2</title>
+<ellipse fill="none" stroke="#000000" cx="4994.5311" cy="-366" rx="96.6831" ry="18"/>
+<text text-anchor="middle" x="4994.5311" y="-362.3" font-family="Times,serif" font-size="14.00" fill="#000000">ScDNA_seqLevel2</text>
+</g>
+<!-- ScDNA_seqLevel1 -->
+<g id="node51" class="node">
+<title>ScDNA_seqLevel1</title>
+<ellipse fill="none" stroke="#000000" cx="4994.5311" cy="-279" rx="96.6831" ry="18"/>
+<text text-anchor="middle" x="4994.5311" y="-275.3" font-family="Times,serif" font-size="14.00" fill="#000000">ScDNA_seqLevel1</text>
+</g>
+<!-- ScDNA_seqLevel2&#45;&gt;ScDNA_seqLevel1 -->
+<g id="edge2" class="edge">
+<title>ScDNA_seqLevel2&#45;&gt;ScDNA_seqLevel1</title>
+<path fill="none" stroke="#000000" d="M4994.5311,-347.9735C4994.5311,-336.1918 4994.5311,-320.5607 4994.5311,-307.1581"/>
+<polygon fill="#000000" stroke="#000000" points="4998.0311,-307.0033 4994.5311,-297.0034 4991.0311,-307.0034 4998.0311,-307.0033"/>
+<text text-anchor="middle" x="5068.5311" y="-318.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
 </g>
 <!-- ScRNA_seqLevel3 -->
-<g id="node55" class="node">
+<g id="node24" class="node">
 <title>ScRNA_seqLevel3</title>
-<ellipse fill="none" stroke="#000000" cx="3111.5404" cy="-453" rx="96.6831" ry="18"/>
-<text text-anchor="middle" x="3111.5404" y="-449.3" font-family="Times,serif" font-size="14.00" fill="#000000">ScRNA_seqLevel3</text>
+<ellipse fill="none" stroke="#000000" cx="4492.5311" cy="-453" rx="96.6831" ry="18"/>
+<text text-anchor="middle" x="4492.5311" y="-449.3" font-family="Times,serif" font-size="14.00" fill="#000000">ScRNA_seqLevel3</text>
 </g>
 <!-- ScRNA_seqLevel2 -->
-<g id="node64" class="node">
+<g id="node25" class="node">
 <title>ScRNA_seqLevel2</title>
-<ellipse fill="none" stroke="#000000" cx="3111.5404" cy="-366" rx="96.6831" ry="18"/>
-<text text-anchor="middle" x="3111.5404" y="-362.3" font-family="Times,serif" font-size="14.00" fill="#000000">ScRNA_seqLevel2</text>
+<ellipse fill="none" stroke="#000000" cx="4492.5311" cy="-366" rx="96.6831" ry="18"/>
+<text text-anchor="middle" x="4492.5311" y="-362.3" font-family="Times,serif" font-size="14.00" fill="#000000">ScRNA_seqLevel2</text>
 </g>
 <!-- ScRNA_seqLevel3&#45;&gt;ScRNA_seqLevel2 -->
 <g id="edge3" class="edge">
 <title>ScRNA_seqLevel3&#45;&gt;ScRNA_seqLevel2</title>
-<path fill="none" stroke="#000000" d="M3111.5404,-434.9735C3111.5404,-423.1918 3111.5404,-407.5607 3111.5404,-394.1581"/>
-<polygon fill="#000000" stroke="#000000" points="3115.0405,-394.0033 3111.5404,-384.0034 3108.0405,-394.0034 3115.0405,-394.0033"/>
-<text text-anchor="middle" x="3185.5404" y="-405.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
+<path fill="none" stroke="#000000" d="M4492.5311,-434.9735C4492.5311,-423.1918 4492.5311,-407.5607 4492.5311,-394.1581"/>
+<polygon fill="#000000" stroke="#000000" points="4496.0311,-394.0033 4492.5311,-384.0034 4489.0311,-394.0034 4496.0311,-394.0033"/>
+<text text-anchor="middle" x="4566.5311" y="-405.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
 </g>
-<!-- _10xVisiumSpatialTranscriptomics_RNA_seqLevel3&#45;&gt;_10xVisiumSpatialTranscriptomics_AuxiliaryFiles -->
-<g id="edge4" class="edge">
-<title>_10xVisiumSpatialTranscriptomics_RNA_seqLevel3&#45;&gt;_10xVisiumSpatialTranscriptomics_AuxiliaryFiles</title>
-<path fill="none" stroke="#000000" d="M5883.0959,-522.4989C5933.1033,-508.2811 6003.6968,-488.2104 6056.1731,-473.2907"/>
-<polygon fill="#000000" stroke="#000000" points="6057.4216,-476.5745 6066.0832,-470.4731 6055.5072,-469.8414 6057.4216,-476.5745"/>
-<text text-anchor="middle" x="6067.5404" y="-492.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
-</g>
-<!-- _10xVisiumSpatialTranscriptomics_RNA_seqLevel3&#45;&gt;_10xVisiumSpatialTranscriptomics_RNA_seqLevel2 -->
-<g id="edge5" class="edge">
-<title>_10xVisiumSpatialTranscriptomics_RNA_seqLevel3&#45;&gt;_10xVisiumSpatialTranscriptomics_RNA_seqLevel2</title>
-<path fill="none" stroke="#000000" d="M5785.2905,-522.0101C5749.9239,-501.9738 5704.5568,-468.0402 5727.5404,-435 5740.4127,-416.4953 5788.7491,-398.8746 5832.9179,-386.0718"/>
-<polygon fill="#000000" stroke="#000000" points="5833.8949,-389.4328 5842.5576,-383.333 5831.9817,-382.6993 5833.8949,-389.4328"/>
-<text text-anchor="middle" x="5801.5404" y="-449.3" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
-</g>
-<!-- AcuteLymphoblasticLeukemiaTier3 -->
-<g id="node57" class="node">
-<title>AcuteLymphoblasticLeukemiaTier3</title>
-<ellipse fill="none" stroke="#000000" cx="2323.5404" cy="-192" rx="177.3685" ry="18"/>
-<text text-anchor="middle" x="2323.5404" y="-188.3" font-family="Times,serif" font-size="14.00" fill="#000000">AcuteLymphoblasticLeukemiaTier3</text>
-</g>
-<!-- AcuteLymphoblasticLeukemiaTier3&#45;&gt;Patient -->
-<g id="edge1" class="edge">
-<title>AcuteLymphoblasticLeukemiaTier3&#45;&gt;Patient</title>
-<path fill="none" stroke="#000000" d="M2262.0951,-175.009C2219.1242,-163.7396 2160.223,-149.5101 2107.5404,-141 1982.5207,-120.8049 1833.8807,-111.2521 1755.7443,-107.3316"/>
-<polygon fill="#000000" stroke="#000000" points="1755.8141,-103.8309 1745.6547,-106.8371 1755.4714,-110.8225 1755.8141,-103.8309"/>
-<text text-anchor="middle" x="2253.5404" y="-144.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
-</g>
-<!-- BulkWESLevel1&#45;&gt;Biospecimen -->
-<g id="edge2" class="edge">
-<title>BulkWESLevel1&#45;&gt;Biospecimen</title>
-<path fill="none" stroke="#000000" d="M3929.6649,-263.1868C3896.2922,-251.3269 3848.0999,-235.8415 3804.5404,-228 3706.8755,-210.4185 3423.4701,-199.1132 3283.5754,-194.4459"/>
-<polygon fill="#000000" stroke="#000000" points="3283.4577,-190.9402 3273.3475,-194.1079 3283.2265,-197.9363 3283.4577,-190.9402"/>
-<text text-anchor="middle" x="3939.5404" y="-231.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
-</g>
-<!-- RPPALevel4 -->
-<g id="node59" class="node">
-<title>RPPALevel4</title>
-<ellipse fill="none" stroke="#000000" cx="1355.5404" cy="-366" rx="67.6881" ry="18"/>
-<text text-anchor="middle" x="1355.5404" y="-362.3" font-family="Times,serif" font-size="14.00" fill="#000000">RPPALevel4</text>
-</g>
-<!-- RPPALevel4&#45;&gt;RPPALevel2 -->
-<g id="edge9" class="edge">
-<title>RPPALevel4&#45;&gt;RPPALevel2</title>
-<path fill="none" stroke="#000000" d="M1355.5404,-347.9735C1355.5404,-336.1918 1355.5404,-320.5607 1355.5404,-307.1581"/>
-<polygon fill="#000000" stroke="#000000" points="1359.0405,-307.0033 1355.5404,-297.0034 1352.0405,-307.0034 1359.0405,-307.0033"/>
-<text text-anchor="middle" x="1429.5404" y="-318.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
-</g>
-<!-- Slide_seqLevel3 -->
-<g id="node61" class="node">
-<title>Slide_seqLevel3</title>
-<ellipse fill="none" stroke="#000000" cx="2910.5404" cy="-453" rx="86.3847" ry="18"/>
-<text text-anchor="middle" x="2910.5404" y="-449.3" font-family="Times,serif" font-size="14.00" fill="#000000">Slide_seqLevel3</text>
-</g>
-<!-- Slide_seqLevel3&#45;&gt;Slide_seqLevel2 -->
-<g id="edge8" class="edge">
-<title>Slide_seqLevel3&#45;&gt;Slide_seqLevel2</title>
-<path fill="none" stroke="#000000" d="M2910.5404,-434.9735C2910.5404,-423.1918 2910.5404,-407.5607 2910.5404,-394.1581"/>
-<polygon fill="#000000" stroke="#000000" points="2914.0405,-394.0033 2910.5404,-384.0034 2907.0405,-394.0034 2914.0405,-394.0033"/>
-<text text-anchor="middle" x="2984.5404" y="-405.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
-</g>
-<!-- ScDNA_seqLevel1&#45;&gt;Biospecimen -->
-<g id="edge7" class="edge">
-<title>ScDNA_seqLevel1&#45;&gt;Biospecimen</title>
-<path fill="none" stroke="#000000" d="M4132.5376,-262.4739C4101.6945,-250.5635 4057.6674,-235.3448 4017.5404,-228 3878.485,-202.5473 3460.3819,-194.8945 3283.7221,-192.7622"/>
-<polygon fill="#000000" stroke="#000000" points="3283.7512,-189.2624 3273.7106,-192.6442 3283.6686,-196.2619 3283.7512,-189.2624"/>
-<text text-anchor="middle" x="4148.5404" y="-231.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
+<!-- ScRNA_seqLevel1 -->
+<g id="node47" class="node">
+<title>ScRNA_seqLevel1</title>
+<ellipse fill="none" stroke="#000000" cx="4492.5311" cy="-279" rx="96.6831" ry="18"/>
+<text text-anchor="middle" x="4492.5311" y="-275.3" font-family="Times,serif" font-size="14.00" fill="#000000">ScRNA_seqLevel1</text>
 </g>
 <!-- ScRNA_seqLevel2&#45;&gt;ScRNA_seqLevel1 -->
-<g id="edge36" class="edge">
+<g id="edge4" class="edge">
 <title>ScRNA_seqLevel2&#45;&gt;ScRNA_seqLevel1</title>
-<path fill="none" stroke="#000000" d="M3111.5404,-347.9735C3111.5404,-336.1918 3111.5404,-320.5607 3111.5404,-307.1581"/>
-<polygon fill="#000000" stroke="#000000" points="3115.0405,-307.0033 3111.5404,-297.0034 3108.0405,-307.0034 3115.0405,-307.0033"/>
-<text text-anchor="middle" x="3185.5404" y="-318.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
+<path fill="none" stroke="#000000" d="M4492.5311,-347.9735C4492.5311,-336.1918 4492.5311,-320.5607 4492.5311,-307.1581"/>
+<polygon fill="#000000" stroke="#000000" points="4496.0311,-307.0033 4492.5311,-297.0034 4489.0311,-307.0034 4496.0311,-307.0033"/>
+<text text-anchor="middle" x="4566.5311" y="-318.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
+</g>
+<!-- SRRSBiospecimen -->
+<g id="node26" class="node">
+<title>SRRSBiospecimen</title>
+<ellipse fill="none" stroke="#000000" cx="3374.5311" cy="-192" rx="96.6831" ry="18"/>
+<text text-anchor="middle" x="3374.5311" y="-188.3" font-family="Times,serif" font-size="14.00" fill="#000000">SRRSBiospecimen</text>
+</g>
+<!-- SRRSBiospecimen&#45;&gt;Patient -->
+<g id="edge20" class="edge">
+<title>SRRSBiospecimen&#45;&gt;Patient</title>
+<path fill="none" stroke="#000000" d="M3373.3499,-173.8663C3373.5772,-163.3198 3375.5308,-150.3138 3382.5311,-141 3390.012,-131.0467 3400.9261,-123.7438 3412.1977,-118.4254"/>
+<polygon fill="#000000" stroke="#000000" points="3413.8381,-121.5317 3421.6823,-114.41 3411.109,-115.0855 3413.8381,-121.5317"/>
+<text text-anchor="middle" x="3456.5311" y="-144.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
+</g>
+<!-- Slide_seqLevel2 -->
+<g id="node27" class="node">
+<title>Slide_seqLevel2</title>
+<ellipse fill="none" stroke="#000000" cx="3901.5311" cy="-366" rx="86.3847" ry="18"/>
+<text text-anchor="middle" x="3901.5311" y="-362.3" font-family="Times,serif" font-size="14.00" fill="#000000">Slide_seqLevel2</text>
+</g>
+<!-- Slide_seqLevel1 -->
+<g id="node39" class="node">
+<title>Slide_seqLevel1</title>
+<ellipse fill="none" stroke="#000000" cx="3901.5311" cy="-279" rx="86.3847" ry="18"/>
+<text text-anchor="middle" x="3901.5311" y="-275.3" font-family="Times,serif" font-size="14.00" fill="#000000">Slide_seqLevel1</text>
+</g>
+<!-- Slide_seqLevel2&#45;&gt;Slide_seqLevel1 -->
+<g id="edge22" class="edge">
+<title>Slide_seqLevel2&#45;&gt;Slide_seqLevel1</title>
+<path fill="none" stroke="#000000" d="M3901.5311,-347.9735C3901.5311,-336.1918 3901.5311,-320.5607 3901.5311,-307.1581"/>
+<polygon fill="#000000" stroke="#000000" points="3905.0311,-307.0033 3901.5311,-297.0034 3898.0311,-307.0034 3905.0311,-307.0033"/>
+<text text-anchor="middle" x="3975.5311" y="-318.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
+</g>
+<!-- RPPALevel2&#45;&gt;Biospecimen -->
+<g id="edge21" class="edge">
+<title>RPPALevel2&#45;&gt;Biospecimen</title>
+<path fill="none" stroke="#000000" d="M3568.3217,-261.0569C3565.1754,-255.5068 3562.2061,-249.2129 3560.5311,-243 3558.5881,-235.7935 3557.8161,-227.8043 3557.6546,-220.3289"/>
+<polygon fill="#000000" stroke="#000000" points="3561.1553,-220.279 3557.7744,-210.2382 3554.1558,-220.1959 3561.1553,-220.279"/>
+<text text-anchor="middle" x="3634.5311" y="-231.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
+</g>
+<!-- Slide_seqLevel3 -->
+<g id="node29" class="node">
+<title>Slide_seqLevel3</title>
+<ellipse fill="none" stroke="#000000" cx="3901.5311" cy="-453" rx="86.3847" ry="18"/>
+<text text-anchor="middle" x="3901.5311" y="-449.3" font-family="Times,serif" font-size="14.00" fill="#000000">Slide_seqLevel3</text>
+</g>
+<!-- Slide_seqLevel3&#45;&gt;Slide_seqLevel2 -->
+<g id="edge11" class="edge">
+<title>Slide_seqLevel3&#45;&gt;Slide_seqLevel2</title>
+<path fill="none" stroke="#000000" d="M3901.5311,-434.9735C3901.5311,-423.1918 3901.5311,-407.5607 3901.5311,-394.1581"/>
+<polygon fill="#000000" stroke="#000000" points="3905.0311,-394.0033 3901.5311,-384.0034 3898.0311,-394.0034 3905.0311,-394.0033"/>
+<text text-anchor="middle" x="3975.5311" y="-405.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
+</g>
+<!-- ImagingLevel2&#45;&gt;ImagingLevel1 -->
+<g id="edge16" class="edge">
+<title>ImagingLevel2&#45;&gt;ImagingLevel1</title>
+<path fill="none" stroke="#000000" d="M911.4565,-352.5969C848.7178,-337.0463 745.3718,-311.4306 678.6435,-294.8911"/>
+<polygon fill="#000000" stroke="#000000" points="679.2154,-291.427 668.667,-292.4183 677.5312,-298.2214 679.2154,-291.427"/>
+<text text-anchor="middle" x="885.5311" y="-318.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
 </g>
 <!-- ScRNA_seqLevel4 -->
-<g id="node65" class="node">
+<g id="node31" class="node">
 <title>ScRNA_seqLevel4</title>
-<ellipse fill="none" stroke="#000000" cx="3111.5404" cy="-540" rx="96.6831" ry="18"/>
-<text text-anchor="middle" x="3111.5404" y="-536.3" font-family="Times,serif" font-size="14.00" fill="#000000">ScRNA_seqLevel4</text>
+<ellipse fill="none" stroke="#000000" cx="4492.5311" cy="-540" rx="96.6831" ry="18"/>
+<text text-anchor="middle" x="4492.5311" y="-536.3" font-family="Times,serif" font-size="14.00" fill="#000000">ScRNA_seqLevel4</text>
 </g>
 <!-- ScRNA_seqLevel4&#45;&gt;ScRNA_seqLevel3 -->
-<g id="edge35" class="edge">
+<g id="edge12" class="edge">
 <title>ScRNA_seqLevel4&#45;&gt;ScRNA_seqLevel3</title>
-<path fill="none" stroke="#000000" d="M3111.5404,-521.9735C3111.5404,-510.1918 3111.5404,-494.5607 3111.5404,-481.1581"/>
-<polygon fill="#000000" stroke="#000000" points="3115.0405,-481.0033 3111.5404,-471.0034 3108.0405,-481.0034 3115.0405,-481.0033"/>
-<text text-anchor="middle" x="3185.5404" y="-492.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
+<path fill="none" stroke="#000000" d="M4492.5311,-521.9735C4492.5311,-510.1918 4492.5311,-494.5607 4492.5311,-481.1581"/>
+<polygon fill="#000000" stroke="#000000" points="4496.0311,-481.0033 4492.5311,-471.0034 4489.0311,-481.0034 4496.0311,-481.0033"/>
+<text text-anchor="middle" x="4566.5311" y="-492.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
 </g>
-<!-- ImagingLevel1&#45;&gt;Biospecimen -->
-<g id="edge37" class="edge">
-<title>ImagingLevel1&#45;&gt;Biospecimen</title>
-<path fill="none" stroke="#000000" d="M4332.193,-262.7183C4304.1898,-250.6857 4263.7262,-235.1947 4226.5404,-228 4135.1981,-210.3271 3508.7863,-197.4787 3283.7912,-193.3872"/>
-<polygon fill="#000000" stroke="#000000" points="3283.7667,-189.8863 3273.705,-193.2048 3283.64,-196.8851 3283.7667,-189.8863"/>
-<text text-anchor="middle" x="4352.5404" y="-231.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
+<!-- OtherAssay -->
+<g id="node32" class="node">
+<title>OtherAssay</title>
+<ellipse fill="none" stroke="#000000" cx="3731.5311" cy="-279" rx="65.7887" ry="18"/>
+<text text-anchor="middle" x="3731.5311" y="-275.3" font-family="Times,serif" font-size="14.00" fill="#000000">OtherAssay</text>
 </g>
-<!-- MelanomaTier3 -->
-<g id="node69" class="node">
-<title>MelanomaTier3</title>
-<ellipse fill="none" stroke="#000000" cx="2602.5404" cy="-192" rx="83.6854" ry="18"/>
-<text text-anchor="middle" x="2602.5404" y="-188.3" font-family="Times,serif" font-size="14.00" fill="#000000">MelanomaTier3</text>
+<!-- OtherAssay&#45;&gt;Biospecimen -->
+<g id="edge63" class="edge">
+<title>OtherAssay&#45;&gt;Biospecimen</title>
+<path fill="none" stroke="#000000" d="M3727.6664,-260.9507C3724.3836,-249.8898 3718.5517,-236.3058 3708.5311,-228 3696.1832,-217.7652 3662.4329,-209.1877 3630.171,-202.9756"/>
+<polygon fill="#000000" stroke="#000000" points="3630.7037,-199.5147 3620.2319,-201.1245 3629.4219,-206.3964 3630.7037,-199.5147"/>
+<text text-anchor="middle" x="3794.5311" y="-231.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
 </g>
-<!-- MelanomaTier3&#45;&gt;Patient -->
-<g id="edge38" class="edge">
-<title>MelanomaTier3&#45;&gt;Patient</title>
-<path fill="none" stroke="#000000" d="M2544.9956,-178.8902C2490.3696,-166.9889 2405.8046,-149.9695 2331.5404,-141 2119.7584,-115.4213 1865.6656,-107.9264 1756.1519,-105.8039"/>
-<polygon fill="#000000" stroke="#000000" points="1756.075,-102.3019 1746.0114,-105.6148 1755.9444,-109.3007 1756.075,-102.3019"/>
-<text text-anchor="middle" x="2503.5404" y="-144.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
+<!-- HI_C_seqLevel3 -->
+<g id="node33" class="node">
+<title>HI_C_seqLevel3</title>
+<ellipse fill="none" stroke="#000000" cx="2697.5311" cy="-453" rx="87.1846" ry="18"/>
+<text text-anchor="middle" x="2697.5311" y="-449.3" font-family="Times,serif" font-size="14.00" fill="#000000">HI_C_seqLevel3</text>
 </g>
-<!-- SarcomaTier3 -->
-<g id="node70" class="node">
-<title>SarcomaTier3</title>
-<ellipse fill="none" stroke="#000000" cx="2781.5404" cy="-192" rx="76.8869" ry="18"/>
-<text text-anchor="middle" x="2781.5404" y="-188.3" font-family="Times,serif" font-size="14.00" fill="#000000">SarcomaTier3</text>
+<!-- HI_C_seqLevel2 -->
+<g id="node50" class="node">
+<title>HI_C_seqLevel2</title>
+<ellipse fill="none" stroke="#000000" cx="2699.5311" cy="-366" rx="87.1846" ry="18"/>
+<text text-anchor="middle" x="2699.5311" y="-362.3" font-family="Times,serif" font-size="14.00" fill="#000000">HI_C_seqLevel2</text>
 </g>
-<!-- SarcomaTier3&#45;&gt;Patient -->
-<g id="edge26" class="edge">
-<title>SarcomaTier3&#45;&gt;Patient</title>
-<path fill="none" stroke="#000000" d="M2736.0191,-177.492C2695.8362,-165.3863 2635.4333,-148.8853 2581.5404,-141 2421.19,-117.5386 1923.0528,-108.2481 1756.4483,-105.7464"/>
-<polygon fill="#000000" stroke="#000000" points="1756.0116,-102.2396 1745.9609,-105.5913 1755.908,-109.2389 1756.0116,-102.2396"/>
-<text text-anchor="middle" x="2728.5404" y="-144.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
+<!-- HI_C_seqLevel3&#45;&gt;HI_C_seqLevel2 -->
+<g id="edge65" class="edge">
+<title>HI_C_seqLevel3&#45;&gt;HI_C_seqLevel2</title>
+<path fill="none" stroke="#000000" d="M2697.9455,-434.9735C2698.2163,-423.1918 2698.5756,-407.5607 2698.8837,-394.1581"/>
+<polygon fill="#000000" stroke="#000000" points="2702.3863,-394.0812 2699.1172,-384.0034 2695.3882,-393.9202 2702.3863,-394.0812"/>
+<text text-anchor="middle" x="2773.5311" y="-405.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
 </g>
-<!-- HTANRPPAAntibodyTable -->
-<g id="node71" class="node">
-<title>HTANRPPAAntibodyTable</title>
-<ellipse fill="none" stroke="#000000" cx="1137.5404" cy="-366" rx="132.6765" ry="18"/>
-<text text-anchor="middle" x="1137.5404" y="-362.3" font-family="Times,serif" font-size="14.00" fill="#000000">HTANRPPAAntibodyTable</text>
+<!-- ElectronMicroscopyLevel4 -->
+<g id="node34" class="node">
+<title>ElectronMicroscopyLevel4</title>
+<ellipse fill="none" stroke="#000000" cx="4743.5311" cy="-540" rx="135.6761" ry="18"/>
+<text text-anchor="middle" x="4743.5311" y="-536.3" font-family="Times,serif" font-size="14.00" fill="#000000">ElectronMicroscopyLevel4</text>
 </g>
-<!-- HTANRPPAAntibodyTable&#45;&gt;RPPALevel2 -->
-<g id="edge24" class="edge">
-<title>HTANRPPAAntibodyTable&#45;&gt;RPPALevel2</title>
-<path fill="none" stroke="#000000" d="M1156.2899,-347.9853C1168.7657,-336.9382 1186.0279,-323.3565 1203.5404,-315 1228.9325,-302.8835 1258.7074,-294.6752 1285.1427,-289.1973"/>
-<polygon fill="#000000" stroke="#000000" points="1285.9637,-292.6029 1295.0946,-287.2292 1284.6055,-285.7359 1285.9637,-292.6029"/>
-<text text-anchor="middle" x="1277.5404" y="-318.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
+<!-- ElectronMicroscopyLevel3 -->
+<g id="node36" class="node">
+<title>ElectronMicroscopyLevel3</title>
+<ellipse fill="none" stroke="#000000" cx="4743.5311" cy="-453" rx="135.6761" ry="18"/>
+<text text-anchor="middle" x="4743.5311" y="-449.3" font-family="Times,serif" font-size="14.00" fill="#000000">ElectronMicroscopyLevel3</text>
 </g>
-<!-- _10xVisiumSpatialTranscriptomics_RNA_seqLevel1&#45;&gt;Biospecimen -->
-<g id="edge25" class="edge">
-<title>_10xVisiumSpatialTranscriptomics_RNA_seqLevel1&#45;&gt;Biospecimen</title>
-<path fill="none" stroke="#000000" d="M5939.6477,-266.1871C5911.5141,-264.3313 5882.7392,-262.5333 5855.5404,-261 5522.8567,-242.246 5439.5872,-238.4854 5106.5404,-228 4400.5093,-205.7719 3546.6681,-195.5641 3284.1747,-192.8011"/>
-<polygon fill="#000000" stroke="#000000" points="3284.0087,-189.2993 3273.9726,-192.6944 3283.9354,-196.2989 3284.0087,-189.2993"/>
-<text text-anchor="middle" x="5580.5404" y="-231.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
+<!-- ElectronMicroscopyLevel4&#45;&gt;ElectronMicroscopyLevel3 -->
+<g id="edge59" class="edge">
+<title>ElectronMicroscopyLevel4&#45;&gt;ElectronMicroscopyLevel3</title>
+<path fill="none" stroke="#000000" d="M4743.5311,-521.9735C4743.5311,-510.1918 4743.5311,-494.5607 4743.5311,-481.1581"/>
+<polygon fill="#000000" stroke="#000000" points="4747.0311,-481.0033 4743.5311,-471.0034 4740.0311,-481.0034 4747.0311,-481.0033"/>
+<text text-anchor="middle" x="4817.5311" y="-492.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
 </g>
 <!-- ScmC_seqLevel2 -->
-<g id="node73" class="node">
+<g id="node35" class="node">
 <title>ScmC_seqLevel2</title>
-<ellipse fill="none" stroke="#000000" cx="2715.5404" cy="-366" rx="90.9839" ry="18"/>
-<text text-anchor="middle" x="2715.5404" y="-362.3" font-family="Times,serif" font-size="14.00" fill="#000000">ScmC_seqLevel2</text>
+<ellipse fill="none" stroke="#000000" cx="4096.5311" cy="-366" rx="90.9839" ry="18"/>
+<text text-anchor="middle" x="4096.5311" y="-362.3" font-family="Times,serif" font-size="14.00" fill="#000000">ScmC_seqLevel2</text>
+</g>
+<!-- ScmC_seqLevel1 -->
+<g id="node40" class="node">
+<title>ScmC_seqLevel1</title>
+<ellipse fill="none" stroke="#000000" cx="4096.5311" cy="-279" rx="90.9839" ry="18"/>
+<text text-anchor="middle" x="4096.5311" y="-275.3" font-family="Times,serif" font-size="14.00" fill="#000000">ScmC_seqLevel1</text>
 </g>
 <!-- ScmC_seqLevel2&#45;&gt;ScmC_seqLevel1 -->
-<g id="edge34" class="edge">
+<g id="edge58" class="edge">
 <title>ScmC_seqLevel2&#45;&gt;ScmC_seqLevel1</title>
-<path fill="none" stroke="#000000" d="M2715.5404,-347.9735C2715.5404,-336.1918 2715.5404,-320.5607 2715.5404,-307.1581"/>
-<polygon fill="#000000" stroke="#000000" points="2719.0405,-307.0033 2715.5404,-297.0034 2712.0405,-307.0034 2719.0405,-307.0033"/>
-<text text-anchor="middle" x="2789.5404" y="-318.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
+<path fill="none" stroke="#000000" d="M4096.5311,-347.9735C4096.5311,-336.1918 4096.5311,-320.5607 4096.5311,-307.1581"/>
+<polygon fill="#000000" stroke="#000000" points="4100.0311,-307.0033 4096.5311,-297.0034 4093.0311,-307.0034 4100.0311,-307.0033"/>
+<text text-anchor="middle" x="4170.5311" y="-318.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
 </g>
-<!-- NanoStringGeoMxDSPSpatialTranscriptomicsLevel1&#45;&gt;Biospecimen -->
-<g id="edge31" class="edge">
-<title>NanoStringGeoMxDSPSpatialTranscriptomicsLevel1&#45;&gt;Biospecimen</title>
-<path fill="none" stroke="#000000" d="M5171.8333,-347.9352C5151.529,-334.6995 5124.0292,-315.8287 5101.5404,-297 5084.1909,-282.4742 5086.2136,-270.1989 5065.5404,-261 4983.1353,-224.3325 3630.7139,-199.1787 3284.0114,-193.3121"/>
-<polygon fill="#000000" stroke="#000000" points="3283.8633,-189.8092 3273.8057,-193.1401 3283.7453,-196.8083 3283.8633,-189.8092"/>
-<text text-anchor="middle" x="5175.5404" y="-275.3" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
+<!-- ElectronMicroscopyLevel2 -->
+<g id="node52" class="node">
+<title>ElectronMicroscopyLevel2</title>
+<ellipse fill="none" stroke="#000000" cx="4743.5311" cy="-366" rx="135.6761" ry="18"/>
+<text text-anchor="middle" x="4743.5311" y="-362.3" font-family="Times,serif" font-size="14.00" fill="#000000">ElectronMicroscopyLevel2</text>
 </g>
-<!-- NanoStringGeoMxDSPSpatialTranscriptomicsLevel1&#45;&gt;NanoStringGeoMxDSPROIDCCSegmentAnnotationMetadata -->
-<g id="edge32" class="edge">
-<title>NanoStringGeoMxDSPSpatialTranscriptomicsLevel1&#45;&gt;NanoStringGeoMxDSPROIDCCSegmentAnnotationMetadata</title>
-<path fill="none" stroke="#000000" d="M5055.8223,-351.0549C5015.072,-345.671 4970.8699,-338.7148 4930.5404,-330 4894.1629,-322.1392 4854.269,-310.26 4822.3807,-299.9437"/>
-<polygon fill="#000000" stroke="#000000" points="4823.3466,-296.5773 4812.754,-296.7984 4821.1725,-303.2311 4823.3466,-296.5773"/>
-<text text-anchor="middle" x="5004.5404" y="-318.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
+<!-- ElectronMicroscopyLevel3&#45;&gt;ElectronMicroscopyLevel2 -->
+<g id="edge60" class="edge">
+<title>ElectronMicroscopyLevel3&#45;&gt;ElectronMicroscopyLevel2</title>
+<path fill="none" stroke="#000000" d="M4743.5311,-434.9735C4743.5311,-423.1918 4743.5311,-407.5607 4743.5311,-394.1581"/>
+<polygon fill="#000000" stroke="#000000" points="4747.0311,-394.0033 4743.5311,-384.0034 4740.0311,-394.0034 4747.0311,-394.0033"/>
+<text text-anchor="middle" x="4817.5311" y="-405.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
 </g>
-<!-- NanoStringGeoMxDSPSpatialTranscriptomicsLevel1&#45;&gt;NanoStringGeoMxDSPROIRCCSegmentAnnotationMetadata -->
-<g id="edge30" class="edge">
-<title>NanoStringGeoMxDSPSpatialTranscriptomicsLevel1&#45;&gt;NanoStringGeoMxDSPROIRCCSegmentAnnotationMetadata</title>
-<path fill="none" stroke="#000000" d="M5240.2587,-348.176C5266.0956,-337.2049 5300.7727,-323.6364 5332.5404,-315 5358.9006,-307.8336 5387.4488,-301.8824 5414.9748,-297.0209"/>
-<polygon fill="#000000" stroke="#000000" points="5415.805,-300.4294 5425.0637,-295.279 5414.614,-293.5315 5415.805,-300.4294"/>
-<text text-anchor="middle" x="5406.5404" y="-318.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
+<!-- NanoStringGeoMxDSPROIDCCSegmentAnnotationMetadata -->
+<g id="node37" class="node">
+<title>NanoStringGeoMxDSPROIDCCSegmentAnnotationMetadata</title>
+<ellipse fill="none" stroke="#000000" cx="1008.5311" cy="-279" rx="295.1477" ry="18"/>
+<text text-anchor="middle" x="1008.5311" y="-275.3" font-family="Times,serif" font-size="14.00" fill="#000000">NanoStringGeoMxDSPROIDCCSegmentAnnotationMetadata</text>
 </g>
-<!-- MassSpectrometryLevel3&#45;&gt;MassSpectrometryLevel2 -->
-<g id="edge33" class="edge">
-<title>MassSpectrometryLevel3&#45;&gt;MassSpectrometryLevel2</title>
-<path fill="none" stroke="#000000" d="M3736.5404,-434.9735C3736.5404,-423.1918 3736.5404,-407.5607 3736.5404,-394.1581"/>
-<polygon fill="#000000" stroke="#000000" points="3740.0405,-394.0033 3736.5404,-384.0034 3733.0405,-394.0034 3740.0405,-394.0033"/>
-<text text-anchor="middle" x="3810.5404" y="-405.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
+<!-- MassSpectrometryLevel4 -->
+<g id="node38" class="node">
+<title>MassSpectrometryLevel4</title>
+<ellipse fill="none" stroke="#000000" cx="2333.5311" cy="-540" rx="130.777" ry="18"/>
+<text text-anchor="middle" x="2333.5311" y="-536.3" font-family="Times,serif" font-size="14.00" fill="#000000">MassSpectrometryLevel4</text>
+</g>
+<!-- MassSpectrometryLevel4&#45;&gt;MassSpectrometryLevel3 -->
+<g id="edge66" class="edge">
+<title>MassSpectrometryLevel4&#45;&gt;MassSpectrometryLevel3</title>
+<path fill="none" stroke="#000000" d="M2333.5311,-521.9735C2333.5311,-510.1918 2333.5311,-494.5607 2333.5311,-481.1581"/>
+<polygon fill="#000000" stroke="#000000" points="2337.0311,-481.0033 2333.5311,-471.0034 2330.0311,-481.0034 2337.0311,-481.0033"/>
+<text text-anchor="middle" x="2407.5311" y="-492.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
+</g>
+<!-- Slide_seqLevel1&#45;&gt;Biospecimen -->
+<g id="edge67" class="edge">
+<title>Slide_seqLevel1&#45;&gt;Biospecimen</title>
+<path fill="none" stroke="#000000" d="M3896.0057,-260.9232C3891.5488,-249.5554 3884.0865,-235.6393 3872.5311,-228 3853.3287,-215.3054 3724.0438,-203.7399 3637.7505,-197.3075"/>
+<polygon fill="#000000" stroke="#000000" points="3637.9423,-193.8122 3627.7121,-196.5678 3637.4279,-200.7933 3637.9423,-193.8122"/>
+<text text-anchor="middle" x="3961.5311" y="-231.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
+</g>
+<!-- ScmC_seqLevel1&#45;&gt;Biospecimen -->
+<g id="edge69" class="edge">
+<title>ScmC_seqLevel1&#45;&gt;Biospecimen</title>
+<path fill="none" stroke="#000000" d="M4082.1112,-261.0562C4071.6384,-249.4355 4056.3921,-235.1761 4039.5311,-228 4003.736,-212.7656 3766.0598,-200.6468 3639.1261,-195.1713"/>
+<polygon fill="#000000" stroke="#000000" points="3639.2038,-191.6715 3629.0634,-194.7411 3638.9048,-198.6651 3639.2038,-191.6715"/>
+<text text-anchor="middle" x="4136.5311" y="-231.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
+</g>
+<!-- ImagingLevel4 -->
+<g id="node41" class="node">
+<title>ImagingLevel4</title>
+<ellipse fill="none" stroke="#000000" cx="511.5311" cy="-453" rx="80.6858" ry="18"/>
+<text text-anchor="middle" x="511.5311" y="-449.3" font-family="Times,serif" font-size="14.00" fill="#000000">ImagingLevel4</text>
+</g>
+<!-- ImagingLevel4&#45;&gt;ImagingLevel3Channels -->
+<g id="edge70" class="edge">
+<title>ImagingLevel4&#45;&gt;ImagingLevel3Channels</title>
+<path fill="none" stroke="#000000" d="M510.5709,-434.8177C510.9916,-423.9864 513.3961,-410.6989 521.5311,-402 528.7182,-394.3145 546.5395,-387.7035 566.9616,-382.3214"/>
+<polygon fill="#000000" stroke="#000000" points="567.9741,-385.6761 576.8281,-379.8574 566.278,-378.8847 567.9741,-385.6761"/>
+<text text-anchor="middle" x="595.5311" y="-405.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
+</g>
+<!-- BulkWESLevel1 -->
+<g id="node43" class="node">
+<title>BulkWESLevel1</title>
+<ellipse fill="none" stroke="#000000" cx="4291.5311" cy="-279" rx="86.3847" ry="18"/>
+<text text-anchor="middle" x="4291.5311" y="-275.3" font-family="Times,serif" font-size="14.00" fill="#000000">BulkWESLevel1</text>
+</g>
+<!-- BulkWESLevel1&#45;&gt;Biospecimen -->
+<g id="edge51" class="edge">
+<title>BulkWESLevel1&#45;&gt;Biospecimen</title>
+<path fill="none" stroke="#000000" d="M4271.5548,-261.4244C4256.8708,-249.6512 4235.8399,-235.0604 4214.5311,-228 4161.3413,-210.3762 3802.8272,-198.5735 3639.8696,-194.0575"/>
+<polygon fill="#000000" stroke="#000000" points="3639.5163,-190.5466 3629.4239,-193.7706 3639.324,-197.5439 3639.5163,-190.5466"/>
+<text text-anchor="middle" x="4318.5311" y="-231.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
+</g>
+<!-- Patient&#45;&gt;Therapy -->
+<g id="edge46" class="edge">
+<title>Patient&#45;&gt;Therapy</title>
+<path fill="none" stroke="#000000" d="M3415.1745,-103.9083C3303.4003,-100.8435 3016.4499,-90.9138 2979.5311,-69 2970.2128,-63.469 2963.0585,-54.1621 2957.8322,-45.0013"/>
+<polygon fill="#000000" stroke="#000000" points="2960.9135,-43.3395 2953.2398,-36.0344 2954.6831,-46.5305 2960.9135,-43.3395"/>
+<text text-anchor="middle" x="3053.5311" y="-57.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
+</g>
+<!-- Patient&#45;&gt;Diagnosis -->
+<g id="edge47" class="edge">
+<title>Patient&#45;&gt;Diagnosis</title>
+<path fill="none" stroke="#000000" d="M3415.675,-102.2523C3334.3662,-96.8299 3166.468,-83.9707 3144.5311,-69 3136.2663,-63.3598 3130.3407,-54.3579 3126.1871,-45.4759"/>
+<polygon fill="#000000" stroke="#000000" points="3129.3617,-43.9913 3122.3486,-36.0498 3122.8786,-46.6314 3129.3617,-43.9913"/>
+<text text-anchor="middle" x="3218.5311" y="-57.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
+</g>
+<!-- Patient&#45;&gt;FollowUp -->
+<g id="edge49" class="edge">
+<title>Patient&#45;&gt;FollowUp</title>
+<path fill="none" stroke="#000000" d="M3417.2334,-99.6513C3377.7883,-93.8664 3322.678,-83.4879 3306.5311,-69 3299.9726,-63.1154 3295.8037,-54.6918 3293.1538,-46.3815"/>
+<polygon fill="#000000" stroke="#000000" points="3296.4891,-45.2972 3290.6162,-36.4791 3289.7082,-47.035 3296.4891,-45.2972"/>
+<text text-anchor="middle" x="3380.5311" y="-57.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
+</g>
+<!-- Patient&#45;&gt;Demographics -->
+<g id="edge44" class="edge">
+<title>Patient&#45;&gt;Demographics</title>
+<path fill="none" stroke="#000000" d="M3459.1166,-86.9735C3458.8458,-75.1918 3458.4865,-59.5607 3458.1784,-46.1581"/>
+<polygon fill="#000000" stroke="#000000" points="3461.6739,-45.9202 3457.9449,-36.0034 3454.6758,-46.0812 3461.6739,-45.9202"/>
+<text text-anchor="middle" x="3533.5311" y="-57.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
+</g>
+<!-- MolecularTest -->
+<g id="node46" class="node">
+<title>MolecularTest</title>
+<ellipse fill="none" stroke="#000000" cx="3630.5311" cy="-18" rx="77.1866" ry="18"/>
+<text text-anchor="middle" x="3630.5311" y="-14.3" font-family="Times,serif" font-size="14.00" fill="#000000">MolecularTest</text>
+</g>
+<!-- Patient&#45;&gt;MolecularTest -->
+<g id="edge48" class="edge">
+<title>Patient&#45;&gt;MolecularTest</title>
+<path fill="none" stroke="#000000" d="M3501.615,-99.1109C3539.8009,-93.0197 3592.5062,-82.5059 3608.5311,-69 3615.6325,-63.0148 3620.5045,-54.3145 3623.8193,-45.7892"/>
+<polygon fill="#000000" stroke="#000000" points="3627.2281,-46.6278 3627.0357,-36.0347 3620.5802,-44.4357 3627.2281,-46.6278"/>
+<text text-anchor="middle" x="3694.5311" y="-57.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
+</g>
+<!-- FamilyHistory -->
+<g id="node48" class="node">
+<title>FamilyHistory</title>
+<ellipse fill="none" stroke="#000000" cx="3803.5311" cy="-18" rx="77.1866" ry="18"/>
+<text text-anchor="middle" x="3803.5311" y="-14.3" font-family="Times,serif" font-size="14.00" fill="#000000">FamilyHistory</text>
+</g>
+<!-- Patient&#45;&gt;FamilyHistory -->
+<g id="edge43" class="edge">
+<title>Patient&#45;&gt;FamilyHistory</title>
+<path fill="none" stroke="#000000" d="M3503.3448,-102.0962C3584.122,-96.4322 3750.3343,-83.214 3772.5311,-69 3781.3386,-63.3599 3788.0201,-54.2389 3792.8829,-45.2587"/>
+<polygon fill="#000000" stroke="#000000" points="3796.1073,-46.6302 3797.3048,-36.1032 3789.804,-43.5857 3796.1073,-46.6302"/>
+<text text-anchor="middle" x="3861.5311" y="-57.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
+</g>
+<!-- Exposure -->
+<g id="node64" class="node">
+<title>Exposure</title>
+<ellipse fill="none" stroke="#000000" cx="3973.5311" cy="-18" rx="54.6905" ry="18"/>
+<text text-anchor="middle" x="3973.5311" y="-14.3" font-family="Times,serif" font-size="14.00" fill="#000000">Exposure</text>
+</g>
+<!-- Patient&#45;&gt;Exposure -->
+<g id="edge45" class="edge">
+<title>Patient&#45;&gt;Exposure</title>
+<path fill="none" stroke="#000000" d="M3503.8702,-103.8787C3615.6029,-100.7435 3902.4629,-90.6605 3939.5311,-69 3948.9715,-63.4836 3956.311,-54.1795 3961.7153,-45.0169"/>
+<polygon fill="#000000" stroke="#000000" points="3964.8798,-46.5202 3966.4806,-36.047 3958.698,-43.2361 3964.8798,-46.5202"/>
+<text text-anchor="middle" x="4029.5311" y="-57.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
+</g>
+<!-- BulkMethylation_seqLevel1 -->
+<g id="node45" class="node">
+<title>BulkMethylation_seqLevel1</title>
+<ellipse fill="none" stroke="#000000" cx="310.5311" cy="-279" rx="140.2752" ry="18"/>
+<text text-anchor="middle" x="310.5311" y="-275.3" font-family="Times,serif" font-size="14.00" fill="#000000">BulkMethylation_seqLevel1</text>
 </g>
 <!-- BulkMethylation_seqLevel1&#45;&gt;Biospecimen -->
-<g id="edge29" class="edge">
+<g id="edge50" class="edge">
 <title>BulkMethylation_seqLevel1&#45;&gt;Biospecimen</title>
-<path fill="none" stroke="#000000" d="M1821.3041,-260.9917C1820.4226,-249.802 1821.6023,-236.0602 1830.5404,-228 1857.2366,-203.9258 3088.8465,-214.2665 3124.5404,-210 3130.865,-209.244 3137.4238,-208.1923 3143.9362,-206.9732"/>
-<polygon fill="#000000" stroke="#000000" points="3144.974,-210.3348 3154.0912,-204.9379 3143.5984,-203.4713 3144.974,-210.3348"/>
-<text text-anchor="middle" x="1904.5404" y="-231.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
+<path fill="none" stroke="#000000" d="M307.2727,-260.9671C306.382,-249.7672 307.56,-236.0234 316.5311,-228 332.909,-213.3523 3458.7032,-212.5181 3480.5311,-210 3487.1032,-209.2418 3493.927,-208.1547 3500.688,-206.885"/>
+<polygon fill="#000000" stroke="#000000" points="3501.3975,-210.3125 3510.5122,-204.9114 3500.0187,-203.4496 3501.3975,-210.3125"/>
+<text text-anchor="middle" x="390.5311" y="-231.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
 </g>
-<!-- SRRSClinicalDataTier2 -->
-<g id="node77" class="node">
-<title>SRRSClinicalDataTier2</title>
-<ellipse fill="none" stroke="#000000" cx="2995.5404" cy="-192" rx="119.6788" ry="18"/>
-<text text-anchor="middle" x="2995.5404" y="-188.3" font-family="Times,serif" font-size="14.00" fill="#000000">SRRSClinicalDataTier2</text>
+<!-- ScRNA_seqLevel1&#45;&gt;Biospecimen -->
+<g id="edge52" class="edge">
+<title>ScRNA_seqLevel1&#45;&gt;Biospecimen</title>
+<path fill="none" stroke="#000000" d="M4467.363,-261.6009C4448.7226,-249.7482 4422.2079,-234.9864 4396.5311,-228 4324.9209,-208.5156 3835.4796,-197.217 3639.9629,-193.4366"/>
+<polygon fill="#000000" stroke="#000000" points="3639.8196,-189.9333 3629.7543,-193.2409 3639.6853,-196.932 3639.8196,-189.9333"/>
+<text text-anchor="middle" x="4507.5311" y="-231.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
 </g>
-<!-- SRRSClinicalDataTier2&#45;&gt;Patient -->
-<g id="edge27" class="edge">
-<title>SRRSClinicalDataTier2&#45;&gt;Patient</title>
-<path fill="none" stroke="#000000" d="M2946.8544,-175.5265C2909.0684,-163.56 2855.113,-148.245 2806.5404,-141 2702.3439,-125.4583 1964.1748,-110.0968 1756.0464,-106.0367"/>
-<polygon fill="#000000" stroke="#000000" points="1756.0305,-102.5359 1745.9644,-105.8408 1755.8945,-109.5345 1756.0305,-102.5359"/>
-<text text-anchor="middle" x="2949.5404" y="-144.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
+<!-- ElectronMicroscopyLevel1 -->
+<g id="node49" class="node">
+<title>ElectronMicroscopyLevel1</title>
+<ellipse fill="none" stroke="#000000" cx="4743.5311" cy="-279" rx="135.6761" ry="18"/>
+<text text-anchor="middle" x="4743.5311" y="-275.3" font-family="Times,serif" font-size="14.00" fill="#000000">ElectronMicroscopyLevel1</text>
 </g>
-<!-- HI_C_seqLevel1&#45;&gt;Biospecimen -->
+<!-- ElectronMicroscopyLevel1&#45;&gt;Biospecimen -->
+<g id="edge54" class="edge">
+<title>ElectronMicroscopyLevel1&#45;&gt;Biospecimen</title>
+<path fill="none" stroke="#000000" d="M4701.4239,-261.874C4670.0495,-249.99 4625.8458,-235.0719 4585.5311,-228 4493.6256,-211.8782 3865.5647,-198.0434 3639.9879,-193.5414"/>
+<polygon fill="#000000" stroke="#000000" points="3639.9432,-190.0399 3629.8756,-193.3404 3639.8041,-197.0385 3639.9432,-190.0399"/>
+<text text-anchor="middle" x="4717.5311" y="-231.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
+</g>
+<!-- HI_C_seqLevel2&#45;&gt;HI_C_seqLevel1 -->
+<g id="edge55" class="edge">
+<title>HI_C_seqLevel2&#45;&gt;HI_C_seqLevel1</title>
+<path fill="none" stroke="#000000" d="M2701.6031,-347.9735C2702.9573,-336.1918 2704.754,-320.5607 2706.2945,-307.1581"/>
+<polygon fill="#000000" stroke="#000000" points="2709.7968,-307.3376 2707.4617,-297.0034 2702.8426,-306.5383 2709.7968,-307.3376"/>
+<text text-anchor="middle" x="2779.5311" y="-318.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
+</g>
+<!-- ScDNA_seqLevel1&#45;&gt;Biospecimen -->
 <g id="edge28" class="edge">
-<title>HI_C_seqLevel1&#45;&gt;Biospecimen</title>
-<path fill="none" stroke="#000000" d="M6414.2793,-266.1952C6402.7798,-264.1669 6390.8259,-262.3098 6379.5404,-261 6060.8993,-224.0186 5979.174,-237.6862 5658.5404,-228 4725.4012,-199.8103 3592.0565,-193.5054 3284.0388,-192.272"/>
-<polygon fill="#000000" stroke="#000000" points="3283.8781,-188.7714 3273.8643,-192.2319 3283.8504,-195.7713 3283.8781,-188.7714"/>
-<text text-anchor="middle" x="6258.5404" y="-231.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
+<title>ScDNA_seqLevel1&#45;&gt;Biospecimen</title>
+<path fill="none" stroke="#000000" d="M4946.0693,-263.3607C4906.1436,-251.2605 4847.799,-235.3657 4795.5311,-228 4681.9174,-211.9894 3896.0774,-197.6135 3640.0029,-193.3078"/>
+<polygon fill="#000000" stroke="#000000" points="3639.7201,-189.8026 3629.6628,-193.1345 3639.6028,-196.8016 3639.7201,-189.8026"/>
+<text text-anchor="middle" x="4941.5311" y="-231.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
+</g>
+<!-- ElectronMicroscopyLevel2&#45;&gt;ElectronMicroscopyLevel1 -->
+<g id="edge29" class="edge">
+<title>ElectronMicroscopyLevel2&#45;&gt;ElectronMicroscopyLevel1</title>
+<path fill="none" stroke="#000000" d="M4743.5311,-347.9735C4743.5311,-336.1918 4743.5311,-320.5607 4743.5311,-307.1581"/>
+<polygon fill="#000000" stroke="#000000" points="4747.0311,-307.0033 4743.5311,-297.0034 4740.0311,-307.0034 4747.0311,-307.0033"/>
+<text text-anchor="middle" x="4817.5311" y="-318.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
+</g>
+<!-- BulkRNA_seqLevel3 -->
+<g id="node53" class="node">
+<title>BulkRNA_seqLevel3</title>
+<ellipse fill="none" stroke="#000000" cx="5587.5311" cy="-453" rx="106.6812" ry="18"/>
+<text text-anchor="middle" x="5587.5311" y="-449.3" font-family="Times,serif" font-size="14.00" fill="#000000">BulkRNA_seqLevel3</text>
+</g>
+<!-- BulkRNA_seqLevel3&#45;&gt;BulkRNA_seqLevel2 -->
+<g id="edge30" class="edge">
+<title>BulkRNA_seqLevel3&#45;&gt;BulkRNA_seqLevel2</title>
+<path fill="none" stroke="#000000" d="M5587.5311,-434.9735C5587.5311,-423.1918 5587.5311,-407.5607 5587.5311,-394.1581"/>
+<polygon fill="#000000" stroke="#000000" points="5591.0311,-394.0033 5587.5311,-384.0034 5584.0311,-394.0034 5591.0311,-394.0033"/>
+<text text-anchor="middle" x="5661.5311" y="-405.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
+</g>
+<!-- _10xVisiumSpatialTranscriptomics_AuxiliaryFiles -->
+<g id="node54" class="node">
+<title>_10xVisiumSpatialTranscriptomics_AuxiliaryFiles</title>
+<ellipse fill="none" stroke="#000000" cx="3045.5311" cy="-453" rx="243.1569" ry="18"/>
+<text text-anchor="middle" x="3045.5311" y="-449.3" font-family="Times,serif" font-size="14.00" fill="#000000">_10xVisiumSpatialTranscriptomics_AuxiliaryFiles</text>
+</g>
+<!-- _10xVisiumSpatialTranscriptomics_AuxiliaryFiles&#45;&gt;_10xVisiumSpatialTranscriptomics_RNA_seqLevel2 -->
+<g id="edge31" class="edge">
+<title>_10xVisiumSpatialTranscriptomics_AuxiliaryFiles&#45;&gt;_10xVisiumSpatialTranscriptomics_RNA_seqLevel2</title>
+<path fill="none" stroke="#000000" d="M3048.6391,-434.9735C3050.6704,-423.1918 3053.3654,-407.5607 3055.6762,-394.1581"/>
+<polygon fill="#000000" stroke="#000000" points="3059.177,-394.4527 3057.427,-384.0034 3052.2788,-393.2633 3059.177,-394.4527"/>
+<text text-anchor="middle" x="3128.5311" y="-405.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
+</g>
+<!-- _10xVisiumSpatialTranscriptomics_AuxiliaryFiles&#45;&gt;_10xVisiumSpatialTranscriptomics_RNA_seqLevel1 -->
+<g id="edge32" class="edge">
+<title>_10xVisiumSpatialTranscriptomics_AuxiliaryFiles&#45;&gt;_10xVisiumSpatialTranscriptomics_RNA_seqLevel1</title>
+<path fill="none" stroke="#000000" d="M3169.6948,-437.4835C3234.166,-426.5614 3303.416,-409.3114 3322.5311,-384 3341.1361,-359.3639 3333.7624,-339.1504 3314.5311,-315 3310.7386,-310.2375 3306.1519,-306.0534 3301.1512,-302.3887"/>
+<polygon fill="#000000" stroke="#000000" points="3302.7022,-299.2222 3292.4116,-296.7014 3298.8841,-305.0893 3302.7022,-299.2222"/>
+<text text-anchor="middle" x="3407.5311" y="-362.3" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
+</g>
+<!-- BulkMethylation_seqLevel2&#45;&gt;Biospecimen -->
+<g id="edge25" class="edge">
+<title>BulkMethylation_seqLevel2&#45;&gt;Biospecimen</title>
+<path fill="none" stroke="#000000" d="M157.3538,-355.6933C66.9159,-343.228 -36.0878,-316.5423 13.5311,-261 57.0366,-212.3008 240.3431,-231.8573 305.5311,-228 481.6148,-217.5808 3305.3013,-230.2135 3480.5311,-210 3487.1033,-209.2419 3493.927,-208.1548 3500.688,-206.8852"/>
+<polygon fill="#000000" stroke="#000000" points="3501.3975,-210.3127 3510.5122,-204.9115 3500.0187,-203.4498 3501.3975,-210.3127"/>
+<text text-anchor="middle" x="87.5311" y="-275.3" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
+</g>
+<!-- BulkMethylation_seqLevel2&#45;&gt;BulkMethylation_seqLevel1 -->
+<g id="edge26" class="edge">
+<title>BulkMethylation_seqLevel2&#45;&gt;BulkMethylation_seqLevel1</title>
+<path fill="none" stroke="#000000" d="M280.4047,-347.9735C285.6526,-335.9585 292.6492,-319.9401 298.5787,-306.3646"/>
+<polygon fill="#000000" stroke="#000000" points="301.8722,-307.5683 302.6675,-297.0034 295.4574,-304.7664 301.8722,-307.5683"/>
+<text text-anchor="middle" x="368.5311" y="-318.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
+</g>
+<!-- RPPALevel3 -->
+<g id="node56" class="node">
+<title>RPPALevel3</title>
+<ellipse fill="none" stroke="#000000" cx="5176.5311" cy="-279" rx="67.6881" ry="18"/>
+<text text-anchor="middle" x="5176.5311" y="-275.3" font-family="Times,serif" font-size="14.00" fill="#000000">RPPALevel3</text>
+</g>
+<!-- RPPALevel3&#45;&gt;Biospecimen -->
+<g id="edge27" class="edge">
+<title>RPPALevel3&#45;&gt;Biospecimen</title>
+<path fill="none" stroke="#000000" d="M5139.8645,-263.7365C5108.5232,-251.5102 5061.9044,-235.2462 5019.5311,-228 4883.7523,-204.7807 3926.4112,-195.0406 3640.1738,-192.6271"/>
+<polygon fill="#000000" stroke="#000000" points="3639.9012,-189.1248 3629.8722,-192.541 3639.8426,-196.1246 3639.9012,-189.1248"/>
+<text text-anchor="middle" x="5151.5311" y="-231.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
+</g>
+<!-- BulkWESLevel2 -->
+<g id="node57" class="node">
+<title>BulkWESLevel2</title>
+<ellipse fill="none" stroke="#000000" cx="4291.5311" cy="-366" rx="86.3847" ry="18"/>
+<text text-anchor="middle" x="4291.5311" y="-362.3" font-family="Times,serif" font-size="14.00" fill="#000000">BulkWESLevel2</text>
+</g>
+<!-- BulkWESLevel2&#45;&gt;BulkWESLevel1 -->
+<g id="edge37" class="edge">
+<title>BulkWESLevel2&#45;&gt;BulkWESLevel1</title>
+<path fill="none" stroke="#000000" d="M4291.5311,-347.9735C4291.5311,-336.1918 4291.5311,-320.5607 4291.5311,-307.1581"/>
+<polygon fill="#000000" stroke="#000000" points="4295.0311,-307.0033 4291.5311,-297.0034 4288.0311,-307.0034 4295.0311,-307.0033"/>
+<text text-anchor="middle" x="4365.5311" y="-318.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
+</g>
+<!-- _10xVisiumSpatialTranscriptomics_RNA_seqLevel4 -->
+<g id="node58" class="node">
+<title>_10xVisiumSpatialTranscriptomics_RNA_seqLevel4</title>
+<ellipse fill="none" stroke="#000000" cx="3214.5311" cy="-627" rx="252.6553" ry="18"/>
+<text text-anchor="middle" x="3214.5311" y="-623.3" font-family="Times,serif" font-size="14.00" fill="#000000">_10xVisiumSpatialTranscriptomics_RNA_seqLevel4</text>
+</g>
+<!-- _10xVisiumSpatialTranscriptomics_RNA_seqLevel3 -->
+<g id="node62" class="node">
+<title>_10xVisiumSpatialTranscriptomics_RNA_seqLevel3</title>
+<ellipse fill="none" stroke="#000000" cx="3214.5311" cy="-540" rx="252.6553" ry="18"/>
+<text text-anchor="middle" x="3214.5311" y="-536.3" font-family="Times,serif" font-size="14.00" fill="#000000">_10xVisiumSpatialTranscriptomics_RNA_seqLevel3</text>
+</g>
+<!-- _10xVisiumSpatialTranscriptomics_RNA_seqLevel4&#45;&gt;_10xVisiumSpatialTranscriptomics_RNA_seqLevel3 -->
+<g id="edge41" class="edge">
+<title>_10xVisiumSpatialTranscriptomics_RNA_seqLevel4&#45;&gt;_10xVisiumSpatialTranscriptomics_RNA_seqLevel3</title>
+<path fill="none" stroke="#000000" d="M3214.5311,-608.9735C3214.5311,-597.1918 3214.5311,-581.5607 3214.5311,-568.1581"/>
+<polygon fill="#000000" stroke="#000000" points="3218.0311,-568.0033 3214.5311,-558.0034 3211.0311,-568.0034 3218.0311,-568.0033"/>
+<text text-anchor="middle" x="3288.5311" y="-579.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
+</g>
+<!-- BulkWESLevel3 -->
+<g id="node59" class="node">
+<title>BulkWESLevel3</title>
+<ellipse fill="none" stroke="#000000" cx="4291.5311" cy="-453" rx="86.3847" ry="18"/>
+<text text-anchor="middle" x="4291.5311" y="-449.3" font-family="Times,serif" font-size="14.00" fill="#000000">BulkWESLevel3</text>
+</g>
+<!-- BulkWESLevel3&#45;&gt;BulkWESLevel2 -->
+<g id="edge35" class="edge">
+<title>BulkWESLevel3&#45;&gt;BulkWESLevel2</title>
+<path fill="none" stroke="#000000" d="M4291.5311,-434.9735C4291.5311,-423.1918 4291.5311,-407.5607 4291.5311,-394.1581"/>
+<polygon fill="#000000" stroke="#000000" points="4295.0311,-394.0033 4291.5311,-384.0034 4288.0311,-394.0034 4295.0311,-394.0033"/>
+<text text-anchor="middle" x="4365.5311" y="-405.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
+</g>
+<!-- ScATAC_seqLevel2 -->
+<g id="node60" class="node">
+<title>ScATAC_seqLevel2</title>
+<ellipse fill="none" stroke="#000000" cx="5362.5311" cy="-366" rx="100.9827" ry="18"/>
+<text text-anchor="middle" x="5362.5311" y="-362.3" font-family="Times,serif" font-size="14.00" fill="#000000">ScATAC_seqLevel2</text>
+</g>
+<!-- ScATAC_seqLevel1 -->
+<g id="node63" class="node">
+<title>ScATAC_seqLevel1</title>
+<ellipse fill="none" stroke="#000000" cx="5362.5311" cy="-279" rx="100.9827" ry="18"/>
+<text text-anchor="middle" x="5362.5311" y="-275.3" font-family="Times,serif" font-size="14.00" fill="#000000">ScATAC_seqLevel1</text>
+</g>
+<!-- ScATAC_seqLevel2&#45;&gt;ScATAC_seqLevel1 -->
+<g id="edge5" class="edge">
+<title>ScATAC_seqLevel2&#45;&gt;ScATAC_seqLevel1</title>
+<path fill="none" stroke="#000000" d="M5362.5311,-347.9735C5362.5311,-336.1918 5362.5311,-320.5607 5362.5311,-307.1581"/>
+<polygon fill="#000000" stroke="#000000" points="5366.0311,-307.0033 5362.5311,-297.0034 5359.0311,-307.0034 5366.0311,-307.0033"/>
+<text text-anchor="middle" x="5436.5311" y="-318.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
+</g>
+<!-- NanoStringGeoMxDSPSpatialTranscriptomicsLevel3 -->
+<g id="node61" class="node">
+<title>NanoStringGeoMxDSPSpatialTranscriptomicsLevel3</title>
+<ellipse fill="none" stroke="#000000" cx="1465.5311" cy="-453" rx="258.0542" ry="18"/>
+<text text-anchor="middle" x="1465.5311" y="-449.3" font-family="Times,serif" font-size="14.00" fill="#000000">NanoStringGeoMxDSPSpatialTranscriptomicsLevel3</text>
+</g>
+<!-- NanoStringGeoMxDSPSpatialTranscriptomicsLevel3&#45;&gt;NanoStringGeoMxDSPROIRCCSegmentAnnotationMetadata -->
+<g id="edge6" class="edge">
+<title>NanoStringGeoMxDSPSpatialTranscriptomicsLevel3&#45;&gt;NanoStringGeoMxDSPROIRCCSegmentAnnotationMetadata</title>
+<path fill="none" stroke="#000000" d="M1470.0247,-434.968C1476.312,-412.5952 1489.506,-374.2042 1511.5311,-348 1527.3086,-329.2287 1549.4604,-313.5697 1569.2676,-301.9395"/>
+<polygon fill="#000000" stroke="#000000" points="1571.2047,-304.8645 1578.1719,-296.8827 1567.7479,-298.7776 1571.2047,-304.8645"/>
+<text text-anchor="middle" x="1585.5311" y="-362.3" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
+</g>
+<!-- NanoStringGeoMxDSPSpatialTranscriptomicsLevel3&#45;&gt;ImagingLevel2 -->
+<g id="edge8" class="edge">
+<title>NanoStringGeoMxDSPSpatialTranscriptomicsLevel3&#45;&gt;ImagingLevel2</title>
+<path fill="none" stroke="#000000" d="M1302.4914,-438.9921C1267.1511,-433.7963 1230.2683,-426.6952 1196.5311,-417 1181.047,-412.5503 1178.9067,-406.8109 1163.5311,-402 1125.8896,-390.2223 1082.9443,-381.8316 1046.692,-376.1308"/>
+<polygon fill="#000000" stroke="#000000" points="1047.0691,-372.6479 1036.6545,-374.5937 1046.0094,-379.5672 1047.0691,-372.6479"/>
+<text text-anchor="middle" x="1270.5311" y="-405.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
+</g>
+<!-- NanoStringGeoMxDSPSpatialTranscriptomicsLevel3&#45;&gt;NanoStringGeoMxDSPROIDCCSegmentAnnotationMetadata -->
+<g id="edge9" class="edge">
+<title>NanoStringGeoMxDSPSpatialTranscriptomicsLevel3&#45;&gt;NanoStringGeoMxDSPROIDCCSegmentAnnotationMetadata</title>
+<path fill="none" stroke="#000000" d="M1424.5682,-435.1585C1401.2255,-425.1366 1371.3658,-412.56 1344.5311,-402 1248.9415,-364.3838 1136.6439,-324.0408 1069.1106,-300.1899"/>
+<polygon fill="#000000" stroke="#000000" points="1070.0736,-296.8183 1059.4788,-296.7929 1067.7453,-303.4198 1070.0736,-296.8183"/>
+<text text-anchor="middle" x="1368.5311" y="-362.3" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
+</g>
+<!-- NanoStringGeoMxDSPSpatialTranscriptomicsLevel1 -->
+<g id="node66" class="node">
+<title>NanoStringGeoMxDSPSpatialTranscriptomicsLevel1</title>
+<ellipse fill="none" stroke="#000000" cx="1926.5311" cy="-366" rx="258.0542" ry="18"/>
+<text text-anchor="middle" x="1926.5311" y="-362.3" font-family="Times,serif" font-size="14.00" fill="#000000">NanoStringGeoMxDSPSpatialTranscriptomicsLevel1</text>
+</g>
+<!-- NanoStringGeoMxDSPSpatialTranscriptomicsLevel3&#45;&gt;NanoStringGeoMxDSPSpatialTranscriptomicsLevel1 -->
+<g id="edge7" class="edge">
+<title>NanoStringGeoMxDSPSpatialTranscriptomicsLevel3&#45;&gt;NanoStringGeoMxDSPSpatialTranscriptomicsLevel1</title>
+<path fill="none" stroke="#000000" d="M1555.2368,-436.0707C1633.2318,-421.3515 1746.0886,-400.0531 1826.8781,-384.8065"/>
+<polygon fill="#000000" stroke="#000000" points="1827.8855,-388.1783 1837.0629,-382.8844 1826.5873,-381.2997 1827.8855,-388.1783"/>
+<text text-anchor="middle" x="1798.5311" y="-405.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
+</g>
+<!-- _10xVisiumSpatialTranscriptomics_RNA_seqLevel3&#45;&gt;_10xVisiumSpatialTranscriptomics_RNA_seqLevel2 -->
+<g id="edge18" class="edge">
+<title>_10xVisiumSpatialTranscriptomics_RNA_seqLevel3&#45;&gt;_10xVisiumSpatialTranscriptomics_RNA_seqLevel2</title>
+<path fill="none" stroke="#000000" d="M3271.0604,-522.2763C3279.2967,-517.5068 3286.8868,-511.5119 3292.5311,-504 3311.0009,-479.4186 3315.1817,-460.1761 3297.5311,-435 3282.2169,-413.1565 3225.7434,-396.2396 3171.7667,-384.6238"/>
+<polygon fill="#000000" stroke="#000000" points="3172.2334,-381.1455 3161.7276,-382.5166 3170.7953,-387.9963 3172.2334,-381.1455"/>
+<text text-anchor="middle" x="3383.5311" y="-449.3" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
+</g>
+<!-- _10xVisiumSpatialTranscriptomics_RNA_seqLevel3&#45;&gt;_10xVisiumSpatialTranscriptomics_AuxiliaryFiles -->
+<g id="edge19" class="edge">
+<title>_10xVisiumSpatialTranscriptomics_RNA_seqLevel3&#45;&gt;_10xVisiumSpatialTranscriptomics_AuxiliaryFiles</title>
+<path fill="none" stroke="#000000" d="M3179.5141,-521.9735C3153.3685,-508.5139 3117.464,-490.0306 3089.4036,-475.5853"/>
+<polygon fill="#000000" stroke="#000000" points="3090.7066,-472.3195 3080.2136,-470.8543 3087.5026,-478.5433 3090.7066,-472.3195"/>
+<text text-anchor="middle" x="3214.5311" y="-492.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
+</g>
+<!-- ScATAC_seqLevel1&#45;&gt;Biospecimen -->
+<g id="edge17" class="edge">
+<title>ScATAC_seqLevel1&#45;&gt;Biospecimen</title>
+<path fill="none" stroke="#000000" d="M5328.2257,-262.07C5301.9269,-250.0335 5264.3534,-234.8365 5229.5311,-228 5073.063,-197.2814 3952.7921,-192.7736 3640.2903,-192.1131"/>
+<polygon fill="#000000" stroke="#000000" points="3639.9645,-188.6126 3629.9573,-192.0921 3639.9502,-195.6126 3639.9645,-188.6126"/>
+<text text-anchor="middle" x="5352.5311" y="-231.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
+</g>
+<!-- ScATAC_seqLevel3&#45;&gt;ScATAC_seqLevel2 -->
+<g id="edge10" class="edge">
+<title>ScATAC_seqLevel3&#45;&gt;ScATAC_seqLevel2</title>
+<path fill="none" stroke="#000000" d="M5362.5311,-434.9735C5362.5311,-423.1918 5362.5311,-407.5607 5362.5311,-394.1581"/>
+<polygon fill="#000000" stroke="#000000" points="5366.0311,-394.0033 5362.5311,-384.0034 5359.0311,-394.0034 5366.0311,-394.0033"/>
+<text text-anchor="middle" x="5436.5311" y="-405.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
+</g>
+<!-- NanoStringGeoMxDSPSpatialTranscriptomicsLevel1&#45;&gt;NanoStringGeoMxDSPROIRCCSegmentAnnotationMetadata -->
+<g id="edge13" class="edge">
+<title>NanoStringGeoMxDSPSpatialTranscriptomicsLevel1&#45;&gt;NanoStringGeoMxDSPROIRCCSegmentAnnotationMetadata</title>
+<path fill="none" stroke="#000000" d="M1854.7049,-348.6355C1831.889,-342.9277 1806.5965,-336.4003 1783.5311,-330 1749.6073,-320.5866 1712.0971,-309.286 1681.1419,-299.7172"/>
+<polygon fill="#000000" stroke="#000000" points="1681.9227,-296.295 1671.3347,-296.6759 1679.8493,-302.9809 1681.9227,-296.295"/>
+<text text-anchor="middle" x="1857.5311" y="-318.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
+</g>
+<!-- NanoStringGeoMxDSPSpatialTranscriptomicsLevel1&#45;&gt;Biospecimen -->
+<g id="edge14" class="edge">
+<title>NanoStringGeoMxDSPSpatialTranscriptomicsLevel1&#45;&gt;Biospecimen</title>
+<path fill="none" stroke="#000000" d="M1928.8231,-347.9455C1932.6486,-320.9443 1941.2499,-272.0276 1954.5311,-261 2029.1163,-199.0706 2292.6896,-232.4682 2389.5311,-228 2631.7508,-216.824 3239.8049,-239.0902 3480.5311,-210 3486.8547,-209.2358 3493.4129,-208.1788 3499.9248,-206.9565"/>
+<polygon fill="#000000" stroke="#000000" points="3500.964,-210.3178 3510.0795,-204.918 3499.5862,-203.4547 3500.964,-210.3178"/>
+<text text-anchor="middle" x="2028.5311" y="-275.3" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
+</g>
+<!-- NanoStringGeoMxDSPSpatialTranscriptomicsLevel1&#45;&gt;NanoStringGeoMxDSPROIDCCSegmentAnnotationMetadata -->
+<g id="edge15" class="edge">
+<title>NanoStringGeoMxDSPSpatialTranscriptomicsLevel1&#45;&gt;NanoStringGeoMxDSPROIDCCSegmentAnnotationMetadata</title>
+<path fill="none" stroke="#000000" d="M1773.3953,-351.4871C1609.0915,-335.9159 1348.8257,-311.2501 1178.3514,-295.0941"/>
+<polygon fill="#000000" stroke="#000000" points="1178.5577,-291.598 1168.2721,-294.1389 1177.8972,-298.5668 1178.5577,-291.598"/>
+<text text-anchor="middle" x="1596.5311" y="-318.8" font-family="Times,serif" font-size="14.00" fill="#000000">requires_component</text>
 </g>
 </g>
 </svg>
