@@ -35,11 +35,11 @@ PropDefinitions:
         - NOS
         - Nocardiosis
         - Pneumocystis_Pneumonia
-        - Pneumonia
         - Progressive_Multifocal_Leukoencephalopathy
         - Salmonella_Septicemia
         - Toxoplasmosis
         - Wasting_Syndrome
+        - pneumonia
         Term:
         -   Code: http://schema.biothings.io/AIDSRiskFactors
             Definition: The text term used to describe a risk factor of the acquired
@@ -370,14 +370,6 @@ PropDefinitions:
                 is compatible with other accepted classifications.
             Origin: HTAN
             Value: AJCC Staging System Edition
-    AbNameReportedonDataset:
-        Desc: The antibody name.
-        Term:
-        -   Code: http://schema.biothings.io/AbNameReportedonDataset
-            Definition: The antibody name.
-            Origin: HTAN
-            Value: Ab Name Reported on Dataset
-        Type: TBD
     AcquisitionMethodType:
         Desc: Records the method of acquisition or source for the specimen under consideration.
         Enum:
@@ -445,46 +437,31 @@ PropDefinitions:
         - Hilar_Airway
         - Not_Reported
         - Peri_tumoral_Airway
-        - Skin_NOS
-        - Skin_of_abdomen
-        - Skin_of_back
-        - Skin_of_breast
-        - Skin_of_chest
-        - Skin_of_ear
-        - Skin_of_eye_lid
-        - Skin_of_lip
-        - Skin_of_lower_limb_and_hip
-        - Skin_of_neck
-        - Skin_of_nose
-        - Skin_of_other_parts_of_face
-        - Skin_of_palm
-        - Skin_of_penis
-        - Skin_of_scalp
-        - Skin_of_scrotum
-        - Skin_of_sole
         - Skin_of_trunk
-        - Skin_of_upper_limb_and_shoulder
-        - Skin_of_vulva
+        - skin_NOS
+        - skin_of_abdomen
+        - skin_of_back
+        - skin_of_breast
+        - skin_of_chest
+        - skin_of_ear
+        - skin_of_eye_lid
+        - skin_of_lip
+        - skin_of_lower_limb_and_hip
+        - skin_of_neck
+        - skin_of_nose
+        - skin_of_other_parts_of_face
+        - skin_of_palm
+        - skin_of_penis
+        - skin_of_scalp
+        - skin_of_scrotum
+        - skin_of_sole
+        - skin_of_upper_limb_and_shoulder
+        - skin_of_vulva
         Term:
         -   Code: http://schema.biothings.io/AdditionalTopography
             Definition: Topography not included in the ICD-O-3 Topography codes.
             Origin: HTAN
             Value: Additional Topography
-    AdditonalFindingsUninvolvedProstate:
-        Desc: Additional findings, uninvolved prostate
-        Enum:
-        - Benign_prostatic_hyperplasia__BPH_
-        - High_grade_prostatic_intraepithelial_neoplasia__PIN_
-        - Inflammation
-        - Not_Reported
-        - Other
-        - Prostatic_Intraductal_adenocarcinoma
-        - unknown
-        Term:
-        -   Code: http://schema.biothings.io/AdditonalFindingsUninvolvedProstate
-            Definition: Additional findings, uninvolved prostate
-            Origin: HTAN
-            Value: Additonal Findings Uninvolved Prostate
     AdjacentBiospecimenIDs:
         Desc: List of HTAN Identifiers (separated by commas) of adjacent biospecimens
             cut from the same sample; for example HTA3_3000_3, HTA3_3000_4, ...
@@ -675,9 +652,7 @@ PropDefinitions:
         - Dysmenorrhea
         - Dyspareunia
         - Dyspepsia
-        - Dysphagia
         - Dysphasia
-        - Dyspnea
         - Ear_Pain
         - Ear_and_Labyrinth_Disorders_Other
         - Edema_Cerebral
@@ -1288,13 +1263,15 @@ PropDefinitions:
         - Watering_Eyes
         - Weight_Gain
         - Weight_Loss
-        - Wheezing
         - White_Blood_Cell_Decreased
         - Wolff_Parkinson_White_Syndrome
         - Wound_Complication
         - Wound_Dehiscence
         - Wound_Infection
         - Wrist_Fracture
+        - dysphagia
+        - dyspnea
+        - wheezing
         Term:
         -   Code: http://schema.biothings.io/AdverseEvent
             Definition: Text that represents the Common Terminology Criteria for Adverse
@@ -1321,8 +1298,8 @@ PropDefinitions:
             actual age differs from what is reported. Other date intervals for this
             patient may also be modified.
         Enum:
-        - 'False'
-        - 'True'
+        - 'false'
+        - 'true'
         Term:
         -   Code: http://schema.biothings.io/AgeIsObfuscated
             Definition: The age of the patient has been modified for compliance reasons.
@@ -1436,6 +1413,8 @@ PropDefinitions:
         - cDNA_Libraries_Analyte
         - cfDNA_Analyte
         - lipid
+        - metabolite
+        - protein
         Term:
         -   Code: http://schema.biothings.io/AnalyteType
             Definition: 'The kind of molecular specimen analyte: a molecular derivative
@@ -1446,9 +1425,9 @@ PropDefinitions:
         Desc: Yes/no/unknown/Not Reported indicator used to describe whether anaplasia
             was present at the time of diagnosis.
         Enum:
-        - 'No'
         - Not_Reported
         - Yes___Anaplasia_Present
+        - 'no'
         - unknown
         Term:
         -   Code: http://schema.biothings.io/AnaplasiaPresent
@@ -1488,23 +1467,14 @@ PropDefinitions:
             Origin: HTAN
             Value: Antibody Name
         Type: TBD
-    AntibodyNotes:
-        Desc: Notes on antibodies replacements and antibody recognition observations.
-        Term:
-        -   Code: http://schema.biothings.io/AntibodyNotes
-            Definition: Notes on antibodies replacements and antibody recognition
-                observations.
-            Origin: HTAN
-            Value: Antibody Notes
-        Type: TBD
     AntibodyRole:
-        Desc: ' "Is this antibody acting as a primary or secondary antibody"'
+        Desc: '"Is this antibody acting as a primary or secondary antibody"'
         Enum:
         - Primary
         - Secondary
         Term:
         -   Code: http://schema.biothings.io/AntibodyRole
-            Definition: ' "Is this antibody acting as a primary or secondary antibody"'
+            Definition: '"Is this antibody acting as a primary or secondary antibody"'
             Origin: HTAN
             Value: Antibody Role
     Antigen:
@@ -1556,8 +1526,8 @@ PropDefinitions:
     AppliedHardTrimming:
         Desc: Was Hard Trimming applied
         Enum:
-        - 'No'
         - Yes___Applied_Hard_Trimming
+        - 'no'
         Term:
         -   Code: http://schema.biothings.io/AppliedHardTrimming
             Definition: Was Hard Trimming applied
@@ -1567,10 +1537,10 @@ PropDefinitions:
         Desc: The yes/no/unknown indicator used to describe whether the patient was
             exposed to asbestos.
         Enum:
-        - 'No'
         - Not_Reported
-        - 'Yes'
+        - 'no'
         - unknown
+        - 'yes'
         Term:
         -   Code: http://schema.biothings.io/AsbestosExposure
             Definition: The yes/no/unknown indicator used to describe whether the
@@ -1611,26 +1581,6 @@ PropDefinitions:
             Origin: HTAN
             Value: Average Read Length
         Type: TBD
-    BIRADSMammographyBreastDensityCategory:
-        Desc: The category that describes the relative amount of different tissues
-            present in the breast on a mammogram based on the updated 2015 edition
-            of the American College of Radiology''s Breast Imaging Reporting and Data
-            System (BI-RADS) reporting guidelines.
-        Enum:
-        - Data_not_available
-        - Extremely_dense
-        - Heterogeneously_dense
-        - Predominantly_fatty
-        - Scattered_fibroglandular_densities
-        - unknown
-        Term:
-        -   Code: http://schema.biothings.io/BIRADSMammographyBreastDensityCategory
-            Definition: The category that describes the relative amount of different
-                tissues present in the breast on a mammogram based on the updated
-                2015 edition of the American College of Radiology''s Breast Imaging
-                Reporting and Data System (BI-RADS) reporting guidelines.
-            Origin: HTAN
-            Value: BIRADS Mammography Breast Density Category
     BMI:
         Desc: A calculated numerical quantity that represents an individual''s weight
             to height ratio.
@@ -1644,8 +1594,8 @@ PropDefinitions:
     BarrettsEsophagusGobletCellsPresent:
         Desc: Presence or absennce of Barretts esophagus goblet cells.
         Enum:
-        - 'No'
-        - 'Yes'
+        - 'no'
+        - 'yes'
         Term:
         -   Code: http://schema.biothings.io/BarrettsEsophagusGobletCellsPresent
             Definition: Presence or absennce of Barretts esophagus goblet cells.
@@ -1775,8 +1725,8 @@ PropDefinitions:
     BiotinEnrichment:
         Desc: Whether biotin is used for enriching ligation product
         Enum:
-        - 'No'
-        - 'Yes'
+        - 'no'
+        - 'yes'
         Term:
         -   Code: http://schema.biothings.io/BiotinEnrichment
             Definition: Whether biotin is used for enriching ligation product
@@ -1845,317 +1795,6 @@ PropDefinitions:
             Origin: HTAN
             Value: Body Surface Area
         Type: TBD
-    BreastBiopsyProcedureFindingType:
-        Desc: Text term to describe the result of the examination of the breast tissue
-            specimen or fluid as related to the presence and nature of disease.
-        Enum:
-        - Atypical_hyperplasia
-        - Cancer
-        - DCIS
-        - LCIS
-        - No_cancer
-        - Other
-        Term:
-        -   Code: http://schema.biothings.io/BreastBiopsyProcedureFindingType
-            Definition: Text term to describe the result of the examination of the
-                breast tissue specimen or fluid as related to the presence and nature
-                of disease.
-            Origin: HTAN
-            Value: Breast Biopsy Procedure Finding Type
-    BreastCancerAllredEstrogenReceptorScore:
-        Desc: The numeric Allred score, that is cell staining percentage plus intensity,
-            to determine estrogen receptor status.
-        Enum:
-        - _0
-        - _1
-        - _10
-        - _2
-        - _3
-        - _4
-        - _5
-        - _6
-        - _7
-        - _8
-        - unknown
-        Term:
-        -   Code: http://schema.biothings.io/BreastCancerAllredEstrogenReceptorScore
-            Definition: The numeric Allred score, that is cell staining percentage
-                plus intensity, to determine estrogen receptor status.
-            Origin: HTAN
-            Value: Breast Cancer Allred Estrogen Receptor Score
-    BreastCancerAssessmentTests:
-        Desc: Text term to identify assessment tests done in participants during diagnosis
-        Enum:
-        - Data_not_available
-        - Estrogen_receptor_IHC
-        - HER2_FISH
-        - HER2_FISH_CISH
-        - HER2_IHC
-        - Other
-        - Progesterone_receptor_IHC
-        - unknown
-        Term:
-        -   Code: http://schema.biothings.io/BreastCancerAssessmentTests
-            Definition: Text term to identify assessment tests done in participants
-                during diagnosis
-            Origin: HTAN
-            Value: Breast Cancer Assessment Tests
-    BreastCancerGenomicTestPerformed:
-        Desc: Text term that represents the name of the genomic test performed for
-            breast cancer.
-        Enum:
-        - Data_not_available
-        - MammaPrint
-        - Not_performed
-        - Oncotype
-        - Other
-        - unknown
-        Term:
-        -   Code: http://schema.biothings.io/BreastCancerGenomicTestPerformed
-            Definition: Text term that represents the name of the genomic test performed
-                for breast cancer.
-            Origin: HTAN
-            Value: Breast Cancer Genomic Test Performed
-    BreastCarcinomaCentromere17CopyNumber:
-        Desc: Result of Centromere 17 testing in a sample or specimen of metastatic
-            breast carcinoma, expressed as a range of values.
-        Term:
-        -   Code: http://schema.biothings.io/BreastCarcinomaCentromere17CopyNumber
-            Definition: Result of Centromere 17 testing in a sample or specimen of
-                metastatic breast carcinoma, expressed as a range of values.
-            Origin: HTAN
-            Value: Breast Carcinoma Centromere 17 Copy Number
-        Type: TBD
-    BreastCarcinomaDetectionMethodType:
-        Desc: The means, manner of procedure, or systematic course of actions performed
-            in order to discover or identify breast cancer.
-        Enum:
-        - Clinical_Exam
-        - Data_not_available
-        - Nipple_Discharge
-        - Other
-        - Screening_MRI
-        - Screening_Mammography
-        - Self_exam
-        - unknown
-        Term:
-        -   Code: http://schema.biothings.io/BreastCarcinomaDetectionMethodType
-            Definition: The means, manner of procedure, or systematic course of actions
-                performed in order to discover or identify breast cancer.
-            Origin: HTAN
-            Value: Breast Carcinoma Detection Method Type
-    BreastCarcinomaERStainingIntensity:
-        Desc: Text term to indicate the ER staining intensity on pathology assessment
-            in a participant with breast cancer
-        Enum:
-        - Moderate
-        - Moderate_Strong
-        - Other
-        - Strong
-        - Weak
-        - Weak_Moderate
-        - Weak_Strong
-        - unknown
-        Term:
-        -   Code: http://schema.biothings.io/BreastCarcinomaERStainingIntensity
-            Definition: Text term to indicate the ER staining intensity on pathology
-                assessment in a participant with breast cancer
-            Origin: HTAN
-            Value: Breast Carcinoma ER Staining Intensity
-    BreastCarcinomaERStatusPercentageValue:
-        Desc: A numerical quantity measured or assigned or computed which captures
-            the estrogen receptor level measured in a participant with breast cancer
-        Term:
-        -   Code: http://schema.biothings.io/BreastCarcinomaERStatusPercentageValue
-            Definition: A numerical quantity measured or assigned or computed which
-                captures the estrogen receptor level measured in a participant with
-                breast cancer
-            Origin: HTAN
-            Value: Breast Carcinoma ER Status Percentage Value
-        Type: TBD
-    BreastCarcinomaEstrogenReceptorStatus:
-        Desc: Text term to represent the overall result of Estrogen Receptor (ER)
-            testing in a participant with breast cancer
-        Enum:
-        - Borderline
-        - Equivocal
-        - Indeterminate
-        - Negative
-        - Not_Performed
-        - Performed_but_Not_Available
-        - Positive
-        - unknown
-        Term:
-        -   Code: http://schema.biothings.io/BreastCarcinomaEstrogenReceptorStatus
-            Definition: Text term to represent the overall result of Estrogen Receptor
-                (ER) testing in a participant with breast cancer
-            Origin: HTAN
-            Value: Breast Carcinoma Estrogen Receptor Status
-    BreastCarcinomaHER2Centromere17CopynumberTotal:
-        Desc: Number of Cells Counted for HER2 & Centromere 17 Copy Numbers in a participant
-            with breast cancer
-        Term:
-        -   Code: http://schema.biothings.io/BreastCarcinomaHER2Centromere17CopynumberTotal
-            Definition: Number of Cells Counted for HER2 & Centromere 17 Copy Numbers
-                in a participant with breast cancer
-            Origin: HTAN
-            Value: Breast Carcinoma HER2 Centromere17 Copynumber Total
-        Type: TBD
-    BreastCarcinomaHER2Chromosome17Ratio:
-        Desc: HER2 chromosome 17 ratio in participants with breast cancer
-        Term:
-        -   Code: http://schema.biothings.io/BreastCarcinomaHER2Chromosome17Ratio
-            Definition: HER2 chromosome 17 ratio in participants with breast cancer
-            Origin: HTAN
-            Value: Breast Carcinoma HER2 Chromosome17 Ratio
-        Type: TBD
-    BreastCarcinomaHER2RatioDiagnosis:
-        Desc: HER2 ratio of the participant at diagnosis
-        Term:
-        -   Code: http://schema.biothings.io/BreastCarcinomaHER2RatioDiagnosis
-            Definition: HER2 ratio of the participant at diagnosis
-            Origin: HTAN
-            Value: Breast Carcinoma HER2 Ratio Diagnosis
-        Type: TBD
-    BreastCarcinomaHER2Status:
-        Desc: Text term to signify the result of the medical procedure that involves
-            testing a sample of blood or tissue for HER2 in a participant with breast
-            cancer
-        Enum:
-        - Amplified
-        - Equivocal
-        - Indeterminate
-        - Negative
-        - Non_amplified
-        - Not_Performed
-        - Positive
-        - unknown
-        Term:
-        -   Code: http://schema.biothings.io/BreastCarcinomaHER2Status
-            Definition: Text term to signify the result of the medical procedure that
-                involves testing a sample of blood or tissue for HER2 in a participant
-                with breast cancer
-            Origin: HTAN
-            Value: Breast Carcinoma HER2 Status
-    BreastCarcinomaHistologyCategory:
-        Desc: Classification of the type of invasive breast carcinoma diagnosed based
-            on histologic attributes.
-        Enum:
-        - Infiltrating_ductal_carcinoma
-        - Infiltrating_lobular_carcinoma
-        - Invasive_mammary_carcinoma_NOS
-        - Invasive_mixed_ductal_and_lobular_carcinoma
-        - Other
-        Term:
-        -   Code: http://schema.biothings.io/BreastCarcinomaHistologyCategory
-            Definition: Classification of the type of invasive breast carcinoma diagnosed
-                based on histologic attributes.
-            Origin: HTAN
-            Value: Breast Carcinoma Histology Category
-    BreastCarcinomaPRStainingIntensity:
-        Desc: Text term to indicate the PR staining intensity on pathology assessment
-            in a participant with breast cancer
-        Enum:
-        - Moderate
-        - Moderate_Strong
-        - Other
-        - Strong
-        - Weak
-        - Weak_Moderate
-        - Weak_Strong
-        - unknown
-        Term:
-        -   Code: http://schema.biothings.io/BreastCarcinomaPRStainingIntensity
-            Definition: Text term to indicate the PR staining intensity on pathology
-                assessment in a participant with breast cancer
-            Origin: HTAN
-            Value: Breast Carcinoma PR Staining Intensity
-    BreastCarcinomaPRStatusPercentageValue:
-        Desc: A numerical quantity measured or assigned or computed which captures
-            the progesterone receptor level measured in a participant with breast
-            cancer
-        Term:
-        -   Code: http://schema.biothings.io/BreastCarcinomaPRStatusPercentageValue
-            Definition: A numerical quantity measured or assigned or computed which
-                captures the progesterone receptor level measured in a participant
-                with breast cancer
-            Origin: HTAN
-            Value: Breast Carcinoma PR Status Percentage Value
-        Type: TBD
-    BreastCarcinomaProgesteronerReceptorStatus:
-        Desc: Text term to represent the overall result of Progresterone Receptor
-            (PR) testing in a participant with breast cancer
-        Enum:
-        - Borderline
-        - Equivocal
-        - Indeterminate
-        - Negative
-        - Not_Performed
-        - Performed_but_Not_Available
-        - Positive
-        - unknown
-        Term:
-        -   Code: http://schema.biothings.io/BreastCarcinomaProgesteronerReceptorStatus
-            Definition: Text term to represent the overall result of Progresterone
-                Receptor (PR) testing in a participant with breast cancer
-            Origin: HTAN
-            Value: Breast Carcinoma Progesteroner Receptor Status
-    BreastCarcinomaSurgicalProcedureName:
-        Desc: Text name of a surgical procedure performed for a person with a diagnosis
-            of breast cancer
-        Enum:
-        - Lumpectomy
-        - Modified_radical_mastectomy
-        - Other
-        - Partial_mastectomy
-        - Radical_mastectomy
-        - Re_excision
-        - Simple_mastectomy
-        - Surgery_not_performed
-        - unknown
-        Term:
-        -   Code: http://schema.biothings.io/BreastCarcinomaSurgicalProcedureName
-            Definition: Text name of a surgical procedure performed for a person with
-                a diagnosis of breast cancer
-            Origin: HTAN
-            Value: Breast Carcinoma Surgical Procedure Name
-    BreastImagingPerformedType:
-        Desc: The kind of technology or method performed for screening, diagnosis,
-            surgical procedures or therapy that aids in the visualization of the breast(s).
-        Enum:
-        - CT
-        - Data_not_available
-        - MRI
-        - Mammogram
-        - Multiple_imaging_modalities
-        - PET_CT
-        - Ultrasound
-        - unknown
-        Term:
-        -   Code: http://schema.biothings.io/BreastImagingPerformedType
-            Definition: The kind of technology or method performed for screening,
-                diagnosis, surgical procedures or therapy that aids in the visualization
-                of the breast(s).
-            Origin: HTAN
-            Value: Breast Imaging Performed Type
-    BreastQuadrantSite:
-        Desc: The breast quadrant or structure from which the breast tissue specimen
-            was removed for microscopic examination.
-        Enum:
-        - Central
-        - Data_not_available
-        - Lower_inner_quadrant
-        - Lower_outer_quadrant
-        - Nipple
-        - Upper_inner_quadrant
-        - Upper_outer_quadrant
-        - unknown
-        Term:
-        -   Code: http://schema.biothings.io/BreastQuadrantSite
-            Definition: The breast quadrant or structure from which the breast tissue
-                specimen was removed for microscopic examination.
-            Origin: HTAN
-            Value: Breast Quadrant Site
     BreslowThickness:
         Desc: The number that describes the distance, in millimeters, between the
             upper layer of the epidermis and the deepest point of tumor penetration.
@@ -2216,278 +1855,6 @@ PropDefinitions:
                 virus, as described by the Center for Disease Control.
             Origin: HTAN
             Value: CDC HIV Risk Factors
-    CNSLeukemiaStatus:
-        Desc: The status of central nervous system leukemia at the time of diagnosis.
-        Enum:
-        - CNS_1
-        - CNS_2
-        - CNS_2a
-        - CNS_2b
-        - CNS_2c
-        - CNS_3
-        - CNS_3a
-        - CNS_3b
-        - CNS_3c
-        - Not_evaluated
-        - unknown
-        Term:
-        -   Code: http://schema.biothings.io/CNSLeukemiaStatus
-            Definition: The status of central nervous system leukemia at the time
-                of diagnosis.
-            Origin: HTAN
-            Value: CNS Leukemia Status
-    CNSTumorPrimaryAnatomicSite:
-        Desc: Primary tumor location in the central nervous system that comprise the
-            tissues of the central nervous system (brain and spinal cord)-not covered
-            in Tiers 1 and 2
-        Enum:
-        - Basal_ganglia
-        - Brain_stem_Medulla
-        - Brain_stem_Midbrain_Tectum
-        - Brainstem_Pons
-        - Cerebellar_Posterior_fossa
-        - Hippocampus
-        - Intracranial_Leptomeningeal
-        - Meninges_Dura
-        - Optic_pathway
-        - Other_locations_NOS
-        - Other_lymph_nodes
-        - Paraspinal_ganglion
-        - Spinal_cord_Cervical
-        - Spinal_cord_Lumbar
-        - Spinal_cord_Thoracic
-        - Suprasellar_Hypothalamic_Pituitary
-        - Thalamus
-        - Ventricles
-        Term:
-        -   Code: http://schema.biothings.io/CNSTumorPrimaryAnatomicSite
-            Definition: Primary tumor location in the central nervous system that
-                comprise the tissues of the central nervous system (brain and spinal
-                cord)-not covered in Tiers 1 and 2
-            Origin: HTAN
-            Value: CNS Tumor Primary Anatomic Site
-    COVID19AntibodyTesting:
-        Desc: Text term that demonstrates the test results of immunoglobulin M (IgM)
-            and immunoglobulin G (IgG) antibodies to the SARS-CoV-2 virus in subject
-            serum samples.
-        Enum:
-        - Not_Applicable
-        - Not_Done
-        - SARS_CoV_2_IgG_IgM_antibody_negative
-        - SARS_CoV_2_IgG_IgM_antibody_positive
-        - SARS_CoV_2_IgG_antibody_negative
-        - SARS_CoV_2_IgG_antibody_positive
-        - SARS_CoV_2_IgM_antibody_negative
-        - SARS_CoV_2_IgM_antibody_positive
-        - unknown
-        Term:
-        -   Code: http://schema.biothings.io/COVID19AntibodyTesting
-            Definition: Text term that demonstrates the test results of immunoglobulin
-                M (IgM) and immunoglobulin G (IgG) antibodies to the SARS-CoV-2 virus
-                in subject serum samples.
-            Origin: HTAN
-            Value: COVID19 Antibody Testing
-    COVID19CancerTreatmentFollowup:
-        Desc: Indicator that describes if cancer treatment was modified for the patient
-            due to COVID-19 infectious disorder
-        Enum:
-        - 'No'
-        - Not_Applicable
-        - 'Yes'
-        - unknown
-        Term:
-        -   Code: http://schema.biothings.io/COVID19CancerTreatmentFollowup
-            Definition: Indicator that describes if cancer treatment was modified
-                for the patient due to COVID-19 infectious disorder
-            Origin: HTAN
-            Value: COVID19 Cancer Treatment Followup
-    COVID19ComplicationsSeverity:
-        Desc: Text term that retrospectively indicates the worst complications during
-            COVID-19 infectious disorder in the patient.
-        Enum:
-        - Cardiac_complications
-        - Not_Applicable
-        - Other
-        - Pulmonary_complications
-        - Systemic_complications
-        - unknown
-        Term:
-        -   Code: http://schema.biothings.io/COVID19ComplicationsSeverity
-            Definition: Text term that retrospectively indicates the worst complications
-                during COVID-19 infectious disorder in the patient.
-            Origin: HTAN
-            Value: COVID19 Complications Severity
-    COVID19CurrentStatus:
-        Desc: The patient''s current COVID-19 status of sign or symptom events or
-            interventions
-        Enum:
-        - Patient_currently_has_symptoms
-        - Patient_had_symptoms_but_now_is_fully_recovered
-        - Patient_never_had_any_symptoms_of_COVID_19
-        - Status_unknown_due_to_general_COVID_19_related_travel_restrictions
-        - Status_unknown_due_to_lack_of_disease_tumor_assessment_due_to_COVID_19_diagnosis
-        - Status_unknown_due_to_other_reasons
-        Term:
-        -   Code: http://schema.biothings.io/COVID19CurrentStatus
-            Definition: The patient''s current COVID-19 status of sign or symptom
-                events or interventions
-            Origin: HTAN
-            Value: COVID19 Current Status
-    COVID19OccurrenceIndicator:
-        Desc: The indicator that describes whether or not a COVID-19 infectious disorder
-            occurred.
-        Enum:
-        - 'No'
-        - Not_Applicable
-        - Not_Done
-        - 'Yes'
-        - unknown
-        Term:
-        -   Code: http://schema.biothings.io/COVID19OccurrenceIndicator
-            Definition: The indicator that describes whether or not a COVID-19 infectious
-                disorder occurred.
-            Origin: HTAN
-            Value: COVID19 Occurrence Indicator
-    COVID19PositiveLabTestIndicator:
-        Desc: The indicator that describes whether or not there was a COVID-19 positive
-            test result.
-        Enum:
-        - 'No'
-        - Not_Applicable
-        - Not_Done
-        - 'Yes'
-        - unknown
-        Term:
-        -   Code: http://schema.biothings.io/COVID19PositiveLabTestIndicator
-            Definition: The indicator that describes whether or not there was a COVID-19
-                positive test result.
-            Origin: HTAN
-            Value: COVID19 Positive Lab Test Indicator
-    CancerAssociatedGeneMutations:
-        Desc: Type of inherited germline or other gene mutations that confers heightened
-            susceptibility to cancer identified in patient history
-        Enum:
-        - ACVR1_mutation
-        - ALK_mutation
-        - APC_mutation
-        - ARF_mutation
-        - ATM_mutation
-        - ATRX_mutation
-        - BAP1_mutation
-        - BLM_mutation
-        - BMPR1A_mutation
-        - BRAF_mutation
-        - BRCA1_and_2_mutation
-        - BRCA1_mutation
-        - BRCA2_mutation
-        - CDH1_mutation
-        - CDKN2A_and_p14ARF_mutation
-        - CDKN2A_mutation
-        - CHK_mutation
-        - EGFR_mutation
-        - ETV6_mutation
-        - FH_mutation
-        - FLCN_mutation
-        - GREM1_mutation
-        - H3G34R_V_mutation
-        - H3K27M_mutation
-        - HOXB13_mutation
-        - IKZF1_mutation
-        - KIT_mutation
-        - KRAS_mutation
-        - MAX_mutation
-        - MEN1_mutation
-        - MET_mutation
-        - MLH1_mutation
-        - MSH2_mutation
-        - MSH6_mutation
-        - MUTYH_mutation
-        - NF1_mutation
-        - NF2_mutation
-        - Not_Applicable
-        - Not_Reported
-        - PALB2_mutation
-        - PAX5_mutation
-        - PDGFRA_mutation
-        - PHOX2B_mutation
-        - PMS2_mutation
-        - POT1_mutation
-        - PRKAR1A_mutation
-        - PTCH_mutation
-        - PTEN_mutation
-        - PolD_mutation
-        - PolE_mutation
-        - RB1_mutation
-        - RET_mutation
-        - ROS1_mutation
-        - SDHAF2_mutation
-        - SDHB_mutation
-        - SDHC_mutation
-        - SDHD_mutation
-        - SETD2_mutation
-        - SMAD4_mutation
-        - SMARCA4_mutation
-        - SMARCB1_mutation
-        - STK11_mutation
-        - TMEM127_mutation
-        - TP53_mutation
-        - TSC1_mutation
-        - TSC2_mutation
-        - VHL_mutation
-        - p14ARF_mutation
-        - unknown
-        Term:
-        -   Code: http://schema.biothings.io/CancerAssociatedGeneMutations
-            Definition: Type of inherited germline or other gene mutations that confers
-                heightened susceptibility to cancer identified in patient history
-            Origin: HTAN
-            Value: Cancer Associated Gene Mutations
-    CancerIncidence:
-        Desc: Incidence of specific cancer type in a defined area (a number between
-            0 and 100). The rate of incident cases per population of 100,000 persons
-            of a specific type of cancer as designated in the "primary_diagnosis"
-            data element in the county where the patient resides, using the most recent
-            2013-2017 NCI Cancer Atlas derived data.  Use patient zip code to find
-            the county the patient lives in by going to https://www.unitedstateszipcodes.org/.
-            Enter the zip code in the main text field and use the asociated county
-            on the right side of the result field. On the https://gis.cancer.gov/canceratlas/tableview/
-            website, choose "Incidence" from the Topic dropdown menu, state of interest
-            from the Area menu, "All Races" from the Race menu, and the cancer type
-            ("Both Sexes" when possible) from the Statistic menu. Find the county
-            of interest and enter the numeric Age-Adjusted Rate per 100,000 as the
-            value.
-        Term:
-        -   Code: http://schema.biothings.io/CancerIncidence
-            Definition: Incidence of specific cancer type in a defined area (a number
-                between 0 and 100). The rate of incident cases per population of 100,000
-                persons of a specific type of cancer as designated in the "primary_diagnosis"
-                data element in the county where the patient resides, using the most
-                recent 2013-2017 NCI Cancer Atlas derived data.  Use patient zip code
-                to find the county the patient lives in by going to https://www.unitedstateszipcodes.org/.
-                Enter the zip code in the main text field and use the asociated county
-                on the right side of the result field. On the https://gis.cancer.gov/canceratlas/tableview/
-                website, choose "Incidence" from the Topic dropdown menu, state of
-                interest from the Area menu, "All Races" from the Race menu, and the
-                cancer type ("Both Sexes" when possible) from the Statistic menu.
-                Find the county of interest and enter the numeric Age-Adjusted Rate
-                per 100,000 as the value.
-            Origin: HTAN
-            Value: Cancer Incidence
-        Type: TBD
-    CancerIncidenceLocation:
-        Desc: The county and state in which the patient lives and to which the cancer_incidence
-            data correlates. Record as "County, State" as they appear in the incidence
-            box from which the cancer_incidence data is obtained in the https://gis.cancer.gov/canceratlas/tableview/
-            website
-        Term:
-        -   Code: http://schema.biothings.io/CancerIncidenceLocation
-            Definition: The county and state in which the patient lives and to which
-                the cancer_incidence data correlates. Record as "County, State" as
-                they appear in the incidence box from which the cancer_incidence data
-                is obtained in the https://gis.cancer.gov/canceratlas/tableview/ website
-            Origin: HTAN
-            Value: Cancer Incidence Location
-        Type: TBD
     CaptureArea:
         Desc: 'Area (or Capture Area) - One of the either four or two active regions
             where tissue can be placed on a Visium slide. Each area is intended to
@@ -2618,7 +1985,7 @@ PropDefinitions:
         Desc: Identify stains that did not pass QC but are included in the dataset.
         Enum:
         - No___Channel_Failed_QC
-        - 'Yes'
+        - 'yes'
         Term:
         -   Code: http://schema.biothings.io/ChannelPassedQC
             Definition: Identify stains that did not pass QC but are included in the
@@ -2637,26 +2004,16 @@ PropDefinitions:
         Desc: The text term used to describe whether the patient was receiving chemotherapy
             concurrent to radiation.
         Enum:
-        - 'No'
         - Not_Reported
-        - 'Yes'
+        - 'no'
         - unknown
+        - 'yes'
         Term:
         -   Code: http://schema.biothings.io/ChemoConcurrenttoRadiation
             Definition: The text term used to describe whether the patient was receiving
                 chemotherapy concurrent to radiation.
             Origin: HTAN
             Value: Chemo Concurrent to Radiation
-    Chewingtobaccodailyusecount:
-        Desc: The quantity of daily use of tobacco, in the form of a plug, usually
-            flavored, for chewing rather than smoking.
-        Term:
-        -   Code: http://schema.biothings.io/Chewingtobaccodailyusecount
-            Definition: The quantity of daily use of tobacco, in the form of a plug,
-                usually flavored, for chewing rather than smoking.
-            Origin: HTAN
-            Value: Chewing tobacco daily use count
-        Type: TBD
     ChimericRead_Pairs:
         Desc: Number of chimerically mapped read-pairs
         Term:
@@ -2720,9 +2077,9 @@ PropDefinitions:
         - Metastasis
         - Not_Allowed_To_Collect
         - Not_Reported
-        - Other
         - Primary
         - Recurrence
+        - other
         - unknown
         Term:
         -   Code: http://schema.biothings.io/ClassificationofTumor
@@ -2804,9 +2161,9 @@ PropDefinitions:
         Desc: The yes/no/unknown indicator used to describe whether a patient was
             exposed to fine powder derived by the crushing of coal.
         Enum:
-        - 'No'
-        - 'Yes'
+        - 'no'
         - unknown
+        - 'yes'
         Term:
         -   Code: http://schema.biothings.io/CoalDustExposure
             Definition: The yes/no/unknown indicator used to describe whether a patient
@@ -2871,136 +2228,6 @@ PropDefinitions:
             Definition: Material Specimen is collected into post procedure
             Origin: HTAN
             Value: Collection Media
-    ColonPolypOccurenceIndicator:
-        Desc: Yes/No indicator to describe if the subject had a previous history of
-            colon polyps as noted in the history/physical or previous endoscopic report
-            (s).
-        Enum:
-        - 'No'
-        - Not_Applicable
-        - 'Yes'
-        - unknown
-        Term:
-        -   Code: http://schema.biothings.io/ColonPolypOccurenceIndicator
-            Definition: Yes/No indicator to describe if the subject had a previous
-                history of colon polyps as noted in the history/physical or previous
-                endoscopic report (s).
-            Origin: HTAN
-            Value: Colon Polyp Occurence Indicator
-    ColorectalCancerDetectionMethodType:
-        Desc: The means, manner of procedure, or systematic course of actions performed
-            in order to discover or identify colorectal cancer
-        Enum:
-        - Colonoscopy
-        - DNA_stool_test
-        - Data_not_available
-        - Fecal_occult_blood_test
-        - Other
-        - Sigmoidoscopy
-        - Virtual_colonoscopy
-        - unknown
-        Term:
-        -   Code: http://schema.biothings.io/ColorectalCancerDetectionMethodType
-            Definition: The means, manner of procedure, or systematic course of actions
-                performed in order to discover or identify colorectal cancer
-            Origin: HTAN
-            Value: Colorectal Cancer Detection Method Type
-    ColorectalCancerKRASIndicator:
-        Desc: The yes/no/not applicable indicator that describes if patient has diagnosis
-            of colorectal cancer with known KRAS.
-        Enum:
-        - 'No'
-        - Not_Applicable
-        - 'Yes'
-        - unknown
-        Term:
-        -   Code: http://schema.biothings.io/ColorectalCancerKRASIndicator
-            Definition: The yes/no/not applicable indicator that describes if patient
-                has diagnosis of colorectal cancer with known KRAS.
-            Origin: HTAN
-            Value: Colorectal Cancer KRAS Indicator
-    ColorectalCancerTumorBorderConfiguration:
-        Desc: The description of the border configuration of a colorectal tumor at
-            pathologic assessment.
-        Enum:
-        - Indeterminate
-        - Infiltrating
-        - Not_Applicable
-        - Other
-        - Pushing
-        Term:
-        -   Code: http://schema.biothings.io/ColorectalCancerTumorBorderConfiguration
-            Definition: The description of the border configuration of a colorectal
-                tumor at pathologic assessment.
-            Origin: HTAN
-            Value: Colorectal Cancer Tumor Border Configuration
-    ColorectalPolypAdenomaType:
-        Desc: Type of adenoma associated with the polyp
-        Enum:
-        - Not_Applicable
-        - Not_stated
-        - Serrated_not_specified
-        - Sessile_serrated
-        - Traditional_serrated
-        - Tubular
-        - Tubulovillous
-        - Villous
-        Term:
-        -   Code: http://schema.biothings.io/ColorectalPolypAdenomaType
-            Definition: Type of adenoma associated with the polyp
-            Origin: HTAN
-            Value: Colorectal Polyp Adenoma Type
-    ColorectalPolypCount:
-        Desc: The total number of polyps detected
-        Term:
-        -   Code: http://schema.biothings.io/ColorectalPolypCount
-            Definition: The total number of polyps detected
-            Origin: HTAN
-            Value: Colorectal Polyp Count
-        Type: TBD
-    ColorectalPolypNewIndicator:
-        Desc: A yes/no response to a question that asks whether any new polyps greater
-            or equal to two millimeter were identified.
-        Enum:
-        - 'No'
-        - Not_Applicable
-        - 'Yes'
-        - unknown
-        Term:
-        -   Code: http://schema.biothings.io/ColorectalPolypNewIndicator
-            Definition: A yes/no response to a question that asks whether any new
-                polyps greater or equal to two millimeter were identified.
-            Origin: HTAN
-            Value: Colorectal Polyp New Indicator
-    ColorectalPolypShape:
-        Desc: Shape of polyp identified in the participant
-        Enum:
-        - Flat
-        - Not_Applicable
-        - Not_stated
-        - Pedunculated
-        - Sessile
-        Term:
-        -   Code: http://schema.biothings.io/ColorectalPolypShape
-            Definition: Shape of polyp identified in the participant
-            Origin: HTAN
-            Value: Colorectal Polyp Shape
-    ColorectalPolypType:
-        Desc: Type of polyp found in the participant
-        Enum:
-        - Adenoma
-        - Cancer
-        - Hyperplastic
-        - Mixed
-        - Normal
-        - Other
-        - Papillomatous
-        - unknown
-        Term:
-        -   Code: http://schema.biothings.io/ColorectalPolypType
-            Definition: Type of polyp found in the participant
-            Origin: HTAN
-            Value: Colorectal Polyp Type
     Comment:
         Desc: Free text field (generally for QC comment)
         Term:
@@ -3131,7 +2358,6 @@ PropDefinitions:
         - Organ_transplant__site_
         - Osteoarthritis
         - Osteoporosis_or_Osteopenia
-        - Other
         - Other_Cancer_Within_5_Years
         - Other_Nonmalignant_Systemic_Disease
         - Other_Pulmonary_Complications
@@ -3165,6 +2391,7 @@ PropDefinitions:
         - Tyrosinemia
         - Ulcerative_Colitis
         - Wagr_Syndrome
+        - other
         - unknown
         - unknown_Etiology
         Term:
@@ -3206,46 +2433,6 @@ PropDefinitions:
             Origin: HTAN
             Value: Concentration
         Type: TBD
-    ConcomitantMedicationReceivedType:
-        Desc: An enumerated list of the type of concomitant medication received by
-            the patient.
-        Enum:
-        - Anticoagulant_agents
-        - Anticonvulsant
-        - Antidepressants_Moderate_CYP2D6_inhibitors
-        - Antidepressants_Strong_CYP2D6_inhibitors
-        - Antidepressants_weak_CYP2D2_inhibitors_or_non_inhibitors
-        - Antifungal
-        - Antiplatelet_agents
-        - Anxiolytics_or_sedatives
-        - Aspirin
-        - Bisphosphonates_for_treatment_prevention_of_bone_loss
-        - COX_2_inhibitor
-        - Corticosteroid
-        - Decadron
-        - Diabetes_Insulin
-        - Diabetes_Metformin_containing_agents
-        - Growth_factor
-        - Intravaginal_estrogen_preparations
-        - Lipid_lowering_drugs
-        - Non_prescription_supplements_for_memory
-        - Non_prescription_supplements_for_relief_of_hot_flashes
-        - Non_steroidal_anti_inflammatory_agents
-        - Not_Applicable
-        - Not_Reported
-        - Opioids
-        - Other
-        - Prescription_medications_for_memory
-        - Prescription_medications_for_relief_of_hot_flashes
-        - Prophylactic_antiplatelet_therapy
-        - Tricyclic_antidepressants
-        - unknown
-        Term:
-        -   Code: http://schema.biothings.io/ConcomitantMedicationReceivedType
-            Definition: An enumerated list of the type of concomitant medication received
-                by the patient.
-            Origin: HTAN
-            Value: Concomitant Medication Received Type
     Contamination:
         Desc: Fraction of reads coming from cross-sample contamination collected from
             GATK4. Number
@@ -3285,247 +2472,6 @@ PropDefinitions:
             Origin: HTAN
             Value: Copy Number
         Type: TBD
-    CountryofBirth:
-        Desc: Country where the patient was born.
-        Enum:
-        - Afghanistan
-        - Albania
-        - Algeria
-        - Andorra
-        - Angola
-        - Anguilla
-        - Antigua_and_Barbuda
-        - Argentina
-        - Armenia
-        - Aruba
-        - Australia
-        - Austria
-        - Azerbaijan
-        - Bahamas
-        - Bahrain
-        - Bangladesh
-        - Barbados
-        - Belarus
-        - Belgium
-        - Belize
-        - Benin
-        - Bermuda
-        - Bhutan
-        - Bolivia
-        - Bosnia_and_Herzegovina
-        - Botswana
-        - Brazil
-        - Brunei
-        - Bulgaria
-        - Burkina_Faso
-        - Burundi
-        - Cambodia
-        - Cameroon
-        - Canada
-        - Cape_Verde
-        - Cayman_Islands
-        - Central_African_Republic
-        - Chad
-        - Chile
-        - China
-        - Colombia
-        - Comoros
-        - Congo
-        - Cook_Islands
-        - Costa_Rica
-        - Cote_dIvoire
-        - Croatia
-        - Cuba
-        - Curacao
-        - Cyprus
-        - Czech_Republic__Czechia_
-        - Democratic_Republic_of_the_Congo
-        - Denmark
-        - Djibouti
-        - Dominica
-        - Dominican_Republic
-        - Ecuador
-        - Egypt
-        - El_Salvador
-        - Equatorial_Guinea
-        - Eritrea
-        - Estonia
-        - Eswatini
-        - Ethiopia
-        - Falkland_Islands__Malvinas_
-        - Faroe_Islands
-        - Federated_States_of_Micronesia
-        - Fiji
-        - Finland
-        - France
-        - French_Guiana
-        - French_Polynesia
-        - Gabon
-        - Gambia
-        - Georgia
-        - Germany
-        - Ghana
-        - Gibraltar
-        - Greece
-        - Greenland
-        - Grenada
-        - Guadeloupe
-        - Guam
-        - Guatemala
-        - Guernsey
-        - Guinea
-        - Guinea_Bissau
-        - Guyana
-        - Haiti
-        - Holy_See
-        - Honduras
-        - Hong_Kong
-        - Hungary
-        - Iceland
-        - India
-        - Indonesia
-        - Iran
-        - Iraq
-        - Ireland
-        - Isle_of_Man
-        - Israel
-        - Italy
-        - Jamaica
-        - Japan
-        - Jersey
-        - Jordan
-        - Kazakhstan
-        - Kenya
-        - Kiribati
-        - Kosovo
-        - Kuwait
-        - Kyrgyzstan
-        - Laos
-        - Latvia
-        - Lebanon
-        - Lesotho
-        - Liberia
-        - Libya
-        - Liechtenstein
-        - Lithuania
-        - Luxembourg
-        - Macau
-        - Madagascar
-        - Malawi
-        - Malaysia
-        - Maldives
-        - Mali
-        - Malta
-        - Marshall_Islands
-        - Martinique
-        - Mauritania
-        - Mauritius
-        - Mayotte
-        - Mexico
-        - Moldova
-        - Monaco
-        - Mongolia
-        - Montenegro
-        - Montserrat
-        - Morocco
-        - Mozambique
-        - Myanmar
-        - Namibia
-        - Nauru
-        - Nepal
-        - Netherlands
-        - New_Caledonia
-        - New_Zealand
-        - Nicaragua
-        - Niger
-        - Nigeria
-        - Niue
-        - North_Korea
-        - North_Macedonia
-        - Northern_Mariana_Islands
-        - Norway
-        - Oman
-        - Pakistan
-        - Palau
-        - Panama
-        - Papua_New_Guinea
-        - Paraguay
-        - Peru
-        - Philippines
-        - Poland
-        - Portugal
-        - Puerto_Rico
-        - Qatar
-        - Reunion
-        - Romania
-        - Russia
-        - Rwanda
-        - Saint_Helena_Ascension_and_Tristan_da_Cunha
-        - Saint_Kitts_and_Nevis
-        - Saint_Lucia
-        - Saint_Pierre_and_Miquelon
-        - Saint_Vincent_and_the_Grenadines
-        - Samoa
-        - San_Marino
-        - Sao_Tome_and_Principe
-        - Saudi_Arabia
-        - Senegal
-        - Serbia
-        - Seychelles
-        - Sierra_Leone
-        - Singapore
-        - Slovakia
-        - Slovenia
-        - Solomon_Islands
-        - Somalia
-        - South_Africa
-        - South_Korea
-        - South_Sudan
-        - Spain
-        - Sri_Lanka
-        - State_of_Palestine
-        - Sudan
-        - Suriname
-        - Svalbard___Jan_Mayen_Islands
-        - Sweden
-        - Switzerland
-        - Syria
-        - Taiwan
-        - Tajikistan
-        - Tanzania
-        - Thailand
-        - Timor_Leste
-        - Togo
-        - Tokelau
-        - Tonga
-        - Trinidad_and_Tobago
-        - Tunisia
-        - Turkey
-        - Turkmenistan
-        - Tuvalu
-        - Uganda
-        - Ukraine
-        - United_Arab_Emirates
-        - United_Kingdom
-        - United_States
-        - Uruguay
-        - Uzbekistan
-        - Vanuatu
-        - Venezuela
-        - Vietnam
-        - Virgin_Islands_British
-        - Virgin_Islands_U_S_
-        - Wallis_and_Futuna
-        - Western_Sahara
-        - Yemen
-        - Zambia
-        - Zimbabwe
-        - unknown
-        Term:
-        -   Code: http://schema.biothings.io/CountryofBirth
-            Definition: Country where the patient was born.
-            Origin: HTAN
-            Value: Country of Birth
     CountryofResidence:
         Desc: Country of Residence at enrollment
         Enum:
@@ -3777,133 +2723,14 @@ PropDefinitions:
     CryopreservedCellsinSample:
         Desc: Indicate if library preparation was based on revived frozen cells.
         Enum:
-        - 'No'
-        - 'Yes'
+        - 'no'
+        - 'yes'
         Term:
         -   Code: http://schema.biothings.io/CryopreservedCellsinSample
             Definition: Indicate if library preparation was based on revived frozen
                 cells.
             Origin: HTAN
             Value: Cryopreserved Cells in Sample
-    CurrentLungCancerSymptoms:
-        Desc: Reported lung cancer related symptoms person is currently experiencing
-        Enum:
-        - Dysphagia
-        - Dyspnea
-        - Not_Reported
-        - Other
-        - Pneumonia
-        - Wheezing
-        - abnormal_breath_sounds
-        - air_entry_decreased_fair_poor_diminished
-        - asbestosis
-        - breath_sounds_coarse_diminished
-        - chest_pain_or_discomfort
-        - clear_lungs_to_auscultation_or_percussion
-        - cold_symptoms_flu_sinus_nasal_congestion
-        - crackles
-        - dullness_to_percussion
-        - fair_poor_aeration
-        - finger_clubbing
-        - hemoptysis
-        - hoarseness_laryngitis_vocal_cord_inflammation
-        - no_evidence_of_lung_cancer_recurrence
-        - non_productive_cough
-        - oxygen_supplemental_portable_O2_at_night_or_continuous
-        - patient_is_NED
-        - productive_cough
-        - prolonged_expiration_long_forced_expiratory_phase
-        - rhonci
-        - shallow_inspiration
-        - sinus_pain_infection
-        - unexplained_loss_of_energy_fatigue
-        - unexplained_weight_loss
-        - unknown
-        - unlabored_normal_breathing
-        Term:
-        -   Code: http://schema.biothings.io/CurrentLungCancerSymptoms
-            Definition: Reported lung cancer related symptoms person is currently
-                experiencing
-            Origin: HTAN
-            Value: Current Lung Cancer Symptoms
-    CutaneousMelanomaAdditionalFindings:
-        Desc: Significant pathologic finding present in addition to the cutaneous
-            melanoma.
-        Enum:
-        - Actinic_Keratosis
-        - Fibrosing_Regression
-        - Nesting_Melanoma
-        - Nevus_Remnant
-        - Not_Applicable
-        - Other
-        - Pagetoid_Spread
-        - Solar_Elastosis
-        - Vascular_Proliferation
-        - unknown
-        Term:
-        -   Code: http://schema.biothings.io/CutaneousMelanomaAdditionalFindings
-            Definition: Significant pathologic finding present in addition to the
-                cutaneous melanoma.
-            Origin: HTAN
-            Value: Cutaneous Melanoma Additional Findings
-    CutaneousMelanomaSurgicalMargins:
-        Desc: Text term to indicate presence of tumor at resection margins
-        Enum:
-        - Negative
-        - Not_Reported
-        - Positive
-        - unknown
-        Term:
-        -   Code: http://schema.biothings.io/CutaneousMelanomaSurgicalMargins
-            Definition: Text term to indicate presence of tumor at resection margins
-            Origin: HTAN
-            Value: Cutaneous Melanoma Surgical Margins
-    CutaneousMelanomaTumorInfiltratingLymphocytes:
-        Desc: Description of degree of lymphocytic infiltration surrounding and disrupting
-            tumor cells of the vertical growth phase in a cutaneous melanoma.
-        Enum:
-        - Absent
-        - Brisk
-        - Nonbrisk
-        - unknown
-        Term:
-        -   Code: http://schema.biothings.io/CutaneousMelanomaTumorInfiltratingLymphocytes
-            Definition: Description of degree of lymphocytic infiltration surrounding
-                and disrupting tumor cells of the vertical growth phase in a cutaneous
-                melanoma.
-            Origin: HTAN
-            Value: Cutaneous Melanoma Tumor Infiltrating Lymphocytes
-    CutaneousMelanomaTumorRegressionRange:
-        Desc: Description of the degree to which tumor cells are replaced by lymphocytic
-            inflammation with or without dermal melanophages and fibrosis._Range;
-            the difference between the lowest and highest numerical values.
-        Enum:
-        - Absent
-        - Present_involving_75__or_more
-        - Present_involving_less_than_75_
-        - unknown
-        Term:
-        -   Code: http://schema.biothings.io/CutaneousMelanomaTumorRegressionRange
-            Definition: Description of the degree to which tumor cells are replaced
-                by lymphocytic inflammation with or without dermal melanophages and
-                fibrosis._Range; the difference between the lowest and highest numerical
-                values.
-            Origin: HTAN
-            Value: Cutaneous Melanoma Tumor Regression Range
-    CutaneousMelanomaUlceration:
-        Desc: Description of extent of disruption to the surface of the skin caused
-            by the cutaneous melanoma.
-        Enum:
-        - Absent
-        - Not_Reported
-        - Present
-        - unknown
-        Term:
-        -   Code: http://schema.biothings.io/CutaneousMelanomaUlceration
-            Definition: Description of extent of disruption to the surface of the
-                skin caused by the cutaneous melanoma.
-            Origin: HTAN
-            Value: Cutaneous Melanoma Ulceration
     CycleNumber:
         Desc: 'The cycle # in which the co-listed reagent(s) was(were) used. Integer
             >= 1 (up to number of cycles)'
@@ -4006,14 +2833,12 @@ PropDefinitions:
             Value: DMR Calling Tool
     DMRCallingWorkflowURL:
         Desc: Generic name for the workflow used to analyze a data set
-        Enum:
-        - Github
-        - Synapse
         Term:
         -   Code: http://schema.biothings.io/DMRCallingWorkflowURL
             Definition: Generic name for the workflow used to analyze a data set
             Origin: HTAN
             Value: DMR Calling Workflow URL
+        Type: TBD
     DMRdatafileFormat:
         Desc: Format of the data files.
         Enum:
@@ -4065,9 +2890,9 @@ PropDefinitions:
         - Gene_Expression
         - Gene_Expression_Quantification
         - Isoform_Expression_Quantification
-        - Other
         - Splice_Junction_Quantification
         - Transcript_Expression
+        - other
         Term:
         -   Code: http://schema.biothings.io/DataCategory
             Definition: Specific content type of the data file.
@@ -4079,7 +2904,7 @@ PropDefinitions:
         Enum:
         - DDA
         - DIA
-        - Other
+        - other
         Term:
         -   Code: http://schema.biothings.io/DataCollectionMode
             Definition: Mode of data collection in tandem MS assays. Either DDA (Data-dependent
@@ -4181,17 +3006,6 @@ PropDefinitions:
             Origin: HTAN
             Value: Days to Last Known Disease Status
         Type: TBD
-    DaystoRecurrence:
-        Desc: Number of days between the date used for index and the date the patient''s
-            disease recurred. If not applicable please enter 'Not Applicable'
-        Term:
-        -   Code: http://schema.biothings.io/DaystoRecurrence
-            Definition: Number of days between the date used for index and the date
-                the patient''s disease recurred. If not applicable please enter 'Not
-                Applicable'
-            Origin: HTAN
-            Value: Days to Recurrence
-        Type: TBD
     DaystoTreatmentEnd:
         Desc: Number of days between the date used for index and the date the treatment
             ended. If not applicable please enter 'Not Applicable'
@@ -4254,9 +3068,9 @@ PropDefinitions:
         - Insulin
         - Not_Reported
         - Oral_Hypoglycemic
-        - Other
         - Sulfonylurea
         - Thiazolidinedione
+        - other
         - unknown
         Term:
         -   Code: http://schema.biothings.io/DiabetesTreatmentType
@@ -4373,18 +3187,20 @@ PropDefinitions:
     ECOGPerformanceStatus:
         Desc: The ECOG functional performance status of the patient/participant.
         Enum:
-        - _0
-        - _0_0
-        - _1
-        - _1_0
-        - _2
-        - _2_0
-        - _3
-        - _3_0
-        - _4
-        - _4_0
-        - _5
-        - _5_0
+        - Not_Reported
+        - _0_
+        - _0_0_
+        - _1_
+        - _1_0_
+        - _2_
+        - _2_0_
+        - _3_
+        - _3_0_
+        - _4_
+        - _4_0_
+        - _5_
+        - _5_0_
+        - unknown
         Term:
         -   Code: http://schema.biothings.io/ECOGPerformanceStatus
             Definition: The ECOG functional performance status of the patient/participant.
@@ -4492,60 +3308,6 @@ PropDefinitions:
             Origin: HTAN
             Value: EM voltage
         Type: TBD
-    Ecigvape30dayusenum:
-        Desc: Number of days e-cigarettes or vaping device was used in the last 30
-            days
-        Term:
-        -   Code: http://schema.biothings.io/Ecigvape30dayusenum
-            Definition: Number of days e-cigarettes or vaping device was used in the
-                last 30 days
-            Origin: HTAN
-            Value: Ecig vape 30 day use num
-        Type: TBD
-    Ecigvapetimesperday:
-        Desc: "e-cig frequency of use (times per day\u2014one \u201Ctime\u201D consists\
-            \ of around 15 puffs or lasts around 10 minutes)"
-        Term:
-        -   Code: http://schema.biothings.io/Ecigvapetimesperday
-            Definition: "e-cig frequency of use (times per day\u2014one \u201Ctime\u201D\
-                \ consists of around 15 puffs or lasts around 10 minutes)"
-            Origin: HTAN
-            Value: Ecig vape times per day
-        Type: TBD
-    Ecigvapeuse:
-        Desc: Use of non-traditional cigarette nicotine delivery device (electronic
-            cigarette, ENDS - electronic nicotine delivery system)
-        Enum:
-        - Current
-        - Former
-        - Never
-        - unknown
-        Term:
-        -   Code: http://schema.biothings.io/Ecigvapeuse
-            Definition: Use of non-traditional cigarette nicotine delivery device
-                (electronic cigarette, ENDS - electronic nicotine delivery system)
-            Origin: HTAN
-            Value: Ecig vape use
-    EducationLevel:
-        Desc: Highest level of education that the patient completed (direct patient-derived
-            information)
-        Enum:
-        - Bachelors_degree
-        - Data_not_available
-        - Doctoral_degree_or_professional_degree
-        - Grade_school
-        - Graduate_or_professional_degree
-        - High_school_graduate__including_equivalency_
-        - Masters_degree
-        - No_formal_education
-        - Not_high_school_graduate
-        - Some_college_or_associate_degree
-        Term:
-        -   Code: http://schema.biothings.io/EducationLevel
-            Definition: Highest level of education that the patient completed (direct
-                patient-derived information)
-            Origin: HTAN
-            Value: Education Level
     EmissionBandwidth:
         Desc: Nominal width of emission spectrum (nm)
         Term:
@@ -4597,9 +3359,9 @@ PropDefinitions:
             exposed to smoke that is emitted from burning tobacco, including cigarettes,
             pipes, and cigars. This includes tobacco smoke exhaled by smokers.
         Enum:
-        - 'No'
-        - 'Yes'
+        - 'no'
         - unknown
+        - 'yes'
         Term:
         -   Code: http://schema.biothings.io/EnvironmentalTobaccoSmokeExposure
             Definition: The yes/no/unknown indicator used to describe whether a patient
@@ -4658,12 +3420,22 @@ PropDefinitions:
             Value: Excitation Wavelength
         Type: TBD
     Exon:
-        Desc: A region of the transcript sequence within a gene which is not removed
-            from the primary RNA transcript by RNA splicing
+        Desc: 'Exon number targeted or included in a molecular analysis. If a specific
+            genetic variant is being reported, this property can be used to capture
+            the exon where that variant is located. Note: This node is meant to capture
+            molecular tests that were completed clinically for the participant and
+            only includes data from diagnostic array that was completed prior to research
+            sequencing was done. Do not include data related to research assay outputs
+            here.'
         Term:
         -   Code: http://schema.biothings.io/Exon
-            Definition: A region of the transcript sequence within a gene which is
-                not removed from the primary RNA transcript by RNA splicing
+            Definition: 'Exon number targeted or included in a molecular analysis.
+                If a specific genetic variant is being reported, this property can
+                be used to capture the exon where that variant is located. Note: This
+                node is meant to capture molecular tests that were completed clinically
+                for the participant and only includes data from diagnostic array that
+                was completed prior to research sequencing was done. Do not include
+                data related to research assay outputs here.'
             Origin: HTAN
             Value: Exon
         Type: TBD
@@ -4673,37 +3445,14 @@ PropDefinitions:
         - Counts
         - FPKM
         - NA
-        - Other
         - RPKM
         - TPM
+        - other
         Term:
         -   Code: http://schema.biothings.io/ExpressionUnits
             Definition: How quantities are corrected for gene length
             Origin: HTAN
             Value: Expression Units
-    ExtentofTumorResection:
-        Desc: The degree to which the lesion has been cut out, or resected.
-        Enum:
-        - Extensive_Subtotal
-        - Gross_Total_Resection
-        - Minor
-        - NTR
-        - Not_Applicable
-        - Not_Reported
-        - Open_Biopsy
-        - Optimal_debulking
-        - Other
-        - Partial_debulking
-        - Segmental
-        - Suboptimal
-        - Suboptimal_debulking
-        - Subtotal_Resection
-        - unknown
-        Term:
-        -   Code: http://schema.biothings.io/ExtentofTumorResection
-            Definition: The degree to which the lesion has been cut out, or resected.
-            Origin: HTAN
-            Value: Extent of Tumor Resection
     FEV1FVCPostBronchPercent:
         Desc: Percentage value to represent result of Forced Expiratory Volume in
             1 second (FEV1) divided by the Forced Vital Capacity (FVC) post-bronchodilator.
@@ -4805,68 +3554,6 @@ PropDefinitions:
             Origin: HTAN
             Value: FOV number
         Type: TBD
-    FamilyColonCancerHistoryIndicator:
-        Desc: The indicator to designate if any first degree relative has a history
-            of colorectal cancer.
-        Enum:
-        - 'No'
-        - Not_Applicable
-        - 'Yes'
-        - unknown
-        Term:
-        -   Code: http://schema.biothings.io/FamilyColonCancerHistoryIndicator
-            Definition: The indicator to designate if any first degree relative has
-                a history of colorectal cancer.
-            Origin: HTAN
-            Value: Family Colon Cancer History Indicator
-    FamilyHistoryColorectalPolyp:
-        Desc: A yes/no/unknown/not applicable indicator related to family medical
-            history diagnosis of polypoid lesion that arises from the colon or rectum
-            and protrudes into the lumen.
-        Enum:
-        - 'No'
-        - Not_Applicable
-        - 'Yes'
-        - unknown
-        Term:
-        -   Code: http://schema.biothings.io/FamilyHistoryColorectalPolyp
-            Definition: A yes/no/unknown/not applicable indicator related to family
-                medical history diagnosis of polypoid lesion that arises from the
-                colon or rectum and protrudes into the lumen.
-            Origin: HTAN
-            Value: Family History Colorectal Polyp
-    FamilyMedicalHistoryColorectalPolypDiagnosis:
-        Desc: A yes/no/unknown/not applicable indicator related to family medical
-            history diagnosis of polypoid lesion that arises from the colon or rectum
-            and protrudes into the lumen.
-        Enum:
-        - 'No'
-        - Not_Applicable
-        - 'Yes'
-        - unknown
-        Term:
-        -   Code: http://schema.biothings.io/FamilyMedicalHistoryColorectalPolypDiagnosis
-            Definition: A yes/no/unknown/not applicable indicator related to family
-                medical history diagnosis of polypoid lesion that arises from the
-                colon or rectum and protrudes into the lumen.
-            Origin: HTAN
-            Value: Family Medical History Colorectal Polyp Diagnosis
-    FamilyMemberVitalStatusIndicator:
-        Desc: The response indicates whether the family member of the patient with
-            a history of cancer is alive. (Extension to GDC attributes in Family History
-            Tier 1)
-        Enum:
-        - Not_Reported
-        - Vital_Status_Alive
-        - Vital_Status_Dead
-        - unknown
-        Term:
-        -   Code: http://schema.biothings.io/FamilyMemberVitalStatusIndicator
-            Definition: The response indicates whether the family member of the patient
-                with a history of cancer is alive. (Extension to GDC attributes in
-                Family History Tier 1)
-            Origin: HTAN
-            Value: Family Member Vital Status Indicator
     FiducialMarker:
         Desc: 'Imaging specific: fiducial markers for the alignment of images taken
             across multiple rounds of imaging.'
@@ -4876,7 +3563,7 @@ PropDefinitions:
         - Grid_Slides___Hemocytometer
         - Not_Reported
         - Nuclear_Stain___DAPI
-        - Other
+        - other
         - unknown
         Term:
         -   Code: http://schema.biothings.io/FiducialMarker
@@ -4887,7 +3574,10 @@ PropDefinitions:
     FileFormat:
         Desc: Format of a file (e.g. txt, csv, fastq, bam, etc.)
         Enum:
+        - Am
         - DICOM
+        - M
+        - Md
         - OME_TIFF
         - Python_script
         - RData
@@ -4896,7 +3586,6 @@ PropDefinitions:
         - _7z
         - ab1
         - abf
-        - am
         - avi
         - bai
         - bam
@@ -4937,9 +3626,7 @@ PropDefinitions:
         - jpg
         - json
         - locs
-        - m
         - maf
-        - md
         - mex
         - mov
         - mpg
@@ -5008,22 +3695,6 @@ PropDefinitions:
                 prior to diagnosis and thought to be related to the disease.
             Origin: HTAN
             Value: First Symptom Prior to Diagnosis
-    FitzpatrickSkinTone:
-        Desc: The Fitzpatrick classification of skin phototype
-        Enum:
-        - I
-        - II
-        - III
-        - IV
-        - Not_Reported
-        - V
-        - VI
-        - unknown
-        Term:
-        -   Code: http://schema.biothings.io/FitzpatrickSkinTone
-            Definition: The Fitzpatrick classification of skin phototype
-            Origin: HTAN
-            Value: Fitzpatrick Skin Tone
     FixativeType:
         Desc: Text term to identify the type of fixative used to preserve a tissue
             specimen
@@ -5041,7 +3712,6 @@ PropDefinitions:
         - NP40_lysis_buffer
         - None
         - OCT_media
-        - Other
         - PAXgene_tissue
         - Para_benzoquinone
         - Polaxamer
@@ -5049,6 +3719,7 @@ PropDefinitions:
         - Saline
         - TCL_lysis_buffer
         - _95__Ethanol
+        - other
         - unknown
         Term:
         -   Code: http://schema.biothings.io/FixativeType
@@ -5127,8 +3798,8 @@ PropDefinitions:
     FusionGeneDetected:
         Desc: Was a fusion gene identified?
         Enum:
-        - 'No'
         - Yes___Fusion_Gene_Detected
+        - 'no'
         - unknown
         Term:
         -   Code: http://schema.biothings.io/FusionGeneDetected
@@ -5149,25 +3820,17 @@ PropDefinitions:
             Definition: The gene symbols of fused genes.
             Origin: HTAN
             Value: Fusion Gene Identity
-    GENCODEGeneSymbolTarget:
-        Desc: The comma separated list of gene symbols targeted by the antibody.
-        Term:
-        -   Code: http://schema.biothings.io/GENCODEGeneSymbolTarget
-            Definition: The comma separated list of gene symbols targeted by the antibody.
-            Origin: HTAN
-            Value: GENCODE Gene Symbol Target
-        Type: TBD
     Gender:
         Desc: Text designations that identify gender. Gender is described as the assemblage
             of properties that distinguish people on the basis of their societal roles.
             [Identification of gender is based upon self-report and may come from
             a form, questionnaire, interview, etc.]
         Enum:
+        - Female
+        - Male
         - Not_Reported
-        - female
-        - male
+        - Unspecified
         - unknown
-        - unspecified
         Term:
         -   Code: http://schema.biothings.io/Gender
             Definition: Text designations that identify gender. Gender is described
@@ -5393,36 +4056,6 @@ PropDefinitions:
             Origin: HTAN
             Value: Gleason Patterns Percent
         Type: TBD
-    GliomaSpecificMetastasisSites:
-        Desc: Evidence of active brain metastasis including leptomeningeal involvement
-        Enum:
-        - Bone_marrow
-        - Brain
-        - CSF
-        - Leptomeningeal
-        - Not_Applicable
-        - Other
-        - Spine
-        Term:
-        -   Code: http://schema.biothings.io/GliomaSpecificMetastasisSites
-            Definition: Evidence of active brain metastasis including leptomeningeal
-                involvement
-            Origin: HTAN
-            Value: Glioma Specific Metastasis Sites
-    GliomaSpecificRadiationField:
-        Desc: A description of the location on or within the CNS where radiation was
-            administered in a partcipant with glioma
-        Enum:
-        - Craniospinal
-        - Focal_tumor_bed
-        - Not_Applicable
-        - unknown
-        Term:
-        -   Code: http://schema.biothings.io/GliomaSpecificRadiationField
-            Definition: A description of the location on or within the CNS where radiation
-                was administered in a partcipant with glioma
-            Origin: HTAN
-            Value: Glioma Specific Radiation Field
     GreatestTumorDimension:
         Desc: Numeric value that represents the measurement of the widest portion
             of the tumor in centimeters.
@@ -5447,26 +4080,16 @@ PropDefinitions:
         Desc: The text term used to indicate whether the patient received Highly Active
             Antiretroviral Therapy (HAART).
         Enum:
-        - 'No'
         - Not_Reported
-        - 'Yes'
+        - 'no'
         - unknown
+        - 'yes'
         Term:
         -   Code: http://schema.biothings.io/HAARTTreatmentIndicator
             Definition: The text term used to indicate whether the patient received
                 Highly Active Antiretroviral Therapy (HAART).
             Origin: HTAN
             Value: HAART Treatment Indicator
-    HER2BreastCarcinomaCopyNumberTotal:
-        Desc: Result of HER2 Copy Number testing (in a participant with breast cancer),
-            expressed as a range of values.
-        Term:
-        -   Code: http://schema.biothings.io/HER2BreastCarcinomaCopyNumberTotal
-            Definition: Result of HER2 Copy Number testing (in a participant with
-                breast cancer), expressed as a range of values.
-            Origin: HTAN
-            Value: HER2 Breast Carcinoma Copy Number Total
-        Type: TBD
     HIVViralLoad:
         Desc: Numeric value that represents the concentration of an analyte or aliquot
             extracted from the sample or sample portion, measured in milligrams per
@@ -5483,26 +4106,29 @@ PropDefinitions:
         Desc: Text classification to represent the strain or type of human papillomavirus
             identified in an individual.
         Enum:
-        - _16
-        - _18
-        - _26
-        - _31
-        - _33
-        - _35
-        - _39
-        - _45
-        - _51
-        - _52
-        - _53
-        - _56
-        - _58
-        - _59
-        - _63
-        - _66
-        - _68
-        - _70
-        - _73
-        - _82
+        - Not_Reported
+        - _16_
+        - _18_
+        - _26_
+        - _31_
+        - _33_
+        - _35_
+        - _39_
+        - _45_
+        - _51_
+        - _52_
+        - _53_
+        - _56_
+        - _58_
+        - _59_
+        - _63_
+        - _66_
+        - _68_
+        - _70_
+        - _73_
+        - _82_
+        - other
+        - unknown
         Term:
         -   Code: http://schema.biothings.io/HPVPositiveType
             Definition: Text classification to represent the strain or type of human
@@ -5594,16 +4220,6 @@ PropDefinitions:
             Origin: HTAN
             Value: HTAN RPPA Antibody Table
         Type: TBD
-    HTANRPPAAntibodyTableID:
-        Desc: HTAN identifier associated with RPPA antibody level metadata. Identical
-            for every row of the table.
-        Term:
-        -   Code: http://schema.biothings.io/HTANRPPAAntibodyTableID
-            Definition: HTAN identifier associated with RPPA antibody level metadata.
-                Identical for every row of the table.
-            Origin: HTAN
-            Value: HTAN RPPA Antibody Table ID
-        Type: TBD
     Height:
         Desc: The height of the patient in centimeters.
         Term:
@@ -5617,10 +4233,10 @@ PropDefinitions:
             treatment for a risk factor the patient had at the time of or prior to
             their diagnosis.
         Enum:
-        - 'No'
         - Not_Reported
-        - 'Yes'
+        - 'no'
         - unknown
+        - 'yes'
         Term:
         -   Code: http://schema.biothings.io/HepatitisSustainedVirologicalResponse
             Definition: The yes/no/unknown indicator used to describe whether the
@@ -5628,65 +4244,6 @@ PropDefinitions:
                 time of or prior to their diagnosis.
             Origin: HTAN
             Value: Hepatitis Sustained Virological Response
-    HereditaryCancerPredispositionSyndrome:
-        Desc: History of presence of inherited genetic predisposition syndrome that
-            confers heightened susceptibility to cancer in the patient.
-        Enum:
-        - Alpha_1_antitrypsin
-        - Attenuated_familial_adenomatous_polyposis
-        - BAP1_mutant_disease
-        - Beckwith_Wiedemann
-        - Biliary_disorder
-        - Birt_Hogg_Dube_syndrome
-        - Carney_complex
-        - Cirrhosis_unknown_etiology
-        - Constitutional_mismatch_repair_deficiency
-        - Cowden_syndrome
-        - Familial_adenomatous_polyposis
-        - Familial_gastrointestinal_stromal_tumor
-        - Familial_pancreatic_cancer
-        - Familial_prostate_cancer
-        - Familial_renal_cancer
-        - Fanconi_anemia
-        - Glycogen_Storage_Disease
-        - Gorlin_syndrome
-        - "Hereditary_breast\u2013ovarian_cancer_syndrome"
-        - Hereditary_diffuse_gastric_cancer
-        - Hereditary_leiomyoma_renal_cell_carcinoma
-        - Hereditary_melanoma
-        - Hereditary_mixed_polyposis_syndrome
-        - Hereditary_papillary_RCC
-        - Hereditary_papillary_renal_cell_carcinoma
-        - "Hereditary_paraganglioma\u2013pheochromocytoma_syndrome"
-        - Hereditary_renal_oncocytoma
-        - Hereditary_retinoblastoma
-        - Juvenile_polyposis_syndrome
-        - Li_Fraumeni_syndrome
-        - Lynch_syndrome
-        - MUTYH_associated_polyposis
-        - "Melanoma\u2013astrocytoma_syndrome"
-        - Multiple_endocrine_neoplasia_type_I
-        - Multiple_endocrine_neoplasia_type_II
-        - Nevoid_basal_cell_carcinoma_syndrome
-        - Not_Applicable
-        - Not_Reported
-        - "Peutz\u2013Jeghers_syndrome"
-        - Rhabdoid_tumor_predisposition_syndrome_type_I
-        - Rhabdoid_tumor_predisposition_syndrome_type_II
-        - Rubinstein_Taybi_syndrome
-        - SDH_associated_renal_cancer
-        - Serrated_polyposis_syndrome
-        - Tuberous_sclerosis_complex
-        - Turcot_syndrome
-        - Tyrosinemia
-        - unknown
-        - von_Hippel_Lindau_Syndrome
-        Term:
-        -   Code: http://schema.biothings.io/HereditaryCancerPredispositionSyndrome
-            Definition: History of presence of inherited genetic predisposition syndrome
-                that confers heightened susceptibility to cancer in the patient.
-            Origin: HTAN
-            Value: Hereditary Cancer Predisposition Syndrome
     HistologicMorphologyCode:
         Desc: 'Histologic Morphology Code, based on ICD-O-3. Any valid ICD-O-3 morphology
             code. See https://seer.cancer.gov/icd-o-3/ and https://seer.cancer.gov/icd-o-3/sitetype.icdo3.20200629.xlsx.
@@ -5703,9 +4260,9 @@ PropDefinitions:
         Desc: Text term describing who (in what role) made the histological assessments
             of the sample
         Enum:
-        - Other
         - Pathologist
         - Research_Scientist
+        - other
         - unknown
         Term:
         -   Code: http://schema.biothings.io/HistologyAssessmentBy
@@ -5718,7 +4275,7 @@ PropDefinitions:
         Enum:
         - Digital
         - Microscopy
-        - Other
+        - other
         - unknown
         Term:
         -   Code: http://schema.biothings.io/HistologyAssessmentMedium
@@ -5771,74 +4328,6 @@ PropDefinitions:
                 which are proteins that substitute for the core canonical histones.
             Origin: HTAN
             Value: Histone Variant
-    HistoryofAtypicalNevi:
-        Desc: Patient has a history of atypical nevi
-        Enum:
-        - 'No'
-        - Not_Reported
-        - Yes__less_than_50_
-        - Yes__more_than_50_
-        - unknown
-        Term:
-        -   Code: http://schema.biothings.io/HistoryofAtypicalNevi
-            Definition: Patient has a history of atypical nevi
-            Origin: HTAN
-            Value: History of Atypical Nevi
-    HistoryofBlisteringSunburn:
-        Desc: Patient has history of blistering sunburn
-        Enum:
-        - 'No'
-        - Not_Reported
-        - 'Yes'
-        - unknown
-        Term:
-        -   Code: http://schema.biothings.io/HistoryofBlisteringSunburn
-            Definition: Patient has history of blistering sunburn
-            Origin: HTAN
-            Value: History of Blistering Sunburn
-    HistoryofChronicUVExposure:
-        Desc: History of chronic UV exposure
-        Enum:
-        - None
-        - Not_Reported
-        - Outdoor_occupational
-        - Outdoor_recreational
-        - Therapeutic
-        Term:
-        -   Code: http://schema.biothings.io/HistoryofChronicUVExposure
-            Definition: History of chronic UV exposure
-            Origin: HTAN
-            Value: History of Chronic UV Exposure
-    HistoryofPriorColonPolyps:
-        Desc: Yes/No indicator to describe if the subject had a previous history of
-            colon polyps as noted in the history/physical or previous endoscopic report
-            (s).
-        Enum:
-        - 'No'
-        - Not_Applicable
-        - 'Yes'
-        - unknown
-        Term:
-        -   Code: http://schema.biothings.io/HistoryofPriorColonPolyps
-            Definition: Yes/No indicator to describe if the subject had a previous
-                history of colon polyps as noted in the history/physical or previous
-                endoscopic report (s).
-            Origin: HTAN
-            Value: History of Prior Colon Polyps
-    HistoryofTanningBedUse:
-        Desc: History of tanning bed use of the patient
-        Enum:
-        - Less_than_10_times
-        - More_than_100_times
-        - Never
-        - Not_Reported
-        - _10_50_times
-        - _50_100_times
-        Term:
-        -   Code: http://schema.biothings.io/HistoryofTanningBedUse
-            Definition: History of tanning bed use of the patient
-            Origin: HTAN
-            Value: History of Tanning Bed Use
     HormonalContraceptiveUse:
         Desc: The text term used to indicate whether the patient used hormonal contraceptives.
         Enum:
@@ -5853,19 +4342,6 @@ PropDefinitions:
                 contraceptives.
             Origin: HTAN
             Value: Hormonal Contraceptive Use
-    HormoneTherapyBreastCancerPreventionIndicator:
-        Desc: Did the patient receive hormonal therapy for prevention of breast cancer?
-        Enum:
-        - 'No'
-        - Not_Applicable
-        - 'Yes'
-        - unknown
-        Term:
-        -   Code: http://schema.biothings.io/HormoneTherapyBreastCancerPreventionIndicator
-            Definition: Did the patient receive hormonal therapy for prevention of
-                breast cancer?
-            Origin: HTAN
-            Value: Hormone Therapy Breast Cancer Prevention Indicator
     HysterectomyMarginsInvolved:
         Desc: The text term used to indicate whether the patient''s disease was determined
             to be involved based on the surgical margins of the hysterectomy.
@@ -5960,9 +4436,9 @@ PropDefinitions:
         Enum:
         - L1
         - L2
+        - M
         - Ms
         - Not_Reported
-        - m
         - unknown
         Term:
         -   Code: http://schema.biothings.io/INRGStage
@@ -6105,10 +4581,10 @@ PropDefinitions:
             on the patient.
         Enum:
         - Indeterminate
-        - Negative
         - Not_Performed
         - Not_Reported
-        - Positive
+        - negative
+        - positive
         - unknown
         Term:
         -   Code: http://schema.biothings.io/ImagingResult
@@ -6154,76 +4630,18 @@ PropDefinitions:
                 performed on the patient.
             Origin: HTAN
             Value: Imaging Type
-    ImmediateFamilyHistoryEndometrialCancer:
-        Desc: Text that describes the age at which the family member was diagnosed
-            with endometrial or uterine cancer in relationship to their 50th birthday.
-        Enum:
-        - Before_age_50
-        - Not_Applicable
-        - Not_before_age_50
-        - unknown
-        Term:
-        -   Code: http://schema.biothings.io/ImmediateFamilyHistoryEndometrialCancer
-            Definition: Text that describes the age at which the family member was
-                diagnosed with endometrial or uterine cancer in relationship to their
-                50th birthday.
-            Origin: HTAN
-            Value: Immediate Family History Endometrial Cancer
-    ImmediateFamilyHistoryMelanoma:
-        Desc: Text that describes the age at which the family member was diagnosed
-            with melanoma skin cancer in relationship to their 50th birthday.
-        Enum:
-        - Before_age_50
-        - Not_before_age_50
-        - unknown
-        Term:
-        -   Code: http://schema.biothings.io/ImmediateFamilyHistoryMelanoma
-            Definition: Text that describes the age at which the family member was
-                diagnosed with melanoma skin cancer in relationship to their 50th
-                birthday.
-            Origin: HTAN
-            Value: Immediate Family History Melanoma
-    ImmediateFamilyHistoryOvarianCancer:
-        Desc: Text that describes the age at which the family member was diagnosed
-            with ovarian cancer in relationship to their 50th birthday.
-        Enum:
-        - Before_age_50
-        - Not_Applicable
-        - Not_before_age_50
-        - unknown
-        Term:
-        -   Code: http://schema.biothings.io/ImmediateFamilyHistoryOvarianCancer
-            Definition: Text that describes the age at which the family member was
-                diagnosed with ovarian cancer in relationship to their 50th birthday.
-            Origin: HTAN
-            Value: Immediate Family History Ovarian Cancer
     Immersion:
         Desc: Immersion medium
         Enum:
         - Air
         - Oil
-        - Other
         - Water
+        - other
         Term:
         -   Code: http://schema.biothings.io/Immersion
             Definition: Immersion medium
             Origin: HTAN
             Value: Immersion
-    Immunosuppression:
-        Desc: The indicator that describes whether or not immunosuppressive therapy
-            was administered.
-        Enum:
-        - 'No'
-        - Not_Applicable
-        - Not_Done
-        - 'Yes'
-        - unknown
-        Term:
-        -   Code: http://schema.biothings.io/Immunosuppression
-            Definition: The indicator that describes whether or not immunosuppressive
-                therapy was administered.
-            Origin: HTAN
-            Value: Immunosuppression
     ImmunosuppressiveTreatmentType:
         Desc: The text term used to describe the type of immunosuppresive treatment
             the patient received.
@@ -6234,7 +4652,7 @@ PropDefinitions:
         - Methotrexate
         - None
         - Not_Reported
-        - Other
+        - other
         - unknown
         Term:
         -   Code: http://schema.biothings.io/ImmunosuppressiveTreatmentType
@@ -6260,20 +4678,6 @@ PropDefinitions:
             Origin: HTAN
             Value: Index File Name
         Type: TBD
-    InfraTentorialEpendymomaMolecularSubgroup:
-        Desc: Text term to identify the molecular subgroup in a infra tentorial ependymoma
-        Enum:
-        - Myxopapillary_ependymoma
-        - Not_Applicable
-        - PF_EPN_A
-        - PF_EPN_B
-        - unknown
-        Term:
-        -   Code: http://schema.biothings.io/InfraTentorialEpendymomaMolecularSubgroup
-            Definition: Text term to identify the molecular subgroup in a infra tentorial
-                ependymoma
-            Origin: HTAN
-            Value: Infra Tentorial Ependymoma Molecular Subgroup
     InitialDiseaseStatus:
         Desc: The text term used to describe the status of the patient''s malignancy
             when the treatment began.
@@ -6298,14 +4702,6 @@ PropDefinitions:
                 number, number'
             Origin: HTAN
             Value: Input Cells and Nuclei
-        Type: TBD
-    InternalAbID:
-        Desc: Internal lab ID for an antibody.
-        Term:
-        -   Code: http://schema.biothings.io/InternalAbID
-            Definition: Internal lab ID for an antibody.
-            Origin: HTAN
-            Value: Internal Ab ID
         Type: TBD
     InternationalPrognosticIndex:
         Desc: The text term used to describe the International Prognostic Index, which
@@ -6334,42 +4730,6 @@ PropDefinitions:
             Origin: HTAN
             Value: Intron
         Type: TBD
-    InvasiveDuctalBreastCarcinomaHistologicCategory:
-        Desc: The histologic subtype for the most common type of invasive breast carcinoma.
-        Enum:
-        - Classical_type
-        - Data_not_available
-        - Invasive_carcinoma_type_cannot_be_determined
-        - Invasive_cribriform_carcinoma
-        - Invasive_micropapillary_carcinoma
-        - Invasive_papillary_carcinoma
-        - Invasive_tubular_carcinoma
-        - Medullary_carcinoma
-        - Mucinous_carcinoma
-        - Other
-        - Tubulolobular_carcinoma
-        - unknown
-        Term:
-        -   Code: http://schema.biothings.io/InvasiveDuctalBreastCarcinomaHistologicCategory
-            Definition: The histologic subtype for the most common type of invasive
-                breast carcinoma.
-            Origin: HTAN
-            Value: Invasive Ductal Breast Carcinoma Histologic Category
-    InvasiveLobularBreastCarcinomaHistologicCategory:
-        Desc: The histologic subtype for an infiltrating lobular carcinoma of the
-            breast.
-        Enum:
-        - Alveolar_type
-        - Classical_type
-        - Data_not_available
-        - Pleomorphic_type
-        - unknown
-        Term:
-        -   Code: http://schema.biothings.io/InvasiveLobularBreastCarcinomaHistologicCategory
-            Definition: The histologic subtype for an infiltrating lobular carcinoma
-                of the breast.
-            Origin: HTAN
-            Value: Invasive Lobular Breast Carcinoma Histologic Category
     IschemicTemperature:
         Desc: Specify whether specimen experienced warm or cold ischemia.
         Enum:
@@ -6400,8 +4760,8 @@ PropDefinitions:
         Desc: Denotes that the manifest represents the lowest data level submitted.
             Use when L1 data is missing
         Enum:
-        - 'No'
         - Yes___Is_lowest_level
+        - 'no'
         Term:
         -   Code: http://schema.biothings.io/Islowestlevel
             Definition: Denotes that the manifest represents the lowest data level
@@ -6412,17 +4772,19 @@ PropDefinitions:
         Desc: Text term used to describe the classification used of the functional
             capabilities of a person.
         Enum:
-        - _0
-        - _10
-        - _100
-        - _20
-        - _30
-        - _40
-        - _50
-        - _60
-        - _70
-        - _80
-        - _90
+        - Not_Reported
+        - _0_
+        - _100_
+        - _10_
+        - _20_
+        - _30_
+        - _40_
+        - _50_
+        - _60_
+        - _70_
+        - _80_
+        - _90_
+        - unknown
         Term:
         -   Code: http://schema.biothings.io/KarnofskyPerformanceStatus
             Definition: Text term used to describe the classification used of the
@@ -6444,19 +4806,6 @@ PropDefinitions:
                 specific details about the states are available on their website.
             Origin: HTAN
             Value: Kmer Content
-    KnownGeneticPredispositionMutation:
-        Desc: A yes/no/unknown indicator to identify whether there is a known genetic
-            predisposition mutation present in the patient.
-        Enum:
-        - 'No'
-        - 'Yes'
-        - unknown
-        Term:
-        -   Code: http://schema.biothings.io/KnownGeneticPredispositionMutation
-            Definition: A yes/no/unknown indicator to identify whether there is a
-                known genetic predisposition mutation present in the patient.
-            Origin: HTAN
-            Value: Known Genetic Predisposition Mutation
     LCColumnVendorandModel:
         Desc: The manufacturer of the LC Column unless self-packed, pulled tip capilary
             is used and the model number/name of the LC Column - IF custom self-packed,
@@ -6546,22 +4895,6 @@ PropDefinitions:
             Origin: HTAN
             Value: LC Temp Value
         Type: TBD
-    LabTestsforMMRStatus:
-        Desc: Laboratory tests used to evaluate the status of mismatch repair pathways
-        Enum:
-        - "BRAF\_sequencing"
-        - IHC_staining_for_mismatch_repair_proteins
-        - "MLH1\_promoter_methylation_analysis"
-        - Not_Applicable
-        - Other
-        - PCR_to_evaluate_microsatellite_instability
-        - unknown
-        Term:
-        -   Code: http://schema.biothings.io/LabTestsforMMRStatus
-            Definition: Laboratory tests used to evaluate the status of mismatch repair
-                pathways
-            Origin: HTAN
-            Value: Lab Tests for MMR Status
     LaboratoryTest:
         Desc: The text term used to describe the medical testing used to diagnose,
             treat or further understand a patient''s disease.
@@ -6692,6 +5025,7 @@ PropDefinitions:
         Enum:
         - CEL_seq2
         - Drop_seq
+        - Nextera_XT
         - Smart_SeqV4
         - Smart_seq2
         - TruDrop
@@ -6763,11 +5097,11 @@ PropDefinitions:
         Enum:
         - Affinity_Enrichment
         - Hybrid_Selection
-        - Other
         - PCR
         - Poly_T_Enrichment
         - Random
         - miRNA_Size_Fractionation
+        - other
         - rRNA_Depletion
         Term:
         -   Code: http://schema.biothings.io/LibrarySelectionMethod
@@ -6804,71 +5138,6 @@ PropDefinitions:
             Origin: HTAN
             Value: Linked Matrices
         Type: TBD
-    LocationExtentExtraprostaticExtension:
-        Desc: Location and extent of extraprostatic extension
-        Enum:
-        - Left_Anterior
-        - Left_Apex
-        - Left_Base
-        - Left_Focal
-        - Left_Lateral
-        - Left_Mid
-        - Left_Non_focal__established_
-        - Left_Posterior
-        - Left_Posterolateral
-        - Not_Reported
-        - Right_Anterior
-        - Right_Apex
-        - Right_Base
-        - Right_Focal
-        - Right_Lateral
-        - Right_Mid
-        - Right_Non_focal__established_
-        - Right_Posterior
-        - Right_Posterolateral
-        - unknown
-        Term:
-        -   Code: http://schema.biothings.io/LocationExtentExtraprostaticExtension
-            Definition: Location and extent of extraprostatic extension
-            Origin: HTAN
-            Value: Location Extent Extraprostatic Extension
-    LocationNaturePositiveMargins:
-        Desc: Location and nature of positive margins
-        Enum:
-        - Apical_margin__block_DUM_
-        - Bladder_neck__block_PUM_
-        - Left_Anterior
-        - Left_Apex
-        - Left_Base
-        - Left_Extensive
-        - Left_Focal
-        - Left_Lateral
-        - Left_Mid
-        - Left_Positive_in_an_area_of_extraprostatic_extension__EPE_
-        - Left_Positive_in_an_area_of_intraprostatic_incision__II_
-        - Left_Positive_where_it_is_difficult_to_distinguish_EPE_vs_II
-        - Left_Posterior
-        - Left_Posterolateral
-        - Not_Reported
-        - Right_Anterior
-        - Right_Apex
-        - Right_Base
-        - Right_Extensive
-        - Right_Focal
-        - Right_Lateral
-        - Right_Mid
-        - Right_Positive_in_an_area_of_extraprostatic_extension__EPE_
-        - Right_Positive_in_an_area_of_intraprostatic_incision__II_
-        - Right_Positive_where_it_is_difficult_to_distinguish_EPE_vs_II
-        - Right_Posterior
-        - Right_Posterolateral
-        - Vas_deferens
-        - unknown
-        Term:
-        -   Code: http://schema.biothings.io/LocationNaturePositiveMargins
-            Definition: Location and nature of positive margins
-            Origin: HTAN
-            Value: Location Nature Positive Margins
     LociAbnormalCount:
         Desc: Numeric value used to describe the number of loci determined to be abnormal.
         Term:
@@ -6929,250 +5198,6 @@ PropDefinitions:
             Origin: HTAN
             Value: LowMapQ
         Type: TBD
-    LungAdjacentHistologyType:
-        Desc: The type of morphologic characteristics observed by microscope in the
-            tissue next to a benign or malignant tissue growth
-        Enum:
-        - Adenosquamous_carcinoma
-        - Bronchioalveolar_carcinoma
-        - Carcinoid_tumor_and_lung_atypical_carcinoid_tumor
-        - Large_cell_lung_carcinoma
-        - Large_cell_neuroendocrine_carcinoma
-        - Lung_adenocarcinoma
-        - Lung_adenocarcinoma_in_situ
-        - Lung_lymphoepithelioma_like_carcinoma
-        - Lung_squamous_cell_carcinoma_in_situ
-        - Not_Reported
-        - Other
-        - Sarcomatoid_carcinoma
-        - Small_cell_lung_carcinoma
-        - Squamous_cell_lung_carcinoma
-        - Thoracic_NUT_carcinoma
-        - unknown
-        Term:
-        -   Code: http://schema.biothings.io/LungAdjacentHistologyType
-            Definition: The type of morphologic characteristics observed by microscope
-                in the tissue next to a benign or malignant tissue growth
-            Origin: HTAN
-            Value: Lung Adjacent Histology Type
-    LungCancerDetectionMethodType:
-        Desc: The means, manner of procedure, or systematic course of actions performed
-            in order to discover or identify lung cancer
-        Enum:
-        - Chest_CT
-        - Chest_X_ray
-        - Data_not_available
-        - Low_Dose_Computed_Tomography__LDCT_
-        - Other
-        - unknown
-        Term:
-        -   Code: http://schema.biothings.io/LungCancerDetectionMethodType
-            Definition: The means, manner of procedure, or systematic course of actions
-                performed in order to discover or identify lung cancer
-            Origin: HTAN
-            Value: Lung Cancer Detection Method Type
-    LungCancerHarboringGenomicAberrations:
-        Desc: Genomic aberrations in participants with lung cancer (specific lung
-            cancer associated gene mutations not covered in Tiers 1 and 2)
-        Enum:
-        - A146T_KRAS_mutation
-        - C797S_EGFR_mutation
-        - D1010N_MET_mutation
-        - D1010_splice_MET_mutation
-        - D963_splice_MET_mutation
-        - EML4_ALK_translocation_variant_1
-        - EML4_ALK_translocation_variant_2
-        - EML4_ALK_translocation_variant_3
-        - EML4_ALK_translocation_variant_4
-        - EML4_ALK_translocation_variant_5
-        - Exon_14_deletion
-        - Exon_14_mutation
-        - Exon_19_deletion
-        - Exon_20_insertion
-        - G12A_KRAS_mutation
-        - G12C_KRAS_mutation
-        - G12D_KRAS_mutation
-        - G12R_KRAS_mutation
-        - G12S_KRAS_mutation
-        - G12V_KRAS_mutation
-        - G13A_KRAS_mutation
-        - G13C_KRAS_mutation
-        - G13D_KRAS_mutation
-        - G13R_KRAS_mutation
-        - G13V_KRAS_mutation
-        - G719X_EGFR_mutation
-        - Intron_13_mutation
-        - Intron_14_mutation
-        - K601E_BRAF_mutation
-        - L858R_EGFR_mutation
-        - L861Q_EGFR_mutation
-        - Not_Reported
-        - Other
-        - Q61H_KRAS_mutation
-        - Q61L_KRAS_mutation
-        - T790M_EGFR_mutation
-        - V600D_BRAF_mutation
-        - V600E_BRAF_mutation
-        - V600K_BRAF_mutation
-        - V600R_BRAF_mutation
-        - unknown
-        Term:
-        -   Code: http://schema.biothings.io/LungCancerHarboringGenomicAberrations
-            Definition: Genomic aberrations in participants with lung cancer (specific
-                lung cancer associated gene mutations not covered in Tiers 1 and 2)
-            Origin: HTAN
-            Value: Lung Cancer Harboring Genomic Aberrations
-    LungCancerParticipantProcedureHistory:
-        Desc: Text name of a surgical or operative procedure used in a natural history
-            protocol of a lung cancer participant.
-        Enum:
-        - Brain_resection
-        - Endobronchial_biopsy
-        - Lobectomy_Bilateral
-        - Lobectomy_Left
-        - Lobectomy_Right
-        - Lung_Wedge_Resection_Bilateral
-        - Lung_Wedge_Resection_Left
-        - Lung_Wedge_Resection_Multiple
-        - Lung_Wedge_Resection_Right
-        - Mediastinoscopy
-        - Not_Reported
-        - Other
-        - Pneumonectomy_Left
-        - Pneumonectomy_Right
-        - Segmentectomy
-        - VATS_Sclerosis
-        - unknown
-        Term:
-        -   Code: http://schema.biothings.io/LungCancerParticipantProcedureHistory
-            Definition: Text name of a surgical or operative procedure used in a natural
-                history protocol of a lung cancer participant.
-            Origin: HTAN
-            Value: Lung Cancer Participant Procedure History
-    LungTopography:
-        Desc: Lung PCA specific topography (not covered in previous tiers)
-        Enum:
-        - Bronchus_Intermedius_Bronchus__airway_wall__between_right_upper_and_right_middle_lobes
-        - Carina_NOS__Carina_not_otherwise_specified_
-        - Carina_between_LUDB_orifice_and_lingula_orifice
-        - LB10A_B__Carina_between_the_apical_and_lateral_subsegments_of_the_posterior_segment_of_the_LLL
-        - LB10A_C__Carina_between_the_apical_and_medial_segments_of_the_posterior_segment_of_the_LLL
-        - LB10B_C__Carina_between_the_medial_and_lateral_subsegments_of_the_posterior_segment_of_the_LLL
-        - LB10_orifice__Posterior_segment_left_lower_lobe_airway_wall_between_LB10_and_LB10A_B_carinae_
-        - LB1A_B__Carina_between_the_lateral_and_medial_subsegments_of_the_apical_segment_of_the_LUL
-        - LB1A_C__Carina_between_the_apical_and_lateral_subsegments_of_the_apical_segment_left_upper_lobe
-        - LB1B_C__Carina_between_the_medial_and_lateral_subsegments_of_the_apical_segment_of_the_left_upper_lobe
-        - LB1_2_3__Carina_between_the_apico_posterior_and_anterior_segments_of_the_left_upper_lobe__Carina_between_LB1_2_orifice_and_LB3_orifice_
-        - LB1_2__Carina_between_apical_and_posterior_segment_left_upper_lobe__Carina_between_LB1_orifice_and_LB2_orifice_
-        - LB1_2_orifice__The_apico_posterior_segment_of_the_left_upper_lobe__airway_wall_between_LB1_2_3_carina_and_LB1_or_LB2_
-        - LB2A_B__Carina_between_the_apical_and_lateral_subsegments_of_the_posterior_segment_of_the_left_upper_lobe
-        - LB2A_C__Carina_between_the_apical_and_medial_subsegments_of_the_posterior_segment_of_the_left_upper_lobe
-        - LB2B_C__Carina_between_the_medial_and_lateral_subsegments_of_the_posterior_segment_left_upper_lobe
-        - LB3A_B_Carina_between_the_apical_and_lateral_subsegments_of_the_anterior_segment_of_the_left_upper_lobe
-        - LB3_orifice_Anterior_segment_left_upper_lobe_airway_wall_between_LB3_and_LB3A_B_carinae_
-        - LB4A_B__Carina_between_medial_and_lateral_subsegments_superior_segment_lingula
-        - LB4_5__Carina_between_superior_and_inferior_segment_lingula__Carina_between_LB4_orifice_and_LB5_orifice_
-        - LB4_orifice_Superior_segment_lingula_airway_wall_between_LB4_and_LB4A_B_carinae_
-        - LB5A_B__Carina_between_the_medial_and_lateral_subsegments_inferior_segment_lingula
-        - LB5_orifice_Inferior_segment_lingula_airway_wall_between_LB5_and_LB5A_B_carinae_
-        - LB6A_B__Carina_between_the_superior_and_lateral_subsegments_superior_segment_LLL
-        - LB6A_C__Carina_between_the_superior_and_medial_subsegments_of_superior_segment_LLL
-        - LB6B_C__Carina_between_the_medial_and_lateral_subsegments_of_the_superior_segment_LLL
-        - LB6__The_superior_segment_of_the_left_lower_lobe__Carina_between_LB6_orifice_and_lower_portion_of_LLL_orifice_
-        - LB6_orifice_Airway_wall_between_LB6_and_LB6A_B_carinae
-        - LB8A_B__Carina_between_the_medial_and_lateral_subsegments_of_the_anterior_segment_LLL
-        - LB8_9__Carina_between_the_anterior_and_lateral_segments_LLL__Carina_between_LB8_orifice_and_LB9_orifice_
-        - LB8_orifice_Anterior_segment_left_lower_lobe_airway_wall_between_LB8_and_LB8A_B_carinae_
-        - LB9A_B__Carina_between_the_medial_and_lateral_subsegments_of_the_lateral_segment_LLL
-        - LB9_10__Carina_between_the_lateral_and_posterior_segments_LLL__Carina_between_LB9_orifice_and_LB10_orifice_
-        - LB9_orifice_Lateral_segment_left_lower_lobe_airway_wall_between_LB9_and_LB9A_B_carinae_
-        - LLL_orifice_Airway_wall_between_LUL_carina_and_LB6_10_carinae
-        - LL_NOS__Left_lung_not_otherwise_specified_
-        - LMB_Left_mainstem_bronchus_airway_wall_between_MC___LUL_carina_
-        - LUDB_Carina_between_the_lingula_and_upper_division_left_upper_lobe
-        - LUDB_orifice_airway_wall_between_LUDB_and_LB3_LB1_2_carinae_
-        - LUL_Carina_between_the_LUL_orifice_and_LLL_orifice__airways_
-        - LUL_orifice_Airway_wall_between_LUL_and_LUDB
-        - Lingula_orifice_airway_wall_between_LUDB_and_LB4_5_carinae
-        - MC_Carina_between_right_and_left_lungs__main_carina_
-        - Not_Reported
-        - Other
-        - RB10A_B___Carina_between_medial_and_lateral_subsegments_posterior_segment_RLL
-        - RB10A_C___Carina_between_medial_and_apical_subsegments_posterior_segment_RLL
-        - RB10B_C___Carina_between_medial_and_lateral_subsegments_posterior_segment_RLL
-        - RB10_Posterior_segment_right_lower_lobe__Carina_at_RB10_orifice_takeoff_from_RLL_orifice_
-        - RB10_orifice_Airway_wall_between_RB10_and_RB10A_B_carinae
-        - RB1A_B___Carina_between_medial_and_lateral_subsegments_apical_segment_RUL
-        - RB1_2___Carina_between_apical_and_posterior_segments_right_upper_lobe__Carina_between_RB1_orifice_and_RB2_orifice_
-        - RB1_3___Carina_between_apical_and_anterior_segments_RUL__Carina_between_RB1_orifice_and_RB3_orifice_
-        - RB1_orifice_Apical_segment___right_upper_lobe_airway_wall_between_RB1_and_RB1A_B_carinae_
-        - RB2A_B___Carina_between_the_medial_and_lateral_subsegments_of_the_posterior_segment__RUL_
-        - RB2_3___Carina_between_anterior_and_posterior_segments_RUL__Carina_between_RB2_orifice_and_RB3_orifice_
-        - RB2_orifice_Posterior_segment___right_upper_lobe_airway_wall_between_RB2_and_RB2A_B_carinae_
-        - RB3A_B___Carina_between_the_medial_and_lateral_subsegments_of_the_anterior_segment_RUL
-        - RB3_orifice_Anterior_segment___right_upper_lobe_airway_wall_between_RB3_and_RB3A_B_carinae_
-        - RB4A_B___Carina_between_the_medial_and_lateral_subsegments_of_the_lateral_segment_of_the_right_middle_lobe
-        - RB4_5___Carina_between_the_lateral_and_medial_segments_right_middle_lobe__Carina_between_RB4_orifice_and_RB5_orifice_
-        - RB4_orifice_Lateral_segment_right_middle_lobe__airway_wall_between_RB4_and_RB4A_B_carinae_
-        - RB5A_B___Carina_between_the_medial_and_lateral_subsegments_of_the_medial_segment_of_the_right_middle_lobe
-        - RB5_orifice_Medial_segment_right_middle_lobe__airway_wall_between_RB5_and_RB5A_B_carinae_
-        - RB6A_B___Carina_between_apical_and_lateral_subsegments_superior_segment_RLL
-        - RB6A_C___Carina_between_apical_and_medial_subsegments_superior_segment_RLL
-        - RB6B_C___Carina_between_medial_and_lateral_subsegments_superior_segment_RLL
-        - RB6___Carina_of_superior_segment_RLL__Carina_between_RB6_orifice_and_lower_portion_of_RLL_orifice_
-        - RB6_orifice_Airway_wall_between_RB6_and_RB6A_B_C_carinae
-        - RB7A_B___Carina_between_medial_and_lateral_subsegments_medial_basal_segment_RLL
-        - RB7_Medial_basal_segment_right_lower_lobe__Carina_at_RB7_orifice_takeoff_from_RLL_orifice_
-        - RB7_orifice_Airway_wall_between_RB7_and_RB7A_B_carinae
-        - RB8A_B___Carina_between_medial_and_lateral_subsegments_anterior_segment_RLL
-        - RB8_9___Carina_between_anterior_and_lateral_segments_RLL__Carina_between_RB8_orifice_and_RB9_orifice_
-        - RB8_orifice_Anterior_segment_right_lower_lobe_airway_wall_between_RB8_and_RB8A_B_carinae_
-        - RB9A_B___Carina_between_medial_and_lateral_subsegments_lateral_segment_RLL
-        - RB9_10___Carina_between_lateral_and_posterior_segments_RLL
-        - RB9_orifice_Lateral_segment_right_lower_lobe_airway_wall_between_RB9_and_RB9A_B_carinae_
-        - RLL_orifice_Airway_wall_between_RML_and_RB6_10_carinae
-        - RL_NOS__Right_lung_not_otherwise_specified_
-        - RMB_Right_mainstem_bronchus_airway_wall_between_MC___RUL_carina_
-        - RML___Carina_between_RML_orifice_and_RLL_orifice
-        - RML_orifice_Airway_wall_between_RML_and_RB4_5
-        - RUL_Carinae_between_RUL_orifice_and_bronchus_intermedius
-        - RUL_orifice_Airway_wall_between_RUL_and_RB1_RB2_RB3
-        - TR__Trachea__airway_wall_between_tracheo_esophageal_bifurcation_and_main_carina_
-        - unknown
-        Term:
-        -   Code: http://schema.biothings.io/LungTopography
-            Definition: Lung PCA specific topography (not covered in previous tiers)
-            Origin: HTAN
-            Value: Lung Topography
-    LungTumorLobeBronchialLocation:
-        Desc: Anatomic lobe and bronchial location of the tumor inside the lung
-        Enum:
-        - Bronchus
-        - Lower_lobe
-        - Middle_lobe
-        - Not_Reported
-        - Stump
-        - Upper_lobe
-        - unknown
-        Term:
-        -   Code: http://schema.biothings.io/LungTumorLobeBronchialLocation
-            Definition: Anatomic lobe and bronchial location of the tumor inside the
-                lung
-            Origin: HTAN
-            Value: Lung Tumor Lobe Bronchial Location
-    LungTumorLocationAnatomicSite:
-        Desc: Anatomic location of the tumor inside the lung
-        Enum:
-        - Left
-        - Main_carina
-        - Not_Reported
-        - Right
-        - unknown
-        Term:
-        -   Code: http://schema.biothings.io/LungTumorLocationAnatomicSite
-            Definition: Anatomic location of the tumor inside the lung
-            Origin: HTAN
-            Value: Lung Tumor Location Anatomic Site
     LymphNodeInvolvedSite:
         Desc: The text term used to describe the anatomic site of lymph node involvement.
         Enum:
@@ -7229,10 +5254,10 @@ PropDefinitions:
         Desc: A yes/no indicator to ask if small or thin-walled vessel invasion is
             present, indicating lymphatic involvement
         Enum:
-        - 'No'
         - Not_Reported
-        - 'Yes'
+        - 'no'
         - unknown
+        - 'yes'
         Term:
         -   Code: http://schema.biothings.io/LymphaticInvasionPresent
             Definition: A yes/no indicator to ask if small or thin-walled vessel invasion
@@ -7358,39 +5383,6 @@ PropDefinitions:
             Origin: HTAN
             Value: MERFISH Positions File
         Type: TBD
-    MLH1PromoterMethylationStatus:
-        Desc: 'Text term to define the status of promoter methylation for the MLH1
-            gene. Note: MLH1 gene is commonly associated with hereditary nonpolyposis
-            colorectal cancer. Testing for methylation of the MLH1 promoter can help
-            distinguish sporadic from inherited cancers.'
-        Enum:
-        - Absent
-        - Indeterminate
-        - Not_Assessed
-        - Present
-        Term:
-        -   Code: http://schema.biothings.io/MLH1PromoterMethylationStatus
-            Definition: 'Text term to define the status of promoter methylation for
-                the MLH1 gene. Note: MLH1 gene is commonly associated with hereditary
-                nonpolyposis colorectal cancer. Testing for methylation of the MLH1
-                promoter can help distinguish sporadic from inherited cancers.'
-            Origin: HTAN
-            Value: MLH1 Promoter Methylation Status
-    MRDALLDiagnosticSensitivity:
-        Desc: The assay sensitivity results of a diagnostic assessment of Minimal
-            Residual Disease in patients diagnosed with Acute Lymphoblastic Leukemia.
-        Enum:
-        - Indeterminate
-        - Optimal
-        - Suboptimal
-        - unknown
-        Term:
-        -   Code: http://schema.biothings.io/MRDALLDiagnosticSensitivity
-            Definition: The assay sensitivity results of a diagnostic assessment of
-                Minimal Residual Disease in patients diagnosed with Acute Lymphoblastic
-                Leukemia.
-            Origin: HTAN
-            Value: MRD ALL Diagnostic Sensitivity
     MSAssayCategory:
         Desc: Type of Mass Spectrometry performed.
         Term:
@@ -7479,7 +5471,7 @@ PropDefinitions:
         - MS
         - MS3
         - MS_MS
-        - Other
+        - other
         Term:
         -   Code: http://schema.biothings.io/MSScanMode
             Definition: Indicates whether experiment is MS, MS/MS, or other (possibly
@@ -7493,9 +5485,9 @@ PropDefinitions:
         - DESI
         - MALDI
         - MALDI_2
-        - Other
         - SIMS
         - nESI
+        - other
         Term:
         -   Code: http://schema.biothings.io/MSSource
             Definition: The ion source type used for surface sampling (MALDI, MALDI-2,
@@ -7529,21 +5521,6 @@ PropDefinitions:
                 analyte is lipids.'
             Origin: HTAN
             Value: MS-based Targeted
-    MammaprintRiskGroup:
-        Desc: Text term that represents the risk group for breast cancer as determined
-            by assessment of the MammaPrint test.
-        Enum:
-        - Data_not_available
-        - High_risk
-        - Intermediate_risk
-        - Low_risk
-        - unknown
-        Term:
-        -   Code: http://schema.biothings.io/MammaprintRiskGroup
-            Definition: Text term that represents the risk group for breast cancer
-                as determined by assessment of the MammaPrint test.
-            Origin: HTAN
-            Value: Mammaprint Risk Group
     MapQ30:
         Desc: Number of reads with Quality >= 30.
         Term:
@@ -7605,6 +5582,16 @@ PropDefinitions:
                 data processing, recorded as synapse ID (syn12345).
             Origin: HTAN
             Value: Mass Spectrometry Auxiliary File
+        Type: TBD
+    MatchedSpatialBarcodeTag:
+        Desc: SAM tag for matched spot barcode field; please provide a valid spot
+            barcode tag (e.g. CB:Z) (Slide-seq specific)
+        Term:
+        -   Code: http://schema.biothings.io/MatchedSpatialBarcodeTag
+            Definition: SAM tag for matched spot barcode field; please provide a valid
+                spot barcode tag (e.g. CB:Z) (Slide-seq specific)
+            Origin: HTAN
+            Value: Matched Spatial Barcode Tag
         Type: TBD
     MatrixType:
         Desc: Type of data stored in matrix.
@@ -7691,45 +5678,6 @@ PropDefinitions:
             Origin: HTAN
             Value: Median UMI Counts per Spot
         Type: TBD
-    MedicallyUnderservedArea:
-        Desc: 'Areas or populations designated by HRSA as having too few primary care
-            providers, high infant mortality, high poverty or a high elderly population:  Use
-            patient zip code to find the county the patient lives in by going to https://www.unitedstateszipcodes.org/
-            - enter the zip code in the main text field and use the associated county
-            on the right side of the result field. Go to data.hrsa.gov website and
-            select "Query Data". Pick the Medically Underserved Areas/Populations
-            (MUA/P) data source in the step 1 menu and select "View Data". Enter the
-            name of the county (_______ county) in the first "Service Area" column,
-            adding the state in the 5th column may help direct you to the data.  If
-            the designation type in the third column is "medically underserved area"
-            enter "Yes" as the value. If the county generates a "No data available
-            in table" enter "No" as the value.  A value of "Unknown" indicates that
-            sufficient data was not available to look up the value.  If value is yes,
-            complete the Medically_underserved_score data element.'
-        Enum:
-        - Medically_Underserved_Area___No
-        - Medically_Underserved_Area___Unknown
-        - Medically_Underserved_Area___Yes
-        Term:
-        -   Code: http://schema.biothings.io/MedicallyUnderservedArea
-            Definition: 'Areas or populations designated by HRSA as having too few
-                primary care providers, high infant mortality, high poverty or a high
-                elderly population:  Use patient zip code to find the county the patient
-                lives in by going to https://www.unitedstateszipcodes.org/ - enter
-                the zip code in the main text field and use the associated county
-                on the right side of the result field. Go to data.hrsa.gov website
-                and select "Query Data". Pick the Medically Underserved Areas/Populations
-                (MUA/P) data source in the step 1 menu and select "View Data". Enter
-                the name of the county (_______ county) in the first "Service Area"
-                column, adding the state in the 5th column may help direct you to
-                the data.  If the designation type in the third column is "medically
-                underserved area" enter "Yes" as the value. If the county generates
-                a "No data available in table" enter "No" as the value.  A value of
-                "Unknown" indicates that sufficient data was not available to look
-                up the value.  If value is yes, complete the Medically_underserved_score
-                data element.'
-            Origin: HTAN
-            Value: Medically Underserved Area
     MedulloblastomaMolecularClassification:
         Desc: The text term used to describe the classification of medulloblastoma
             tumors based on molecular features.
@@ -7746,64 +5694,6 @@ PropDefinitions:
                 tumors based on molecular features.
             Origin: HTAN
             Value: Medulloblastoma Molecular Classification
-    MelanomaBiopsyResectionSites:
-        Desc: Biopsy resection sites specific to melanoma (not covered in Tiers 1
-            and 2)
-        Enum:
-        - Not_Reported
-        - Skin_NOS
-        - Skin_of_abdomen
-        - Skin_of_back
-        - Skin_of_breast
-        - Skin_of_chest
-        - Skin_of_ear
-        - Skin_of_eye_lid
-        - Skin_of_lip
-        - Skin_of_lower_limb_and_hip
-        - Skin_of_neck
-        - Skin_of_nose
-        - Skin_of_other_parts_of_face
-        - Skin_of_palm
-        - Skin_of_penis
-        - Skin_of_scalp
-        - Skin_of_scrotum
-        - Skin_of_sole
-        - Skin_of_upper_limb_and_shoulder
-        - Skin_of_vulva
-        - skin_of_trunk_other
-        - skin_other
-        Term:
-        -   Code: http://schema.biothings.io/MelanomaBiopsyResectionSites
-            Definition: Biopsy resection sites specific to melanoma (not covered in
-                Tiers 1 and 2)
-            Origin: HTAN
-            Value: Melanoma Biopsy Resection Sites
-    MelanomaLesionSize:
-        Desc: Diameter of lesion determined on skin examination (pre-bx), in mm
-        Term:
-        -   Code: http://schema.biothings.io/MelanomaLesionSize
-            Definition: Diameter of lesion determined on skin examination (pre-bx),
-                in mm
-            Origin: HTAN
-            Value: Melanoma Lesion Size
-        Type: TBD
-    MelanomaSpecimenClarkLevelValue:
-        Desc: Definition of the Clark level or depth of involvement of a melanoma
-            in the skin or a specimen.
-        Enum:
-        - I
-        - II
-        - III
-        - IV
-        - No_Source_Documentation
-        - V
-        - unknown
-        Term:
-        -   Code: http://schema.biothings.io/MelanomaSpecimenClarkLevelValue
-            Definition: Definition of the Clark level or depth of involvement of a
-                melanoma in the skin or a specimen.
-            Origin: HTAN
-            Value: Melanoma Specimen Clark Level Value
     MenopauseStatus:
         Desc: Text term used to describe the patient''s menopause status.
         Enum:
@@ -7823,6 +5713,7 @@ PropDefinitions:
         - Ac
         - Ag
         - Al
+        - Am
         - Ar
         - As
         - At
@@ -7876,6 +5767,7 @@ PropDefinitions:
         - Lu
         - Lv
         - Mc
+        - Md
         - Mg
         - Mn
         - Mo
@@ -7887,7 +5779,6 @@ PropDefinitions:
         - Ne
         - Nh
         - Ni
-        - 'No'
         - Np
         - O
         - Og
@@ -7935,8 +5826,7 @@ PropDefinitions:
         - Yb
         - Zn
         - Zr
-        - am
-        - md
+        - 'no'
         Term:
         -   Code: http://schema.biothings.io/MetalIsotopeElement
             Definition: "Element abbreviation. eg \u201CLa\u201D or \u201CNd\u201D"
@@ -8030,13 +5920,13 @@ PropDefinitions:
         - Laparoscopy
         - Laparotomy
         - Not_Reported
-        - Other
         - Pap_Smear
         - Pathologic_Review
         - Physical_Exam
         - Surgical_Resection
         - Thoracentesis
         - Ultrasound_Guided_Biopsy
+        - other
         - unknown
         Term:
         -   Code: http://schema.biothings.io/MethodofDiagnosis
@@ -8095,10 +5985,10 @@ PropDefinitions:
             diagnostic array that was completed prior to research sequencing was done.
             Do not include data related to research assay outputs here.'
         Enum:
-        - 'No'
         - Not_Reported
-        - 'Yes'
+        - 'no'
         - unknown
+        - 'yes'
         Term:
         -   Code: http://schema.biothings.io/MismatchRepairMutation
             Definition: 'The yes/no/unknown indicator used to describe whether the
@@ -8110,21 +6000,6 @@ PropDefinitions:
                 assay outputs here.'
             Origin: HTAN
             Value: Mismatch Repair Mutation
-    MismatchRepairSystemStatus:
-        Desc: The text that best describes the condition or state of MMR (mismatch
-            repair system) in the patient
-        Enum:
-        - Microsatellite_instability_high_MSIH
-        - Microsatellite_stable_MSS
-        - Mismatch_repair_deficiency_MMRD
-        - Mismatch_repair_proficiency_MMPP
-        - unknown_or_other
-        Term:
-        -   Code: http://schema.biothings.io/MismatchRepairSystemStatus
-            Definition: The text that best describes the condition or state of MMR
-                (mismatch repair system) in the patient
-            Origin: HTAN
-            Value: Mismatch Repair System Status
     MitochondrialRead_Pairs:
         Desc: Number of read-pairs mapping to mitochondria and non-nuclear contigs
         Term:
@@ -8164,21 +6039,6 @@ PropDefinitions:
             Origin: HTAN
             Value: Mitotic Count
         Type: TBD
-    ModeofCancerDetection:
-        Desc: Text term used to describe the mode of cancer detection, like standard
-            of care screening or random detection
-        Enum:
-        - Clinical_Examination_of_unrelated_cancer_symptoms
-        - Data_not_available
-        - Incidentaloma
-        - Interval_Cancer
-        - Standard_of_Care_Screening
-        Term:
-        -   Code: http://schema.biothings.io/ModeofCancerDetection
-            Definition: Text term used to describe the mode of cancer detection, like
-                standard of care screening or random detection
-            Origin: HTAN
-            Value: Mode of Cancer Detection
     MolecularAnalysisMethod:
         Desc: 'The text term used to describe the method used for molecular analysis.
             Note: This node is meant to capture molecular tests that were completed
@@ -8198,7 +6058,6 @@ PropDefinitions:
         - Not_Applicable
         - Not_Reported
         - Nuclear_Staining
-        - Other
         - RNA_Sequencing
         - RT_PCR
         - Sequencing_NOS
@@ -8206,6 +6065,7 @@ PropDefinitions:
         - Targeted_Sequencing
         - WGS
         - WXS
+        - other
         - unknown
         Term:
         -   Code: http://schema.biothings.io/MolecularAnalysisMethod
@@ -8314,38 +6174,6 @@ PropDefinitions:
                 by non-soluble ringing media
             Origin: HTAN
             Value: Mounting Medium
-    MulticentricBreastCarcinomaPresentIndicator:
-        Desc: A response to indicate if there is breast cancer characterized by the
-            presence of multiple cancerous tumors that originate from different clones
-            and usually located in different quadrants of the breast.
-        Enum:
-        - Data_not_available
-        - 'No'
-        - 'Yes'
-        - unknown
-        Term:
-        -   Code: http://schema.biothings.io/MulticentricBreastCarcinomaPresentIndicator
-            Definition: A response to indicate if there is breast cancer characterized
-                by the presence of multiple cancerous tumors that originate from different
-                clones and usually located in different quadrants of the breast.
-            Origin: HTAN
-            Value: Multicentric Breast Carcinoma Present Indicator
-    MultifocalBreastCarcinomaPresentIndicator:
-        Desc: A response to indicate if there is breast cancer characterized by the
-            presence of multiple cancerous tumors that originate from the same clone
-            and usually located in the same quadrant of the breast.
-        Enum:
-        - Data_not_available
-        - 'No'
-        - 'Yes'
-        - unknown
-        Term:
-        -   Code: http://schema.biothings.io/MultifocalBreastCarcinomaPresentIndicator
-            Definition: A response to indicate if there is breast cancer characterized
-                by the presence of multiple cancerous tumors that originate from the
-                same clone and usually located in the same quadrant of the breast.
-            Origin: HTAN
-            Value: Multifocal Breast Carcinoma Present Indicator
     MultiplexBarcode:
         Desc: The barcode/index sequence used. Wrong or missing information may affect
             analysis results. String
@@ -8356,113 +6184,6 @@ PropDefinitions:
             Origin: HTAN
             Value: Multiplex Barcode
         Type: TBD
-    MutationalSignatures:
-        Desc: 'Mutational signatures identified in the patient, includes signatures
-            linked to selected exogenous carcinogens, endogenous and enzymatic modification
-            of DNA or defective DNA repair. Note: Include only outputs of tests that
-            were completed clinically for the participant and only include data from
-            a diagnostic array that was completed prior to research sequencing was
-            done. '
-        Enum:
-        - APOBEC_enzymes_associated_mutations
-        - Activation_Induced_Deaminases__AID__associated_mutations
-        - Alkylating_Agents__Temozolomide__induced_mutations
-        - DNA_MMR_Deficiency
-        - Data_not_available
-        - Ig_gene_hypermutation
-        - Not_Applicable
-        - Not_Reported
-        - Other
-        - Signature_10
-        - Signature_11
-        - Signature_12
-        - Signature_13
-        - Signature_14
-        - Signature_15
-        - Signature_16
-        - Signature_17
-        - Signature_18
-        - Signature_19
-        - Signature_1A
-        - Signature_1B
-        - Signature_2
-        - Signature_20
-        - Signature_21
-        - Signature_3
-        - Signature_4
-        - Signature_5
-        - Signature_6
-        - Signature_7
-        - Signature_8
-        - Signature_9
-        - Tobacco_use_associated_mutations
-        - UV_light_induced_mutations
-        - age_of_cancer_diagnosis
-        - "altered_activity_of_the_error_prone_polymerase_POL\u03B5__POLE_"
-        - localized_substitution_hypermutation__kataegis_
-        - methylated_CpG_sequences_mutagenesis_deamination_of_5_methyl_cytosine_
-        - microsatellite_instability__additions_and_deletions_
-        - transcriptional_strand_bias
-        - unknown
-        Term:
-        -   Code: http://schema.biothings.io/MutationalSignatures
-            Definition: 'Mutational signatures identified in the patient, includes
-                signatures linked to selected exogenous carcinogens, endogenous and
-                enzymatic modification of DNA or defective DNA repair. Note: Include
-                only outputs of tests that were completed clinically for the participant
-                and only include data from a diagnostic array that was completed prior
-                to research sequencing was done. '
-            Origin: HTAN
-            Value: Mutational Signatures
-    NCIALLRiskGroup:
-        Desc: The NCI risk group assigned to a patient at initial diagnosis with Acute
-            Lymphoblastic Leukemia.
-        Enum:
-        - NCI_High_Risk
-        - NCI_Standard_Risk
-        - unknown
-        Term:
-        -   Code: http://schema.biothings.io/NCIALLRiskGroup
-            Definition: The NCI risk group assigned to a patient at initial diagnosis
-                with Acute Lymphoblastic Leukemia.
-            Origin: HTAN
-            Value: NCI ALL Risk Group
-    NCIAtlasCancerSite:
-        Desc: The primary tumor site used to calculate the incidence rate using the
-            NCI Cancer Atlas, a digital atlas which provides geographical data related
-            to cancer utilizing the Surveillance, Epidemiology, and End Results (SEER)
-            Program cancer incidence rates for 2013 to 2017
-        Enum:
-        - Bladder
-        - Brain_And_Other_Nervous_System
-        - Cervix_Uteri
-        - Colon_And_Rectum
-        - Cutaneous_Melanoma
-        - Esophagus
-        - Female_Breast
-        - In_situ_Female_Breast
-        - Kidney_And_Renal_Pelvis
-        - Less_Than_Age
-        - Leukemia
-        - Liver_And_Bile_Duct
-        - Lung_And_Bronchus
-        - Malignant_Childhood_Neoplasm
-        - Non_Hodgkins_Lymphoma
-        - Oral_Cavity_And_Pharynx
-        - Ovary
-        - Pancreas
-        - Prostate_Gland
-        - Stomach
-        - Thyroid_Gland
-        - Uterus
-        Term:
-        -   Code: http://schema.biothings.io/NCIAtlasCancerSite
-            Definition: The primary tumor site used to calculate the incidence rate
-                using the NCI Cancer Atlas, a digital atlas which provides geographical
-                data related to cancer utilizing the Surveillance, Epidemiology, and
-                End Results (SEER) Program cancer incidence rates for 2013 to 2017
-            Origin: HTAN
-            Value: NCI Atlas Cancer Site
     NCountPeaks:
         Desc: Total number of fragments in peaks
         Term:
@@ -8505,18 +6226,6 @@ PropDefinitions:
             Origin: HTAN
             Value: Nadir CD4 Count
         Type: TBD
-    NeuroblastomaMYCNGeneAmplificationStatus:
-        Desc: Neuroblastoma MYCN amplification or over-expression status
-        Enum:
-        - Amplified
-        - Not_amplified
-        - Not_done
-        - unknown
-        Term:
-        -   Code: http://schema.biothings.io/NeuroblastomaMYCNGeneAmplificationStatus
-            Definition: Neuroblastoma MYCN amplification or over-expression status
-            Origin: HTAN
-            Value: Neuroblastoma MYCN Gene Amplification Status
     NominalMagnification:
         Desc: The magnification of the lens as specified by the manufacturer - i.e.
             '60' is a 60X lens. floating point value > 1(no units)
@@ -8547,10 +6256,10 @@ PropDefinitions:
             deposits in the pericolic or perirectal fat or in adjacent mesentery away
             from the leading edge of the tumor.
         Enum:
-        - 'No'
         - Not_Reported
-        - 'Yes'
+        - 'no'
         - unknown
+        - 'yes'
         Term:
         -   Code: http://schema.biothings.io/NonNodalTumorDeposits
             Definition: The yes/no/unknown indicator used to describe the presence
@@ -8736,91 +6445,6 @@ PropDefinitions:
             Origin: HTAN
             Value: On Target Fragments
         Type: TBD
-    OncotypeRiskGroup:
-        Desc: Text term that represents the risk group for breast cancer as determined
-            by assessment of the Oncotype recurrence score.
-        Enum:
-        - Data_not_available
-        - High_risk
-        - Intermediate_risk
-        - Low_risk
-        - unknown
-        Term:
-        -   Code: http://schema.biothings.io/OncotypeRiskGroup
-            Definition: Text term that represents the risk group for breast cancer
-                as determined by assessment of the Oncotype recurrence score.
-            Origin: HTAN
-            Value: Oncotype Risk Group
-    OncotypeScore:
-        Desc: OncotypeDX recurrence score
-        Term:
-        -   Code: http://schema.biothings.io/OncotypeScore
-            Definition: OncotypeDX recurrence score
-            Origin: HTAN
-            Value: Oncotype Score
-        Type: TBD
-    OtherBiopsyResectionSite:
-        Desc: A description of the location on or within the human body where the
-            surgical biopsy/resection procedure was performed (Not covered under HTAN
-            Clinical Data Tier 1)
-        Term:
-        -   Code: http://schema.biothings.io/OtherBiopsyResectionSite
-            Definition: A description of the location on or within the human body
-                where the surgical biopsy/resection procedure was performed (Not covered
-                under HTAN Clinical Data Tier 1)
-            Origin: HTAN
-            Value: Other Biopsy Resection Site
-        Type: TBD
-    OvarianCancerHistologicSubtype:
-        Desc: Text term to describe the histological subtype of ovarian cancer in
-            the participant
-        Enum:
-        - Clear_cell
-        - Data_not_available
-        - Germ_cell
-        - High_grade_endometrioid
-        - High_grade_serous
-        - Low_grade_endometrioid
-        - Low_grade_serous
-        - Mucinous
-        - Other
-        - Sex_cord_stromal
-        - unknown
-        Term:
-        -   Code: http://schema.biothings.io/OvarianCancerHistologicSubtype
-            Definition: Text term to describe the histological subtype of ovarian
-                cancer in the participant
-            Origin: HTAN
-            Value: Ovarian Cancer Histologic Subtype
-    OvarianCancerPlatinumStatus:
-        Desc: Text term to indicate the status of treatment with platinum in participant
-            with ovarian cancer
-        Enum:
-        - Data_not_available
-        - Platinum_refractory
-        - Platinum_resistant
-        - Platinum_sensitive
-        - unknown
-        Term:
-        -   Code: http://schema.biothings.io/OvarianCancerPlatinumStatus
-            Definition: Text term to indicate the status of treatment with platinum
-                in participant with ovarian cancer
-            Origin: HTAN
-            Value: Ovarian Cancer Platinum Status
-    OvarianCancerSurgicalOutcome:
-        Desc: Text term that describes the kind of surgical treatment administered.
-        Enum:
-        - Data_not_available
-        - Optimal_cytoreduction
-        - Other
-        - R0_resection
-        - Sub_optimal_cytoreduction
-        - unknown
-        Term:
-        -   Code: http://schema.biothings.io/OvarianCancerSurgicalOutcome
-            Definition: Text term that describes the kind of surgical treatment administered.
-            Origin: HTAN
-            Value: Ovarian Cancer Surgical Outcome
     OvarianSpecimenStatus:
         Desc: The text term used to describe the physical condition of the involved
             ovary.
@@ -8876,18 +6500,6 @@ PropDefinitions:
             Origin: HTAN
             Value: pUC19 methylation ratio
         Type: TBD
-    PackYearsSmoked:
-        Desc: Numeric computed value to represent lifetime tobacco exposure defined
-            as number of cigarettes smoked per day x number of years smoked divided
-            by 20.
-        Term:
-        -   Code: http://schema.biothings.io/PackYearsSmoked
-            Definition: Numeric computed value to represent lifetime tobacco exposure
-                defined as number of cigarettes smoked per day x number of years smoked
-                divided by 20.
-            Origin: HTAN
-            Value: Pack Years Smoked
-        Type: TBD
     PairsOnDiffCHR:
         Desc: Pairs on different chromosomes collected from samtools. Integer
         Term:
@@ -8896,64 +6508,6 @@ PropDefinitions:
             Origin: HTAN
             Value: Pairs On Diff CHR
         Type: TBD
-    PancreasPrecancerHistopathologicGrade:
-        Desc: The grade of precancerous pancreatic tissue based on microscopic study
-            of characteristic tissue abnormalities by employing various cytochemical
-            and immunocytochemical stains.
-        Enum:
-        - IPMN_Adenoma
-        - IPMN_Borderline
-        - IPMN_Carcinoma_in_situ
-        - IPMN_Invasive_carcinoma
-        - Not_Reported
-        - PanIN_1
-        - PanIN_1A
-        - PanIN_1B
-        - PanIN_2
-        - PanIN_3
-        - unknown
-        Term:
-        -   Code: http://schema.biothings.io/PancreasPrecancerHistopathologicGrade
-            Definition: The grade of precancerous pancreatic tissue based on microscopic
-                study of characteristic tissue abnormalities by employing various
-                cytochemical and immunocytochemical stains.
-            Origin: HTAN
-            Value: Pancreas Precancer Histopathologic Grade
-    PancreaticDuctFinalPathologyType:
-        Desc: The final pathology result of the pancreatic duct communication type.
-        Enum:
-        - Main_Duct
-        - Mixed
-        - None
-        - Not_Reported
-        - Not_Specified
-        - Side_Branch
-        Term:
-        -   Code: http://schema.biothings.io/PancreaticDuctFinalPathologyType
-            Definition: The final pathology result of the pancreatic duct communication
-                type.
-            Origin: HTAN
-            Value: Pancreatic Duct Final Pathology Type
-    PancreaticIPMNPathologyEpithelialSubtype:
-        Desc: The Intraductal Papillary Mucinous Neoplasm (IPMN) epithelial cell subtype
-            based on the gross and microscopic examination of a pancreatic neoplasm
-            specimen
-        Enum:
-        - Gastric_Foveolar
-        - Intestinal
-        - Intraductal_Tubopapillary
-        - Not_Reported
-        - Oncocytic
-        - Other
-        - Pancreatobiliary
-        - unknown
-        Term:
-        -   Code: http://schema.biothings.io/PancreaticIPMNPathologyEpithelialSubtype
-            Definition: The Intraductal Papillary Mucinous Neoplasm (IPMN) epithelial
-                cell subtype based on the gross and microscopic examination of a pancreatic
-                neoplasm specimen
-            Origin: HTAN
-            Value: Pancreatic IPMN Pathology Epithelial Subtype
     PancreatitisOnsetYear:
         Desc: Date of onset of pancreatitis.
         Term:
@@ -8984,7 +6538,7 @@ PropDefinitions:
         Desc: Did all channels pass QC (if not add free text Comment)
         Enum:
         - No___Channels_QC
-        - 'Yes'
+        - 'yes'
         Term:
         -   Code: http://schema.biothings.io/PassedQC
             Definition: Did all channels pass QC (if not add free text Comment)
@@ -9008,37 +6562,6 @@ PropDefinitions:
                 (ACMG).
             Origin: HTAN
             Value: Pathogenicity
-    PatientColonoscopyPerformedIndicator:
-        Desc: The yes/no indicator that records if the subject has undergone a previous
-            colonoscopy.
-        Enum:
-        - 'No'
-        - Not_Applicable
-        - 'Yes'
-        - unknown
-        Term:
-        -   Code: http://schema.biothings.io/PatientColonoscopyPerformedIndicator
-            Definition: The yes/no indicator that records if the subject has undergone
-                a previous colonoscopy.
-            Origin: HTAN
-            Value: Patient Colonoscopy Performed Indicator
-    PatientInflammatoryBowelDiseasePersonalMedicaHistory:
-        Desc: The indicator for patient''s personal medical history of inflammatory
-            bowel disease (chronic, non-specific disorders of unknown etiology, including
-            Crohn disease and ulcerative colitis).
-        Enum:
-        - 'No'
-        - Not_Applicable
-        - Yes___Crohns_disease
-        - Yes___Ulcerative_colitis
-        - unknown
-        Term:
-        -   Code: http://schema.biothings.io/PatientInflammatoryBowelDiseasePersonalMedicaHistory
-            Definition: The indicator for patient''s personal medical history of inflammatory
-                bowel disease (chronic, non-specific disorders of unknown etiology,
-                including Crohn disease and ulcerative colitis).
-            Origin: HTAN
-            Value: Patient Inflammatory Bowel Disease Personal Medica History
     PctReadsinPeaks:
         Desc: Percentage of reads in peaks
         Term:
@@ -9299,10 +6822,10 @@ PropDefinitions:
         Desc: A yes/no indicator to ask if perineural invasion or infiltration of
             tumor or cancer is present.
         Enum:
-        - 'No'
         - Not_Reported
-        - 'Yes'
+        - 'no'
         - unknown
+        - 'yes'
         Term:
         -   Code: http://schema.biothings.io/PerineuralInvasionPresent
             Definition: A yes/no indicator to ask if perineural invasion or infiltration
@@ -9337,26 +6860,6 @@ PropDefinitions:
             Origin: HTAN
             Value: Permeabilization Time
         Type: TBD
-    PhosphoSite:
-        Desc: The protein site for a phosphoprotein targeting antibody. Report AA
-            and site (i.e. S442)
-        Term:
-        -   Code: http://schema.biothings.io/PhosphoSite
-            Definition: The protein site for a phosphoprotein targeting antibody.
-                Report AA and site (i.e. S442)
-            Origin: HTAN
-            Value: Phospho Site
-        Type: TBD
-    PhosphoproteinFlag:
-        Desc: A flag the denotes if an antibody targets a phosphoprotein.
-        Enum:
-        - 'False'
-        - 'True'
-        Term:
-        -   Code: http://schema.biothings.io/PhosphoproteinFlag
-            Definition: A flag the denotes if an antibody targets a phosphoprotein.
-            Origin: HTAN
-            Value: Phosphoprotein Flag
     PhysicalSizeX:
         Desc: Physical size (X-dimension) of a pixel. Units are set by PhysicalSizeXUnit.
             Floating point value > 0.
@@ -9455,8 +6958,8 @@ PropDefinitions:
     PixelsBigEndian:
         Desc: Boolean (True/False)
         Enum:
-        - 'False'
-        - 'True'
+        - 'false'
+        - 'true'
         Term:
         -   Code: http://schema.biothings.io/PixelsBigEndian
             Definition: Boolean (True/False)
@@ -9492,8 +6995,8 @@ PropDefinitions:
     Polarity:
         Desc: The polarity of the mass analysis (positive or negative ion modes)
         Enum:
-        - Negative
-        - Positive
+        - negative
+        - positive
         Term:
         -   Code: http://schema.biothings.io/Polarity
             Definition: The polarity of the mass analysis (positive or negative ion
@@ -9516,9 +7019,9 @@ PropDefinitions:
         - Channel_Cycle_Registration
         - Illumination_correction
         - None
-        - Other
         - TMA_de_arraying
         - Tile_Stitching
+        - other
         Term:
         -   Code: http://schema.biothings.io/Pre-processingCompleted
             Definition: Pre-processing steps completed to convert level 1 raw data
@@ -9532,9 +7035,9 @@ PropDefinitions:
         - Channel_Cycle_Registration
         - Illumination_correction
         - None
-        - Other
         - TMA_de_arraying
         - Tile_Stitching
+        - other
         Term:
         -   Code: http://schema.biothings.io/Pre-processingRequired
             Definition: Pre-processing steps required to convert level 1 raw data
@@ -9572,7 +7075,7 @@ PropDefinitions:
         - Moderate_dysplasia
         - No_diagnosis_possible
         - Normal_WDA
-        - Other
+        - Not_Applicable
         - Pancreatic_Intraductal_Papillary_Mucinous_Neoplasm
         - Pancreatic_Intraepithelial_Neoplasia
         - Persistent_melanoma_in_situ
@@ -9583,6 +7086,7 @@ PropDefinitions:
         - Squamous_metaplasia___immature
         - Squamous_metaplasia___mature
         - Superficial_spreading
+        - other
         Term:
         -   Code: http://schema.biothings.io/PrecancerousConditionType
             Definition: The classification of pre-cancerous cells found in a specific
@@ -9610,10 +7114,10 @@ PropDefinitions:
         Desc: The text term used to indicate whether the patient was pregnant at the
             time they were diagnosed.
         Enum:
-        - 'No'
         - Not_Reported
-        - 'Yes'
+        - 'no'
         - unknown
+        - 'yes'
         Term:
         -   Code: http://schema.biothings.io/PregnantatDiagnosis
             Definition: The text term used to indicate whether the patient was pregnant
@@ -9665,10 +7169,10 @@ PropDefinitions:
         Desc: The yes/no/unknown indicator used to describe whether the patient was
             premature (less than 37 weeks gestation) at birth.
         Enum:
-        - 'No'
         - Not_Reported
-        - 'Yes'
+        - 'no'
         - unknown
+        - 'yes'
         Term:
         -   Code: http://schema.biothings.io/PrematureAtBirth
             Definition: The yes/no/unknown indicator used to describe whether the
@@ -10245,356 +7749,30 @@ PropDefinitions:
                 the sample used for sequencing.
             Origin: HTAN
             Value: Primary Gleason Grade
-    PriorInvasiveBreastDisease:
-        Desc: Text term to indicate prior invasive breast condition in the participant
-        Enum:
-        - DCIS
-        - Data_not_available
-        - Invasive_breast_cancer__unrelated_to_the_current_cancer_
-        - LCIS
-        - Other
-        - unknown
-        Term:
-        -   Code: http://schema.biothings.io/PriorInvasiveBreastDisease
-            Definition: Text term to indicate prior invasive breast condition in the
-                participant
-            Origin: HTAN
-            Value: Prior Invasive Breast Disease
     PriorMalignancy:
         Desc: The yes/no/unknown indicator used to describe the patient''s history
             of prior cancer diagnosis.
         Enum:
-        - 'No'
         - Not_Allowed_To_Collect
         - Not_Reported
-        - 'Yes'
+        - 'no'
         - unknown
+        - 'yes'
         Term:
         -   Code: http://schema.biothings.io/PriorMalignancy
             Definition: The yes/no/unknown indicator used to describe the patient''s
                 history of prior cancer diagnosis.
             Origin: HTAN
             Value: Prior Malignancy
-    PriorSitesofRadiation:
-        Desc: The anatomic location to which radiation treatment was administered
-            to a patient prior to enrollment on a protocol.
-        Enum:
-        - Abdomen_total
-        - Abdominal_Wall
-        - Acetabulum
-        - Adenoid
-        - Adipose
-        - Adrenal
-        - Alveolar_Ridge
-        - Amniotic_Fluid
-        - Ampulla_of_Vater
-        - Anal_Sphincter
-        - Ankle
-        - Anorectum
-        - Antecubital_Fossa
-        - Antrum
-        - Anus
-        - Aorta
-        - Aortic_Body
-        - Appendix
-        - Aqueous_Fluid
-        - Arm
-        - Artery
-        - Ascending_Colon
-        - Ascending_Colon_Hepatic_Flexure
-        - Ascites
-        - Auditory_Canal
-        - Autonomic_Nervous_System
-        - Axilla
-        - Back
-        - Bile_Duct
-        - Bladder
-        - Blood
-        - Blood_Vessel
-        - Body_total
-        - Bone
-        - Bone_Marrow
-        - Bone_non_spine
-        - Bowel
-        - Brain
-        - Brain_Stem
-        - Breast
-        - Broad_Ligament
-        - Bronchiole
-        - Bronchus
-        - Brow
-        - Buccal_Cavity
-        - Buccal_Mucosa
-        - Buttock
-        - Calf
-        - Capillary
-        - Cardia
-        - Carina
-        - Carotid_Artery
-        - Carotid_Body
-        - Cartilage
-        - Cecum
-        - Cell_Line
-        - Central_Nervous_System
-        - Cerebellum
-        - Cerebral_Cortex
-        - Cerebrospinal_Fluid
-        - Cerebrum
-        - Cervical_Spine
-        - Cervix
-        - Chest
-        - Chest_Wall
-        - Chin
-        - Clavicle
-        - Clitoris
-        - Colon
-        - Colon_Mucosa_Only
-        - Common_Duct
-        - Conjunctiva
-        - Connective_Tissue
-        - Dermal
-        - Descending_Colon
-        - Diaphragm
-        - Distant_Site
-        - Duodenum
-        - Ear
-        - Ear_Canal
-        - Ear_Pinna__External_
-        - Elbow
-        - Endocrine_Gland
-        - Epididymis
-        - Epidural_Space
-        - Epitrochlear
-        - Esophagogastric_Junction
-        - Esophagus
-        - Esophagus_Mucosa_Only
-        - Eye
-        - Fallopian_Tube
-        - Femoral_Artery
-        - Femoral_Vein
-        - Femur
-        - Fibroblasts
-        - Fibula
-        - Finger
-        - Floor_of_Mouth
-        - Fluid
-        - Foot
-        - Forearm
-        - Forehead
-        - Foreskin
-        - Frontal_Cortex
-        - Frontal_Lobe
-        - Fundus_of_Stomach
-        - Gallbladder
-        - Ganglia
-        - Gastroesophageal_Junction
-        - Gastrointestinal_Intestine
-        - Gastrointestinal_Tract
-        - Genitourinary_NOS
-        - Groin
-        - Gum
-        - Hand
-        - Hard_Palate
-        - Head_Face_Or_Neck_Nos
-        - Head_and_Neck
-        - Heart
-        - Hepatic
-        - Hepatic_Duct
-        - Hepatic_Vein
-        - Hilar
-        - Hip
-        - Hippocampus
-        - Humerus
-        - Hypopharynx
-        - Ileocecal_Valve
-        - Ileum
-        - Ilium
-        - Index_Finger
-        - Ischium
-        - Islet_Cells
-        - Jaw
-        - Jejunum
-        - Joint
-        - Kidney
-        - Knee
-        - Lacrimal_Gland
-        - Large_Bowel
-        - Laryngopharynx
-        - Larynx
-        - Leg
-        - Leptomeninges
-        - Ligament
-        - Lip
-        - Liver
-        - Lumbar_Spine
-        - Lung
-        - Lymph_Node
-        - Lymph_Node_s__Axilla
-        - Lymph_Node_s__Cervical
-        - Lymph_Node_s__Distant
-        - Lymph_Node_s__Epitrochlear
-        - Lymph_Node_s__Femoral
-        - Lymph_Node_s__Hilar
-        - Lymph_Node_s__Iliac_Common
-        - Lymph_Node_s__Iliac_External
-        - Lymph_Node_s__Inguinal
-        - Lymph_Node_s__Internal_Mammary
-        - Lymph_Node_s__Mammary
-        - Lymph_Node_s__Mediastinal
-        - Lymph_Node_s__Mesenteric
-        - Lymph_Node_s__Occipital
-        - Lymph_Node_s__Paraaortic
-        - Lymph_Node_s__Parotid
-        - Lymph_Node_s__Pelvic
-        - Lymph_Node_s__Popliteal
-        - Lymph_Node_s__Regional
-        - Lymph_Node_s__Retroperitoneal
-        - Lymph_Node_s__Scalene
-        - Lymph_Node_s__Splenic
-        - Lymph_Node_s__Subclavicular
-        - Lymph_Node_s__Submandibular
-        - Lymph_Node_s__Supraclavicular
-        - Mandible
-        - Mantle
-        - Maxilla
-        - Mediastinal_Soft_Tissue
-        - Mediastinum
-        - Mesentery
-        - Mesothelium
-        - Middle_Finger
-        - Mitochondria
-        - Muscle
-        - Nails
-        - Nasal_Cavity
-        - Nasal_Soft_Tissue
-        - Nasopharynx
-        - Neck
-        - Nerve
-        - Nerve_s__Cranial
-        - Not_Reported
-        - Occipital_Cortex
-        - Ocular_Orbits
-        - Omentum
-        - Oral_Cavity
-        - Oral_Cavity_Mucosa_Only
-        - Oropharynx
-        - Other
-        - Ovary
-        - Palate
-        - Pancreas
-        - Parametrium
-        - Paraspinal_Ganglion
-        - Parathyroid
-        - Parotid_Gland
-        - Patella
-        - Pelvis
-        - Penis
-        - Pericardium
-        - Periorbital_Soft_Tissue
-        - Peritoneal_Cavity
-        - Peritoneum
-        - Pharynx
-        - Pineal
-        - Pineal_Gland
-        - Pituitary_Gland
-        - Placenta
-        - Pleura
-        - Popliteal_Fossa
-        - Pouch
-        - Primary_Tumor_Field
-        - Primary_tumor_site
-        - Prostate
-        - Prostate_Bed
-        - Prostate_Seminal_Vesicles_and_Lymph_Nodes
-        - Pylorus
-        - Rectosigmoid_Junction
-        - Rectum
-        - Regional_Site
-        - Retina
-        - Retro_Orbital_Region
-        - Retroperitoneum
-        - Rib
-        - Ring_Finger
-        - Round_Ligament
-        - Sacrum
-        - Salivary_Gland
-        - Scalp
-        - Scapula
-        - Sciatic_Nerve
-        - Scrotum
-        - Seminal_Vesicle
-        - Shoulder
-        - Sigmoid_Colon
-        - Sinus
-        - Sinus_es__Maxillary
-        - Skeletal_Muscle
-        - Skin
-        - Skin_lower_extremity_local
-        - Skin_total
-        - Skin_trunk_local
-        - Skin_upper_extremity_local
-        - Skull
-        - Small_Bowel
-        - Small_Bowel_Mucosa_Only
-        - Small_Finger
-        - Soft_Tissue
-        - Spinal_Column
-        - Spinal_Cord
-        - Spine
-        - Spleen
-        - Splenic_Flexure
-        - Sternum
-        - Stomach
-        - Stomach_Mucosa_Only
-        - Subcutaneous_Tissue
-        - Synovium
-        - Temporal_Cortex
-        - Tendon
-        - Testis
-        - Thigh
-        - Thoracic_Spine
-        - Thorax
-        - Throat
-        - Thumb
-        - Thymus
-        - Thyroid
-        - Tibia
-        - Tongue
-        - Tonsil
-        - Tonsil__Pharyngeal_
-        - Trachea___Major_Bronchi
-        - Transverse_Colon
-        - Trunk
-        - Umbilical_Cord
-        - Ureter
-        - Urethra
-        - Urinary_Tract
-        - Uterus
-        - Uvula
-        - Vagina
-        - Vas_Deferens
-        - Vein
-        - Venous
-        - Vertebra
-        - Vulva
-        - White_Blood_Cells
-        - Wrist
-        - unknown
-        Term:
-        -   Code: http://schema.biothings.io/PriorSitesofRadiation
-            Definition: The anatomic location to which radiation treatment was administered
-                to a patient prior to enrollment on a protocol.
-            Origin: HTAN
-            Value: Prior Sites of Radiation
     PriorTreatment:
         Desc: A yes/no/unknown/not applicable indicator related to the administration
             of therapeutic agents received before the body specimen was collected.
         Enum:
-        - 'No'
         - Not_Allowed_To_Collect
         - Not_Reported
-        - 'Yes'
+        - 'no'
         - unknown
+        - 'yes'
         Term:
         -   Code: http://schema.biothings.io/PriorTreatment
             Definition: A yes/no/unknown/not applicable indicator related to the administration
@@ -10628,9 +7806,9 @@ PropDefinitions:
         Desc: Yes/No/unknown indicator to identify whether a patient has had a new
             tumor event after initial treatment.
         Enum:
-        - 'No'
         - Not_Reported
         - Yes___Progression_or_Recurrence
+        - 'no'
         - unknown
         Term:
         -   Code: http://schema.biothings.io/ProgressionorRecurrence
@@ -10735,56 +7913,6 @@ PropDefinitions:
             Origin: HTAN
             Value: Proportion of Minimum CpG Coverage 10X
         Type: TBD
-    ProstateCancerCytologicMorphologicSubtypes:
-        Desc: Text term that describes various morphological and cytological subtypes
-            in protate tumors.
-        Enum:
-        - High_grade_prostatic_intraepithelial_neoplasia__HGPIN____PIN_II___PIN_III_
-        - Low_grade_prostatic_intraepithelial_neoplasia__PIN___PIN_I_
-        - Not_Reported
-        - Other
-        - prostatic_atypical_adenomatous_hyperplasia__adenosis_or_AAH_
-        - prostatic_basal_cell_hyperplasia
-        - prostatic_clear_cell_cribiform_hyperplasia
-        - unknown
-        Term:
-        -   Code: http://schema.biothings.io/ProstateCancerCytologicMorphologicSubtypes
-            Definition: Text term that describes various morphological and cytological
-                subtypes in protate tumors.
-            Origin: HTAN
-            Value: Prostate Cancer Cytologic Morphologic Subtypes
-    ProstateCancerLocalExtent:
-        Desc: The response used to categorize the local extent of disease for prostate
-            cancer.
-        Enum:
-        - Extraprostatic_extension
-        - Not_Reported
-        - Organ_Confined
-        - unknown
-        Term:
-        -   Code: http://schema.biothings.io/ProstateCancerLocalExtent
-            Definition: The response used to categorize the local extent of disease
-                for prostate cancer.
-            Origin: HTAN
-            Value: Prostate Cancer Local Extent
-    ProstateCarcinomaHistologicType:
-        Desc: The diagnostic subclassification of an invasive prostate carcinoma.
-        Enum:
-        - Acinar_prostate_adenocarcinoma_sarcomatoid_variant
-        - Acinar_prostate_adenocarcinoma_signet_ring_variant
-        - Acinar_prostate_mucinous__colloid__adenocarcinoma
-        - Acinar_prostate_mucinous_adenocarcinoma
-        - Other
-        - Prostatic_adenocarcinoma__conventional_NOS_
-        - Prostatic_adenosquamous_carcinoma
-        - Prostatic_duct_adenocarcinoma
-        - Prostatic_small_cell_carcinoma
-        - Undifferentiated_carcinoma_NOS
-        Term:
-        -   Code: http://schema.biothings.io/ProstateCarcinomaHistologicType
-            Definition: The diagnostic subclassification of an invasive prostate carcinoma.
-            Origin: HTAN
-            Value: Prostate Carcinoma Histologic Type
     ProtocolLink:
         Desc: Protocols.io ID or DOI link to a free/open protocol resource describing
             in detail the assay protocol (e.g. surface markers used in Smart-seq,
@@ -10805,8 +7933,8 @@ PropDefinitions:
         Desc: Pseudo aligners such as Kallisto or Salmon do not produce aligned reads
             BAM files. True indicates pseudoalignment was used.
         Enum:
-        - 'No'
         - Yes___Pseudo_Alignment_Used
+        - 'no'
         Term:
         -   Code: http://schema.biothings.io/PseudoAlignmentUsed
             Definition: Pseudo aligners such as Kallisto or Salmon do not produce
@@ -10816,8 +7944,8 @@ PropDefinitions:
     Pyramid:
         Desc: Does data file contain pyramid of images
         Enum:
-        - 'No'
-        - 'Yes'
+        - 'no'
+        - 'yes'
         Term:
         -   Code: http://schema.biothings.io/Pyramid
             Definition: Does data file contain pyramid of images
@@ -10904,34 +8032,6 @@ PropDefinitions:
             Origin: HTAN
             Value: ROI name
         Type: TBD
-    RPPADilution:
-        Desc: The dilution ratio.
-        Term:
-        -   Code: http://schema.biothings.io/RPPADilution
-            Definition: The dilution ratio.
-            Origin: HTAN
-            Value: RPPA Dilution
-        Type: TBD
-    RPPAValidationStatus:
-        Desc: Valid = RPPA and WB correlation > 0.7; Use with Caution = RPPA and WB
-            correlation < 0.7; Under Evaluation = Antibody has given mixed results
-            and/or evaluated by another lab; We are in the process of (re)validating;
-            Used for QC = These antibodies are used for tissue sample quality control
-            (QC)
-        Enum:
-        - Under_Evaluation
-        - Use_with_Caution
-        - Used_for_QC
-        - Valid
-        Term:
-        -   Code: http://schema.biothings.io/RPPAValidationStatus
-            Definition: Valid = RPPA and WB correlation > 0.7; Use with Caution =
-                RPPA and WB correlation < 0.7; Under Evaluation = Antibody has given
-                mixed results and/or evaluated by another lab; We are in the process
-                of (re)validating; Used for QC = These antibodies are used for tissue
-                sample quality control (QC)
-            Origin: HTAN
-            Value: RPPA Validation Status
     RRIDidentifier:
         Desc: "Research Resource Identifier (eg \u201CRRID: AB_394606\u201D)"
         Term:
@@ -10949,12 +8049,12 @@ PropDefinitions:
             or geographic distribution.
         Enum:
         - Not_Reported
-        - Other
         - american_indian_or_alaska_native
         - asian
         - black_or_african_american
         - native_hawaiian_or_other_pacific_islander
         - not_allowed_to_collect
+        - other
         - unknown
         - white
         Term:
@@ -10970,10 +8070,10 @@ PropDefinitions:
         Desc: The yes/no/unknown indicator used to describe whether the patient was
             exposed to radon.
         Enum:
-        - 'No'
         - Not_Reported
-        - 'Yes'
+        - 'no'
         - unknown
+        - 'yes'
         Term:
         -   Code: http://schema.biothings.io/RadonExposure
             Definition: The yes/no/unknown indicator used to describe whether the
@@ -10981,14 +8081,14 @@ PropDefinitions:
             Origin: HTAN
             Value: Radon Exposure
     Rawreads:
-        Desc: 'Reads not yet analyzed in any way to be used for data analysis. The
+        Desc: Reads not yet analyzed in any way to be used for data analysis. The
             number of reads that pass filter from the flow cell represented in the
-            FASTQ file. '
+            FASTQ file.
         Term:
         -   Code: http://schema.biothings.io/Rawreads
-            Definition: 'Reads not yet analyzed in any way to be used for data analysis.
+            Definition: Reads not yet analyzed in any way to be used for data analysis.
                 The number of reads that pass filter from the flow cell represented
-                in the FASTQ file. '
+                in the FASTQ file.
             Origin: HTAN
             Value: Raw reads
         Type: TBD
@@ -11016,10 +8116,10 @@ PropDefinitions:
         Desc: Indicate if this is Read 1 (R1), Read 2 (R2), Index Reads (I1), or Other
         Enum:
         - I1
-        - Other
         - R1
         - R1_R2
         - R2
+        - other
         Term:
         -   Code: http://schema.biothings.io/ReadIndicator
             Definition: Indicate if this is Read 1 (R1), Read 2 (R2), Index Reads
@@ -11042,8 +8142,8 @@ PropDefinitions:
         - Course_of_Therapy_Completed
         - Death
         - Disease_Progression
-        - Other
         - Withdrawal_by_Subject
+        - other
         Term:
         -   Code: http://schema.biothings.io/ReasonTreatmentEnded
             Definition: The text term used to describe the reason a specific treatment
@@ -11159,9 +8259,9 @@ PropDefinitions:
             crystalline metal oxide that consists of different forms including quartz,
             cristobalite, tridymite, tripoli, ganister, chert and novaculite.
         Enum:
-        - 'No'
-        - 'Yes'
+        - 'no'
         - unknown
+        - 'yes'
         Term:
         -   Code: http://schema.biothings.io/RespirableCrystallineSilicaExposure
             Definition: The yes/no/unknown indicator used to describe whether a patient
@@ -11297,10 +8397,10 @@ PropDefinitions:
             treatment for a risk factor the patient had at the time of or prior to
             their diagnosis.
         Enum:
-        - 'No'
         - Not_Reported
-        - 'Yes'
+        - 'no'
         - unknown
+        - 'yes'
         Term:
         -   Code: http://schema.biothings.io/RiskFactorTreatment
             Definition: The yes/no/unknown indicator used to describe whether the
@@ -11318,106 +8418,6 @@ PropDefinitions:
             Origin: HTAN
             Value: Run ID
         Type: TBD
-    RuralvsUrban:
-        Desc: Density of population in the county of residence, based on census data
-            (updated last on 4/28/20). Use patient zip code to find the county the
-            patient lives in by going to https://www.unitedstateszipcodes.org/. Enter
-            the zip code in the main text field and use the associated county on the
-            right side of the result field. Go to https://www2.census.gov/programs-surveys/acs/data/covid_19/Data_Profiles_for_HHS/050-County_By_State/.
-            Select the dp02_XX.csv file where XX = the two letter abbreviation for
-            the appropriate state. On row 166 find the total population for the appropriate
-            county.  If the total population is <2,500 enter a value of "Rural Population";
-            if 2,500 - 50,000 enter a value of "Urban Cluster"; or if >50,000 enter
-            "Urban Population"
-        Enum:
-        - Rural_Population__population_<2500_
-        - Urban_Cluster__population_2500___50000_
-        - Urban_Population__population_>50000_
-        Term:
-        -   Code: http://schema.biothings.io/RuralvsUrban
-            Definition: Density of population in the county of residence, based on
-                census data (updated last on 4/28/20). Use patient zip code to find
-                the county the patient lives in by going to https://www.unitedstateszipcodes.org/.
-                Enter the zip code in the main text field and use the associated county
-                on the right side of the result field. Go to https://www2.census.gov/programs-surveys/acs/data/covid_19/Data_Profiles_for_HHS/050-County_By_State/.
-                Select the dp02_XX.csv file where XX = the two letter abbreviation
-                for the appropriate state. On row 166 find the total population for
-                the appropriate county.  If the total population is <2,500 enter a
-                value of "Rural Population"; if 2,500 - 50,000 enter a value of "Urban
-                Cluster"; or if >50,000 enter "Urban Population"
-            Origin: HTAN
-            Value: Rural vs Urban
-    SarcomaDiagnosisClassificationCategory:
-        Desc: High level grouping to describe a diagnostic grouping or category for
-            sarcoma, a malignant mesenchymal cell tumor most commonly arising from
-            muscle, fat, fibrous tissue, bone, cartilage, and blood vessels.
-        Enum:
-        - Bone_Sarcoma
-        - Musculoskeletal_Sarcoma
-        - Not_Reported
-        - Soft_Tissue_Sarcoma
-        - unknown
-        Term:
-        -   Code: http://schema.biothings.io/SarcomaDiagnosisClassificationCategory
-            Definition: High level grouping to describe a diagnostic grouping or category
-                for sarcoma, a malignant mesenchymal cell tumor most commonly arising
-                from muscle, fat, fibrous tissue, bone, cartilage, and blood vessels.
-            Origin: HTAN
-            Value: Sarcoma Diagnosis Classification Category
-    SarcomaSubtype:
-        Desc: The subtype related to the scientific determination and investigation,
-            analysis and recognition of the presence and nature of disease, condition,
-            or injury from expressed signs and symptoms of tissue growth resulting
-            from uncontrolled cell proliferation.
-        Enum:
-        - Gastrointestinal_Stromal_Tumor
-        - Leiomyosarcoma__uterine_or_extra_uterine_
-        - Liposarcoma
-        - Not_Reported
-        - Other
-        - Other_Synovial_Sarcoma_Or_Malignant_Peripheral_Nerve_Sheath_Tumor_Sarcoma
-        - Undifferentiated_pleomorphic_sarcoma
-        - undifferentiated_pleomorphic_sarcoma_or_malignant_fibrous_histiosarcoma
-        - unknown
-        Term:
-        -   Code: http://schema.biothings.io/SarcomaSubtype
-            Definition: The subtype related to the scientific determination and investigation,
-                analysis and recognition of the presence and nature of disease, condition,
-                or injury from expressed signs and symptoms of tissue growth resulting
-                from uncontrolled cell proliferation.
-            Origin: HTAN
-            Value: Sarcoma Subtype
-    SarcomaTumorExtensionType:
-        Desc: The field to indicate the organs and structures to which the tumor has
-            become adherent or has invaded.
-        Enum:
-        - Extraosseous
-        - Intracranial
-        - Lymph_nodes
-        - Not_Reported
-        - Other
-        - Parameningeal
-        - Thoracic_cavity
-        - unknown
-        Term:
-        -   Code: http://schema.biothings.io/SarcomaTumorExtensionType
-            Definition: The field to indicate the organs and structures to which the
-                tumor has become adherent or has invaded.
-            Origin: HTAN
-            Value: Sarcoma Tumor Extension Type
-    SatelliteMetastasisPresentIndicator:
-        Desc: A yes/no indicator to ask if intransit metastases or satellite lesions
-            are present.
-        Enum:
-        - 'No'
-        - 'Yes'
-        - unknown
-        Term:
-        -   Code: http://schema.biothings.io/SatelliteMetastasisPresentIndicator
-            Definition: A yes/no indicator to ask if intransit metastases or satellite
-                lesions are present.
-            Origin: HTAN
-            Value: Satellite Metastasis Present Indicator
     ScATAC_seqObjectID:
         Desc: Orig.Ident or scATAC-seq Object ID
         Term:
@@ -11522,10 +8522,10 @@ PropDefinitions:
         - Differentiation_trajectory_analysis
         - HCA_Optimus
         - HTSeq___FPKM
-        - Other
         - SEQC
         - STARsolo
         - dropEST
+        - other
         Term:
         -   Code: http://schema.biothings.io/ScRNAseqWorkflowType
             Definition: Generic name for the workflow used to analyze a data set.
@@ -11675,16 +8675,6 @@ PropDefinitions:
                 specific to the sample used for sequencing.
             Origin: HTAN
             Value: Secondary Gleason Grade
-    Secondhandsmokeexposureyears:
-        Desc: The number of cumulative years of the patient''s exposure to second-hand
-            cigarette smoke
-        Term:
-        -   Code: http://schema.biothings.io/Secondhandsmokeexposureyears
-            Definition: The number of cumulative years of the patient''s exposure
-                to second-hand cigarette smoke
-            Origin: HTAN
-            Value: Second hand smoke exposure years
-        Type: TBD
     Segmentname:
         Desc: Name given to segment at time of generation
         Term:
@@ -11692,46 +8682,6 @@ PropDefinitions:
             Definition: Name given to segment at time of generation
             Origin: HTAN
             Value: Segment name
-        Type: TBD
-    SeminalVesicleInvasion:
-        Desc: An anatomic position identifying a side of the body where local spread
-            of malignant neoplasm is found to infiltrate tissue in the saclike glandular
-            diverticulum on the ductus deferens in a male.
-        Enum:
-        - Both_sides
-        - Left
-        - None
-        - Not_Reported
-        - Right
-        - unknown
-        Term:
-        -   Code: http://schema.biothings.io/SeminalVesicleInvasion
-            Definition: An anatomic position identifying a side of the body where
-                local spread of malignant neoplasm is found to infiltrate tissue in
-                the saclike glandular diverticulum on the ductus deferens in a male.
-            Origin: HTAN
-            Value: Seminal Vesicle Invasion
-    SentinelLymphNodeCount:
-        Desc: Numeric count of sentinel lymph nodes.
-        Term:
-        -   Code: http://schema.biothings.io/SentinelLymphNodeCount
-            Definition: Numeric count of sentinel lymph nodes.
-            Origin: HTAN
-            Value: Sentinel Lymph Node Count
-        Type: TBD
-    SentinelNodePositiveAssessmentCount:
-        Desc: The number or amount of metastatic neoplasms related to the confirmed
-            presence of disease or specific microorganisms during examination of the
-            first rounded mass of lymphatic tissue to which cancer is likely to spread
-            from the primary tumor.
-        Term:
-        -   Code: http://schema.biothings.io/SentinelNodePositiveAssessmentCount
-            Definition: The number or amount of metastatic neoplasms related to the
-                confirmed presence of disease or specific microorganisms during examination
-                of the first rounded mass of lymphatic tissue to which cancer is likely
-                to spread from the primary tumor.
-            Origin: HTAN
-            Value: Sentinel Node Positive Assessment Count
         Type: TBD
     SequenceDuplicationLevels:
         Desc: State classification given by FASTQC for the metric. Metric specific
@@ -11813,7 +8763,6 @@ PropDefinitions:
         - Not_Reported
         - NovaSeqS4
         - NovaSeq_6000
-        - Other
         - Oxford_Nanopore_minION
         - PacBio_RS
         - PacBio_Sequel2
@@ -11821,6 +8770,7 @@ PropDefinitions:
         - Revio
         - Ultima_Genomics_UG100
         - _454_GS_FLX_Titanium
+        - other
         - unknown
         Term:
         -   Code: http://schema.biothings.io/SequencingPlatform
@@ -12202,13 +9152,10 @@ PropDefinitions:
         - Short_bones_of_lower_limb_and_associated_joints
         - Short_bones_of_upper_limb_and_associated_joints
         - Sigmoid_colon
-        - Skin_NOS
         - Skin_of_lip_NOS
-        - Skin_of_lower_limb_and_hip
         - Skin_of_other_and_unspecified_parts_of_face
         - Skin_of_scalp_and_neck
         - Skin_of_trunk
-        - Skin_of_upper_limb_and_shoulder
         - Small_intestine_NOS
         - Soft_palate_NOS
         - Specified_parts_of_peritoneum
@@ -12262,6 +9209,9 @@ PropDefinitions:
         - Vestibule_of_mouth
         - Vulva_NOS
         - Waldeyer_ring
+        - skin_NOS
+        - skin_of_lower_limb_and_hip
+        - skin_of_upper_limb_and_shoulder
         - unknown
         - unknown_primary_site
         Term:
@@ -12320,24 +9270,16 @@ PropDefinitions:
             Origin: HTAN
             Value: SizeZ
         Type: TBD
-    SizeofPolypRemoved:
-        Desc: Size of the polyp removed in cm
-        Term:
-        -   Code: http://schema.biothings.io/SizeofPolypRemoved
-            Definition: Size of the polyp removed in cm
-            Origin: HTAN
-            Value: Size of Polyp Removed
-        Type: TBD
     SlicingMethod:
         Desc: 'Imaging specific: the method by which the tissue was sliced.'
         Enum:
         - Cryosectioning
         - Not_Reported
-        - Other
         - Sectioning
         - Sliding_microtome
         - Tissue_molds
         - Vibratome
+        - other
         - unknown
         Term:
         -   Code: http://schema.biothings.io/SlicingMethod
@@ -12377,12 +9319,12 @@ PropDefinitions:
     Slide_seqBeadFileType:
         Desc: The type of Level 3 file submitted as part of the Slide-seq workflow.
         Enum:
-        - Barcodes
-        - Bead_Barcodes
-        - Bead_Locations
-        - Features
+        - All_Bead_Barcodes
+        - All_Bead_Locations
         - Matched_Bead_Barcodes
         - Matched_Bead_Locations
+        - Matrix_Barcodes
+        - Matrix_Features
         - Not_Applicable
         Term:
         -   Code: http://schema.biothings.io/Slide-seqBeadFileType
@@ -12390,6 +9332,14 @@ PropDefinitions:
                 workflow.
             Origin: HTAN
             Value: Slide-seq Bead File Type
+    Slide_seqFragmentSize:
+        Desc: Average cDNA length associated with the experiemtn. Integer
+        Term:
+        -   Code: http://schema.biothings.io/Slide-seqFragmentSize
+            Definition: Average cDNA length associated with the experiemtn. Integer
+            Origin: HTAN
+            Value: Slide-seq Fragment Size
+        Type: TBD
     Slide_seqWorkflowParameterDescription:
         Desc: Parameters used to run the Slide-seq workflow. String
         Term:
@@ -12515,6 +9465,7 @@ PropDefinitions:
             [OBI_0000711]
         Enum:
         - Drop_seq
+        - Nextera_XT
         - Smart_SeqV4
         - Smart_seq2
         - TruDrop
@@ -12569,29 +9520,6 @@ PropDefinitions:
                 related to research assay outputs here.'
             Origin: HTAN
             Value: Specialized Molecular Test
-        Type: TBD
-    Species:
-        Desc: Host animal.
-        Enum:
-        - Goat
-        - Mouse
-        - Rabbit
-        Term:
-        -   Code: http://schema.biothings.io/Species
-            Definition: Host animal.
-            Origin: HTAN
-            Value: Species
-    SpecimenBlastCountPercentageValue:
-        Desc: The value, in percent(%) of the medical procedure that involves testing
-            a sample of blood for blast cells, immature (undifferentiated) cells during
-            diagnosis
-        Term:
-        -   Code: http://schema.biothings.io/SpecimenBlastCountPercentageValue
-            Definition: The value, in percent(%) of the medical procedure that involves
-                testing a sample of blood for blast cells, immature (undifferentiated)
-                cells during diagnosis
-            Origin: HTAN
-            Value: Specimen Blast Count Percentage Value
         Type: TBD
     SpikeIn:
         Desc: A set of known synthetic RNA molecules with known sequence that are
@@ -12688,7 +9616,7 @@ PropDefinitions:
             hotspots.
         Enum:
         - MACS2
-        - Other
+        - other
         Term:
         -   Code: http://schema.biothings.io/StripeCalling
             Definition: Tool used for identifying architectural stripe-forming, interaction
@@ -12702,7 +9630,7 @@ PropDefinitions:
         Enum:
         - Cooltools
         - HiCCUPS
-        - Other
+        - other
         Term:
         -   Code: http://schema.biothings.io/StripeWindow
             Definition: Binning size used for calling significant architectural stripes.
@@ -12740,19 +9668,6 @@ PropDefinitions:
             Origin: HTAN
             Value: Sub Cycle Number
         Type: TBD
-    SupraTentorialEpendymomaMolecularSubgroup:
-        Desc: Text term to identify the molecular subgroup in a supra tentorial ependymoma
-        Enum:
-        - Not_Applicable
-        - ST_EPN_RELA
-        - ST_EPN_YAP1
-        - unknown
-        Term:
-        -   Code: http://schema.biothings.io/SupraTentorialEpendymomaMolecularSubgroup
-            Definition: Text term to identify the molecular subgroup in a supra tentorial
-                ependymoma
-            Origin: HTAN
-            Value: Supra Tentorial Ependymoma Molecular Subgroup
     SupratentorialLocalization:
         Desc: Text term to specify the location of the supratentorial tumor.
         Enum:
@@ -12810,10 +9725,10 @@ PropDefinitions:
             sequencing was diagnosed. If both tumors were sequenced, both tumors would
             have synchronous malignancies.
         Enum:
-        - 'No'
         - Not_Reported
-        - 'Yes'
+        - 'no'
         - unknown
+        - 'yes'
         Term:
         -   Code: http://schema.biothings.io/SynchronousMalignancy
             Definition: A yes/no/unknown indicator used to describe whether the patient
@@ -12899,6 +9814,7 @@ PropDefinitions:
         - SureSelect_Human_All_Exon_v4
         - SureSelect_Human_All_Exon_v5
         - SureSelect_Human_All_Exon_v5___UTR
+        - SureSelect_Human_All_Exon_v6
         - TruSeq_Amplicon_Cancer_Panel
         - TruSeq_Exome_Enrichment___62_Mb
         - TruSeq_RNA_Exome
@@ -12979,13 +9895,13 @@ PropDefinitions:
         - Intermediate
         - Loss_of_Expression
         - Low
-        - Negative
         - Normal
         - Not_Applicable
         - Not_Reported
         - Overexpressed
-        - Positive
         - Test_Value_Reported
+        - negative
+        - positive
         - unknown
         Term:
         -   Code: http://schema.biothings.io/TestResult
@@ -13362,13 +10278,10 @@ PropDefinitions:
         - Short_bones_of_lower_limb_and_associated_joints
         - Short_bones_of_upper_limb_and_associated_joints
         - Sigmoid_colon
-        - Skin_NOS
         - Skin_of_lip_NOS
-        - Skin_of_lower_limb_and_hip
         - Skin_of_other_and_unspecified_parts_of_face
         - Skin_of_scalp_and_neck
         - Skin_of_trunk
-        - Skin_of_upper_limb_and_shoulder
         - Small_intestine_NOS
         - Soft_palate_NOS
         - Specified_parts_of_peritoneum
@@ -13422,6 +10335,9 @@ PropDefinitions:
         - Vestibule_of_mouth
         - Vulva_NOS
         - Waldeyer_ring
+        - skin_NOS
+        - skin_of_lower_limb_and_hip
+        - skin_of_upper_limb_and_shoulder
         - unknown
         - unknown_primary_site
         Term:
@@ -13435,8 +10351,8 @@ PropDefinitions:
     ToTrimAdapterSequence:
         Desc: Does the user suggest adapter trimming?
         Enum:
-        - 'No'
         - Yes___Trim_Adapter_Sequence
+        - 'no'
         Term:
         -   Code: http://schema.biothings.io/ToTrimAdapterSequence
             Definition: Does the user suggest adapter trimming?
@@ -13445,8 +10361,8 @@ PropDefinitions:
     Tool:
         Desc: Were any software or computational tools generated for this content
         Enum:
-        - 'No'
-        - 'Yes'
+        - 'no'
+        - 'yes'
         Term:
         -   Code: http://schema.biothings.io/Tool
             Definition: Were any software or computational tools generated for this
@@ -13796,14 +10712,6 @@ PropDefinitions:
             Origin: HTAN
             Value: Total DNA Input
         Type: TBD
-    TotalNumberBeadsinPuck:
-        Desc: Number of beads in the Slide-seq puck. Integer
-        Term:
-        -   Code: http://schema.biothings.io/TotalNumberBeadsinPuck
-            Definition: Number of beads in the Slide-seq puck. Integer
-            Origin: HTAN
-            Value: Total Number Beads in Puck
-        Type: TBD
     TotalNumberofInputCells:
         Desc: Number of cells loaded/placed on plates
         Term:
@@ -13853,10 +10761,18 @@ PropDefinitions:
             Value: Total Unmapped reads
         Type: TBD
     Transcript:
-        Desc: An RNA synthesized on a DNA or RNA template by an RNA polymerase
+        Desc: 'Alphanumeric value used to describe the transcript of a specific genetic
+            variant. Note: This node is meant to capture molecular tests that were
+            completed clinically for the participant and only includes data from diagnostic
+            array that was completed prior to research sequencing was done. Do not
+            include data related to research assay outputs here.'
         Term:
         -   Code: http://schema.biothings.io/Transcript
-            Definition: An RNA synthesized on a DNA or RNA template by an RNA polymerase
+            Definition: 'Alphanumeric value used to describe the transcript of a specific
+                genetic variant. Note: This node is meant to capture molecular tests
+                that were completed clinically for the participant and only includes
+                data from diagnostic array that was completed prior to research sequencing
+                was done. Do not include data related to research assay outputs here.'
             Origin: HTAN
             Value: Transcript
         Type: TBD
@@ -14160,13 +11076,10 @@ PropDefinitions:
         - Short_bones_of_lower_limb_and_associated_joints
         - Short_bones_of_upper_limb_and_associated_joints
         - Sigmoid_colon
-        - Skin_NOS
         - Skin_of_lip_NOS
-        - Skin_of_lower_limb_and_hip
         - Skin_of_other_and_unspecified_parts_of_face
         - Skin_of_scalp_and_neck
         - Skin_of_trunk
-        - Skin_of_upper_limb_and_shoulder
         - Small_intestine_NOS
         - Soft_palate_NOS
         - Specified_parts_of_peritoneum
@@ -14220,6 +11133,9 @@ PropDefinitions:
         - Vestibule_of_mouth
         - Vulva_NOS
         - Waldeyer_ring
+        - skin_NOS
+        - skin_of_lower_limb_and_hip
+        - skin_of_upper_limb_and_shoulder
         - unknown
         - unknown_primary_site
         Term:
@@ -14283,10 +11199,10 @@ PropDefinitions:
         Desc: The text term used to indicate whether the treatment had an effect on
             the patient.
         Enum:
-        - 'No'
         - Not_Reported
-        - 'Yes'
+        - 'no'
         - unknown
+        - 'yes'
         Term:
         -   Code: http://schema.biothings.io/TreatmentEffectIndicator
             Definition: The text term used to indicate whether the treatment had an
@@ -14386,7 +11302,6 @@ PropDefinitions:
         - Isolated_Limb_Perfusion__ILP_
         - Not_Reported
         - Organ_Transplantation
-        - Other
         - Pharmaceutical_Therapy_NOS
         - Pleurodesis
         - Radiation_2D_Conventional
@@ -14417,6 +11332,7 @@ PropDefinitions:
         - Steroid_Therapy
         - Surgery
         - Targeted_Molecular_Therapy
+        - other
         - unknown
         Term:
         -   Code: http://schema.biothings.io/TreatmentType
@@ -14427,10 +11343,10 @@ PropDefinitions:
         Desc: A yes/no/unknown/not applicable indicator related to the administration
             of therapeutic agents received.
         Enum:
-        - 'No'
         - Not_Reported
-        - 'Yes'
+        - 'no'
         - unknown
+        - 'yes'
         Term:
         -   Code: http://schema.biothings.io/TreatmentorTherapy
             Definition: A yes/no/unknown/not applicable indicator related to the administration
@@ -14459,8 +11375,8 @@ PropDefinitions:
     Tseries:
         Desc: Does data file contain a time-series of images
         Enum:
-        - 'No'
-        - 'Yes'
+        - 'no'
+        - 'yes'
         Term:
         -   Code: http://schema.biothings.io/Tseries
             Definition: Does data file contain a time-series of images
@@ -14471,10 +11387,10 @@ PropDefinitions:
             to the organ where it originated and did not spread to a proximal or distant
             location within the body.
         Enum:
-        - 'No'
         - Not_Reported
-        - 'Yes'
+        - 'no'
         - unknown
+        - 'yes'
         Term:
         -   Code: http://schema.biothings.io/TumorConfinedtoOrganofOrigin
             Definition: The yes/no/unknown indicator used to describe whether the
@@ -14492,27 +11408,6 @@ PropDefinitions:
             Origin: HTAN
             Value: Tumor Depth
         Type: TBD
-    TumorExtranodalExtensionIndicator:
-        Desc: The indicator to determine extranodal involvement or extent of the disease.
-        Enum:
-        - Absent
-        - Indeterminate
-        - 'NO'
-        - No_source_documentation
-        - Not_applicable
-        - Not_sampled_or_dissected
-        - Present
-        - Present___extensive
-        - Present___minimal
-        - UNKNOWN
-        - 'YES'
-        - unspecified
-        Term:
-        -   Code: http://schema.biothings.io/TumorExtranodalExtensionIndicator
-            Definition: The indicator to determine extranodal involvement or extent
-                of the disease.
-            Origin: HTAN
-            Value: Tumor Extranodal Extension Indicator
     TumorFocality:
         Desc: The text term used to describe whether the patient''s disease originated
             in a single location or multiple locations.
@@ -14567,16 +11462,6 @@ PropDefinitions:
             Origin: HTAN
             Value: Tumor Largest Dimension Diameter
         Type: TBD
-    Typeofsmokeexposurecumulativeyears:
-        Desc: The number of cumulative years of the patient''s specific type of smoke
-            exposure
-        Term:
-        -   Code: http://schema.biothings.io/Typeofsmokeexposurecumulativeyears
-            Definition: The number of cumulative years of the patient''s specific
-                type of smoke exposure
-            Origin: HTAN
-            Value: Type of smoke exposure cumulative years
-        Type: TBD
     UMITag:
         Desc: SAM tag for the UMI field; please provide a valid UB, UMI (e.g. UB:Z
             or UR:Z)
@@ -14586,14 +11471,6 @@ PropDefinitions:
                 (e.g. UB:Z or UR:Z)
             Origin: HTAN
             Value: UMI Tag
-        Type: TBD
-    UNIPROTProteinIDTarget:
-        Desc: The comma separated list of UNIPROT IDs targeted by the antibody.
-        Term:
-        -   Code: http://schema.biothings.io/UNIPROTProteinIDTarget
-            Definition: The comma separated list of UNIPROT IDs targeted by the antibody.
-            Origin: HTAN
-            Value: UNIPROT Protein ID Target
         Type: TBD
     UnmappedRead_Pairs:
         Desc: Number of read-pairs with at least one end not mapped
@@ -14642,13 +11519,13 @@ PropDefinitions:
         - Methylation
         - Mosaicism
         - Not_Reported
-        - Other
         - Partial_Methylation
         - Rearrangement
         - Repeated_Sequences
         - Splice
         - Substitution
         - Translocation
+        - other
         - unknown
         Term:
         -   Code: http://schema.biothings.io/VariantType
@@ -14659,10 +11536,10 @@ PropDefinitions:
         Desc: The yes/no indicator to ask if large vessel or venous invasion was detected
             by surgery or presence in a tumor specimen.
         Enum:
-        - 'No'
         - Not_Allowed_To_Collect
         - Not_Reported
         - Yes___Vascular_Invasion_Present
+        - 'no'
         - unknown
         Term:
         -   Code: http://schema.biothings.io/VascularInvasionPresent
@@ -14716,10 +11593,10 @@ PropDefinitions:
     VisiumFileType:
         Desc: The file type generated for the visium experiment.
         Enum:
-        - Barcodes
-        - Features
+        - barcodes
         - detected_image_png
         - detected_jpg
+        - features
         - fiducial_image_jpg
         - fiducial_image_png
         - filtered_mex
@@ -14892,21 +11769,11 @@ PropDefinitions:
             Origin: HTAN
             Value: Year of Diagnosis
         Type: TBD
-    YearsSmoked:
-        Desc: Numeric value (or unknown) to represent the number of years a person
-            has been smoking.
-        Term:
-        -   Code: http://schema.biothings.io/YearsSmoked
-            Definition: Numeric value (or unknown) to represent the number of years
-                a person has been smoking.
-            Origin: HTAN
-            Value: Years Smoked
-        Type: TBD
     Zstack:
         Desc: Does data file contain a Z-stack of images
         Enum:
-        - 'No'
-        - 'Yes'
+        - 'no'
+        - 'yes'
         Term:
         -   Code: http://schema.biothings.io/Zstack
             Definition: Does data file contain a Z-stack of images
